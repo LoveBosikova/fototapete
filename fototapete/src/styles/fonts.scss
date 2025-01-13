@@ -1,0 +1,51 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Evolventa';
+    src: local('Evolventa-Bold'), 
+        url('../fonts/Evolventa-Bold.ttf') format('truetype'),
+        url('../fonts/Evolventa-Bold.woff') format('woff'),
+        url('../fonts/Evolventa-Bold.svg') format("svg");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allison Script';
+    src: local('Allison Script'), 
+        url('../fonts/allison_script.ttf') format('truetype'),
+        url('../fonts/allison_script.otf') format('otf');
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@mixin evolventa-700-38 {
+    font-family: "Evolventa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-38;
+}
+
+@mixin allison-400-64 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    // font-stretch: 200%;
+    font-weight: 400;
+    font-size: $font-size-64;
+}
+
+@mixin onest-700-47 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 47px;
+}
