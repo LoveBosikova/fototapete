@@ -4,9 +4,9 @@
 @font-face {
     font-family: 'Evolventa';
     src: local('Evolventa-Bold'), 
-        url('../fonts/Evolventa-Bold.ttf') format('truetype'),
-        url('../fonts/Evolventa-Bold.woff') format('woff'),
-        url('../fonts/Evolventa-Bold.svg') format("svg");
+        url('/fonts/Evolventa-Bold.ttf') format('truetype'),
+        url('/fonts/Evolventa-Bold.woff') format('woff'),
+        url('/fonts/Evolventa-Bold.svg') format("svg");
     font-style: normal;
     text-rendering: optimizeLegibility;
     font-display: swap;
@@ -15,8 +15,8 @@
 @font-face {
     font-family: 'Allison Script';
     src: local('Allison Script'), 
-        url('../fonts/allison_script.ttf') format('truetype'),
-        url('../fonts/allison_script.otf') format('otf');
+        url('/fonts/allison_script.ttf') format('truetype'),
+        url('/fonts/allison_script.otf') format('otf');
     font-style: normal;
     text-rendering: optimizeLegibility;
     font-display: swap;
