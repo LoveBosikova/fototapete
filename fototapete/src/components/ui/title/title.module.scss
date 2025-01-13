@@ -6,20 +6,19 @@
 
 // A title is black by default 
 .title {
+    @include evolventa-700-38;
     color: $black-text;
     text-transform: uppercase;
     font-weight: 700;
     font-size: $font-size-38;
-    @include evolventa-700-38;
     padding-top: 30%;
-    // line-height: 42px;
 }
 
 // White title 
 .whiteTitle {
+    @include evolventa-700-38;
     color: $white-text;
     text-transform: uppercase;
     font-weight: 700;
     font-size: $font-size-38;
-    @include evolventa-700-38;
 }

@@ -3,18 +3,18 @@
 @import '../../../styles/fonts.scss';
 
 .handwritingWhite {
-    color: $white-text;
     @include  allison-400-64;
+    color: $white-text;
 }
 
 .handwritingOrange {
-    color: $orange-alert;
     @include  allison-400-64;
+    color: $orange-alert;
 
 }
 
 .handwritingBlack {
-    color: $black-text;
     @include  allison-400-64;
+    color: $black-text;
 
 }
