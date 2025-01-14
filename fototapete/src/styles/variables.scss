@@ -8,17 +8,11 @@
 // $font-size-26: 1.806vw;
 // $font-size-30: 2vw;
 // $font-size-36: 2.556vw;
-$font-size-38: 2.796vw;
-$font-size-64: 3vw;
+$font-size-38: 3.18vw;
+$font-size-14: 1.25vw;
 
-// $font-size-200: 13.89vw;
+$font-size-64: 5.48vw;
 
-// @font-face {
-//     font-family: 'Evolventa Bold';
-//     src: url('Evolventa-Bold.ttf') format('truetype'),
-//         url('Evolventa-Bold.woff') format('woff'),
-//         url('Evolventa-Bold.svg') format("svg");
-//     font-style: normal;
-//     text-rendering: optimizeLegibility;
-//     font-display: swap;
-// }
+$transition-appearance: all 250ms ease-in;
+$transition-disappearance: all 150ms ease-out;
+

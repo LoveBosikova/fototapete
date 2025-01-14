@@ -1,0 +1,26 @@
+@import '../../../../styles/colors.scss';
+
+.utilIcon {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: $black-90;
+    transition: all 250 ease-in-out;
+
+    &:hover {
+        background-color: $black
+    }
+}
+
+.link {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 100%;
+    max-width: 100%;
+}

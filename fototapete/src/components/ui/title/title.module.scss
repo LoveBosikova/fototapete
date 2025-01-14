@@ -9,8 +9,6 @@
     @include evolventa-700-38;
     color: $black-text;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: $font-size-38;
     padding-top: 30%;
 }
 
@@ -19,6 +17,6 @@
     @include evolventa-700-38;
     color: $white-text;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: $font-size-38;
+    line-height: 119%;
+    letter-spacing: .057rem;
 }

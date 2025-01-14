@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 @font-face {
-    font-family: 'Evolventa';
+    font-family: 'Evolventa Bold';
     src: local('Evolventa-Bold'), 
         url('/fonts/Evolventa-Bold.ttf') format('truetype'),
+        url('/fonts/Evolventa-Bold.otf') format('otf'),
         url('/fonts/Evolventa-Bold.woff') format('woff'),
         url('/fonts/Evolventa-Bold.svg') format("svg");
     font-style: normal;
@@ -23,7 +24,7 @@
 }
 
 @mixin evolventa-700-38 {
-    font-family: "Evolventa", sans-serif;
+    font-family: "Evolventa Bold", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     line-height: normal;
@@ -40,11 +41,11 @@
     font-size: $font-size-64;
 }
 
-@mixin onest-700-47 {
+@mixin onest-400-14 {
     font-family: "Onest", serif;
     font-optical-sizing: auto;
     font-style: normal;
     line-height: normal;
     font-weight: 400;
-    font-size: 47px;
+    font-size: $font-size-14;
 }
