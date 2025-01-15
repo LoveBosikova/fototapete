@@ -12,7 +12,7 @@ const textData = {
             handwriteBottom: '30+ more categories'
         },
         categories: {
-            childrensWallpapers: 'Children`s wallpapers',
+            childrensWallpapers: `Children's wallpapers`,
             mural: 'Mural',
             marble: 'Marble'
         },

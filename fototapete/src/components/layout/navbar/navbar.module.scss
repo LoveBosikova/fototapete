@@ -11,6 +11,7 @@
     margin-top: 1.5%;
     background-color: $beige-transparent;
     border-radius: $button-border;
+    backdrop-filter: blur(1rem);
     z-index: 2;
 }
 
