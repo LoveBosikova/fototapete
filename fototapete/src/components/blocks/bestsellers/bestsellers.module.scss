@@ -1,0 +1,79 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.bestsellers {
+    padding: 1.2vw 3.5vw;
+}
+
+.handwriteWrap {
+    margin-top: -1vw;
+    margin-top: -1.5vw;
+    margin-left: 8.2vw;
+}
+
+.btnWrap {
+    width: 17%;
+    margin-left: auto;
+    margin-top: -6.1vw;
+}
+
+.contentWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2.2vw;
+}
+
+.bigbestseller,
+.smallbestsellers {
+    width: 49%;
+    padding-bottom: 1.35vw;
+}
+
+.bigbestseller {
+    position: relative;
+}
+
+.category {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    background-color: $beige-transparent;
+    width: fit-content;
+    white-space: nowrap;
+    backdrop-filter: blur(2rem);
+    border-radius: $button-border;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.smallBestsellersWrap {
+    padding-top: .35vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 1.73vw;
+}
+
+.smallBestseller {
+    width: 19.2%;
+}
+
+.bottomHandwriteWrap {
+    padding-left: 10.8vw;
+    margin-top: -0.3vw;
+}
+
+.pointerWrap {
+    width: 16.5%;
+    margin-left: 62.2%;
+}
+
+.orangeBtnWrap {
+    width: 56.1%;
+    margin-left: auto;
+    padding-top: 3.4vw;
+}

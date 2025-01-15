@@ -18,8 +18,6 @@ function Selector () {
 
     const [ isOpen, setIsOpen ] = useState(false);
 
-    console.log(curLang.value);
-
     return (
         <div className={style.selectorWrap}>
             <div className={style.langWrap}>
