@@ -6,6 +6,7 @@ type IUtilIconProps = {
     description: string;
 }
 
+// Иконки, предназначенные не для соцсетей, тёмные
 function UtilIcon (props: IUtilIconProps) {
 
     const { img, linkTo, description } = props

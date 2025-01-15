@@ -15,7 +15,7 @@
     background-color: $orange-alert;
     border: 1px solid $orange-alert;
     outline: none;
-    border-radius: 25px;
+    border-radius: $button-border;
     transition: $transition-appearance;
 
     &:hover {

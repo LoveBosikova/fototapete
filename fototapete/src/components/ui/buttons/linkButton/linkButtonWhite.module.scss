@@ -15,14 +15,20 @@
     background-color: $white-text;
     border: 1px solid $orange-alert;
     outline: none;
-    border-radius: 25px;
+    border-radius: $button-border;
     transition: $transition-appearance;
+    
 
     &:hover {
-        background-color: $orange-hover;
+        background-color: $orange-alert;
         transition: $transition-disappearance;
-        border: 1px solid $orange-hover;
+        border: 1px solid $orange-alert;
         color: $white-text;
+
+        & .link {
+            color: $white-text;
+            transition: $transition-disappearance;
+        }
     }
 }
 
@@ -32,4 +38,5 @@
     white-space: nowrap;
     padding-left: 1%;
     padding-right: 1%;
+    transition: $transition-appearance;
 }

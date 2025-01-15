@@ -27,4 +27,18 @@
 
 .iconsWrap {
     margin-left: auto;
+    width: 15.5%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+}
+
+.selectorWrap {
+    width: 51.5%;
+    height: 30%;
+}
+
+.iconWrap {
+    width: 23%;
+    height: 55%;
 }

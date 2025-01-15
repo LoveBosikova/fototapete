@@ -1,26 +1,47 @@
 import { useContext, useState } from 'react';
-import style from './selector.module.scss';
+
 import { LangContext } from '../../../context/LangContext';
+
+import { LANGS, ILang } from '../../../variables';
+
+import selectArrow from '../../../assets/selectArrow.png'
+
+import style from './selector.module.scss';
 
 function Selector () {
 
     // Берём данные о языке из контекста
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang, toggleLang } = useContext(LangContext)
 
     // Состояние нужно, чтобы элемент обновлялся сам после выбора новой опции, а не только менял значение контекста
-    const [curLang, setCurLang] = useState(lang)
+    const [ curLang, setCurLang ] = useState<ILang>(lang)
+
+    const [ isOpen, setIsOpen ] = useState(false);
+
+    console.log(curLang.value);
 
     return (
-        <select
-            value={curLang}
+        <div className={style.selectorWrap}>
+            <div className={style.langWrap}>
+                <p>{curLang.value}</p>
+                <div className={style.arrowWrap}>
+                    <img src={selectArrow} alt='' />
+                </div>
+            </div>
+            <select
+            className={style.selector}
+            value={curLang.value}
             onChange={e =>{
                 // toggleLang(e.target.value) // Меняем контекст
-                setCurLang(e.target.value) // Меняем состояние селекта
+                const newLang = LANGS.filter((lang)=> lang.value === e.target.value)[0];
+                console.log(newLang);
+                setCurLang(newLang) // Меняем состояние селекта
             }}
         >
-            <option value='en'>English</option>
-            <option value='hrv'>Hrvatski</option>
-    </select>
+            {LANGS.map((lang) => <option key={lang.value} value={lang.value}>{lang.name}</option> )}
+        </select>
+
+        </div>
     )
 }
 

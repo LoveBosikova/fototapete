@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-const LangContext = React.createContext({lang: 'en', toggleLang: (newLang: string) => {}});
+import { LANGS, ILang } from "../variables";
+
+const LangContext = React.createContext({lang: LANGS[0], toggleLang: (newLang: ILang) => {}});
 
 function LangContextProvider(props: any) {
-    const [lang, setLang] = useState('en');
+    const [lang, setLang] = useState(LANGS[0]);
     
-    function toggleLang(newLang: string) {
+    function toggleLang(newLang: ILang) {
         setLang(newLang);
     }
     
