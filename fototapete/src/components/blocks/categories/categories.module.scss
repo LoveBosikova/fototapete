@@ -1,0 +1,64 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
+
+.categories {
+    padding: $horizontal-block-paddings-big;
+    padding-top: 5.2vw;
+}
+
+.contentWrap {
+    padding-top: 1.8vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.categoryWrap {
+    width: 49%;
+    position: relative;
+}
+
+.filmsWrap {
+    margin-top: 2.5vw;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.walpapersDescriptionWrap {
+    width: 43.5%;
+    max-width: 100%;
+    position: absolute;
+    background-color: $beige-transparent;
+    backdrop-filter: blur(1rem);
+    bottom: .4vw;;
+    left: 2.1vw;
+    border-radius: 1.2rem;
+    padding: 1.6vw 1.8vw;
+}
+
+.filmsDescriptionWrap {
+    width: 43.5%;
+    max-width: 100%;
+    position: absolute;
+    background-color: $beige-transparent;
+    backdrop-filter: blur(1rem);
+    top: 0;;
+    right: 2.1vw;
+    border-radius: 1.2rem;
+    padding: 1.6vw 1.8vw;
+}
+
+.blackBtnWrap {
+    width: 66%;
+}
+
+.categoryText {
+    @include onest-400-18;
+    color: $black-text;
+    padding-bottom: 1vw;
+}

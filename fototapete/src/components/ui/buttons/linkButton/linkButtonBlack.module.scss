@@ -1,0 +1,42 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.linkBtn {
+    @include onest-400-14;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    background-color: transparent;
+    border: 1px solid $black-text;
+    outline: none;
+    border-radius: $button-border;
+    transition: $transition-appearance;
+    
+
+    &:hover {
+        background-color: $beige-transparent;
+        backdrop-filter: blur(1rem);
+        transition: $transition-disappearance;
+        border: 1px solid $beige-transparent;
+
+        & .link {
+            color: $black-text;
+            transition: $transition-disappearance;
+        }
+    }
+}
+
+.link {
+    color: $black-text;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    transition: $transition-appearance;
+}

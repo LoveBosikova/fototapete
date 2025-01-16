@@ -1,0 +1,89 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.transforming {
+    margin:  6.6vw .6%;
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 55%;
+}
+
+.hanwriteWrap {
+    margin-left: auto;
+    text-align: right;
+    margin-top: -2.8%;
+    letter-spacing: .016rem;
+}
+
+.customSizes {
+    @include transparentBlock;
+    padding: 1.5rem 1.7rem;
+    top: 18%;
+    left: 9.5%;
+    width: 22%;
+}
+
+.articleTitle {
+    @include onest-400-18;
+    color: $black-text;
+    padding-bottom: 1vw;
+    letter-spacing: .016rem;
+}
+
+.articleText {
+    @include onest-400-13;
+    color: $black-text;
+}
+
+.individualApproach {
+    @include transparentBlock;
+    background-color: $orange-alert;
+    padding: 1.6rem 1.7rem;
+    top: 23%;
+    right: 19%;
+    width: 21.8%;
+
+    & .articleTitle{
+        color: $white-text;
+    }
+
+    & .articleText {
+        color: $white-text;
+    }
+}
+
+.range {
+    @include transparentBlock;
+    top: 51%;
+    left: 16.3%;
+    width: 25.7%;
+    padding: 1.5rem 1.7rem;
+}
+
+.installationService {
+    @include transparentBlock;
+    top: 59.3%;
+    right: 14.5%;
+    width: 16.7%;
+    padding: 1.5rem 1.7rem;
+}
+
+.fastDelivery {
+    @include transparentBlock;
+    bottom: 10%;
+    right: 30%;
+    width: 16%;
+    padding: 1.5rem 1.7rem;
+}

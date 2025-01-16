@@ -1,8 +1,9 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
 
 .bestsellers {
-    padding: 1.2vw 3.5vw;
+    padding: $horizontal-block-paddings-big;
 }
 
 .handwriteWrap {
@@ -43,7 +44,7 @@
     white-space: nowrap;
     backdrop-filter: blur(1rem);
     border-radius: $button-border;
-    padding: 1vw 1vw;
+    padding: 1vw 2.8vw;
 }
 
 .img {
