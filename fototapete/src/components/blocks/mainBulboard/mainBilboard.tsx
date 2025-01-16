@@ -9,6 +9,8 @@ import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 
 import pointer from '../../../assets/pointer-bilboard.png';
+import back from '../../../assets/mainBack.png';
+
 
 import textData from '../../../texts';
 
@@ -22,6 +24,7 @@ function MainBilboard () {
 
     return (
         <div className={style.wrap}>
+            <div className={style.backgroundWrap}><img className={style.backgroundImg} src={back} alt='' /></div>
             <div className={style.textWrap}>
                 <Title text={textData[langValue].mainBillboard.title} isBlack={false}></Title>
                 <div className={style.handwritingWrap}>

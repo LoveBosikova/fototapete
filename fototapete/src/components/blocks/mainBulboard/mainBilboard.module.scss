@@ -3,19 +3,31 @@
 @import '../../../styles/fonts.scss';
 
 .wrap {
-    height: 90vh;
-    width: 99%;
-    background-image: url('../../../assets/mainBack.webp');
+    position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 19px;
     margin: .6%;
 }
 
+.backgroundWrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.backgroundImg {
+    width: 100%;
+    max-width: 100%;
+}
+
 .textWrap {
     width: 56%;
     padding-top: 8.5%;
     padding-left: 3%;
+    position: relative;
 }
 
 .handwritingWrap {
