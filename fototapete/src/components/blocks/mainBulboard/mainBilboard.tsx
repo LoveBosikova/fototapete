@@ -11,7 +11,6 @@ import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 import pointer from '../../../assets/pointer-bilboard.png';
 import back from '../../../assets/mainBack.png';
 
-
 import textData from '../../../texts';
 
 import style from './mainBilboard.module.scss';
@@ -20,8 +19,7 @@ function MainBilboard () {
 
     const { lang } = useContext(LangContext);
     const langValue = lang.value.toLowerCase();
-    console.log(textData[langValue].mainBillboard);
-
+    
     return (
         <div className={style.wrap}>
             <div className={style.backgroundWrap}><img className={style.backgroundImg} src={back} alt='' /></div>

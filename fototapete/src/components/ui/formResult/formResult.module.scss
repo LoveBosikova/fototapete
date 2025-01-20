@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.formResult {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid $orange-alert;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    padding: 1vw 2.7vw;
+}
+
+.description {
+    @include onest-400-14;
+    color: $black-text;
+    padding-bottom: .18vw;
+}
+
+.result {
+    @include onest-500-18;
+    color: $orange-alert;
+}

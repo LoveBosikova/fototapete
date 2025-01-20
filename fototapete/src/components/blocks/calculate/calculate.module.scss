@@ -1,0 +1,171 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.calculate {
+    margin:  12vw 0.6%;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.backgroundWrap {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.backgroundImg {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titleWrap {
+    padding-top: 1.4%;
+    margin-left: 3%;
+    width: 56%
+}
+
+.calculator {
+    position: relative;
+    margin: 4vw 3vw;
+    padding: 2vw 2vw;
+    width: 42%;
+    background-color: $white-back;
+    border-radius: 1.2rem;
+    color: $black-text;
+}
+
+.calculatorTitle {
+    @include onest-400-18;
+    padding-bottom: 1.8vw;
+    letter-spacing: .03rem;
+
+}
+
+.calculatorText {
+    @include onest-400-14;
+    width: 88%;
+    letter-spacing: -0.01rem;
+    line-height: 1.44rem;
+    padding-bottom: 1.6vw
+}
+
+.form {
+    width: 72%;
+    margin-bottom: 2vw;
+}
+
+.selectHidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.material {
+    position: relative;
+    padding: 1vw 2.7vw;
+    border: 1px solid $black-text;
+    border-radius: $button-border;
+    margin-bottom: .7vw;
+}
+
+.materialPlaceholder {
+    @include onest-400-14;
+}
+
+.arrowWrap {
+    position: absolute;
+    top: 24%;
+    right: 9%;
+    width: 1.5%;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.inputsWrap {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 3.8%;
+}
+
+.widthWrap,
+.heightWrap {
+    width: 100%;
+    position: relative;
+    padding: 1vw 2.7vw;
+    border: 1px solid $black-text;
+    border-radius: $button-border;
+}
+
+.widthPlaceholder,
+.heightPlaceholder {
+    width: 100%;
+    @include onest-400-14;
+}
+
+.width,
+.height {
+    width: 100%;
+}
+
+.results {
+    width: 72%
+}
+
+.resultsWrap {
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.topResultsWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    margin-bottom: 1vw;
+}
+
+.orangeArrowWrap {
+    position: absolute;
+    width: 7.15%;
+    top: 35%;
+    right: 16.5%;
+}
+
+.note {
+    position: absolute;
+    padding: 1.2vw 2.2vw;
+    width: 27.7%;
+    top: 45%;
+    right: 3.1%;
+    background-color: $beige-transparent;
+    backdrop-filter: blur(2rem);
+    border-radius: 1.2rem;
+}
+
+.noteStar {
+    @include evolventa-700-75;
+    color: $orange-alert;
+}
+
+.noteText {
+    @include onest-400-14;
+    color: $black-text;
+    line-height: 115%;
+    padding-bottom: 2.35vw;
+    margin-top: -.35vw;
+    letter-spacing: -.014rem;
+}
+
+.noteBtnWrap {
+    width: 41%;
+    margin-top: -1vw;
+}
