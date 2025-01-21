@@ -1,20 +1,21 @@
 import { useContext } from 'react';
-import Title from '../../ui/title/title';
-import style from './wallpapersInInteriors.module.scss';
 import { LangContext } from '../../../context/LangContext';
-import textData from '../../../texts';
-import Handwriting from '../../ui/handwriting/handwriting';
 
+import Title from '../../ui/title/title';
+import Handwriting from '../../ui/handwriting/handwriting';
+import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
+
+import arrow from '../../../assets/interior-arrow.png';
 import photo1 from '../../../assets/interior-photo1.png';
 import photo2 from '../../../assets/interior-photo2.png';
 import photo3 from '../../../assets/interior-photo3.png';
 import photo4 from '../../../assets/interior-photo4.png';
 import photo5 from '../../../assets/interior-photo5.png';
 import photo6 from '../../../assets/interior-photo6.png';
-import arrow from '../../../assets/interior-arrow.png';
 
+import textData from '../../../texts';
 
-import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
+import style from './wallpapersInInteriors.module.scss';
 
 
 function WallpapersInInteriors () {

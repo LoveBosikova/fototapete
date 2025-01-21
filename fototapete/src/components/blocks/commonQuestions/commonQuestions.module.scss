@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.commonQuestions {
+    margin: 7.6vw 3.5vw;
+    margin-bottom: 0;
+}
+
+.titleWrap {
+    width: 100%;
+}
+
+.handwriteWrap {
+    text-align: right;
+    width: 49%;
+    margin-top: -1.5vw;
+    letter-spacing: 0.017rem;
+}
+
+.accordionWrap {
+    margin-top: -0.4vw;
+}

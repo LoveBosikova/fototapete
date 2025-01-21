@@ -72,6 +72,36 @@ const textData = {
             title: 'Our wallpaper in interiors',
             handwrite: 'Gallery',
         },
+        orderingProcess: {
+            title: `We’ve made the ordering process easier for you`,
+            handwrite: 'Additional services',
+            point1: 'Measurement service',
+            point2: 'Individual design development',
+            point3: 'Sample printing',
+            point4: 'Design visualization',
+            point5: 'Installation service',
+            point6: 'Gift certificates',
+        },
+        commonQuestions: {
+            title: `Our customers often ask`,
+            handwrite: 'Frequently Asked Questions',
+            quesions: [{
+                question: 'Do you have any additional patterns besides those offered on the website?',
+                answer: 'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
+            }, {
+                question: 'How many cm more should be added to the existing wall measurements?',
+                answer: 'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
+            }, {
+                question: 'Are certain modifications possible on the pattern I choose?',
+                answer: 'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
+            }, {
+                question: 'How long does it take for the wallpaper to arrive after we place the order?',
+                answer:'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
+            }, {
+                question: 'What is the procedure in case of a complaint?',
+                answer: 'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
+            }],
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
@@ -80,6 +110,7 @@ const textData = {
             goToCategory: 'Go to category',
             getOffer: 'Get an offer',
             viewMore: 'View more',
+            learnMore: 'Learn more',
         }
     }
 }
