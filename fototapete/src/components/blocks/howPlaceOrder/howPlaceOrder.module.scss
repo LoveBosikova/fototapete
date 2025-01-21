@@ -16,7 +16,7 @@
 }
 
 .card1 {
-    background-color: $beige-card;
+    background-color: $orange-alert;
     border-radius: 1.2rem;
     padding: 2.5vw 2.2vw;
     padding-bottom: 1vw;
@@ -24,19 +24,19 @@
 
     & .number {
         @include evolventa-700-38;
-        color: $orange-alert;
+        color: $white-text;
     }
 
     & .cardTitle {
         @include onest-400-18;
-        color: $black-text;
+        color: $white-text;
         padding-top: 4vw;
         letter-spacing: .04rem;
     }
 
     & .cardText {
         @include onest-400-14;
-        color: $black-text;
+        color: $white-text;
         padding-top: 1.5vw;
         line-height: 124%;
         width: 82%;
@@ -48,8 +48,6 @@
     background-color: $beige-card;
     border-radius: 1.2rem;
     padding: 2.5vw 2.2vw;
-    // padding-bottom: 0;
-
     grid-area: 1 / 4 / 2 / 7;
 
     & .number {
@@ -78,8 +76,6 @@
     background-color: $beige-card;
     border-radius: 1.2rem;
     padding: 2.5vw 2.2vw;
-    // padding-bottom: 0;
-
     grid-area: 2 / 1 / 3 / 3;
 
     & .number {
@@ -105,28 +101,26 @@
 }
 
 .card4 {
-    background-color: $beige-card;
+    background-color: $orange-alert;
     border-radius: 1.2rem;
     padding: 2.5vw 2.2vw;
-    // padding-bottom: 0;
-
     grid-area: 2 / 3 / 3 / 5;
 
     & .number {
         @include evolventa-700-38;
-        color: $orange-alert;
+        color: $white-text;
     }
 
     & .cardTitle {
         @include onest-400-18;
-        color: $black-text;
+        color: $white-text;
         padding-top: 4vw;
         letter-spacing: .02rem;
     }
 
     & .cardText {
         @include onest-400-14;
-        color: $black-text;
+        color: $white-text;
         padding-top: 1.5vw;
         line-height: 124%;
         width: 100%;
@@ -138,8 +132,6 @@
     background-color: $beige-card;
     border-radius: 1.2rem;
     padding: 2.5vw 2.2vw;
-    // padding-bottom: 0;
-
     grid-area: 2 / 5 / 3 / 7; 
 
     & .number {
