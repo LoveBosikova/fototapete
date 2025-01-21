@@ -1,13 +1,15 @@
-import style from './transforming.module.scss';
 
 import textData from '../../../texts';
 
-import background from '../../../assets/transforming.webp';
-import Title from '../../ui/title/title';
 import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
+
+import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 
+import background from '../../../assets/transforming.webp';
+
+import style from './transforming.module.scss';
 
 function Transforming () {
 

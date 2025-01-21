@@ -9,17 +9,17 @@ const textData = {
         bestsellers: {
             title: 'Our bestsellers',
             handwriteTop: 'Customers’ choice',
-            handwriteBottom: '30+ more categories'
+            handwriteBottom: '30+ more categories',
         },
         categories: {
             childrensWallpapers: `Children's wallpapers`,
             mural: 'Mural',
-            marble: 'Marble'
+            marble: 'Marble',
         },
         categoriesBlock: {
             title: 'Categories',
             wallpapers: 'Wallpapers',
-            films: 'Films'
+            films: 'Films',
         },
         transforming: {
             title: 'We specialize in transforming your visions into reality',
@@ -53,7 +53,7 @@ const textData = {
             wallpaperPrice: 'Wallpaper price:',
             wallpaperPriceValue: '0 EUR',
             priceWithInstallation: 'Price with installation:',
-            priceWithInstallationValue: '0 EUR'
+            priceWithInstallationValue: '0 EUR',
         },
         howToPlace: {
             title: 'How to place your order',
@@ -68,13 +68,18 @@ const textData = {
             step5Title: 'Installation',
             step5Text: 'You can hire our installers or apply the wallpaper yourself by following the instructions we have prepared for you.',
         },
+        wallpapersInInteriors: {
+            title: 'Our wallpaper in interiors',
+            handwrite: 'Gallery',
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
             categories: 'View all categories',
             loadMore: 'Load more',
             goToCategory: 'Go to category',
-            getOffer: 'Get an offer'
+            getOffer: 'Get an offer',
+            viewMore: 'View more',
         }
     }
 }

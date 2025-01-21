@@ -4,6 +4,7 @@ import Categories from '../../blocks/categories/categories';
 import HowPlaceOrder from '../../blocks/howPlaceOrder/howPlaceOrder';
 import MainBilboard from '../../blocks/mainBulboard/mainBilboard';
 import Transforming from '../../blocks/transforming/transforming';
+import WallpapersInInteriors from '../../blocks/wallpapersInInteriors/wallpapersInInteriors';
 import Header from '../../layout/header/header';
 import NavBar from '../../layout/navbar/navbar';
 
@@ -22,6 +23,7 @@ function MainPage () {
                 <Transforming></Transforming>
                 <Calculate></Calculate>
                 <HowPlaceOrder></HowPlaceOrder>
+                <WallpapersInInteriors></WallpapersInInteriors>
 
             </main>
             <footer></footer>
