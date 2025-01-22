@@ -8,7 +8,7 @@ function HowPlaceOrder () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue].howToPlace
+    const text = textData[langValue as keyof typeof textData].howToPlace
 
     return (
         <section className={style.howPlaceOrder}>

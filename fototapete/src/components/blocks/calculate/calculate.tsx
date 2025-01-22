@@ -15,8 +15,8 @@ function Calculate () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue].calculate
-    const textBtn = textData[langValue].btns
+    const text = textData[langValue as keyof typeof textData].calculate
+    const textBtn = textData[langValue as keyof typeof textData].btns
 
 
     const [width, setWidth] = useState<number>(0);

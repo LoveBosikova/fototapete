@@ -10,7 +10,7 @@ function CommonQuestions () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue].commonQuestions
+    const text = textData[langValue as keyof typeof textData].commonQuestions
 
     return (
         <section className={style.commonQuestions}>

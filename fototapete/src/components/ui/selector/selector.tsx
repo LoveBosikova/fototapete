@@ -16,7 +16,9 @@ function Selector () {
     // Состояние нужно, чтобы элемент обновлялся сам после выбора новой опции, а не только менял значение контекста
     const [ curLang, setCurLang ] = useState<ILang>(lang)
 
-    const [ isOpen, setIsOpen ] = useState(false);
+    // const [ isOpen, setIsOpen ] = useState(false);
+
+    console.log(toggleLang);
 
     return (
         <div className={style.selectorWrap}>

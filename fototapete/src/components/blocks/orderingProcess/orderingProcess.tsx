@@ -16,8 +16,8 @@ function OrderingProcess () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue].orderingProcess
-    const btnText = textData[langValue].btns
+    const text = textData[langValue as keyof typeof textData].orderingProcess
+    const btnText = textData[langValue as keyof typeof textData].btns
 
     return (
         <section className={style.orderingProcess}>

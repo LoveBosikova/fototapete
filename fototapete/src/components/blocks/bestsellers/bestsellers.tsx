@@ -22,9 +22,9 @@ function Bestsellers (){
     const { lang } = useContext(LangContext);
     const langValue = lang.value.toLowerCase();
 
-    const text = textData[langValue].bestsellers
-    const btnText = textData[langValue].btns
-    const categoryText = textData[langValue].categories
+    const text = textData[langValue as keyof typeof textData].bestsellers
+    const btnText = textData[langValue as keyof typeof textData].btns
+    const categoryText = textData[langValue as keyof typeof textData].categories
     
     return (
         <section className={style.bestsellers}>

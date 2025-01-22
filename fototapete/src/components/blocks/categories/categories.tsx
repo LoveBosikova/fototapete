@@ -15,8 +15,8 @@ function Categories () {
     const { lang } = useContext(LangContext);
     const langValue = lang.value.toLowerCase();
 
-    const text = textData[langValue].categoriesBlock
-    const btnText = textData[langValue].btns
+    const text = textData[langValue as keyof typeof textData].categoriesBlock
+    const btnText = textData[langValue as keyof typeof textData].btns
 
     return (
         <section className={style.categories}>

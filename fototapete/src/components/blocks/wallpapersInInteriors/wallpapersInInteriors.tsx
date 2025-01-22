@@ -22,8 +22,8 @@ function WallpapersInInteriors () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue].wallpapersInInteriors
-    const btnText = textData[langValue].btns
+    const text = textData[langValue as keyof typeof textData].wallpapersInInteriors
+    const btnText = textData[langValue as keyof typeof textData].btns
 
     return (
         <section className={style.wallpapersInInteriors}>

@@ -16,7 +16,7 @@ function Transforming () {
     const { lang } = useContext(LangContext);
     const langValue = lang.value.toLowerCase();
 
-    const text = textData[langValue].transforming
+    const text = textData[langValue as keyof typeof textData].transforming
 
     return (
         <section className={style.transforming}>
