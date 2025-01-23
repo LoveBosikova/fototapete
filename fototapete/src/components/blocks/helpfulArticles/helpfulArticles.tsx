@@ -1,13 +1,13 @@
 import { useContext } from 'react';
-import Title from '../../ui/title/title';
-
-import style from './helpfulArticles.module.scss';
 import { LangContext } from '../../../context/LangContext';
-import textData from '../../../texts';
+
+import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 
-// import img from '../../../assets/.png'
+import textData from '../../../texts';
+
+import style from './helpfulArticles.module.scss';
 
 function HelpfulArticles () {
 
@@ -15,8 +15,6 @@ function HelpfulArticles () {
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].helpfulArticles
     const textBtn = textData[langValue as keyof typeof textData].btns
-
-    console.log(text.articles.map((article) => article.img));
 
     return (
         <section className={style.helpfulArticles}>
@@ -33,7 +31,7 @@ function HelpfulArticles () {
                 <ul className={style.articlesWrap}>
                     {text.articles.map((article) => {
                         return (
-                            <li className={style.article}>
+                            <li className={style.article} key={article.link}>
                                 <a href={article.link}>
                                     <div className={style.imgWrap}>
                                         <img className={style.img} src={`/fototapete/src/assets/${article.img}`}></img>

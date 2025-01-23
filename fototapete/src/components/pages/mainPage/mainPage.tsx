@@ -9,6 +9,7 @@ import OrderingProcess from '../../blocks/orderingProcess/orderingProcess';
 import Subscribe from '../../blocks/subscribe/subscribe';
 import Transforming from '../../blocks/transforming/transforming';
 import WallpapersInInteriors from '../../blocks/wallpapersInInteriors/wallpapersInInteriors';
+import Footer from '../../layout/footer/footer';
 import Header from '../../layout/header/header';
 import NavBar from '../../layout/navbar/navbar';
 
@@ -32,6 +33,7 @@ function MainPage () {
                 <CommonQuestions></CommonQuestions>
                 <Subscribe></Subscribe>
                 <HelpfulArticles></HelpfulArticles>
+                <Footer></Footer>
 
             </main>
             <footer></footer>

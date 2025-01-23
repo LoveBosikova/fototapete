@@ -118,6 +118,57 @@ const textData = {
                 {text: 'How to Choose the Perfect Wallpaper?', img: 'article-3.png', link: ''},
             ]
         },
+        footer: {
+            titleTop: `Let's keep`,
+            titleBottom: 'in touch with us',
+            handwrite: 'Contacts',
+            links: [
+                {
+                    linkName: 'Catalog',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'About us',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Instructions',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Wallpapers',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Before & after',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Materials',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Other',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Price',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'FAQ',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Custom design',
+                    linkTo: ''
+                },
+                {
+                    linkName: 'Blog',
+                    linkTo: ''
+                },
+            ]
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',

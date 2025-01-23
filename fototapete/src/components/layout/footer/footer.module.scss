@@ -1,0 +1,47 @@
+.footer {
+    position: relative;
+    margin-right: .6%;
+    margin-left: .6%;
+}
+
+.backWrap {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgsGallery {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgMockUp {
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgWrap {
+    width: 22.4%;
+}
+
+.titleWrap {
+    position: relative;
+    width: 60%;
+    padding-top: 5.4vw;
+    padding-left: 2.9vw;
+}
+
+.handwriteWrap {
+    text-align: right;
+    width: 48.6%;
+    margin-top: -1.7vw;
+}
