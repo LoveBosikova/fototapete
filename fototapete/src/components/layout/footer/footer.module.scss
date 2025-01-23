@@ -1,7 +1,15 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
 .footer {
     position: relative;
     margin-right: .6%;
     margin-left: .6%;
+}
+
+.contentWrap {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .backWrap {
@@ -33,6 +41,42 @@
     width: 22.4%;
 }
 
+.contactsWrap {
+    position: relative;
+    width: 45.5%;
+    padding-left: 2.9vw;
+    margin-top: -1.1vw;
+}
+
+.iconsWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: .8vw;
+    padding-bottom: 0.1vw;
+}
+
+.link {
+    width: 100%;
+    max-width: 100%;
+} 
+
+.icon {
+    width: 8.6%;
+}
+
+.tel,
+.email {
+    @include onest-400-18;
+    color: $white-text;
+    letter-spacing: 0.03rem;
+}
+
+.mailWrap,
+.telWrap {
+    padding-top: 1vw;
+}
+
 .titleWrap {
     position: relative;
     width: 60%;
@@ -44,4 +88,63 @@
     text-align: right;
     width: 48.6%;
     margin-top: -1.7vw;
+}
+
+.linksWrap {
+    position: relative;
+    width: 44%;
+    margin-top: -1.1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.menuItemWrap {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.menuItem {
+    @include onest-400-13;
+    cursor: pointer;
+    color: $white-text;
+    transition: $transition-appearance;
+
+    &:hover {
+        color: $beige-card;
+        transition: $transition-disappearance;
+    }
+}
+
+.btnUp {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 55.9%;
+    width: 4.8%;
+    right: 2.75%;
+    background-color: transparent;
+}
+
+.underline {
+    @include onest-400-12;
+    position: relative;
+    display: flex;
+    gap: 2.9%;
+    padding-left: 2.9vw;
+    padding-top: 5vw;
+    color: $white-70;
+    
+}
+
+.privPolicy {
+    @include onest-400-12;
+    color: $white-70;
+    transition: $transition-appearance;
+
+    &:hover {
+        text-decoration: underline;
+        transition: $transition-disappearance;
+    }
 }

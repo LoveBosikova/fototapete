@@ -12,7 +12,7 @@ import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
 import mockup3 from '../../../assets/footer-3.png';
 import mockup4 from '../../../assets/footer-4.png';
-
+import goUp from '../../../assets/btn-up.png';
 
 import textData from '../../../texts';
 
@@ -47,6 +47,10 @@ function Footer () {
                 </li>
             </ul>
 
+            <button className={style.btnUp}>
+                <img className={style.img} src={goUp} alt='Go up' />
+            </button>
+
             <div className={style.titleWrap}>
                 <Title text={text.titleTop} isBlack={false}></Title>
                 <Title text={text.titleBottom} isBlack={false}></Title>
@@ -60,31 +64,30 @@ function Footer () {
                     <ul className={style.iconsWrap}>
                         <li className={style.icon}>
                             <a className={style.link} href='https://www.instagram.com/fototapete_zg?igsh=MXVyeHc4bDY2Ync4bA=='>
-                                <img src={insta} alt='' />
+                                <img className={style.img} src={insta} alt='' />
                             </a>
                         </li>
                         <li className={style.icon}>
                             <a className={style.link} href='https://www.facebook.com/profile.php?id=100092530363927'>
-                                <img src={fb} alt='' />
+                                <img className={style.img} src={fb} alt='' />
                             </a>
                         </li>
                         <li className={style.icon}>
                             <a className={style.link} href='https://pin.it/5nGCrtbyX'>
-                                <img src={pinterest} alt='' />
+                                <img className={style.img} src={pinterest} alt='' />
                             </a>
                         </li>
                     </ul>
-                    <p className={style.telWrap}><a href='tel:+385-91-6185-191'>+385 91 6185 191</a></p>
-                    <a href="mailto:blog@htmlacademy.ru&cc=mail@htmlacademy.ru?body=Привет, подпишитесь на рассылку">Напишите нам</a>
-                    <p className={style.mailWrap}><a href="mailto:fototapetezg@gmail.com&cc=fototapetezg.info@gmail.com?body=Hi! I wish I could ask about wallpapers.?subject=Question from website">fototapetezg@gmail.com</a></p>
+                    <p className={style.telWrap}><a className={style.tel} href='tel:+385-91-6185-191'>+385 91 6185 191</a></p>
+                    <p className={style.mailWrap}><a className={style.email} href="mailto:fototapetezg@gmail.com&cc=fototapetezg.info@gmail.com?body=Hi! I wish I could ask about wallpapers.?subject=Question from website">fototapetezg@gmail.com</a></p>
                 </div>
-                <div className={style.linksWrap}></div>
+                <ul className={style.linksWrap}>
+                    {text.links.map((link)=> <li className={style.menuItemWrap}><a className={style.menuItem}>{link.linkName}</a></li>)}
+                </ul>
             </div>
             <div className={style.underline}>
                 <p>© Foto tapete 2024</p>
-                <p className={style.privPolicy}>
-                    <NotePrivacyPolicy></NotePrivacyPolicy>
-                </p>
+                <a className={style.privPolicy} href="http://">Privacy policy</a>
             </div>
         </footer>
     )
