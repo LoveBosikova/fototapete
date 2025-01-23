@@ -1,0 +1,51 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
+
+.helpfulArticles {
+    margin: 12.1vw 3.5vw;
+}
+
+.titleWrap {
+    width: 57%;
+}
+
+.handwritingWrap {
+    text-align: right;
+    width: 71%;
+    margin-top: -1.7vw;
+}
+
+.contentWrap {
+    margin-top: -5.8vw;
+}
+
+.btnWrap {
+    width: 17.3%;
+    margin-left: auto;
+}
+
+.articlesWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+
+.article {
+    width: 32%;
+}
+
+.link,
+.imgWrap,
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.articleTitle {
+    @include onest-400-18;
+    color: $black-text;
+    padding-top: 1.2vw;
+    width: 70%;
+    letter-spacing: 0.025rem;
+}

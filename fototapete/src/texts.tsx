@@ -109,6 +109,15 @@ const textData = {
             email: 'Email',
             subscribe: 'Subscribe'
         },
+        helpfulArticles: {
+            title: 'We also write helpful articles for you',
+            handwrite: 'Our blog',
+            articles: [
+                {text: `5 Tips for Decorating a Children's Room`, img: 'article-1.png', link: ''}, 
+                {text: 'Budget-Friendly Home Decorating Tricks', img: 'article-2.png', link: ''}, 
+                {text: 'How to Choose the Perfect Wallpaper?', img: 'article-3.png', link: ''},
+            ]
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
@@ -119,6 +128,7 @@ const textData = {
             viewMore: 'View more',
             learnMore: 'Learn more',
             subscribe: 'Subscribe',
+            viewAllArticles: 'View all articles',
         }
     }
 }

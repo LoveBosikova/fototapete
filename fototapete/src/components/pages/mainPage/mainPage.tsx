@@ -2,6 +2,7 @@ import Bestsellers from '../../blocks/bestsellers/bestsellers';
 import Calculate from '../../blocks/calculate/calculate';
 import Categories from '../../blocks/categories/categories';
 import CommonQuestions from '../../blocks/commonQuestions/commonQuestions';
+import HelpfulArticles from '../../blocks/helpfulArticles/helpfulArticles';
 import HowPlaceOrder from '../../blocks/howPlaceOrder/howPlaceOrder';
 import MainBilboard from '../../blocks/mainBulboard/mainBilboard';
 import OrderingProcess from '../../blocks/orderingProcess/orderingProcess';
@@ -30,6 +31,7 @@ function MainPage () {
                 <OrderingProcess></OrderingProcess>
                 <CommonQuestions></CommonQuestions>
                 <Subscribe></Subscribe>
+                <HelpfulArticles></HelpfulArticles>
 
             </main>
             <footer></footer>

@@ -7,9 +7,9 @@ import arrowImg from '../../../assets/subscribe-arrow.png'
 
 import Title from '../../ui/title/title';
 import SubscribeBtn from '../../ui/buttons/subscribeBtn/subscribeBtn';
+import NotePrivacyPolicy from '../../ui/notePrivacyPolicy/notePrivacyPolicy';
 
 import style from './subscribe.module.scss';
-import NotePrivacyPolicy from '../../ui/notePrivacyPolicy/notePrivacyPolicy';
 
 function Subscribe () {
 
