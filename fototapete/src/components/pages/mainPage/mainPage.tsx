@@ -5,6 +5,7 @@ import CommonQuestions from '../../blocks/commonQuestions/commonQuestions';
 import HowPlaceOrder from '../../blocks/howPlaceOrder/howPlaceOrder';
 import MainBilboard from '../../blocks/mainBulboard/mainBilboard';
 import OrderingProcess from '../../blocks/orderingProcess/orderingProcess';
+import Subscribe from '../../blocks/subscribe/subscribe';
 import Transforming from '../../blocks/transforming/transforming';
 import WallpapersInInteriors from '../../blocks/wallpapersInInteriors/wallpapersInInteriors';
 import Header from '../../layout/header/header';
@@ -28,6 +29,7 @@ function MainPage () {
                 <WallpapersInInteriors></WallpapersInInteriors>
                 <OrderingProcess></OrderingProcess>
                 <CommonQuestions></CommonQuestions>
+                <Subscribe></Subscribe>
 
             </main>
             <footer></footer>

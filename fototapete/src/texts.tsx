@@ -102,6 +102,13 @@ const textData = {
                 answer: 'Yes, we do! Contact us with your idea, and we will find additional galleries for you. You can choose wallpaper from our gallery or from the website www.shutterstock.com by entering keywords in the search field (whichever photo you find, send it to us, and we can produce it as wallpaper). You can also send us any photo (your own or downloaded from the internet), and we will check if it is suitable for printing.',
             }],
         },
+        subscribe: {
+            title: 'Be the first to know about our news and special offers',
+            note: 'Leave your details in the form below and we will send you our special offers',
+            name: 'Name',
+            email: 'Email',
+            subscribe: 'Subscribe'
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
@@ -111,6 +118,7 @@ const textData = {
             getOffer: 'Get an offer',
             viewMore: 'View more',
             learnMore: 'Learn more',
+            subscribe: 'Subscribe',
         }
     }
 }

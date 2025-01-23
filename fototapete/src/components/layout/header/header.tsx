@@ -1,9 +1,9 @@
 import style from './header.module.scss';
 import logo from '../../../assets/logo.svg';
 import Selector from '../../ui/selector/selector';
-import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 import iconHeart from '../../../assets/icon-heart.svg'
 import iconBug from '../../../assets/icon-bug.svg'
+import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 
 
 

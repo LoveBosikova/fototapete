@@ -1,6 +1,7 @@
-import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
-import Handwriting from '../../ui/handwriting/handwriting';
 import Title from '../../ui/title/title';
+import Handwriting from '../../ui/handwriting/handwriting';
+import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
+import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 
 import pointer from '../../../assets/bestsellers-pointer.png'
 import childrewallspapers from '../../../assets/childrensWallpaper.webp';
@@ -12,10 +13,10 @@ import icon3 from '../../../assets/bestsellers-icon-3.webp';
 
 import textData from '../../../texts';
 
-import style from './bestsellers.module.scss';
-import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
+
+import style from './bestsellers.module.scss';
 
 function Bestsellers (){
 
