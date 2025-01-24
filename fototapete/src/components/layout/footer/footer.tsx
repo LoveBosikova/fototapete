@@ -17,7 +17,6 @@ import goUp from '../../../assets/btn-up.png';
 import textData from '../../../texts';
 
 import style from './footer.module.scss';
-import NotePrivacyPolicy from '../../ui/notePrivacyPolicy/notePrivacyPolicy';
 
 function Footer () {
 

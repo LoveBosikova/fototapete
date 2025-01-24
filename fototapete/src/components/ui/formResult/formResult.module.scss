@@ -14,7 +14,8 @@
 .description {
     @include onest-400-14;
     color: $black-text;
-    padding-bottom: .18vw;
+    padding-bottom: .4vw;
+    letter-spacing: -.02rem;
 }
 
 .result {
