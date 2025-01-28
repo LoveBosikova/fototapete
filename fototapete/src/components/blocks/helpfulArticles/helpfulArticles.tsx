@@ -31,10 +31,10 @@ function HelpfulArticles () {
                 <ul className={style.articlesWrap}>
                     {text.articles.map((article) => {
                         return (
-                            <li className={style.article} key={article.link}>
+                            <li className={style.article} key={article.text}>
                                 <a href={article.link}>
                                     <div className={style.imgWrap}>
-                                        <img className={style.img} src={`/fototapete/src/assets/${article.img}`}></img>
+                                        <img className={style.img} src={`${article.img}`}></img>
                                     </div>
                                     <h3 className={style.articleTitle}>{article.text}</h3>
                                 </a>

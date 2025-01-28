@@ -81,7 +81,7 @@ function Footer () {
                     <p className={style.mailWrap}><a className={style.email} href="mailto:fototapetezg@gmail.com&cc=fototapetezg.info@gmail.com?body=Hi! I wish I could ask about wallpapers.?subject=Question from website">fototapetezg@gmail.com</a></p>
                 </div>
                 <ul className={style.linksWrap}>
-                    {text.links.map((link)=> <li className={style.menuItemWrap}><a className={style.menuItem}>{link.linkName}</a></li>)}
+                    {text.links.map((link)=> <li key={link.linkName} className={style.menuItemWrap}><a className={style.menuItem}>{link.linkName}</a></li>)}
                 </ul>
             </div>
             <div className={style.underline}>

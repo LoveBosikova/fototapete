@@ -15,7 +15,7 @@ const { questions } = props;
 
     return (
         <ul className={style.accordion}>
-            {questions.map((question: IQuestion) => <AccordionItem question={question}></AccordionItem>)}
+            {questions.map((question: IQuestion) => <AccordionItem key={question.question} question={question}></AccordionItem>)}
         </ul>
     )
 }

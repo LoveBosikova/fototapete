@@ -5,16 +5,29 @@
 .handwritingWhite {
     @include  allison-400-64;
     color: $white-text;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+    @include  allison-400-96;
+    letter-spacing: 0.05rem;
+    }
 }
 
 .handwritingOrange {
     @include  allison-400-64;
     color: $orange-alert;
 
+    @media (min-width: 720px) and (max-width: 1140px) {
+        @include  allison-400-96;
+        letter-spacing: 0.05rem;
+    }
 }
 
 .handwritingBlack {
     @include  allison-400-64;
     color: $black-text;
-
+    
+    @media (min-width: 720px) and (max-width: 1140px) {
+        @include  allison-400-96;
+        letter-spacing: 0.05rem;
+    }
 }

@@ -39,6 +39,19 @@
     line-height: normal;
     font-weight: 700;
     font-size: $font-size-38;
+    
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-45;
+    }
+}
+
+@mixin evolventa-400-18 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-18;
 }
 
 @mixin evolventa-400-11 {
@@ -59,6 +72,42 @@
     font-size: $font-size-64;
 }
 
+@mixin allison-400-96 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-96;
+}
+
+@mixin allison-400-100 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-100;
+}
+
+@mixin allison-400-128 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-128;
+}
+
+@mixin allison-400-256 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-256;
+}
+
 @mixin onest-500-18 {
     font-family: "Onest", serif;
     font-optical-sizing: auto;
@@ -66,6 +115,24 @@
     line-height: normal;
     font-weight: 500;
     font-size: $font-size-18;
+}
+
+@mixin onest-400-28 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-28;
+}
+
+@mixin onest-400-22 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-22;
 }
 
 @mixin onest-400-18 {

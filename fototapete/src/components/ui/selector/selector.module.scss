@@ -47,3 +47,12 @@
     height: 1px;
     opacity: 0;
 }
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .selectorWrap {
+        @include evolventa-400-18;
+        padding-top: 0.6rem;
+        padding-bottom: 0.4rem;
+        letter-spacing: 0.05rem;
+    }
+}

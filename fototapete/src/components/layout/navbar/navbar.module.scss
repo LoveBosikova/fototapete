@@ -3,6 +3,7 @@
 @import '../../../styles/fonts.scss';
 
 .navbar {
+    display: block;
     position: fixed;
     top: 0;
     width: 32%;
@@ -27,4 +28,10 @@
     cursor: pointer;
     @include onest-400-11;
     color: $black-text;
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .navbar {
+        display: none;
+    }
 }

@@ -9,7 +9,12 @@ import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 
 import pointer from '../../../assets/pointer-bilboard.png';
-import back from '../../../assets/mainBack.png';
+import backLarge from '../../../assets/mainBack-large.png';
+import mediumLarge from '../../../assets/mainBack-medium.png';
+import smallLarge from '../../../assets/mainBack-small.png';
+
+
+
 
 import textData from '../../../texts';
 
@@ -22,9 +27,30 @@ function MainBilboard () {
     
     return (
         <div className={style.wrap}>
-            <div className={style.backgroundWrap}><img className={style.backgroundImg} src={back} alt='' /></div>
+            <div className={style.backgroundWrap}>
+            <picture className={style.backgroundImg} >
+                <source
+                    media="(max-width: 720px)"
+                    srcSet="/fototapete/mainBack-small.png 720w"
+                    sizes="720px"
+                />
+                <source
+                    media="(min-width: 1140px)"
+                    srcSet="/fototapete/mainBack-large.png 1140w"
+                    sizes="1140px"
+                />
+                <source
+                    srcSet="/fototapete/mainBack-medium.png 720w"
+                    sizes="720px"
+                />
+                <img  className={style.backgroundImg} src={backLarge} />
+            </picture>
+                {/* <img className={style.backgroundImg} src={backLarge} alt='' /> */}
+            </div>
             <div className={style.textWrap}>
-                <Title text={textData[langValue as keyof typeof textData].mainBillboard.title} isBlack={false}></Title>
+                <div className={style.titleWrap}>
+                    <Title text={textData[langValue as keyof typeof textData].mainBillboard.title} isBlack={false}></Title>
+                </div>
                 <div className={style.handwritingWrap}>
                     <div className={style.pointerWrap}>
                         <img className={style.pointerImg} src={pointer} alt='' />

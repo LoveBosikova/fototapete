@@ -30,6 +30,10 @@
     position: relative;
 }
 
+.titleWrap {
+    width: 100%;
+}
+
 .handwritingWrap {
     position: relative;
     padding-left: 18%;
@@ -57,7 +61,7 @@
 
 .articleWrap {
     width: 23%;
-    margin-top: 16.3%;
+    margin-top: 16vw;
     margin-left: auto;
     margin-right: 5.8%;
     position: relative;
@@ -82,4 +86,63 @@
 
 .linkWhiteBtnWrap {
     width: 58%;
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .wrap {
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 19px;
+        margin: 2%;
+    }
+
+    .textWrap {
+        width: 99%;
+        padding-top: 17.5%;
+        padding-left: 2.3%;
+    }
+
+    .titleWrap {
+        width: 84%;
+    }
+
+    .handwritingWrap {
+        padding-left: 21.5%;
+        margin-top: -0.5%;
+        padding-right: 1.8%;
+    }
+
+    .pointerWrap {
+        width: 16.4%;
+        top: 21%;
+        left: 50%;
+    }
+
+    .articleWrap {
+        width: 30%;
+        margin-top: 37vw;
+        margin-left: auto;
+        margin-right: 2.3%;
+    }
+
+    .articleText {
+        @include onest-400-22;
+        width: 99%;
+        letter-spacing: -0.015rem;
+        line-height: 123%;
+    }
+
+    .btnsWrap {
+        flex-direction: column;
+        gap: 1.3vw;
+    }
+
+    .linkOrangeBtnWrap {
+        width: 100%;
+    }
+    
+    .linkWhiteBtnWrap {
+        width: 100%;
+    }
 }
