@@ -11,6 +11,11 @@
     text-transform: uppercase;
     line-height: 119%;
     letter-spacing: .057rem;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        line-height: 112%;
+        letter-spacing: -0.04rem;
+    }
 }
 
 // White title 
@@ -24,6 +29,5 @@
     @media (min-width: 720px) and (max-width: 1140px) {
         line-height: 112%;
         letter-spacing: -0.04rem;
-
     }
 }

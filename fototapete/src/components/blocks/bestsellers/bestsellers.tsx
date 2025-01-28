@@ -67,14 +67,16 @@ function Bestsellers (){
                             <img className={style.img} src={icon3} alt='Other bestseller'></img>
                         </div>
                     </div>
-                    <div className={style.bottomHandwriteWrap}>
-                        <Handwriting text={text.handwriteBottom} color={'orange'}></Handwriting>
-                    </div>
-                    <div className={style.pointerWrap}>
-                        <img className={style.img} src={pointer} alt='' />
-                    </div>
-                    <div className={style.orangeBtnWrap}>
-                        <LinkButtonOrange text={btnText.loadMore} link={''}></LinkButtonOrange>
+                    <div className={style.btnSection}>
+                        <div className={style.bottomHandwriteWrap}>
+                            <Handwriting text={text.handwriteBottom} color={'orange'}></Handwriting>
+                        </div>
+                        <div className={style.pointerWrap}>
+                            <img className={style.img} src={pointer} alt='' />
+                        </div>
+                        <div className={style.orangeBtnWrap}>
+                            <LinkButtonOrange text={btnText.loadMore} link={''}></LinkButtonOrange>
+                        </div>
                     </div>
                 </li>
             </ul>

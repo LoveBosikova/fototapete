@@ -87,3 +87,76 @@
     @include onest-400-18;
     color: $black-text;
 }
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .bestsellers {
+        padding-top: 12.8vw;
+        padding-right: 4vw;
+        padding-bottom: 0.5vw;
+        padding-left: 4vw;
+    }
+
+    .handwriteWrap {
+        margin-left: 12.8vw;
+    }
+
+    .btnWrap {
+        width: 31.4%;
+        margin-left: auto;
+        margin-top: -10.1vw;
+    }
+
+    .contentWrap {
+        flex-direction: column;
+        padding-top: 3.5vw;
+    }
+
+    .bigbestseller {
+        width: 100%;
+    }
+
+    .category {
+        top: 3.5vw;
+        left: 3.5vw;
+        padding: 1.35vw 3.8vw;
+    }
+
+    .categoryName {
+        @include onest-400-28;
+    }
+
+    .smallbestsellers {
+        width: 100%;
+        display: flex;
+    }
+
+    .smallBestsellersWrap {
+        gap: 2.8vw;
+        width: 51.5%;
+    }
+
+    .smallBestseller {
+        width: 29.2%;
+    }
+
+    .btnSection {
+        width: 48%;
+
+    }
+
+    .pointerWrap {
+        display: none;
+    }
+
+    .bottomHandwriteWrap {
+        padding-left: 3.4vw;
+        margin-top: 2%;
+    }
+
+    .orangeBtnWrap {
+        width: 92%;
+        margin-left: auto;
+        padding-top: 0vw;
+        margin-top: -2.2vw;
+    }
+}
