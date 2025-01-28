@@ -10,11 +10,6 @@ import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 
 import pointer from '../../../assets/pointer-bilboard.png';
 import backLarge from '../../../assets/mainBack-large.png';
-import mediumLarge from '../../../assets/mainBack-medium.png';
-import smallLarge from '../../../assets/mainBack-small.png';
-
-
-
 
 import textData from '../../../texts';
 
@@ -45,7 +40,6 @@ function MainBilboard () {
                 />
                 <img  className={style.backgroundImg} src={backLarge} />
             </picture>
-                {/* <img className={style.backgroundImg} src={backLarge} alt='' /> */}
             </div>
             <div className={style.textWrap}>
                 <div className={style.titleWrap}>

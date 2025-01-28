@@ -113,9 +113,9 @@ const textData = {
             title: 'We also write helpful articles for you',
             handwrite: 'Our blog',
             articles: [
-                {text: `5 Tips for Decorating a Children's Room`, img: 'article-1.png', link: ''}, 
-                {text: 'Budget-Friendly Home Decorating Tricks', img: 'article-2.png', link: ''}, 
-                {text: 'How to Choose the Perfect Wallpaper?', img: 'article-3.png', link: ''},
+                {text: `5 Tips for Decorating a Children's Room`, img: '/fototapete/article-1.png', link: ''}, 
+                {text: 'Budget-Friendly Home Decorating Tricks', img: '/fototapete/article-2.png', link: ''}, 
+                {text: 'How to Choose the Perfect Wallpaper?', img: '/fototapete/article-3.png', link: ''},
             ]
         },
         footer: {

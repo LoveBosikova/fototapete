@@ -7,7 +7,12 @@ import { LangContext } from '../../../context/LangContext';
 import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 
-import background from '../../../assets/transforming.webp';
+import backgroundBig from '../../../assets/transforming-big.webp';
+import backgroundMedium from '../../../assets/transforming-medium.png';
+import backgroundSmall from '../../../assets/transforming-small.png';
+
+
+
 
 import style from './transforming.module.scss';
 
@@ -20,7 +25,23 @@ function Transforming () {
 
     return (
         <section className={style.transforming}>
-            <img className={style.background} src={background} alt='' />
+            <picture className={style.background} >
+                <source
+                    media="(max-width: 720px)"
+                    srcSet="/fototapete/transforming-small.png 720w"
+                    sizes="720px"
+                />
+                <source
+                    media="(min-width: 1140px)"
+                    srcSet="/fototapete/transforming-big.webp 1140w"
+                    sizes="1140px"
+                />
+                <source
+                    srcSet="/fototapete/transforming-medium.png 720w"
+                    sizes="720px"
+                />
+                <img  className={style.background} src={backgroundBig} />
+            </picture>
             <div className={style.header}>
                 <div className={style.titleWrap}>
                     <Title text={text.title} isBlack={true}></Title>

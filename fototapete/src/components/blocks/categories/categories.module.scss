@@ -62,3 +62,48 @@
     color: $black-text;
     padding-bottom: 1vw;
 }
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .categories {
+        padding-top: 8.6vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .contentWrap {
+        flex-direction: column;
+        padding-top: 2.8vw;
+    }
+
+    .categoryWrap {
+        width: 100%;
+    }
+
+    .walpapersDescriptionWrap {
+        width: 30%;
+        bottom: 56vw;
+        left: 59vw;
+        padding: 2.4vw 2.2vw;
+        backdrop-filter: blur(2rem);
+    }
+
+    .categoryText {
+        @include onest-400-28;
+        color: $black-text;
+        padding-bottom: 1vw;
+    }
+
+    .blackBtnWrap {
+        width: 78%;
+        padding-bottom: .6vw;
+    }
+
+    .filmsDescriptionWrap {
+        width: 29%;
+        backdrop-filter: blur(2rem);
+        top: -0.5vw;
+        right: 0vw;
+        padding: 2.4vw 2.2vw;
+        padding-top: 3vw;
+    }
+}

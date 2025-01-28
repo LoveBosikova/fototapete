@@ -11,6 +11,7 @@
 }
 
 .background {
+    display: block;
     width: 100%;
     max-width: 100%;
 }
@@ -88,4 +89,72 @@
     right: 40.5%;
     width: 15%;
     padding: 1.5rem 1.7rem;
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .transforming {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 8vw;
+    }
+
+    .background {
+        margin-top: 24vw;
+    }
+
+    .header {
+        width: 79.2%;
+        top: -13.9%;
+        left: 2.2%;
+    }
+
+    .hanwriteWrap {
+        margin-top: -1%;
+    }
+
+    .articleTitle {
+        @include onest-400-28;
+        padding-bottom: 1.3vw;
+        letter-spacing: -0.01rem;
+    }
+    
+    .articleText {
+        @include onest-400-22;
+        letter-spacing: -0.02rem;
+    }
+
+    .customSizes {
+        padding: 1.15rem 1.2rem;
+        top: -1%;
+        left: 2.2%;
+        width: 36.5%;
+    }
+
+    .individualApproach{
+        padding: 1.15rem 1.2rem;
+        top: 10.5%;
+        right: 7%;
+        width: 35.8%;
+    }
+
+    .range {
+        top: 33.6%;
+        left: 32.3%;
+        width: 42%;
+        padding: 1.15rem 1.2rem;
+    }
+
+    .installationService {
+        top: 61%;
+        right: 48.5%;
+        width: 27.7%;
+        padding: 1.15rem 1.2rem;
+    }
+
+    .fastDelivery {
+        bottom: -2.7%;
+        right: 4.5%;
+        width: 25%;
+        padding: 1.15rem 1.2rem;
+    }
 }
