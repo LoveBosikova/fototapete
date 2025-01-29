@@ -1,15 +1,16 @@
 import { useContext, useState } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
-import back from '../../../assets/calculateBack.png';
+import backBig from '../../../assets/calculateBack-big.png';
 import selectArrow from '../../../assets/selectArrow.png';
 import orangeArrow from '../../../assets/calculate-pointer.png';
 import Title from '../../ui/title/title';
-
-import textData from '../../../texts';
-import style from './calculate.module.scss';
 import FormResult from '../../ui/formResult/formResult';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
+
+import textData from '../../../texts';
+
+import style from './calculate.module.scss';
 
 function Calculate () {
 
@@ -25,16 +26,24 @@ function Calculate () {
 
     return (
         <section className={style.calculate}>
-            <div className={style.backgroundWrap}><img className={style.backgroundImg} src={back} alt=''/></div>
-            <div className={style.note}>
-                <p className={style.noteStar}>*</p>
-                <p className={style.noteText}>{text.note1}</p>
-                <p className={style.noteText}>{text.note2}</p>
-                <p className={style.noteText}>{text.note3}</p>
-                <div className={style.noteBtnWrap}>
-                    <LinkButtonBlack link={''} text={textBtn.getOffer}></LinkButtonBlack>
-                </div>
-            </div>
+            <picture className={style.backgroundImg} >
+                <source
+                    media="(max-width: 720px)"
+                    srcSet="/fototapete/calculateBack-small.png 720w"
+                    sizes="720px"
+                />
+                <source
+                    media="(min-width: 1140px)"
+                    srcSet="/fototapete/calculateBack-big.png 1140w"
+                    sizes="1140px"
+                />
+                <source
+                    srcSet="/fototapete/calculateBack-medium.png 720w"
+                    sizes="720px"
+                />
+                <img  className={style.backgroundImg} src={backBig} />
+            </picture>
+            {/* <div className={style.backgroundWrap}><img className={style.backgroundImg} src={backBig} alt=''/></div> */}
             <div className={style.titleWrap}>
                 <Title text={text.title} isBlack={true}></Title>
             </div>
@@ -104,6 +113,15 @@ function Calculate () {
                 </div>
 
             </div>
+                <div className={style.note}>
+                    <p className={style.noteStar}>*</p>
+                    <p className={style.noteText}>{text.note1}</p>
+                    <p className={style.noteText}>{text.note2}</p>
+                    <p className={style.noteText}>{text.note3}</p>
+                    <div className={style.noteBtnWrap}>
+                        <LinkButtonBlack link={''} text={textBtn.getOffer}></LinkButtonBlack>
+                    </div>
+                </div>
         </section>
     )
 }

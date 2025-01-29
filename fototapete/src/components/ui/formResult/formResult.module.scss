@@ -22,3 +22,19 @@
     @include onest-500-18;
     color: $orange-alert;
 }
+
+@media (min-width: 720px) and (max-width: 1140px)  {
+
+    .formResult {
+        border-radius: 1em;
+        padding: 1.5vw 3.85vw;
+    }
+
+    .description {
+        @include onest-400-22;
+    }
+
+    .result {
+        @include onest-500-28;
+    }
+}

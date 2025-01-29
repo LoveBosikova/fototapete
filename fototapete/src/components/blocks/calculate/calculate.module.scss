@@ -17,6 +17,10 @@
 }
 
 .backgroundImg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     max-width: 100%;
 }
@@ -168,4 +172,106 @@
 .noteBtnWrap {
     width: 41%;
     margin-top: -1vw;
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .calculate {
+        margin-top: 12.7vw;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .titleWrap {
+        margin-left: 2%;
+        width: 77%;
+    }
+
+    .calculator {
+        width: 63.6%;
+        margin: 7.3vw 4.5vw;
+        margin-bottom: 3.5vw;
+        padding: 3.5vw 3.5vw;
+    }
+
+    .form {
+        width: 77%;
+        margin-bottom: 4vw;
+    }
+
+    .arrowWrap {
+        top: 14%;
+    }
+
+    .calculatorTitle {
+        @include onest-400-28;
+        letter-spacing: -.01rem;
+        padding-bottom: 2.8vw;
+    }
+    
+    .calculatorText {
+        @include onest-400-22;
+        width: 94%;
+        letter-spacing: -.02rem;
+        padding-bottom: 2.6vw;
+    }
+
+    .material {
+        padding: 1.3vw 3.7vw;
+        margin-bottom: 1.8vw;
+    }
+    
+    .materialPlaceholder,
+    .widthPlaceholder,
+    .heightPlaceholder {
+        @include onest-400-22;
+    }
+
+    .widthPlaceholder,
+    .heightPlaceholder {
+        padding-left: 1.1vw;
+    }
+
+    .results {
+        width: 77%;
+    }
+
+    .resultsWrap {
+        width: 82.5%;
+        gap: 1.6vw;
+    }
+
+    .topResultsWrap {
+        margin-bottom: 1.5vw;
+    }
+
+    .orangeArrowWrap {
+        width: 7.5%;
+        top: 35%;
+        right: 11.5%;
+    }
+
+    .note {
+        position: static;
+        width:  63.5%;
+        margin-left: 5%;
+        padding: 2.3vw 3.4vw;
+    }
+
+    .noteStar {
+        @include evolventa-700-111;
+        margin-bottom: -2.8vw;
+    }
+    
+    .noteText {
+        @include onest-400-20;
+        width: 97%;
+        letter-spacing: 0.032rem;
+        line-height: 141%;
+        padding-bottom: 2.8vw;
+    }
+
+    .noteBtnWrap{
+        width: 29%;
+        margin-top: -0.5vw;
+    }
 }
