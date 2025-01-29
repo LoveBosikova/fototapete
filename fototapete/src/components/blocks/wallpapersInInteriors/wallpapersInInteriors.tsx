@@ -49,7 +49,7 @@ function WallpapersInInteriors () {
                 </div>
                 <div className={style.photo4}>
                     <img className={style.img} src={photo4} alt='Wallpaper in interior' />
-                    <div className={style.btnWrap}>
+                    <div className={style.btnWrapDesctop}>
                         <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
                     </div>
                 </div>
@@ -58,6 +58,9 @@ function WallpapersInInteriors () {
                 </div>
                 <div className={style.photo6}>
                     <img className={style.img} src={photo6} alt='Wallpaper in interior' />
+                    <div className={style.btnWrapMedium}>
+                        <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
+                    </div>
                 </div>
             </div>
 
