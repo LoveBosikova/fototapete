@@ -23,7 +23,7 @@
     color: $orange-alert;
 }
 
-@media (min-width: 720px) and (max-width: 1140px)  {
+@media (max-width: 1140px)  {
 
     .formResult {
         border-radius: 1em;
@@ -36,5 +36,21 @@
 
     .result {
         @include onest-500-28;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .formResult {
+        border-radius: 1em;
+        padding: 2.5vw 5vw;
+    }
+
+    .description {
+        @include onest-400-28;
+    }
+
+    .result {
+        font-size: $font-size-38;
     }
 }

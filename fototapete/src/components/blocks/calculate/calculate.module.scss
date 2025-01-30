@@ -174,7 +174,8 @@
     margin-top: -1vw;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
+
     .calculate {
         margin-top: 12.7vw;
         margin-left: 2%;
@@ -273,5 +274,88 @@
     .noteBtnWrap{
         width: 29%;
         margin-top: -0.5vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .calculate {
+        margin-top: 19vw;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .backgroundImg {
+        top: 11.7vw;
+    }
+
+    .titleWrap {
+        width: 76%;
+    }
+
+    .calculator {
+        width: 87.7%;
+        margin: 5vw 2vw;
+        margin-bottom: 3.5vw;
+        padding: 5.2vw 4.2vw;
+        padding-bottom: 4.1vw;
+    }
+
+    .calculatorTitle {
+        font-size: $font-size-38;
+        letter-spacing: 0rem;
+        padding-bottom: 3.8vw;
+    }
+    
+    .calculatorText {
+        @include onest-400-28;
+        padding-bottom: 3.5vw;
+        letter-spacing: 0rem;
+        width: 93%;
+    }
+
+    .materialPlaceholder,
+    .widthPlaceholder,
+    .heightPlaceholder {
+        @include onest-400-28;
+    }
+
+    .material,
+    .widthWrap,
+    .heightWrap {
+        padding: 2vw 3.7vw;
+    }
+
+    .form {
+        width: 75.5%;
+    }
+
+    .results {
+        width: 76%;
+    }
+
+    .orangeArrowWrap {
+        right: 12.5%;
+    }
+
+    .note {
+        width: 88%;
+        margin-left: 2%;
+        padding: 2vw 4vw;
+    }
+
+    .noteStar {
+        font-size: $font-size-161;
+        margin-bottom: -5vw;
+    }
+
+    .noteText {
+        @include onest-400-28;
+        letter-spacing: 0.004rem;
+        width: 96%;
+        padding-bottom: 3.65vw;
+    }
+
+    .noteBtnWrap {
+        margin-bottom: 2vw;
     }
 }
