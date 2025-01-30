@@ -6,17 +6,18 @@ import Handwriting from '../../ui/handwriting/handwriting';
 import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 
 import arrow from '../../../assets/interior-arrow.png';
-import photo1 from '../../../assets/interior-photo1.png';
-import photo2 from '../../../assets/interior-photo2.png';
+import photo1Big from '../../../assets/interior-photo1-big.png';
+import arrowMobile from '../../../assets/arrowMobile.png';
+
+import photo2Big from '../../../assets/interior-photo2-big.png';
 import photo3 from '../../../assets/interior-photo3.png';
-import photo4 from '../../../assets/interior-photo4.png';
+import photo4 from '../../../assets/interior-photo4-big.png';
 import photo5 from '../../../assets/interior-photo5.png';
-import photo6 from '../../../assets/interior-photo6.png';
+import photo6 from '../../../assets/interior-photo6-big.png';
 
 import textData from '../../../texts';
 
 import style from './wallpapersInInteriors.module.scss';
-
 
 function WallpapersInInteriors () {
 
@@ -36,10 +37,45 @@ function WallpapersInInteriors () {
 
             <div className={style.contentWrap}>
                 <div className={style.photo1}>
-                    <img className={style.img} src={photo1} alt='Wallpaper in interior' />
+                    <div className={style.arrowMobile}>
+                        <img  className={style.img} src={arrowMobile} alt='' />
+                    </div>
+                    <picture className={style.img} >
+                        <source
+                            media="(max-width: 720px)"
+                            srcSet="/fototapete/interior-photo1-small.png 720w"
+                            sizes="720px"
+                        />
+                        <source
+                            media="(min-width: 1140px)"
+                            srcSet="/fototapete/interior-photo1-big.png 1140w"
+                            sizes="1140px"
+                        />
+                        <source
+                            srcSet="/fototapete/interior-photo1-big.png 720w"
+                            sizes="720px"
+                        />
+                        <img  className={style.img} src={photo1Big} />
+                    </picture>
                 </div>
                 <div className={style.photo2}>
-                    <img className={style.img} src={photo2} alt='Wallpaper in interior' />
+                    <picture className={style.img} >
+                        <source
+                            media="(max-width: 720px)"
+                            srcSet="/fototapete/interior-photo2-small.png 720w"
+                            sizes="720px"
+                        />
+                        <source
+                            media="(min-width: 1140px)"
+                            srcSet="/fototapete/interior-photo2-big.png 1140w"
+                            sizes="1140px"
+                        />
+                        <source
+                            srcSet="/fototapete/interior-photo2-big.png 720w"
+                            sizes="720px"
+                        />
+                        <img  className={style.img} src={photo2Big} />
+                    </picture>
                 </div>
                 <div className={style.photo3}>
                     <div className={style.arrowWrap}>
@@ -48,7 +84,23 @@ function WallpapersInInteriors () {
                     <img className={style.img} src={photo3} alt='Wallpaper in interior' />
                 </div>
                 <div className={style.photo4}>
-                    <img className={style.img} src={photo4} alt='Wallpaper in interior' />
+                    <picture className={style.img} >
+                        <source
+                            media="(max-width: 720px)"
+                            srcSet="/fototapete/interior-photo4-small.png 720w"
+                            sizes="720px"
+                        />
+                        <source
+                            media="(min-width: 1140px)"
+                            srcSet="/fototapete/interior-photo4-big.png 1140w"
+                            sizes="1140px"
+                        />
+                        <source
+                            srcSet="/fototapete/interior-photo4-big.png 720w"
+                            sizes="720px"
+                        />
+                        <img  className={style.img} src={photo4} />
+                    </picture>
                     <div className={style.btnWrapDesctop}>
                         <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
                     </div>
@@ -57,7 +109,23 @@ function WallpapersInInteriors () {
                     <img className={style.img} src={photo5} alt='Wallpaper in interior' />
                 </div>
                 <div className={style.photo6}>
-                    <img className={style.img} src={photo6} alt='Wallpaper in interior' />
+                <picture className={style.img} >
+                        <source
+                            media="(max-width: 720px)"
+                            srcSet="/fototapete/interior-photo6-small.png 720w"
+                            sizes="720px"
+                        />
+                        <source
+                            media="(min-width: 1140px)"
+                            srcSet="/fototapete/interior-photo6-big.png 1140w"
+                            sizes="1140px"
+                        />
+                        <source
+                            srcSet="/fototapete/interior-photo6-big.png 720w"
+                            sizes="720px"
+                        />
+                        <img  className={style.img} src={photo6} />
+                    </picture>
                     <div className={style.btnWrapMedium}>
                         <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
                     </div>
