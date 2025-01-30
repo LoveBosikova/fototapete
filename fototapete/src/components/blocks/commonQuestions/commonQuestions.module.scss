@@ -22,7 +22,7 @@
     margin-top: -0.4vw;
 }
 
-@media (min-width: 720px) and (max-width: 1140px)  {
+@media (max-width: 1140px)  {
 
     .commonQuestions {
         margin: 28vw 4vw 0vw 4vw;
@@ -35,5 +35,11 @@
 
     .accordionWrap {
         margin-top: -1vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .commonQuestions {
+        margin: 28vw 4.5vw 0vw 4.5vw;
     }
 }

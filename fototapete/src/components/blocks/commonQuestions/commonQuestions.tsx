@@ -1,10 +1,13 @@
 import { useContext } from 'react';
-import textData from '../../../texts';
-import style from './commonQuestions.module.scss';
 import { LangContext } from '../../../context/LangContext';
+
 import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 import Accordion from '../../ui/accordion/accordion';
+
+import textData from '../../../texts';
+
+import style from './commonQuestions.module.scss';
 
 function CommonQuestions () {
 
@@ -22,9 +25,7 @@ function CommonQuestions () {
             </div>
             <div className={style.accordionWrap}>
                 <Accordion questions={text.quesions}></Accordion>
-
             </div>
-
         </section>
     )
 }
