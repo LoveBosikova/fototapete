@@ -5,6 +5,7 @@
     position: relative;
     margin-right: .6%;
     margin-left: .6%;
+    min-height: fit-content;
 }
 
 .contentWrap {
@@ -20,6 +21,7 @@
 
 .imgsGallery {
     position: absolute;
+    display: block;
     top: 0;
     right: 3%;
     width: 47%;
@@ -146,5 +148,88 @@
     &:hover {
         text-decoration: underline;
         transition: $transition-disappearance;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .footer {
+        min-height: fit-content;
+        margin-right: 4vw;
+        margin-left: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .imgsGallery {
+        right: 0%;
+        width: 137%;
+        justify-content: flex-end;
+    }
+
+    .imgWrap {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4) {
+            display: none;
+        }
+    }
+
+    .titleWrap {
+        padding-top: 6vw;
+        padding-left: 3.3vw;
+    }
+
+    .handwriteWrap {
+        width: 70.6%;
+        margin-top: -0.7vw;
+    }
+
+    .contentWrap {
+        flex-direction: column;
+    }
+
+    .iconsWrap {
+        gap: 1.1vw;
+        padding-top: 1.5%;
+        padding-left: 1.5%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
+    .telWrap {
+        padding-top: 1.2vw;
+    }
+
+    .tel,
+    .email {
+        letter-spacing: -.002rem;
+    }
+
+    .linksWrap {
+        width: 81%;
+        margin-top: 4.9vw;
+        margin-left: 3.5vw;
+    }
+
+    .menuItemWrap {
+        margin-bottom: 0.6%;
+    }
+
+    .btnUp {
+        top: 68%;
+        width: 8.5%;
+        right: 3.22%;
+    }
+
+    .privPolicy,
+    .underline {
+        @include onest-400-20;
+        gap: 9.9%;
+    }
+
+    .underline {
+        gap: 9.9%;
+        letter-spacing: -.01rem;
     }
 }

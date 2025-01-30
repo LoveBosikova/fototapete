@@ -4,13 +4,15 @@ import { useContext } from 'react';
 import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 
-import backImg from '../../../assets/footer-back.png';
+import backImgBig from '../../../assets/footer-back-big.png';
 import insta from '../../../assets/icon-instagram.png';
 import fb from '../../../assets/icon-fb.png';
 import pinterest from '../../../assets/icon-pinterest.png';
 import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
-import mockup3 from '../../../assets/footer-3.png';
+import mockup3Big from '../../../assets/footer-3-big.png';
+import mockup3Medium from '../../../assets/footer-3-medium.png';
+
 import mockup4 from '../../../assets/footer-4.png';
 import goUp from '../../../assets/btn-up.png';
 
@@ -26,11 +28,25 @@ function Footer () {
 
     return (
         <footer className={style.footer}>
-
             <div className={style.backWrap}>
-                <img className={style.img} src={backImg} alt='' />
+                <picture className={style.img} >
+                    <source
+                        media="(max-width: 720px)"
+                        srcSet="/fototapete/footer-back-small.png 720w"
+                        sizes="720px"
+                    />
+                    <source
+                        media="(min-width: 1140px)"
+                        srcSet="/fototapete/footer-back-big.png 1140w"
+                        sizes="1140px"
+                    />
+                    <source
+                        srcSet="/fototapete/footer-back-medium.png 720w"
+                        sizes="720px"
+                    />
+                    <img  className={style.img} src={backImgBig} />
+                </picture>
             </div>
-
             <ul className={style.imgsGallery}>
                 <li className={style.imgWrap}>
                     <img className={style.imgMockUp} src={mockup1} alt='Wallpapers mockup' />
@@ -39,7 +55,19 @@ function Footer () {
                     <img className={style.imgMockUp} src={mockup2} alt='Wallpapers mockup' />
                 </li>
                 <li className={style.imgWrap}>
-                    <img className={style.imgMockUp} src={mockup3} alt='Wallpapers mockup' />
+                    <picture className={style.imgMockUp} >
+                        <source
+                            media="(min-width: 1140px)"
+                            srcSet="/fototapete/footer-3-big.png 1140w"
+                            sizes="1140px"
+                        />
+                        <source
+                            srcSet="/fototapete/footer-3-medium.png 720w"
+                            sizes="720px"
+                        />
+                        <img  className={style.imgMockUp} src={mockup3Big} />
+                    </picture>
+                    {/* <img className={style.imgMockUp} src={mockup3Big} alt='Wallpapers mockup' /> */}
                 </li>
                 <li className={style.imgWrap}>
                     <img className={style.imgMockUp} src={mockup4} alt='Wallpapers mockup' />
