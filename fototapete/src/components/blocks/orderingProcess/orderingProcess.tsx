@@ -6,8 +6,14 @@ import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
 import Handwriting from '../../ui/handwriting/handwriting';
 
-import interior1 from '../../../assets/orderingProcess-interior1.png';
-import interior2 from '../../../assets/orderingProcess-interior2.png';
+import interior1Big from '../../../assets/orderingProcess-interior1-big.png';
+import interior1Medium from '../../../assets/orderingProcess-interior1-medium.png';
+import interiorSmall from '../../../assets/orderingProcess-interior1-small.png';
+
+import interior2Big from '../../../assets/orderingProcess-interior2-big.png';
+import interior2Medium from '../../../assets/orderingProcess-interior2-medium.png';
+import interior2Small from '../../../assets/orderingProcess-interior2-small.png';
+
 import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
 
@@ -29,7 +35,23 @@ function OrderingProcess () {
             </div>
                 <div className={style.contentWrap}>
                     <div className={style.point1}>
-                        <img className={style.img} src={interior1} alt='Wallpaper interior'></img>
+                            <picture className={style.img} >
+                                <source
+                                    media="(max-width: 720px)"
+                                    srcSet="/fototapete/orderingProcess-interior1-small.png 720w"
+                                    sizes="720px"
+                                />
+                                <source
+                                    media="(min-width: 1140px)"
+                                    srcSet="/fototapete/orderingProcess-interior1-big.png 1140w"
+                                    sizes="1140px"
+                                />
+                                <source
+                                    srcSet="/fototapete/orderingProcess-interior1-medium.png 720w"
+                                    sizes="720px"
+                                />
+                                <img  className={style.img} src={interior1Big} alt='Wallpaper interior'/>
+                            </picture>
                     </div>
                     <div className={style.point2}>
                         <p className={style.pointText}>{text.point1}</p>
@@ -68,7 +90,24 @@ function OrderingProcess () {
                         </div>
                     </div>
                     <div className={style.point8}>
-                        <img className={style.img} src={interior2} alt='Wallpaper interior'></img>
+                    <picture className={style.img} >
+                                <source
+                                    media="(max-width: 720px)"
+                                    srcSet="/fototapete/orderingProcess-interior2-small.png 720w"
+                                    sizes="720px"
+                                />
+                                <source
+                                    media="(min-width: 1140px)"
+                                    srcSet="/fototapete/orderingProcess-interior2-big.png 1140w"
+                                    sizes="1140px"
+                                />
+                                <source
+                                    srcSet="/fototapete/orderingProcess-interior2-medium.png 720w"
+                                    sizes="720px"
+                                />
+                                <img  className={style.img} src={interior2Big} alt='Wallpaper interior'/>
+                            </picture>
+                        {/* <img className={style.img} src={interior2} alt='Wallpaper interior'></img> */}
                     </div>
                 </div>
         </section>

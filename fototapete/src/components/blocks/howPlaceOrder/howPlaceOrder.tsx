@@ -46,7 +46,7 @@ function HowPlaceOrder () {
                     <h2 className={style.number}>5:</h2>
                     <div className={style.cardContent}>
                         <h3 className={style.cardTitle}>{text.step5Title}</h3>
-                        <p className={style.cardText}>{text.step5Text}</p>
+                        <p className={style.cardText}>{text.step5Text}</p>  
                     </div>
                 </li>
             </ul>

@@ -19,6 +19,7 @@
 }
 
 .img {
+    display: block;
     width: 100%;
     max-width: 100%;
 }
@@ -167,4 +168,122 @@
 
 .point8 {
     grid-area: 3 / 4 / 4 / 6;
+}
+
+@media (min-width: 720px) and (max-width: 1140px) {
+
+    .orderingProcess {
+        margin-top: -6.7vw;
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+
+    .titlesWrap {
+        width: 86%;
+    }
+
+    .handwriteWrap {
+        width: 96.7%;
+        margin-top: -1vw;
+    }
+
+    .contentWrap {
+        margin-top: -1vw;
+        grid-template-columns: 51% 45%;
+        grid-template-rows: 13.5% 16.6% 7.6% 5.9% 7.6% 6.5% 7.9% 6% 22%;
+        grid-column-gap: 3.45vw;
+        grid-row-gap: 3.3vw;
+    }
+
+    .point1 {
+        grid-area: 1 / 1 / 4 / 3;
+    }
+
+    .point2 {
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 3.1vw 3vw 3vw 3vw;
+
+        & .pointText {
+            letter-spacing: -.02rem;
+            width: 70%;
+            margin-bottom: 6.3vw;
+        }
+
+        & .btnWrap {
+            width: 49%;
+        }
+    }
+
+    .point3 {
+        grid-area: 3 / 2 / 5 / 3;
+        padding: 2.8vw 3vw 3vw 3vw;
+
+        & .pointText {
+            letter-spacing: -0.008rem;
+            width: 70%;
+        }
+
+        & .btnWrap {
+            width: 49%;
+        }
+    }
+
+    .point4 {
+        grid-area: 4 / 1 / 6 / 2;
+        padding: 2.8vw 3vw 3vw 3.5vw;
+        
+        & .pointText {
+            letter-spacing: -0.008rem;
+        }
+
+        & .btnWrap {
+            width: 43%;
+        }
+    }
+
+    .point5 {
+        grid-area: 5 / 2 / 7 / 3;
+        padding: 2.8vw 3vw 3vw 3vw;
+
+        & .pointText {
+            letter-spacing: -0.008rem;
+        }
+
+        & .btnWrap {
+            width: 49.5%;
+        }
+    }
+
+    .point6 {
+        grid-area: 6 / 1 / 8 / 2; 
+        padding: 2.6vw 3vw 3vw 3.3vw;
+
+        & .pointText {
+            letter-spacing: -0.008rem;
+        }
+
+        & .btnWrap {
+            width: 43%;
+        }
+    }
+
+    .point7 {
+        grid-area: 7 / 2 / 9 / 3; 
+        padding: 2.1vw 3vw 3vw 3.1vw;
+        z-index: 1;
+
+
+        & .pointText {
+            letter-spacing: -0.008rem;
+        }
+
+        & .btnWrap {
+            width: 49.5%;
+        }
+    }
+
+    .point8 {
+        grid-area: 8 / 1 / 10 / 3; 
+        z-index: 0;
+    }
 }
