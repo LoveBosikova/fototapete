@@ -1,22 +1,17 @@
-import style from './orderingProcess.module.scss';
-
-import textData from '../../../texts';
-import Title from '../../ui/title/title';
 import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
-import Handwriting from '../../ui/handwriting/handwriting';
 
 import interior1Big from '../../../assets/orderingProcess-interior1-big.png';
-import interior1Medium from '../../../assets/orderingProcess-interior1-medium.png';
-import interiorSmall from '../../../assets/orderingProcess-interior1-small.png';
-
 import interior2Big from '../../../assets/orderingProcess-interior2-big.png';
-import interior2Medium from '../../../assets/orderingProcess-interior2-medium.png';
-import interior2Small from '../../../assets/orderingProcess-interior2-small.png';
 
 import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
+import Handwriting from '../../ui/handwriting/handwriting';
+import Title from '../../ui/title/title';
 
+import textData from '../../../texts';
+
+import style from './orderingProcess.module.scss';
 
 function OrderingProcess () {
 

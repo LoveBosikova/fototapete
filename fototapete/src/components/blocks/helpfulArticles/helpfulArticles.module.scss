@@ -50,3 +50,35 @@
     width: 70%;
     letter-spacing: 0.025rem;
 }
+
+@media (min-width: 720px) and (max-width: 1140px)  {
+
+    .helpfulArticles {
+        margin-top: 32.2vw;
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+
+    .handwritingWrap {
+        width: 96.4%;
+        margin-top: -1vw;
+    }
+
+    .contentWrap {
+        margin-top: -8.8vw;
+    }
+
+    .btnWrap {
+        width: 31.3%;
+    }
+
+    .article {
+        width: 48.6%;
+    }
+
+    .articleTitle{
+        padding-top: 1.9vw;
+        letter-spacing: -0.01rem;
+        margin-bottom: 2.2vw;
+    }
+}

@@ -8,11 +8,6 @@ import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 
 import backgroundBig from '../../../assets/transforming-big.webp';
-import backgroundMedium from '../../../assets/transforming-medium.png';
-import backgroundSmall from '../../../assets/transforming-small.png';
-
-
-
 
 import style from './transforming.module.scss';
 
