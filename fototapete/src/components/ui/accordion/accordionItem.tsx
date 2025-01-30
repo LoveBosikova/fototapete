@@ -22,7 +22,7 @@ function AccordionItem (props: IAccordionItemPros) {
                 <div className={style.headerWrap}>
                     <h2 className={style.accordionQuestion}>{question}</h2>
                     <div className={style.btnWrap}>
-                        <img className={style.img} src={isOpen? openIcon : closeIcon} alt='Open-close button' />
+                        <img className={style.img} src={isOpen? closeIcon : openIcon} alt='Open-close button' />
                     </div>
                 </div>
                 <div className={style.answerWrap}>

@@ -91,3 +91,55 @@
         font-size: 0vw;
     }
 }
+
+@media (min-width: 720px) and (max-width: 1140px) {
+    .accordionItemOpen {
+        margin-bottom: 1.6vw;
+
+        & .contentWrap {
+            padding: 3.2vw 3.4vw;
+            padding-right: 3.8vw;
+        }
+    
+        & .btnWrap {
+            width: 6.5%;
+            margin-top: 0.5vw;
+        }
+
+        & .accordionQuestion {
+            letter-spacing: -0.012rem;
+            width: 82%;
+            line-height: 114%;
+        }
+    
+        & .accordionAnswer {
+            padding-top: 1.7vw;
+            letter-spacing: -.02rem;
+        }
+    }
+
+    .accordionItemClosed {
+    
+        & .contentWrap {
+            padding: 3.2vw 3.4vw;
+            padding-right: 3.8vw;
+        }
+
+        & .btnWrap {
+            width: 6.5%;
+            margin-top: 0.5vw;
+        }
+    
+        & .accordionQuestion {
+            letter-spacing: -0.012rem;
+            width: 82%;
+            line-height: 114%;
+        }
+    
+        & .accordionAnswer {
+            width: 70%;
+            letter-spacing: 0.005rem;
+            font-size: 0vw;
+        }
+    }
+}
