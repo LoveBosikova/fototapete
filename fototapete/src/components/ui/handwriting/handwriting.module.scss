@@ -7,8 +7,14 @@
     color: $white-text;
 
     @media (min-width: 720px) and (max-width: 1140px) {
-    @include  allison-400-96;
-    letter-spacing: 0.05rem;
+        @include  allison-400-96;
+        letter-spacing: 0.05rem;
+    }
+
+    @media (max-width: 720px) {
+        @include  allison-400-128;
+        letter-spacing: .038rem;
+
     }
 }
 
@@ -20,6 +26,12 @@
         @include  allison-400-96;
         letter-spacing: 0.05rem;
     }
+
+    @media (max-width: 720px) {
+        @include  allison-400-128;
+        letter-spacing: .038rem;
+
+    }
 }
 
 .handwritingBlack {
@@ -29,5 +41,10 @@
     @media (min-width: 720px) and (max-width: 1140px) {
         @include  allison-400-96;
         letter-spacing: 0.05rem;
+    }
+
+    @media (max-width: 720px) {
+        @include  allison-400-128;
+        letter-spacing: .038rem;
     }
 }

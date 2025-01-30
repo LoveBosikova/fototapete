@@ -63,3 +63,28 @@
         width: 24.5%;
     }
 }
+
+@media (min-width: 0px) and (max-width: 720px) {
+
+    .header {
+        padding-top: 0%;
+    }
+    
+    .wrap {
+        margin: 3%;
+    }
+
+    .contentWrap {
+        margin-top: 3vw;
+        padding-right: 4.5%;
+        padding-left: 4%;
+    }
+
+    .logoWrap {
+        width: 15%;
+    }
+
+    .iconsWrap {
+        width: 31%;
+    }
+}

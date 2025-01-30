@@ -16,6 +16,12 @@
         line-height: 112%;
         letter-spacing: -0.04rem;
     }
+
+    @media (max-width: 720px) {
+        @include evolventa-700-64;
+        line-height: 122%;
+        letter-spacing: 0.045rem;
+    }
 }
 
 // White title 
@@ -29,5 +35,11 @@
     @media (min-width: 720px) and (max-width: 1140px) {
         line-height: 112%;
         letter-spacing: -0.04rem;
+    }
+
+    @media (max-width: 720px) {
+        @include evolventa-700-64;
+        line-height: 122%;
+        letter-spacing: 0.045rem;
     }
 }

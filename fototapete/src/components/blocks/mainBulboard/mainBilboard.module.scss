@@ -90,10 +90,6 @@
 
 @media (min-width: 720px) and (max-width: 1140px) {
     .wrap {
-        position: relative;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 19px;
         margin: 2%;
     }
 
@@ -144,5 +140,56 @@
     
     .linkWhiteBtnWrap {
         width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrap {
+        margin: 3%;
+        min-width: 300px;
+    }
+
+    .textWrap {
+        width: 98%;
+        padding-top: 23.2%;
+        padding-left: 2%;
+    }
+
+    .handwritingWrap {
+        padding-left: 29.558%;
+        margin-top: -1.2%;
+        padding-right: 0.5%;
+    }
+
+    .handwriteBottomWrap {
+        text-align: right;
+        margin-top: 11.3%;
+        margin-right: 2%;
+    }
+
+    .articleWrap {
+        width: 100%;
+        margin-top: 61vw;
+        margin-left: 1.3vw;
+        margin-right: 0;
+    }
+
+    .articleText {
+        @include onest-400-28;
+        letter-spacing: 0.0rem;
+        width: 56%;
+    }
+
+    .btnsWrap {
+        padding-top: 3.6%;
+        width: 97%;
+    }
+
+    .linkOrangeBtnWrap {
+        width: 50%;
+    }
+    
+    .linkWhiteBtnWrap {
+        width: 50%;
     }
 }

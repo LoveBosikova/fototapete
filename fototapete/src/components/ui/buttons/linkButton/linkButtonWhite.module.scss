@@ -62,4 +62,8 @@
         letter-spacing: -0.015rem;
         line-height: 123%;
     }
+
+    @media (max-width: 720px) {
+        @include  onest-400-28;
+    }
 }
