@@ -91,7 +91,7 @@
     padding: 1.5rem 1.7rem;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
     .transforming {
         margin-left: 2%;
         margin-right: 2%;
@@ -155,6 +155,74 @@
         bottom: -2.7%;
         right: 4.5%;
         width: 25%;
+        padding: 1.15rem 1.2rem;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .transforming {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 8vw;
+    }
+
+    .header {
+        width: 70%;
+        top: -13.6%;
+        left: 1.5%;
+    }
+
+    .hanwriteWrap {
+        margin-top: -5%;
+    }
+
+    .background {
+        margin-top: 23vw;
+    }
+
+    .articleTitle {
+        @include onest-400-34;
+        padding-bottom: 1.6vw;
+    }
+    
+    .articleText {
+        @include onest-400-28;
+        letter-spacing: 0rem;
+    }
+
+    .customSizes {
+        padding: 1.15rem 1.2rem;
+        top: 7.8%;
+        left: 2%;
+        width: 49%;
+    }
+
+    .individualApproach {
+        padding: 1.15rem 1.2rem;
+        top: 27.55%;
+        right: 2%;
+        width: 49%;
+    }
+
+    .range {
+        top: 51%;
+        left: 15%;
+        width: 42%;
+        padding: 1.15rem 1.2rem;
+    }
+
+    .installationService {
+        top: 71.5%;
+        right: 2%;
+        width: 37%;
+        padding: 1.15rem 1.2rem;
+    }
+
+    .fastDelivery {
+        bottom: -2.7%;
+        right: 35.5%;
+        width: 34%;
         padding: 1.15rem 1.2rem;
     }
 }
