@@ -170,7 +170,7 @@
     grid-area: 3 / 4 / 4 / 6;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
 
     .orderingProcess {
         margin: -6.7vw 4vw 20vw 4vw;
@@ -283,5 +283,110 @@
     .point8 {
         grid-area: 8 / 1 / 10 / 3; 
         z-index: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .orderingProcess {
+        margin: 16.3vw 4.5vw 20vw 4.5vw;
+    }
+
+    .contentWrap {
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 16% 20.5% 13% 5.5% 13.4% 6.5% 11% 6% 21%;
+        grid-column-gap: 1.45vw;
+        grid-row-gap: 2.1vw;
+    }
+
+    .titlesWrap {
+        width: 103%;
+    }
+
+    .handwriteWrap {
+        width: 96.7%;
+        margin-top: -1.6vw;
+    }
+
+    .point2 {
+        padding: 5vw 3vw 3vw 4.5vw;
+
+        & .pointText {
+            font-size: $font-size-34;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point3 {
+        padding: 5vw 3vw 3vw 4.5vw;
+
+        & .pointText {
+            font-size: $font-size-34;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point4 {
+        padding: 5vw 3vw 3vw 4.5vw;
+        grid-area: 3 / 1 / 5 / 2;
+
+
+        & .pointText {
+            font-size: $font-size-34;
+            width: 58%;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point5 {
+        padding: 4.5vw 3vw 3vw 4.5vw;
+
+        & .pointText {
+            font-size: $font-size-34;
+            width: 58%;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point6 {
+        padding: 4.5vw 3vw 3vw 4.5vw;
+
+        grid-area: 5/1/7/2;
+
+        & .pointText {
+            font-size: $font-size-34;
+            width: 58%;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point7 {
+        padding: 4vw 3vw 3vw 4.5vw;
+
+        & .pointText {
+            font-size: $font-size-34;
+        }
+
+        & .btnWrap {
+            width: 63%;
+        }
+    }
+
+    .point8 {
+        grid-area: 7/1/9/3;
     }
 }
