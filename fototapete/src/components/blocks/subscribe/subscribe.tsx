@@ -2,7 +2,8 @@ import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import textData from '../../../texts';
-import backImg from '../../../assets/subscribe-back.png'
+import backImgBig from '../../../assets/subscribe-back-big.png';
+
 import arrowImg from '../../../assets/subscribe-arrow.png'
 
 import Title from '../../ui/title/title';
@@ -19,9 +20,24 @@ function Subscribe () {
 
     return (
         <section className={style.subscribe}>
-
             <div className={style.backWrap}>
-                <img className={style.backImg} src={backImg} alt='Interior with wallpapers' />
+            <picture className={style.backImg} >
+                <source
+                    media="(max-width: 720px)"
+                    srcSet="/fototapete/subscribe-back-small.png 720w"
+                    sizes="720px"
+                />
+                <source
+                    media="(min-width: 1140px)"
+                    srcSet="/fototapete/subscribe-back-big.png 1140w"
+                    sizes="1140px"
+                />
+                <source
+                    srcSet="/fototapete/subscribe-back-medium.png 720w"
+                    sizes="720px"
+                />
+                <img  className={style.backImg} src={backImgBig} />
+            </picture>
             </div>
             <div className={style.note}>
                 <p className={style.noteStar}>*</p>
@@ -30,7 +46,6 @@ function Subscribe () {
             <div className={style.arrowWrap}>
                 <img className={style.img} src={arrowImg} alt='' />
             </div>
-
             <div className={style.titleWrap}>
                 <Title text={text.title} isBlack={true}></Title>
             </div>
