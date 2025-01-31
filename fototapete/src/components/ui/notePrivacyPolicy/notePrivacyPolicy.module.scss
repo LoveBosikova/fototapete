@@ -1,5 +1,6 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
 
 .notePrivacyPolicy {
     @include onest-400-11;
@@ -10,4 +11,10 @@
 .link {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .notePrivacyPolicy {
+        font-size: $font-size-25;
+    }
 }

@@ -104,7 +104,7 @@
     letter-spacing: -0.02rem;
 }
 
-@media (min-width: 720px) and (max-width: 1140px)  {
+@media (max-width: 1140px)  {
     .arrowWrap {
         display: none;
     }
@@ -174,5 +174,67 @@
         right: 0%;
         letter-spacing: -0.025rem;
     }
-
 }
+
+@media (max-width: 720px) {
+    .subscribe {
+        margin-top: 54.7vw;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .titleWrap {
+        top: -21.3%;
+        left: -1.5%;
+    }
+
+    .note {
+        width: 89%;
+        margin-top: 8vw;
+        margin-left: 2vw;
+    }
+
+    .noteStar {
+        font-size: $font-size-161;
+        padding-top: 6.7vw;
+        padding-left: 4.5vw;
+        line-height: 59%;
+    }
+
+    .noteText {
+        @include onest-400-28;
+        letter-spacing: 0.002rem;
+        padding-left: 6.7vw;
+        margin-top: 4.1vw;
+    }
+
+    .formsWrap{
+        width: 69%;
+        padding: 9.3vw 2vw;
+    }
+
+    .input {
+        padding-bottom: 0.98rem;
+        &::placeholder {
+            @include onest-400-28;
+        }
+    }
+
+    .btnWrap {
+        width: 101%;
+
+        & button {
+            padding-top: 0.8rem;
+        padding-bottom: 0.7rem;
+        }
+
+        & button a {
+            font-size: $font-size-28;
+            padding-left: 0%;
+        }
+    }
+
+    .notePrivacyPolicy {
+        margin-top: 2%;
+    }
+} 

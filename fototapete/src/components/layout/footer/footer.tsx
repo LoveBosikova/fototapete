@@ -11,7 +11,6 @@ import pinterest from '../../../assets/icon-pinterest.png';
 import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
 import mockup3Big from '../../../assets/footer-3-big.png';
-import mockup3Medium from '../../../assets/footer-3-medium.png';
 
 import mockup4 from '../../../assets/footer-4.png';
 import goUp from '../../../assets/btn-up.png';
