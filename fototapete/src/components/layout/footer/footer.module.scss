@@ -151,7 +151,7 @@
     }
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
     .footer {
         min-height: fit-content;
         margin-right: 4vw;
@@ -231,5 +231,85 @@
     .underline {
         gap: 9.9%;
         letter-spacing: -.01rem;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .footer {
+        margin: 11.6vw 4.5vw 4.5vw 4.5vw;
+    }
+
+    .imgsGallery {
+        display: none;
+    }
+
+    .titleWrap {
+        padding-top: 7.5vw;
+        padding-left: 4.4vw;
+    }
+
+    .handwriteWrap {
+        width: 94.6%;
+        margin-top: -1.7vw;
+    }
+
+    .iconsWrap {
+        gap: 1.8vw;
+        padding-top: 2.5%;
+        padding-left: 4.5%;
+    }
+
+    .icon {
+        width: 20%;
+    }
+
+    .tel,
+    .email {
+        font-size: $font-size-38;
+        letter-spacing: 0rem;
+
+    }
+    
+    .mailWrap,
+    .telWrap {
+        padding-top: 1.2vw;
+        padding-left: 4.5%;
+    }
+
+    .telWrap {
+        margin-top: 1vw;
+    }
+
+    .linksWrap {
+        width: 91.9%;
+        margin-top: 6.3vw;
+        margin-left: 4.8%;
+    }
+
+    .menuItemWrap {
+        margin-bottom: .9%;
+    }
+
+    .menuItem {
+        font-size: $font-size-28;
+    }
+
+    .underline {
+        margin-left: 1.8%;
+        padding-top: 7vw;
+        gap: 6.9%;
+        letter-spacing: -.03rem;
+    }
+
+    .privPolicy,
+    .underline {
+        font-size: $font-size-25;
+    }
+
+    .btnUp {
+        top: 36.5%;
+        width: 11.5%;
+        right: 4.5%;
     }
 }
