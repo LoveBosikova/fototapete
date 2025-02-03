@@ -100,7 +100,7 @@
     }
 
     .titleWrap {
-        width: 84%;
+        width: 85%;
     }
 
     .handwritingWrap {
@@ -169,7 +169,7 @@
 
     .articleWrap {
         width: 100%;
-        margin-top: 61vw;
+        margin-top: 65%;
         margin-left: 1.3vw;
         margin-right: 0;
     }
@@ -181,7 +181,7 @@
     }
 
     .btnsWrap {
-        padding-top: 3.6%;
+        padding-top: 4.6%;
         width: 97%;
     }
 
@@ -191,5 +191,23 @@
     
     .linkWhiteBtnWrap {
         width: 50%;
+    }
+
+    .pointerWrap {
+        position: absolute;
+        width: 16%;
+        top: 36%;
+        left: 56%;
+        transform: rotate(38deg);
+    }
+}
+
+@media (max-width: 460px) {
+    .articleWrap {
+        margin-top: 67%;
+    }
+
+    .btnsWrap {
+        padding-top: 5%;
     }
 }

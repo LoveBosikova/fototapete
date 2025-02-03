@@ -21,7 +21,7 @@
 .arrowWrap {
     position: absolute;
     width: 18.3%;
-    top: 72%;
+    top: 46.5%;
     left: 21%;
 }
 
@@ -178,7 +178,7 @@
 
 @media (max-width: 720px) {
     .subscribe {
-        margin-top: 54.7vw;
+        margin-top: 35vw;
         margin-right: 3%;
         margin-left: 3%;
     }
@@ -186,6 +186,7 @@
     .titleWrap {
         top: -21.3%;
         left: -1.5%;
+        width: 95%;
     }
 
     .note {
@@ -238,3 +239,9 @@
         margin-top: 2%;
     }
 } 
+
+@media (max-width: 482px) {
+    .subscribe {
+        margin-top: 35vw;
+    }
+}

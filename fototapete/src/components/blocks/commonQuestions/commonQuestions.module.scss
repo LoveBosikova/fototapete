@@ -40,6 +40,12 @@
 
 @media (max-width: 720px) {
     .commonQuestions {
-        margin: 28vw 4.5vw 0vw 4.5vw;
+        margin: 40vw 4.5vw 0vw 4.5vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .commonQuestions {
+        margin: 45vw 4.5vw 0vw 4.5vw;
     }
 }

@@ -200,7 +200,7 @@
     }
 
     .arrowWrap {
-        top: 14%;
+        top: 28%;
     }
 
     .calculatorTitle {
@@ -275,6 +275,13 @@
         width: 29%;
         margin-top: -0.5vw;
     }
+}
+
+@media (max-width: 800px) {
+    .arrowWrap{
+        top: 0.5vw;
+    }
+
 }
 
 @media (max-width: 720px) {
@@ -357,5 +364,21 @@
 
     .noteBtnWrap {
         margin-bottom: 2vw;
+    }
+}
+
+@media (max-width: 495px) {
+    .calculator {
+        margin-bottom: 1.5vw;
+        padding-bottom: 1.1vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .calculator {
+        margin-bottom: 1vw;
+        // margin-top: 1vw;
+        padding-bottom: 1vw;
+        padding-top: 3vw;
     }
 }

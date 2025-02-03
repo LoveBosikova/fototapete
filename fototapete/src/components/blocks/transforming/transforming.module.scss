@@ -20,14 +20,15 @@
     position: absolute;
     top: 2%;
     left: 3%;
-    width: 55%;
+    width: 64%;
 }
 
 .hanwriteWrap {
     margin-left: auto;
     text-align: right;
-    margin-top: -2.8%;
-    letter-spacing: .016rem;
+    margin-top: -2.3%;
+    letter-spacing: 0.016rem;
+    padding-right: 14.3%;
 }
 
 .customSizes {
@@ -110,6 +111,7 @@
 
     .hanwriteWrap {
         margin-top: -1%;
+        padding-right: 0%;
     }
 
     .articleTitle {

@@ -52,15 +52,15 @@
     .selectorWrap {
         @include evolventa-400-18;
         padding-top: 0.6rem;
-        padding-bottom: 0.4rem;
-        letter-spacing: 0.05rem;
+        padding-top: 1.35vw;
+        padding-bottom: 1.2vw;
     }
 }
 
-@media (min-width: 0px) and (max-width: 720px) {
+@media (max-width: 720px) {
     .selectorWrap {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
     }
 
     .selectorWrap {
