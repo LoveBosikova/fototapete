@@ -12,6 +12,7 @@ import Title from '../../ui/title/title';
 import textData from '../../../texts';
 
 import style from './orderingProcess.module.scss';
+import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite';
 
 function OrderingProcess () {
 
@@ -51,7 +52,7 @@ function OrderingProcess () {
                     <div className={style.point2}>
                         <p className={style.pointText}>{text.point1}</p>
                         <div className={style.btnWrap}>
-                            <LinkButtonWhite text={btnText.learnMore} link={''}></LinkButtonWhite>
+                            <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
                         </div>
                     </div>
                     <div className={style.point3}>
@@ -69,7 +70,7 @@ function OrderingProcess () {
                     <div className={style.point5}>
                         <p className={style.pointText}>{text.point4}</p>
                         <div className={style.btnWrap}>
-                            <LinkButtonWhite text={btnText.learnMore} link={''}></LinkButtonWhite>
+                            <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
                         </div>
                     </div>
                     <div className={style.point6}>
@@ -81,7 +82,7 @@ function OrderingProcess () {
                     <div className={style.point7}>
                         <p className={style.pointText}>{text.point6}</p>
                         <div className={style.btnWrap}>
-                            <LinkButtonWhite text={btnText.learnMore} link={''}></LinkButtonWhite>
+                            <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
                         </div>
                     </div>
                     <div className={style.point8}>

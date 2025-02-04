@@ -1,0 +1,69 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.linkBtn {
+    @include onest-400-14;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    background-color: $orange-alert;
+    border: 1px solid $white-text;
+    outline: none;
+    border-radius: $button-border;
+    transition: $transition-appearance;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+    
+
+    &:hover {
+        background-color: $white-70;
+        transition: $transition-disappearance;
+        border: 1px solid $white-70;
+        color: $white-text;
+
+        @media (min-width: 720px) and (max-width: 1140px) {
+            @include onest-400-22;
+            letter-spacing: -0.015rem;
+            line-height: 123%;
+        }
+
+        & .link {
+            color: $black-text;
+            transition: $transition-disappearance;
+
+            @media (min-width: 720px) and (max-width: 1140px) {
+                @include onest-400-22;
+                letter-spacing: -0.015rem;
+                line-height: 123%;
+            }
+        }
+    }
+}
+
+.link {
+    color: $white-text;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    transition: $transition-appearance;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        @include onest-400-22;
+        letter-spacing: -0.015rem;
+        line-height: 123%;
+    }
+
+    @media (max-width: 720px) {
+        @include  onest-400-28;
+    }
+}
