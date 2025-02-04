@@ -1,7 +1,5 @@
 import logo from '../../../assets/logo.svg';
 import Selector from '../../ui/selector/selector';
-import iconHeart from '../../../assets/icon-heart.tsx'
-import iconBug from '../../../assets/icon-bug.tsx'
 import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 
 import style from './header.module.scss';
