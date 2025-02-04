@@ -1,11 +1,12 @@
-import style from './header.module.scss';
 import logo from '../../../assets/logo.svg';
 import Selector from '../../ui/selector/selector';
-import iconHeart from '../../../assets/icon-heart.svg'
-import iconBug from '../../../assets/icon-bug.svg'
+import iconHeart from '../../../assets/icon-heart.tsx'
+import iconBug from '../../../assets/icon-bug.tsx'
 import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 
-
+import style from './header.module.scss';
+import ImgHeart from '../../ui/icons/imgHeart/ImgHeart.tsx';
+import ImgBug from '../../ui/icons/imgBug/ImgBug.tsx';
 
 function Header () {
     return (
@@ -19,10 +20,14 @@ function Header () {
                         <Selector></Selector>  
                     </div>
                     <div className={style.iconWrap}>
-                        <UtilIcon img={iconHeart} linkTo={''} description={'Go to favorites'}></UtilIcon>
+                        <UtilIcon linkTo={''} description={'Go to favorites'}>
+                            <ImgHeart></ImgHeart>
+                        </UtilIcon>
                     </div>
                     <div className={style.iconWrap}>
-                        <UtilIcon img={iconBug} linkTo={''} description={'Go to cart'}></UtilIcon>
+                        <UtilIcon linkTo={''} description={'Go to favorites'}>
+                            <ImgBug></ImgBug>
+                        </UtilIcon>
                     </div>
                 </div>
             </div>

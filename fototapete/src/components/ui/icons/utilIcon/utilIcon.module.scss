@@ -9,15 +9,11 @@
     border-radius: 50%;
     border: none;
     outline: none;
-    background-color: rgba(251, 251, 251, 0.5);
+    background-color: transparent;
     backdrop-filter: blur(2rem);
     transition: all 250ms ease-in-out;
     margin: 0;
     padding: 0;
-
-    &:hover {
-        background-color: $black-text;
-    }
 }
 
 .link {

@@ -1,7 +1,8 @@
+import { Children } from 'react';
 import style from './utilIcon.module.scss';
 
 type IUtilIconProps = {
-    img: string;
+    children: React.ReactNode;
     linkTo: string;
     description: string;
 }
@@ -9,12 +10,13 @@ type IUtilIconProps = {
 // Иконки, предназначенные не для соцсетей, тёмные
 function UtilIcon (props: IUtilIconProps) {
 
-    const { img, linkTo, description } = props
+    const { linkTo, children } = props
 
     return ( 
     <button className={style.utilIcon}>
         <a className={style.link} href={linkTo} target='blank'>
-            <img className={style.icon} src={img} alt={description} />
+            {/* <img className={style.icon} src={img} alt={description} /> */}
+            {children}
         </a>
     </button>
     )
