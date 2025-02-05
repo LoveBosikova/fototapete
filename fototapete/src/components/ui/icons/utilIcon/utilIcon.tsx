@@ -15,7 +15,6 @@ function UtilIcon (props: IUtilIconProps) {
     return ( 
     <button className={style.utilIcon}>
         <a className={style.link} href={linkTo} target='blank'>
-            {/* <img className={style.icon} src={img} alt={description} /> */}
             {children}
         </a>
     </button>

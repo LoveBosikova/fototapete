@@ -1,16 +1,19 @@
 // colors
 
 $white-text: #FFF;
-$white-50: rgba(251, 251, 251, 0.5);
-$white-70: rgba(251, 251, 251, 0.7);
+$white-50: rgba(251, 251, 251, .5);
+$white-70: rgba(251, 251, 251, .7);
 $white-back: rgba(251, 251, 251, 1);
 $black-text: #191919;
-$black-90: rgba(25, 25, 25, 0.9);
+$black-90: rgba(25, 25, 25, .9);
 $orange-alert: #F46B4B;
 $orange-hover: #D05235;
 $beige: #E7E0D6;
-$beige-transparent: rgba(251, 251, 251, 0.5);
+$beige-transparent: rgba(251, 251, 251, .5);
 $beige-card: rgba(231, 224, 214, 1);
 
-$icon-back: rgba(25, 25, 25, 0.9);
+$icon-back: rgba(25, 25, 25, .9);
 $icon-back--hover: rgba(25, 25, 25, 1);
+
+$socials-icon: rgba(251, 251, 251, 1);
+$socials-icon--hover: rgba(251, 251, 251, .9);

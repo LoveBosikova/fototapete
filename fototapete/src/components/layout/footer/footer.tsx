@@ -5,9 +5,6 @@ import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
 
 import backImgBig from '../../../assets/footer-back-big.png';
-import insta from '../../../assets/icon-instagram.png';
-import fb from '../../../assets/icon-fb.png';
-import pinterest from '../../../assets/icon-pinterest.png';
 import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
 import mockup3Big from '../../../assets/footer-3-big.png';
@@ -17,12 +14,21 @@ import goUp from '../../../assets/btn-up.png';
 import textData from '../../../texts';
 
 import style from './footer.module.scss';
+import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
+import ImgFb from '../../ui/icons/imgFb/imgFb';
+import ImgInstagram from '../../ui/icons/imgInstagram/imgInstagram';
+import ImgPinterest from '../../ui/icons/imgPinterest/imgPinterest';
+import ImgUp from '../../ui/icons/imgUp/imgUp';
 
 function Footer () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].footer
+
+    function handleScrollUp () {
+        window.scrollTo({top: 0, behavior: 'smooth'}) 
+    }
 
     return (
         <footer className={style.footer}>
@@ -72,8 +78,8 @@ function Footer () {
                 </li>
             </ul>
 
-            <button className={style.btnUp}>
-                <img className={style.img} src={goUp} alt='Go up' />
+            <button className={style.btnUp} onClick={handleScrollUp}>
+                <ImgUp></ImgUp>
             </button>
 
             <div className={style.titleWrap}>
@@ -88,19 +94,19 @@ function Footer () {
                 <div className={style.contactsWrap}>
                     <ul className={style.iconsWrap}>
                         <li className={style.icon}>
-                            <a className={style.link} href='https://www.instagram.com/fototapete_zg?igsh=MXVyeHc4bDY2Ync4bA=='>
-                                <img className={style.img} src={insta} alt='' />
-                            </a>
+                            <UtilIcon linkTo={'https://www.instagram.com/fototapete_zg?igsh=MXVyeHc4bDY2Ync4bA=='} description='Go to Instagrsm'>
+                                <ImgInstagram></ImgInstagram>
+                            </UtilIcon>
                         </li>
                         <li className={style.icon}>
-                            <a className={style.link} href='https://www.facebook.com/profile.php?id=100092530363927'>
-                                <img className={style.img} src={fb} alt='' />
-                            </a>
+                            <UtilIcon linkTo={'https://www.facebook.com/profile.php?id=100092530363927'} description='Go to facebook'>
+                                <ImgFb></ImgFb>
+                            </UtilIcon>
                         </li>
                         <li className={style.icon}>
-                            <a className={style.link} href='https://pin.it/5nGCrtbyX'>
-                                <img className={style.img} src={pinterest} alt='' />
-                            </a>
+                            <UtilIcon linkTo={'https://pin.it/5nGCrtbyX'} description='Go to Pinterest'>
+                                <ImgPinterest></ImgPinterest>
+                            </UtilIcon>
                         </li>
                     </ul>
                     <p className={style.telWrap}><a className={style.tel} href='tel:+385-91-6185-191'>+385 91 6185 191</a></p>
