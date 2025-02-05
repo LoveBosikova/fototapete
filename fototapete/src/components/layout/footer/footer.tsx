@@ -9,7 +9,6 @@ import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
 import mockup3Big from '../../../assets/footer-3-big.png';
 import mockup4 from '../../../assets/footer-4.png';
-import goUp from '../../../assets/btn-up.png';
 
 import textData from '../../../texts';
 
@@ -71,7 +70,6 @@ function Footer () {
                         />
                         <img  className={style.imgMockUp} src={mockup3Big} />
                     </picture>
-                    {/* <img className={style.imgMockUp} src={mockup3Big} alt='Wallpapers mockup' /> */}
                 </li>
                 <li className={style.imgWrap}>
                     <img className={style.imgMockUp} src={mockup4} alt='Wallpapers mockup' />

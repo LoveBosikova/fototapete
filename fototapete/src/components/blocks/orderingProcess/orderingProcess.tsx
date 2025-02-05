@@ -3,8 +3,6 @@ import { LangContext } from '../../../context/LangContext';
 
 import interior1Big from '../../../assets/orderingProcess-interior1-big.png';
 import interior2Big from '../../../assets/orderingProcess-interior2-big.png';
-
-import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
 import Handwriting from '../../ui/handwriting/handwriting';
 import Title from '../../ui/title/title';

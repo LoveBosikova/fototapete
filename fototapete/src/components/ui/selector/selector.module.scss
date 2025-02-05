@@ -4,7 +4,7 @@
 
 .selectorWrap {
     @include evolventa-400-11;
-    cursor: pointer;
+    font-weight: 400;
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -25,6 +25,7 @@
 }
 
 .langWrap {
+    cursor: pointer;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -48,10 +49,44 @@
     opacity: 0;
 }
 
+.options {
+    @include evolventa-400-11;
+    display: block;
+    font-weight: 200;
+    position: absolute;
+    width: 120%;
+    top: 110%;
+    left: 0;
+    background-color: $beige-transparent;
+    backdrop-filter: blur(2rem);
+    border: none;
+    outline: none;
+    color: $black-text;
+    border-radius: 1rem;
+    padding-top: .6rem;
+    padding-bottom: .4rem;
+}
+
+.closedOptions {
+    display: none;
+}
+
+.option {
+    text-align: center;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.currentOption {
+    text-align: center;
+    margin-bottom: 3%;
+    color: $link-disabled;
+}
+
 @media (max-width: 1140px) {
     .selectorWrap {
         @include evolventa-400-18;
-        padding-top: 0.6rem;
+        padding-top: .6rem;
         padding-top: 1.35vw;
         padding-bottom: 1.2vw;
     }

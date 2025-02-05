@@ -16,31 +16,27 @@ function Selector () {
     // Состояние нужно, чтобы элемент обновлялся сам после выбора новой опции, а не только менял значение контекста
     const [ curLang, setCurLang ] = useState<ILang>(lang)
 
-    // const [ isOpen, setIsOpen ] = useState(false);
+    // Открыт - закрыт селект 
+    const [ isOpen, setIsOpen ] = useState(false);
 
-    console.log(toggleLang);
+    function handleIsOpen () {
+        setIsOpen(!isOpen)
+    }
 
     return (
         <div className={style.selectorWrap}>
-            <div className={style.langWrap}>
+            <div className={style.langWrap} onClick={handleIsOpen}>
                 <p>{curLang.value}</p>
                 <div className={style.arrowWrap}>
                     <img src={selectArrow} alt='' />
                 </div>
             </div>
-            <select
-            className={style.selector}
-            value={curLang.value}
-            onChange={e =>{
-                // toggleLang(e.target.value) // Меняем контекст
-                const newLang = LANGS.filter((lang)=> lang.value === e.target.value)[0];
-                console.log(newLang);
-                setCurLang(newLang) // Меняем состояние селекта
-            }}
-        >
-            {LANGS.map((lang) => <option key={lang.value} value={lang.value}>{lang.name}</option> )}
-        </select>
-
+            <ul className={isOpen? style.options : style.closedOptions}>
+                {LANGS.map((langOption) => <li className={langOption.name !== lang.name ? style.option : style.currentOption} key={langOption.value} onClick={()=>{
+                    toggleLang(langOption)
+                    setCurLang(langOption)
+                }}>{langOption.name}</li>)}
+            </ul>
         </div>
     )
 }
