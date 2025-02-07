@@ -180,7 +180,15 @@ const textData = {
             learnMore: 'Learn more',
             subscribe: 'Subscribe',
             viewAllArticles: 'View all articles',
-        }
+        },
+        materials: [
+            'Smooth Adhesive-based Wallpaper',
+            'Smooth Self-Adhesive Wallpaper',
+            'Textured Adhesive-Based Wallpaper (Straw/Sand Texture)',
+            'Textured Self-AdhesiveWallpaper',
+            'Self-Adhesive Smooth Wallpapers with Lamination',
+            'Self-Adhesive Smooth Wallpapers with Extra Protection (for Kitchens and Bathrooms)',
+        ]
     },
     hrv: {
         mainBillboard: {
@@ -363,7 +371,15 @@ const textData = {
             learnMore: 'Saznajte više',
             subscribe: 'Pretplatite se',
             viewAllArticles: 'Pogledaj sve članke',
-        }
+        },
+        materials: [
+            'Glatka tapeta na bazi ljepila',
+            'Glatke samoljepljive tapete',
+            'Teksturirana tapeta na bazi ljepila (tekstura slame/pijeska)',
+            'Teksturirana samoljepljiva pozadina',
+            'Samoljepljive glatke tapete s laminacijom',
+            'Samoljepljive glatke tapete s dodatnom zaštitom (za kuhinje i kupaonice)',
+        ]
     }
 }
 

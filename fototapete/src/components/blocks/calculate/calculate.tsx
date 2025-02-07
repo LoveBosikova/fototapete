@@ -18,11 +18,29 @@ function Calculate () {
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].calculate
     const textBtn = textData[langValue as keyof typeof textData].btns
+    const textMaterials = textData[langValue as keyof typeof textData].materials
 
+    const [selectedMaterial, setSelectedMaterial] = useState<string>(text.materialsPlaceholder)
+    const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
+    const [width, setWidth] = useState<number | string>(text.witdh);
+    const [height, setHeight] = useState<number | string>(text.height);
 
-    const [width, setWidth] = useState<number>(0);
-    const [height, setHeight] = useState<number>(0);
+    function handleMaterials () {
+        setIsMaterialsOpen(!isMaterialsOpen)
+    }
 
+    function handleOption (material: string) {
+        setSelectedMaterial(material)
+        setIsMaterialsOpen(false)
+    }
+
+    function handleWidth (e: React.ChangeEvent<HTMLInputElement> ) {
+        setWidth(e.target.value)
+    }
+
+    function handleHeight (e: React.ChangeEvent<HTMLInputElement> ) {
+        setHeight(e.target.value)
+    }
 
     return (
         <section className={style.calculate}>
@@ -43,7 +61,6 @@ function Calculate () {
                 />
                 <img  className={style.backgroundImg} src={backBig} />
             </picture>
-            {/* <div className={style.backgroundWrap}><img className={style.backgroundImg} src={backBig} alt=''/></div> */}
             <div className={style.titleWrap}>
                 <Title text={text.title} isBlack={true}></Title>
             </div>
@@ -54,51 +71,26 @@ function Calculate () {
                 <h3 className={style.calculatorTitle}>{text.calculatorTitle}</h3>
                 <p className={style.calculatorText}>{text.calculatorDescription}</p>
                 <form className={style.form}>
-                    <label>
-                        <div className={style.material}>
-                            <p className={style.materialPlaceholder}>{text.materialsPlaceholder}</p>
-                            <div className={style.arrowWrap}><img className={style.img} src={selectArrow}></img></div>
-                        </div>
+
+                    <div className={style.materialsWrap}>
+                        <div className={style.material} onClick={handleMaterials}>{selectedMaterial}</div>
+                        <ul className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
+                            <div className={style.test}>
+
+                            {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}
+                            </div>
+                        </ul>
+                        <div className={style.arrowWrap}><img className={style.img} src={selectArrow}></img></div>
+                    </div>
+
                         <div className={style.inputsWrap}>
                             <label className={style.widthWrap} htmlFor='width'>
-                                {width === 0 ? <p className={style.widthPlaceholder}>{text.witdh}</p> : <input 
-                                className={style.width} 
-                                placeholder={text.witdh}
-                                type='number' 
-                                name='width' 
-                                id='width' 
-                                min={0}
-                                value={width} 
-                                onChange={(e)=> {setWidth(+e.target.value)}}
-                                />}
-                                
+                                {<input className={style.width} type='number' name='width' id='width' placeholder={text.witdh} value={width} onChange={handleWidth} />}
                             </label>
-                            <label className={style.heightWrap} htmlFor='width'>
-                                {height === 0 ? <p className={style.heightPlaceholder}>{text.height}</p> : <input 
-                                className={style.height} 
-                                placeholder={text.height}
-                                type='number' 
-                                name='height' 
-                                id='height' 
-                                min={0}
-                                value={height} 
-                                onChange={(e)=> {setHeight(+e.target.value)}}
-                                />}
+                            <label className={style.heightWrap} htmlFor='height'>
+                            {<input className={style.height} type='number' name='height' id='height' placeholder={text.height} value={height} onChange={handleHeight} />}
                             </label>
                         </div>
-
-                        <select
-                        className={style.selectHidden}
-                        name="selectedFruit"
-                        defaultValue={['orange', 'banana']}
-                        multiple={false}
-                        >
-                    {/* TODO: OPTIONS */}
-                    {/* <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="orange">Orange</option> */}
-                        </select>
-                    </label>
                 </form>
                 <h3 className={style.calculatorTitle}>{text.priceFor}</h3>
                 <div className={style.results}>
