@@ -9,6 +9,19 @@
     width: 32%;
     margin-left: 34%;
     margin-top: 1.5%;
+    background-color: $beige-card;
+    border-radius: $button-border;
+    backdrop-filter: blur(1rem);
+    z-index: 3;
+}
+
+.navbarColorful {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 32%;
+    margin-left: 34%;
+    margin-top: 1.5%;
     background-color: $beige-transparent;
     border-radius: $button-border;
     backdrop-filter: blur(1rem);

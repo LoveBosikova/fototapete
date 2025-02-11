@@ -2,9 +2,15 @@ import { NavLink } from "react-router";
 
 import style from './navbar.module.scss';
 
-function NavBar () {
+type INavBarProps = {
+    isWhite: boolean
+}
+
+function NavBar (props: INavBarProps) {
+    const { isWhite } = props
+
     return (
-        <nav className={style.navbar}>
+        <nav className={isWhite? style.navbarColorful : style.navbar}>
             <ul className={style.linksWrap}>
             <NavLink to='/fototapete/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>

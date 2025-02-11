@@ -8,7 +8,13 @@ import selectArrow from '../../../assets/selectArrow.png'
 
 import style from './selector.module.scss';
 
-function Selector () {
+type ISelectorProps = {
+    isWhite: boolean
+}
+
+function Selector (props: ISelectorProps) {
+
+    const { isWhite } = props
 
     // Берём данные о языке из контекста
     const { lang, toggleLang } = useContext(LangContext)
@@ -24,7 +30,7 @@ function Selector () {
     }
 
     return (
-        <div className={style.selectorWrap}>
+        <div className={isWhite ? style.selectorWrap : style.selectorWrapColorful}>
             <div className={style.langWrap} onClick={handleIsOpen}>
                 <p>{curLang.value}</p>
                 <div className={style.arrowWrap}>
