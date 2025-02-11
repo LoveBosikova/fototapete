@@ -19,26 +19,20 @@ function MainPage () {
     return (
         <div className={style.pageWrap}>
             <NavBar></NavBar>
-            <header></header>
             <main className={style.main}>
-                <Header></Header>
-                <MainBilboard></MainBilboard>
-                <Bestsellers></Bestsellers>
-                <Categories></Categories>
-                <Transforming></Transforming>
-                <Calculate></Calculate>
-                <HowPlaceOrder></HowPlaceOrder>
-                <WallpapersInInteriors></WallpapersInInteriors>
-                <OrderingProcess></OrderingProcess>
-                <CommonQuestions></CommonQuestions>
-                <Subscribe></Subscribe>
-                <HelpfulArticles></HelpfulArticles>
-                <Footer></Footer>
-
+                <MainBilboard />
+                <Bestsellers />
+                <Categories />
+                <Transforming />
+                <Calculate />
+                <HowPlaceOrder />
+                <WallpapersInInteriors />
+                <OrderingProcess />
+                <CommonQuestions />
+                <Subscribe />
+                <HelpfulArticles />
             </main>
-            <footer></footer>
         </div>
-
     )
 }
 

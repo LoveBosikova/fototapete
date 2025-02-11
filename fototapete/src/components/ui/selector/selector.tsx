@@ -35,6 +35,7 @@ function Selector () {
                 {LANGS.map((langOption) => <li className={langOption.name !== lang.name ? style.option : style.currentOption} key={langOption.value} onClick={()=>{
                     toggleLang(langOption)
                     setCurLang(langOption)
+                    setIsOpen(false)
                 }}>{langOption.name}</li>)}
             </ul>
         </div>

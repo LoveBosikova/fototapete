@@ -12,8 +12,6 @@ body {
   font-family: "Evolventa", sans-serif;
 }
 
-
-
 :root {
   width: 100%;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -74,12 +72,12 @@ input::-webkit-inner-spin-button {
   height: 6px;
   overflow:  hidden;
 }
- 
+
 ::-webkit-scrollbar-track {
   border-radius: 10px;
     background: rgba(0,0,0,0.1);
 }
- 
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: rgba(0,0,0,0.2);

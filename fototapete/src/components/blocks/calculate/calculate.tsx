@@ -74,12 +74,11 @@ function Calculate () {
 
                     <div className={style.materialsWrap}>
                         <div className={style.material} onClick={handleMaterials}>{selectedMaterial}</div>
-                        <ul className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
-                            <div className={style.test}>
-
-                            {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}
-                            </div>
-                        </ul>
+                        <div className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
+                            <ul className={style.scrollHiddenContainer}>
+                                {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}
+                            </ul>
+                        </div>
                         <div className={style.arrowWrap}><img className={style.img} src={selectArrow}></img></div>
                     </div>
 
