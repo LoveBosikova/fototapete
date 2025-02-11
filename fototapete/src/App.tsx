@@ -11,6 +11,7 @@ import CatalogPage from './components/pages/catalog/catalogPage';
 import Wallpapers from './components/blocks/wallpapers/wallpapers';
 
 import './App.scss'
+import Category from './components/blocks/category/category';
 
 function App() {
 

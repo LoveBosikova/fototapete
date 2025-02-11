@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Selector from '../../ui/selector/selector';
@@ -8,7 +9,6 @@ import ImgBug from '../../ui/icons/imgBug/ImgBug.tsx';
 import style from './header.module.scss';
 import NavBar from '../navbar/navbar.tsx';
 import Logo from '../../ui/logo/logo.tsx';
-import { useEffect, useState } from 'react';
 
 function Header () {
 

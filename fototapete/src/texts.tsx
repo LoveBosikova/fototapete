@@ -191,12 +191,12 @@ const textData = {
                 {
                     id: 3,
                     categoryName: 'Bricks',
-                    imgSrc: '/fototapete/categories/.png'
+                    imgSrc: '/fototapete/categories/bricks.png'
                 },
                 {
                     id: 4,
                     categoryName: 'Chalkboard & Dry erase',
-                    imgSrc: '/fototapete/categories/bricks.png'
+                    imgSrc: '/fototapete/categories/chalkboardDryErase.png'
                 },
                 {
                     id: 5,

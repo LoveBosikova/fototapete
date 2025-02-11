@@ -6,17 +6,18 @@
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 3.8%;
+    column-gap: 1.5%;
     row-gap: 2.3vw;
 }
 
 .category {
-    width: 30%;
-    max-width: 30%;
+    width: 32.3%;
+    max-width: 32.3%;
 }
 
 .imgWrap,
-.imgSrc {
+.imgSrc,
+.img {
     width: 100%;
     max-width: 100%;
 }
@@ -25,4 +26,12 @@
     @include onest-400-14;
     color: $black-text;
     margin-top: 1.2vw;
+}
+
+.btnWrap {
+    width: 32%;
+    margin-top: 1.5vw;
+    margin-right: auto;
+    margin-bottom: 6.6vw;
+    margin-left: auto;
 }

@@ -1,9 +1,9 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 
 import Title from '../../ui/title/title';
 
 import style from './catalogPage.module.scss';
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LangContext } from "../../../context/LangContext";
 import textData from "../../../texts";
 
@@ -12,7 +12,20 @@ function CatalogPage () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].categoriesPage
-    // const btnText = textData[langValue as keyof typeof textData].btns
+
+    const [ curCategory, setcurCategory ] = useState('')
+
+    let location = useLocation();
+
+    console.log(location);
+
+    useEffect(()=>{
+        const lastPart = location.pathname.split('/').pop()
+        console.log(lastPart);
+        lastPart !== 'catalog' && lastPart ? setcurCategory(lastPart) : setcurCategory('')
+        // location.pathname === '/fototapete' ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
+        
+    }, [location])
 
     return (
         <div className={style.catalogPage}>
@@ -21,7 +34,8 @@ function CatalogPage () {
                     <Title text={text.title} isBlack={true}></Title>
                 </div>
                 <div className={style.breadCrumbs}>
-                    <p className={style.path}>{text.breadcrumbles}</p>
+                    {/* <p className={style.path}>{text.breadcrumbles}</p> */}
+                    <p className={style.path}>{text.breadcrumbles}{curCategory ? `/ ${curCategory}` : ''}</p>
                 </div>
 
                 <Outlet />
