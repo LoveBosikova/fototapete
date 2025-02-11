@@ -26,7 +26,7 @@ function App() {
           <Route path='/fototapete/catalog' element={<CatalogPage />}>
             {/* <Route path=":cid" element={<Category />} /> */}
             <Route index element={<Wallpapers />} />
-            {/* <Route path=":cid" element={<Category />} /> */}
+            <Route path=":cid" element={<Category />} />
           </Route>
 
           {/* <Route path="/cart">

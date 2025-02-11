@@ -1,0 +1,28 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.wallpapers {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.8%;
+    row-gap: 2.3vw;
+}
+
+.category {
+    width: 30%;
+    max-width: 30%;
+}
+
+.imgWrap,
+.imgSrc {
+    width: 100%;
+    max-width: 100%;
+}
+
+.categoryName {
+    @include onest-400-14;
+    color: $black-text;
+    margin-top: 1.2vw;
+}

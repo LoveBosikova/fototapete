@@ -169,6 +169,87 @@ const textData = {
                 },
             ]
         },
+        categoriesPage: {
+            title: 'CATALOG',
+            breadcrumbles: 'Catalog / Wallpapers',
+            categories: [
+                {
+                    id: 0,
+                    categoryName: '3D',
+                    imgSrc: '/fototapete/categories/3D.png'
+                },
+                {
+                    id: 1,
+                    categoryName: 'Abstract',
+                    imgSrc: '/fototapete/categories/abstract.png'
+                },
+                {
+                    id: 2,
+                    categoryName: 'Animals',
+                    imgSrc: '/fototapete/categories/animals.png'
+                },
+                {
+                    id: 3,
+                    categoryName: 'Bricks',
+                    imgSrc: '/fototapete/categories/.png'
+                },
+                {
+                    id: 4,
+                    categoryName: 'Chalkboard & Dry erase',
+                    imgSrc: '/fototapete/categories/bricks.png'
+                },
+                {
+                    id: 5,
+                    categoryName: 'Children’s wallpapers',
+                    imgSrc: '/fototapete/categories/childrensWallpapers.png'
+                },
+                {
+                    id: 6,
+                    categoryName: 'Christmas',
+                    imgSrc: '/fototapete/categories/christmas.png'
+                },
+                {
+                    id: 7,
+                    categoryName: 'Cities',
+                    imgSrc: '/fototapete/categories/cities.png'
+                },
+                {
+                    id: 8,
+                    categoryName: 'Coffee',
+                    imgSrc: '/fototapete/categories/coffee.png'
+                },
+                {
+                    id: 9,
+                    categoryName: 'Concrete texture',
+                    imgSrc: '/fototapete/categories/concreteTexture.png'
+                },
+                {
+                    id: 10,
+                    categoryName: 'Flowers',
+                    imgSrc: '/fototapete/categories/flowers.png'
+                },
+                {
+                    id: 11,
+                    categoryName: 'Food',
+                    imgSrc: '/fototapete/categories/food.png'
+                },
+                {
+                    id: 12,
+                    categoryName: 'Kitchen',
+                    imgSrc: '/fototapete/categories/kitchen.png'
+                },
+                {
+                    id: 13,
+                    categoryName: 'Leaves',
+                    imgSrc: '/fototapete/categories/leaves.png'
+                },
+                {
+                    id: 14,
+                    categoryName: 'Marble',
+                    imgSrc: '/fototapete/categories/marble.png'
+                },
+            ]
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
@@ -357,6 +438,87 @@ const textData = {
                 {
                     linkName: 'Blog',
                     linkTo: ''
+                },
+            ]
+        },
+        categoriesPage: {
+            title: 'KATALOG',
+            breadcrumbles: 'Katalog / Pozadine',
+            categories: [
+                {
+                    id: 0,
+                    categoryName: '3D',
+                    imgSrc: '/fototapete/categories/3D.png'
+                },
+                {
+                    id: 1,
+                    categoryName: 'Sažetak',
+                    imgSrc: '/fototapete/categories/abstract.png'
+                },
+                {
+                    id: 2,
+                    categoryName: 'Životinje',
+                    imgSrc: '/fototapete/categories/animals.png'
+                },
+                {
+                    id: 3,
+                    categoryName: 'Cigle',
+                    imgSrc: '/fototapete/categories/.png'
+                },
+                {
+                    id: 4,
+                    categoryName: ' Ploča & suho brisanje',
+                    imgSrc: '/fototapete/categories/bricks.png'
+                },
+                {
+                    id: 5,
+                    categoryName: 'Dječje pozadine',
+                    imgSrc: '/fototapete/categories/childrensWallpapers.png'
+                },
+                {
+                    id: 6,
+                    categoryName: 'Božić',
+                    imgSrc: '/fototapete/categories/christmas.png'
+                },
+                {
+                    id: 7,
+                    categoryName: 'Gradovi',
+                    imgSrc: '/fototapete/categories/cities.png'
+                },
+                {
+                    id: 8,
+                    categoryName: 'Kava',
+                    imgSrc: '/fototapete/categories/coffee.png'
+                },
+                {
+                    id: 9,
+                    categoryName: 'Tekstura betona',
+                    imgSrc: '/fototapete/categories/concreteTexture.png'
+                },
+                {
+                    id: 10,
+                    categoryName: 'Cvijeće',
+                    imgSrc: '/fototapete/categories/flowers.png'
+                },
+                {
+                    id: 11,
+                    categoryName: 'Hrana',
+                    imgSrc: '/fototapete/categories/food.png'
+                },
+                {
+                    id: 12,
+                    categoryName: 'Kuhinja',
+                    imgSrc: '/fototapete/categories/kitchen.png'
+                },
+                {
+                    id: 13,
+                    categoryName: 'Lišće',
+                    imgSrc: '/fototapete/categories/leaves.png'
+                },
+                {
+                    id: 14,
+                    categoryName: 'Mramor',
+                    imgSrc: '/fototapete/categories/marble.png'
                 },
             ]
         },
