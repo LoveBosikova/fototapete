@@ -32,7 +32,7 @@ function Header () {
                 </div> */}
                 <div className={style.iconsWrap}>
                     <div className={style.selectorWrap}>
-                        <Selector></Selector>  
+                        <Selector isWhite={isDefaultStyles}></Selector>  
                     </div>
                     <div className={style.iconWrap}>
                         <UtilIcon linkTo={''} description={'Go to favorites'}>

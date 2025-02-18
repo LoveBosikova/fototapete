@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router-dom';
 import { useContext } from 'react';
 import style from './wallpapers.module.scss';
 import { LangContext } from '../../../context/LangContext';

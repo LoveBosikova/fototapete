@@ -1,0 +1,32 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.mark {
+    position: absolute;
+    top: 0;
+    left: 11%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.markHidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}

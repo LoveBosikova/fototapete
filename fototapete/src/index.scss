@@ -90,3 +90,12 @@ input::-webkit-inner-spin-button {
 ::-webkit-scrollbar-thumb:active{
   background: #F46B4B;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}

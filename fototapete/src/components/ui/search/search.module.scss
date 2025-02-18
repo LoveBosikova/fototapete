@@ -1,0 +1,68 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.searchTitle {
+    @include onest-500-18;
+    color: $black-text;
+    position: relative;
+}
+
+// .subTitleWrap {
+//     width: 100%;
+//     text-align: left;
+// }
+
+.subcategoryCheckbox {
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: 2%;
+    padding-bottom: 2%;
+}
+
+.text {
+    @include onest-400-14;
+    color: $black-text;
+}
+
+.arrowWrap {
+    position: absolute;
+    top: -10%;
+    right: -1.25vw;
+    width: 0.6vw;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.checkBoxWrap {
+    width: 10%;
+}
+
+.otherCategories {
+    visibility: visible;
+    height: auto;
+    min-height: max-content;
+}
+
+.otherCategoriesClosed {
+    visibility: hidden;
+    height: 0;
+}
+
+.colorWrap {
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: 2%;
+    padding-bottom: 2%;
+}
+
+.colorsWrapHidden {
+    visibility: hidden;
+    height: 0;
+}
