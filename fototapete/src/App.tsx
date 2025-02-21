@@ -3,6 +3,7 @@ import {
   Routes,
   BrowserRouter } 
 from 'react-router-dom';
+import { useState } from 'react';
 
 import MainPage from './components/pages/mainPage/mainPage'
 import Header from './components/layout/header/header';
@@ -12,22 +13,27 @@ import Wallpapers from './components/blocks/wallpapers/wallpapers';
 
 import './App.scss'
 import Category from './components/blocks/category/category';
+import ProductPreview from './components/ui/productPreview/productPreview';
+import { Iproduct } from './components/ui/productPreview/productPreview';
 
 function App() {
+
+  const [ savedProducts, setSavedProducts ] = useState<Iproduct[]>([])
+  
 
   return (
     <>
     <BrowserRouter>
-    <Header></Header>
-      {/* // TODO: MAKE ROUTING */}
-      {/* Со всех страниц отправляем незалогиненного пользователя на логин, 
-        но если залогиненный хочет на эту страницу, отправляем на главную */}
+      <Header />
         <Routes>
           <Route index path='/fototapete' element={<MainPage />}></Route>
           <Route path='/fototapete/catalog' element={<CatalogPage />}>
-            {/* <Route path=":cid" element={<Category />} /> */}
             <Route index element={<Wallpapers />} />
-            <Route path=":cid" element={<Category />} />
+            <Route path="/fototapete/catalog/:cid" element={<Category />} />
+            {/* <Route
+            path="/fototapete/catalog/:cid/:pid"
+            element={<ProductPreview />}
+            /> */}
           </Route>
 
           {/* <Route path="/cart">
@@ -43,7 +49,7 @@ function App() {
             <ErrorPage />
           </Route> */}
         </Routes>
-      <Footer></Footer>
+        <Footer />
       </BrowserRouter>
     </>
   )

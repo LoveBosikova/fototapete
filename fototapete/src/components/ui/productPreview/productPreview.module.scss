@@ -1,0 +1,61 @@
+@import '../../../styles/fonts.scss';
+
+.productPreview {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.img,
+.imgWrap {
+    width: 100%;
+    max-width: 100%;
+}
+
+.likeWrap {
+    position: absolute;
+    width: 2.75vw;
+    top: 6%;
+    right: 5%;
+}
+
+.name {
+    @include onest-500-14;
+    margin-top: 1vw;
+    padding-bottom: .35vw;
+}
+
+.metrics {
+    @include onest-400-12;
+}
+
+@media (max-width: 1300px) {
+    .name {
+        @include onest-500-23;
+    }
+    
+    .metrics {
+        @include onest-400-18;
+    }
+
+    .likeWrap {
+        position: absolute;
+        width: 4vw;
+        top: 6%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 720px) {
+    .likeWrap {
+        width: 7vw;
+    }
+
+    .name {
+        @include onest-500-34;
+    }
+    
+    .metrics {
+        @include onest-400-18;
+    }
+}

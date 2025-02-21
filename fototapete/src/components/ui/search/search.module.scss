@@ -1,29 +1,38 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
 
-.searchTitle {
-    @include onest-500-18;
-    color: $black-text;
-    position: relative;
+.search {
+    position: sticky;
+    top: 4vw;
 }
 
-// .subTitleWrap {
-//     width: 100%;
-//     text-align: left;
-// }
+.searchTitle {
+    @include onest-500-14;
+    color: $black-text;
+    position: relative;
+    padding-bottom: 1.3vw;
+    text-align: left;
+}
 
 .subcategoryCheckbox {
     cursor: pointer;
     display: flex;
     justify-content: start;
     align-items: stretch;
-    gap: 2%;
-    padding-bottom: 2%;
+    gap: 4%;
+    padding-bottom: .366vw
+}
+
+.results,
+.otherCategories {
+    padding-bottom: 1.4vw;
 }
 
 .text {
-    @include onest-400-14;
+    @include onest-400-13;
     color: $black-text;
+    width: 90%;
 }
 
 .arrowWrap {
@@ -39,13 +48,24 @@
 }
 
 .checkBoxWrap {
-    width: 10%;
+    width: 1.2vw
 }
 
 .otherCategories {
     visibility: visible;
     height: auto;
     min-height: max-content;
+}
+
+.categoryName {
+    @include onest-400-13;
+    color: $black-text;
+    transition: color 200ms ease-out;
+
+    &:hover {
+        color: $orange-alert;
+        transition: color 150ms ease-out;
+    }
 }
 
 .otherCategoriesClosed {
@@ -65,4 +85,54 @@
 .colorsWrapHidden {
     visibility: hidden;
     height: 0;
+}
+
+@media (max-width: 1300px) {
+    .searchTitle {
+        @include onest-500-18;
+    }
+
+    .categoryName {
+        @include onest-400-14;
+    }
+}
+
+@media (max-width: 1140px) {
+    .checkBoxWrap {
+        width: 1.8vw
+    }
+
+    .searchTitle {
+        @include onest-500-23;
+    }
+
+    .categoryName {
+        @include onest-400-14;
+    }
+
+    .text {
+        @include onest-400-14;
+    }
+}
+
+@media (max-width: 720px) {
+    .checkBoxWrap {
+        width: 2.2vw
+    }
+
+    .searchTitle {
+        @include onest-500-34;
+    }
+
+    .categoryName {
+        @include onest-400-28;
+    }
+
+    .text {
+        @include onest-400-24;
+    }
+
+    .arrowWrap {
+        display: none;
+    }
 }

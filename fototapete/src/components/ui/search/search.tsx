@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { LangContext } from '../../../context/LangContext';
+import { NavLink } from 'react-router-dom';
 
 import SubcategoryCheckbox from '../subcategoryCheckbox/subcategoryCheckbox';
 import arrow from '../../../assets/subcategoryArrow.svg';
@@ -7,7 +8,6 @@ import arrow from '../../../assets/subcategoryArrow.svg';
 import textData from '../../../texts';
 
 import style from './search.module.scss';
-import { NavLink } from 'react-router-dom';
 
 type ISearchProps = {
     category: {
@@ -37,7 +37,6 @@ function Search (props: ISearchProps) {
 
     const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(false)  // Subcategories visibility state
     const [ isColorsOpen, setIsColorsOpen ] = useState(false)  // Colors visibility state
-
 
     // Handle subcategories checkboxes
     function handleCheckbox (categoryName: string) {
@@ -69,7 +68,7 @@ function Search (props: ISearchProps) {
             <ul className={style.results}>
                 {category.map((i)=> i.subCategories.map((subCategory) => {
                     return (
-                        <li className={style.subcategoryCheckbox} onClick={()=> handleCheckbox(subCategory)}>
+                        <li key={subCategory} className={style.subcategoryCheckbox} onClick={()=> handleCheckbox(subCategory)}>
                             <div className={style.checkBoxWrap}>
                                 <SubcategoryCheckbox isActive={chosenSubcategories.includes(subCategory)}></SubcategoryCheckbox>
                             </div>
@@ -89,7 +88,7 @@ function Search (props: ISearchProps) {
             <ul className={isOthersCategoriesOpen ? style.otherCategories : style.otherCategoriesClosed}>
                 {text.categories.filter((item) => item.categoryName !== category.map((i)=> i.categoryName)[0]).map((category) => {
                     return (
-                        <li className={style.subcategoryCheckbox} onClick={() => setChosenSubcategories([])}>
+                        <li key={category.id} className={style.subcategoryCheckbox} onClick={() => setChosenSubcategories([])}>
                             <NavLink key={category.id} className={style.category} to={`/fototapete/catalog/${category.categoryName}`} end>
                                 <p className={style.categoryName}>{category.categoryName}</p>
                             </NavLink>
@@ -108,7 +107,7 @@ function Search (props: ISearchProps) {
             <ul className={isColorsOpen ? style.colorsWrap : style.colorsWrapHidden}>
                 {text.colors.map((color) => {
                     return (
-                        <li className={style.colorWrap} onClick={()=> handleColorCheckbox(color)}>
+                        <li key={color} className={style.colorWrap} onClick={()=> handleColorCheckbox(color)}>
                             <div className={style.checkBoxWrap}>
                                 <SubcategoryCheckbox isActive={chosenColors.includes(color)}></SubcategoryCheckbox>
                             </div>
@@ -116,7 +115,6 @@ function Search (props: ISearchProps) {
                         </li>
                     )
                 })}
-
             </ul>
         </div>
     )

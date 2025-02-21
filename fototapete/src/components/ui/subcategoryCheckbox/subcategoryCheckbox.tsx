@@ -9,14 +9,14 @@ type ISubcategoryCheckboxProps = {
 
 function SubcategoryCheckbox (props: ISubcategoryCheckboxProps) {
     const { isActive } = props
-    console.log(isActive);
+    // console.log(isActive);
     return (
         <div className={style.checkbox}>
             <div className={style.square}>
                 <img className={style.img} src={emptyCheckbox} alt="" />
-            </div>
-            <div className={isActive? style.mark : style.markHidden}>
-                <img className={style.img} src={activeCheckbox} alt="" />
+                <div className={isActive? style.mark : style.markHidden}>
+                    <img className={style.img} src={activeCheckbox} alt="" />
+                </div>
             </div>
         </div>
     )

@@ -9,11 +9,46 @@
 
 .mark {
     position: absolute;
-    top: 0;
-    left: 11%;
     display: block;
-    width: 100%;
+    width: 70%;
     max-width: 100%;
+    top: 2.1vw;
+    left: .2vw;
+
+    @media (max-width: 1900px) {
+        top: 1.95vw;
+    }
+
+    @media (max-width: 1450px) {
+        top: 1.85vw;
+    }
+
+    @media (max-width: 1450px) {
+        top: 1.95vw;
+    }
+
+    @media (max-width: 1270px) {
+        top: 2vw;
+    }
+
+    @media (max-width: 1140px) {
+        top: 2.9vw;
+        left: .25vw;
+    }
+
+    @media (max-width: 1070px) {
+        top: 2.7vw;
+        left: .25vw;
+    }
+
+    @media (max-width: 900px) {
+        top: -.5vw;
+        left: .25vw;
+    }
+}
+
+.square {
+    position: relative;
 }
 
 .markHidden {
