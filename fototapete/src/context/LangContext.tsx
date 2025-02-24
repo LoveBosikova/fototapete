@@ -6,7 +6,7 @@ const LangContext = React.createContext({lang: LANGS[0], toggleLang: (newLang: I
 
 function LangContextProvider(props: any) {
     
-    const [lang, setLang] = useState(LANGS[0]);
+    const [lang, setLang] = useState(LANGS[1]);
     
     function toggleLang(newLang: ILang) {
         setLang(newLang);

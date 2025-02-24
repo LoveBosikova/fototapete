@@ -10,9 +10,9 @@ import Header from './components/layout/header/header';
 import Footer from './components/layout/footer/footer';
 import CatalogPage from './components/pages/catalog/catalogPage';
 import Wallpapers from './components/blocks/wallpapers/wallpapers';
+import Category from './components/blocks/category/category';
 
 import './App.scss'
-import Category from './components/blocks/category/category';
 // import { Iproduct } from './components/ui/productPreview/productPreview';
 
 function App() {

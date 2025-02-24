@@ -29,3 +29,29 @@
 .outletWrap {
     width: 77.7%;
 }
+
+@media (max-width: 1140px) {
+    .catalogPage {
+        margin-top: 15vw;
+    }
+
+    .path {
+        @include onest-400-18;
+    }
+}
+
+@media (max-width: 720px) {
+    .catalogPage {
+        margin-top: 18.5vw;
+    }
+
+    .path {
+        @include onest-400-28;
+    }
+}
+
+@media (max-width: 600px) {
+    .path {
+        @include onest-400-34;
+    }
+}

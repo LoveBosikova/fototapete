@@ -17,7 +17,7 @@
 }
 
 .btnWrap {
-    width: 25.3%;
+    width: 33%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6.4vw;
@@ -27,12 +27,18 @@
     .productWrap {
         width: 48%;
     }
+    
+    .results {
+        row-gap: 3vw;
+        padding-top: 3vw;
+    }
 }
 
 @media (max-width: 720px) {
 
     .results {
         row-gap: 3vw;
+        padding-top: 3vw;
     }
 
     .productWrap {

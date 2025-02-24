@@ -3,8 +3,9 @@
 @import '../../../styles/variables.scss';
 .footer {
     position: relative;
-    margin-right: .6%;
-    margin-left: .6%;
+    margin-right: 4.6%;
+    margin-left: 4.6%;
+    margin-bottom: 5vw;
     min-height: fit-content;
 }
 
@@ -23,7 +24,7 @@
     position: absolute;
     display: block;
     top: 0;
-    right: 3%;
+    right: 2%;
     width: 47%;
     display: flex;
     justify-content: space-between;
@@ -124,7 +125,7 @@
     border: none;
     outline: none;
     top: 50.6%;
-    width: 4.8%;
+    width: 4%;
     right: 2.45%;
     background-color: transparent;
 }
@@ -135,9 +136,8 @@
     display: flex;
     gap: 2.9%;
     padding-left: 2.9vw;
-    padding-top: 5vw;
+    padding-top: 3vw;
     color: $white-70;
-    
 }
 
 .privPolicy {
@@ -156,7 +156,7 @@
         min-height: fit-content;
         margin-right: 4vw;
         margin-left: 4vw;
-        margin-bottom: 4vw;
+        margin-bottom: 10vw;
     }
 
     .imgsGallery {
@@ -231,6 +231,7 @@
     .underline {
         gap: 9.9%;
         letter-spacing: -.01rem;
+        padding-top: 9vw;
     }
 }
 

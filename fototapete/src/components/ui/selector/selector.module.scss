@@ -20,8 +20,7 @@
     outline: none;
     color: $black-text;
     border-radius: $button-border;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding: 0.8vw 0.01vw;
 }
 
 .selectorWrapColorful {
@@ -42,8 +41,7 @@
     outline: none;
     color: $black-text;
     border-radius: $button-border;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding: 0.8vw 0.01vw;
 }
 
 .langWrap {
@@ -100,27 +98,37 @@
 }
 
 .currentOption {
+    cursor: auto;
     text-align: center;
     margin-bottom: 3%;
     color: $link-disabled;
 }
 
 @media (max-width: 1140px) {
-    .selectorWrap {
+    .selectorWrap,
+    .selectorWrapColorful {
         @include evolventa-400-18;
-        padding-top: .6rem;
-        padding-top: 1.35vw;
-        padding-bottom: 1.2vw;
+        padding: 1.7vw 0.01vw;
+    }
+
+    .options {
+        @include evolventa-400-14;
+        width: 100%;
     }
 }
 
 @media (max-width: 720px) {
-    .selectorWrap {
-        padding-top: 1.5vw;
-        padding-bottom: 1.5vw;
+    .selectorWrap,
+    .selectorWrapColorful  {
+        padding: 2vw 0.01vw;
     }
 
     .selectorWrap {
         @include evolventa-400-18;
+    }
+
+    .options {
+        @include evolventa-400-18;
+        width: 100%;
     }
 }

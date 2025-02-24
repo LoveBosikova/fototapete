@@ -19,6 +19,14 @@
     border-radius: $button-border;
     transition: $transition-appearance;
 
+    @media (max-width: 720px) {
+        @include onest-400-28;
+    }
+    
+    @media (max-width: 500px) {
+        @include onest-400-34;
+    }
+
     &:hover {
         background-color: $orange-hover;
         transition: $transition-disappearance;

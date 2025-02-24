@@ -118,6 +118,14 @@
         letter-spacing: -0.015rem;
         padding-top: 2.3vw;
         margin-bottom: 4.2vw;
+
+        @media (max-width: 720px) {
+            @include onest-400-45;
+        }
+        
+        @media (max-width: 500px) {
+            @include onest-400-45;
+        }
     }
 
     .btnWrap {
@@ -128,6 +136,14 @@
 
         & button a {
             font-size: $font-size-22;
+
+            @media (max-width: 720px) {
+                @include onest-400-28;
+            }
+            
+            @media (max-width: 500px) {
+                @include onest-400-34;
+            }
         }
     }
 }

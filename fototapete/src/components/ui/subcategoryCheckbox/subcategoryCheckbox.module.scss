@@ -16,33 +16,21 @@
     left: .2vw;
 
     @media (max-width: 1900px) {
-        top: -0.2vw;
+        top: 0vw;
+    }
+
+    @media (max-width: 1600px) {
+        top: -.2vw;
     }
 
     @media (max-width: 1450px) {
         top: -.2vw;
-        left: .3vw;
     }
 
     @media (max-width: 1000px) {
         top: -.4vw;
         left: .3vw;
     }
-
-    // @media (max-width: 1140px) {
-    //     // top: 2.9vw;
-    //     left: .25vw;
-    // }
-
-    // @media (max-width: 1070px) {
-    //     top: 2.7vw;
-    //     left: .25vw;
-    // }
-
-    // @media (max-width: 900px) {
-    //     top: -.5vw;
-    //     left: .25vw;
-    // }
 }
 
 .square {

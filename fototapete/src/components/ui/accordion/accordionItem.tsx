@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import closeIcon from '../../../assets/btnClose.png';
 import openIcon from '../../../assets/btnOpen.png';
 
 import style from './accordionItem.module.scss';
+import { LangContext } from '../../../context/LangContext';
+import textData from '../../../texts';
 
 type IAccordionItemPros = {
     question: {
@@ -12,9 +14,13 @@ type IAccordionItemPros = {
 }
 
 function AccordionItem (props: IAccordionItemPros) {
-    const { answer, question } = props.question;
+    const { lang } = useContext(LangContext)
+    const langValue = lang.value.toLowerCase()
+    const firstQuestion = textData[langValue as keyof typeof textData].commonQuestions.quesions[0].question // Get the first question
 
-    const [ isOpen, setIsOpen ] = useState(false);
+    const { answer, question } = props.question
+
+    const [ isOpen, setIsOpen ] = useState(question == firstQuestion ? true : false) // Always open for the first question
 
     return (
         <li className={isOpen? style.accordionItemOpen : style.accordionItemClosed} onClick={() => setIsOpen(!isOpen)}>

@@ -18,9 +18,17 @@
     border-radius: $button-border;
     transition: $transition-appearance;
     
-    @media (min-width: 720px) and (max-width: 1140px) {
+    @media (max-width: 1140px) {
         padding-top: .6rem;
         padding-bottom: .6rem;
+    }
+
+    @media (max-width: 720px) {
+        @include onest-400-28;
+    }
+    
+    @media (max-width: 500px) {
+        @include onest-400-34;
     }
 
     &:hover {
@@ -29,21 +37,9 @@
         transition: $transition-disappearance;
         border: 1px solid $beige-transparent;
 
-        @media (min-width: 720px) and (max-width: 1140px) {
-            @include onest-400-22;
-            letter-spacing: -0.015rem;
-            line-height: 123%;
-        }
-
         & .link {
             color: $black-text;
             transition: $transition-disappearance;
-
-            @media (min-width: 720px) and (max-width: 1140px) {
-                @include onest-400-22;
-                letter-spacing: -0.015rem;
-                line-height: 123%;
-            }
         }
     }
 
@@ -65,5 +61,9 @@
 
     @media (max-width: 720px) {
         @include  onest-400-28;
+    }
+
+    @media (max-width: 500px) {
+        @include onest-400-34;
     }
 }

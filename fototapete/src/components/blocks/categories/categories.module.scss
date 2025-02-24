@@ -63,7 +63,7 @@
     padding-bottom: 1vw;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
     .categories {
         padding-top: 8.6vw;
         padding-right: 4vw;
@@ -137,6 +137,14 @@
 
         & button a {
             font-size: $font-size-22 !important;
+
+            @media (max-width: 720px) {
+                font-size: $font-size-28 !important;
+            }
+                
+            @media (max-width: 500px) {
+                font-size: $font-size-34 !important;
+            }
         }
     }
 
@@ -166,6 +174,20 @@
 
         & button a {
             font-size: $font-size-22 !important;
+
+            @media (max-width: 720px) {
+            font-size: $font-size-28 !important;
+            }
+            
+            @media (max-width: 500px) {
+            font-size: $font-size-34 !important;
+            }
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .categoryText {
+        @include onest-400-45;
     }
 }

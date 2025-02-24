@@ -15,7 +15,6 @@ function NavBar (props: INavBarProps) {
             <NavLink to='/fototapete/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
             </NavLink>
-                {/* <li className={style.linkWrap}><a className={style.link} href='#'>Catalog</a></li> */}
                 <li className={style.linkWrap}><a className={style.link} href='#'>Сustom design</a></li>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Price</a></li>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Info</a></li>
