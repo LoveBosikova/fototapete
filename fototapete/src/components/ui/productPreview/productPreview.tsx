@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-import style from './productPreview.module.scss';
 import ImgLike from "../icons/imgLike/imgLike";
+
+import style from './productPreview.module.scss';
 
 export type Iproduct = {
     id: number,

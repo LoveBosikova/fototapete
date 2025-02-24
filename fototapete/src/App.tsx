@@ -3,7 +3,7 @@ import {
   Routes,
   BrowserRouter } 
 from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import MainPage from './components/pages/mainPage/mainPage'
 import Header from './components/layout/header/header';
@@ -13,12 +13,11 @@ import Wallpapers from './components/blocks/wallpapers/wallpapers';
 
 import './App.scss'
 import Category from './components/blocks/category/category';
-import ProductPreview from './components/ui/productPreview/productPreview';
-import { Iproduct } from './components/ui/productPreview/productPreview';
+// import { Iproduct } from './components/ui/productPreview/productPreview';
 
 function App() {
 
-  const [ savedProducts, setSavedProducts ] = useState<Iproduct[]>([])
+  // const [ savedProducts, setSavedProducts ] = useState<Iproduct[]>([])
   
 
   return (

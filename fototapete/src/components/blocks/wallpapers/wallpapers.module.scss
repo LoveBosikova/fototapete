@@ -13,6 +13,14 @@
 .category {
     width: 32.3%;
     max-width: 32.3%;
+    transition: $transition-appearance;
+
+    &:hover {
+        .categoryName {
+            color: $orange-hover;
+            transition: $transition-disappearance;
+        }
+    }
 }
 
 .imgWrap,
@@ -34,4 +42,36 @@
     margin-right: auto;
     margin-bottom: 6.6vw;
     margin-left: auto;
+}
+
+@media (max-width: 720px) {
+    .wallpapers {
+        justify-content: space-between;
+        row-gap: 1.5vw;
+    }
+    
+    .category {
+        width: 48.5%;
+        max-width: 48.5%;
+    }
+
+    .categoryName {
+        @include onest-400-24;
+    }
+}
+
+@media (max-width: 540px) {
+    .wallpapers {
+        justify-content: center;
+        row-gap: 3vw;
+    }
+    
+    .category {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .categoryName {
+        @include onest-400-45;
+    }
 }

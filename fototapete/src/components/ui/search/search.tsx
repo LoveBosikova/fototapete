@@ -64,7 +64,7 @@ function Search (props: ISearchProps) {
 
     return (
         <div className={style.search}>
-            <h3 className={style.searchTitle}>{category.map((i) => i.categoryName)}</h3>
+            {category.map((i) => i.categoryName) || <h3 className={style.searchTitle}>{category.map((i) => i.categoryName)}</h3>}
             <ul className={style.results}>
                 {category.map((i)=> i.subCategories.map((subCategory) => {
                     return (

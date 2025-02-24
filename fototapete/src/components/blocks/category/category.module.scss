@@ -1,13 +1,10 @@
-.searchWrap {
-    width: 22.3%;
-}
 
 .results {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 1.84vw;
-    width: 77.7%;
+    width: 100%;
     margin-bottom: 2vw;
 }
 
@@ -21,8 +18,7 @@
 
 .btnWrap {
     width: 25.3%;
-    margin-top: -.6vw;
-    margin-left: 48.6%;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 6.4vw;
 }
@@ -34,10 +30,6 @@
 }
 
 @media (max-width: 720px) {
-
-    .searchWrap {
-        width: 28%;
-    }
 
     .results {
         row-gap: 3vw;

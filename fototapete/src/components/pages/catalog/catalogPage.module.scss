@@ -16,3 +16,16 @@
     @include onest-400-14;
     color: $black-text;
 }
+
+.contentWrap {
+    display: flex;
+}
+
+.searchWrap {
+    width: 22.3%;
+    padding-right: 2%;
+}
+
+.outletWrap {
+    width: 77.7%;
+}
