@@ -35,6 +35,8 @@ function Search (props: ISearchProps) {
         setChosenColors
     } = props
 
+    console.log(text);
+
     const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(false)  // Subcategories visibility state
     const [ isColorsOpen, setIsColorsOpen ] = useState(false)  // Colors visibility state
 

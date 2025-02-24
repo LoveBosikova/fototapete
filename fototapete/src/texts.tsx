@@ -783,6 +783,18 @@ const textData = {
             title: 'KATALOG',
             breadcrumbles: 'Katalog / Tapete',
             otherCategories: 'Ostale kategorije',
+            colorsSubtitle: 'Colors',
+            colors: [
+                'White',
+                'Pink', 
+                'Orange',
+                'Red',
+                'Black',
+                'Grey',
+                'Multicolor',
+                'Brown',
+                'Yellow'
+            ],            
             categories: [
                 {
                     id: 0,
@@ -892,7 +904,7 @@ const textData = {
                 {
                     id: 3,
                     categoryName: 'Cigle',
-                    imgSrc: '/fototapete/categories/.png',
+                    imgSrc: '/fototapete/categories/bricks.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -926,8 +938,8 @@ const textData = {
                 },
                 {
                     id: 4,
-                    categoryName: ' Piši briši',
-                    imgSrc: '/fototapete/categories/bricks.png',
+                    categoryName: 'Piši briši',
+                    imgSrc: '/fototapete/categories/chalkboardDryErase.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
