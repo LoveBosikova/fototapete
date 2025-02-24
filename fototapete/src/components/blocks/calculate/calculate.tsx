@@ -73,7 +73,7 @@ function Calculate () {
                 <form className={style.form}>
 
                     <div className={style.materialsWrap}>
-                        <div className={style.material} onClick={handleMaterials}>{selectedMaterial}</div>
+                        <div className={style.material} onClick={handleMaterials}><p className={style.selectedMaterial}>{selectedMaterial}</p></div>
                         <div className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
                             <ul className={style.scrollHiddenContainer}>
                                 {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}

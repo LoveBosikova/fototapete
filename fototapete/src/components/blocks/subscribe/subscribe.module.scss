@@ -77,13 +77,14 @@
 }
 
 .input {
+    @include onest-400-14;
     background-color: $white-50;
     backdrop-filter: blur(1rem);
     border: none;
     outline: none;
     width: 29%;
     border-radius: 2rem;
-    padding-left: 2.24%;
+    padding-left: 1.6rem;
 
     &::placeholder {
         @include onest-400-14;
@@ -155,7 +156,6 @@
 
     .input {
         width: 100%;
-        padding-left: 0rem;
         padding-top: 0.85rem;
         padding-bottom: 0.85rem;
         margin-bottom: 2vw;
@@ -215,6 +215,7 @@
     }
 
     .input {
+        @include onest-400-28;
         padding-bottom: 0.98rem;
         &::placeholder {
             @include onest-400-28;

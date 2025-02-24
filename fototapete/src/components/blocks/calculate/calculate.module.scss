@@ -72,6 +72,7 @@
     position: relative;
     width: 100%;
     max-width: 100%;
+    // overflow: hidden
 }
 
 .material {
@@ -81,6 +82,13 @@
     border: 1px solid $border-grey;
     border-radius: $button-border;
     margin-bottom: 3%;
+}
+
+.selectedMaterial {
+    width: 94%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .optionsWrapClosed {
@@ -121,7 +129,6 @@
     &:hover .materialText {
         color: $orange-alert;
         transition: $transition-disappearance;
-
     }
 }
 
@@ -242,7 +249,7 @@
 
     .titleWrap {
         margin-left: 2%;
-        width: 77%;
+        width: 76%;
     }
 
     .calculator {
@@ -277,6 +284,7 @@
     .material {
         padding: 1.3vw 3.7vw;
         margin-bottom: 1.8vw;
+        overflow: hidden;
     }
     
     .materialPlaceholder,
@@ -339,7 +347,6 @@
     .arrowWrap{
         top: 0.5vw;
     }
-
 }
 
 @media (max-width: 720px) {
@@ -390,6 +397,10 @@
         padding: 2vw 3.7vw;
     }
 
+    .selectedMaterial {
+        @include onest-400-28;
+    }
+
     .form {
         width: 75.5%;
     }
@@ -422,6 +433,19 @@
 
     .noteBtnWrap {
         margin-bottom: 2vw;
+    }
+
+    .materialText {
+        @include onest-400-28;
+    }
+
+    .width,
+    .height {
+        @include onest-400-28;
+    }
+
+    .arrowWrap{
+        top: 1.7vw;
     }
 }
 
