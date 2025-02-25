@@ -3,11 +3,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { LangContextProvider } from './context/LangContext.tsx'
 import './index.scss'
+import { CurCategoryContextProvider } from './context/curCategoryContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LangContextProvider>
-      <App />
+      <CurCategoryContextProvider>
+        <App />
+      </CurCategoryContextProvider>
     </LangContextProvider>
   </StrictMode>
 )

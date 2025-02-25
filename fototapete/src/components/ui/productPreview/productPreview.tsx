@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 
 import ImgLike from "../icons/imgLike/imgLike";
 
+import prepareTextToLink from '../../../utils/prepareTextToLink';
+
 import style from './productPreview.module.scss';
 
 export type Iproduct = {
@@ -21,7 +23,7 @@ function ProductPreview (props: IProductPreviewProps) {
 
     return (
         <li className={style.productPreview}>
-            <NavLink to={`/fototapete/catalog/${categoryName}/${product.id}`} end>
+            <NavLink to={`/fototapete/catalog/${prepareTextToLink(categoryName)}/${product.id}`} end>
                 <div className={style.imgWrap}>
                     <img className={style.img} src={product.img} alt={product.name} />
                 </div>

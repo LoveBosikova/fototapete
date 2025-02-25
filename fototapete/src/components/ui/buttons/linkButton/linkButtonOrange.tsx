@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import style from './linkButtonOrange.module.scss';
 
 type ILinkButtonOrangeProps = {
@@ -10,11 +11,11 @@ function LinkButtonOrange (props: ILinkButtonOrangeProps) {
     const { text, link } = props;
     
 return (
-    <button className={style.linkBtn}>
-        <a className={style.link} href={link}>
-            {text}
-        </a>
-    </button>
+        <button className={style.linkBtn}>
+            <NavLink className={style.link} to={link} end>
+                {text}
+            </NavLink>
+        </button>
     )
 }
 

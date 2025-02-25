@@ -59,7 +59,7 @@ function MainBilboard () {
                 <p className={style.articleText}>{textData[langValue as keyof typeof textData].mainBillboard.article}</p>
                 <div className={style.btnsWrap}>
                     <div className={style.linkOrangeBtnWrap}>
-                        <LinkButtonOrange text={textData[langValue as keyof typeof textData].btns.catalog} link={''}></LinkButtonOrange>
+                        <LinkButtonOrange text={textData[langValue as keyof typeof textData].btns.catalog} link={'/fototapete/catalog'}></LinkButtonOrange>
                     </div>
                     <div className={style.linkWhiteBtnWrap}>
                         <LinkButtonWhite text={textData[langValue as keyof typeof textData].btns.individualOrder} link={''}></LinkButtonWhite>

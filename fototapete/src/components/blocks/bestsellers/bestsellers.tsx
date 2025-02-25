@@ -15,13 +15,20 @@ import textData from '../../../texts';
 
 import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
+import { CurCategoryContext } from '../../../context/curCategoryContext';
+
+import { NavLink } from 'react-router-dom';
+
+import prepareTextToLink from '../../../utils/prepareTextToLink';
 
 import style from './bestsellers.module.scss';
 
 function Bestsellers (){
 
-    const { lang } = useContext(LangContext);
-    const langValue = lang.value.toLowerCase();
+    const { lang } = useContext(LangContext)
+    const langValue = lang.value.toLowerCase()
+
+    const {setCurCategory} = useContext(CurCategoryContext)
 
     const text = textData[langValue as keyof typeof textData].bestsellers
     const btnText = textData[langValue as keyof typeof textData].btns
@@ -34,26 +41,44 @@ function Bestsellers (){
                 <Handwriting text={text.handwriteTop} color={'orange'}></Handwriting>
             </div>
             <div className={style.btnWrap}>
-                <LinkButtonWhite text={btnText.categories} link={''}></LinkButtonWhite>
+                <LinkButtonWhite text={btnText.categories} link={'/fototapete/catalog'}></LinkButtonWhite>
             </div>
             <ul className={style.contentWrap}>
                 <li className={style.bigbestseller}>
-                    <div className={style.category}>
-                        <p className={style.categoryName}>{categoryText.childrensWallpapers}</p>
-                    </div>
-                    <img className={style.img} src={childrewallspapers} alt='Children`s wallpapers' />
+                    <NavLink 
+                    className={style.link} 
+                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.childrensWallpapers)}`} 
+                    onClick={() => setCurCategory(prepareTextToLink(categoryText.childrensWallpapers)) }
+                    end>
+                        <div className={style.category}>
+                            <p className={style.categoryName}>{categoryText.childrensWallpapers}</p>
+                        </div>
+                        <img className={style.img} src={childrewallspapers} alt='Children`s wallpapers' />
+                    </NavLink>
                 </li>
                 <li className={style.bigbestseller}>
-                    <div className={style.category}>
-                        <p className={style.categoryName}>{categoryText.mural}</p>
-                    </div>
-                    <img className={style.img} src={mural} alt='Mural'></img>
+                    <NavLink 
+                    className={style.link} 
+                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.mural)}`} 
+                    onClick={() => setCurCategory(prepareTextToLink(categoryText.mural)) }
+                    end>
+                        <div className={style.category}>
+                            <p className={style.categoryName}>{categoryText.mural}</p>
+                        </div>
+                        <img className={style.img} src={mural} alt='Mural'></img>
+                    </NavLink>
                 </li>
                 <li className={style.bigbestseller}>
-                    <div className={style.category}>
-                        <p className={style.categoryName}>{categoryText.marble}</p>
-                    </div>
-                    <img className={style.img} src={marble} alt='Marble'></img>
+                    <NavLink 
+                    className={style.link} 
+                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.marble)}`} 
+                    onClick={() => setCurCategory(prepareTextToLink(categoryText.marble)) }
+                    end>
+                        <div className={style.category}>
+                            <p className={style.categoryName}>{categoryText.marble}</p>
+                        </div>
+                        <img className={style.img} src={marble} alt='Marble'></img>
+                    </NavLink>
                 </li>
                 <li className={style.smallbestsellers}>
                     <div className={style.smallBestsellersWrap}>

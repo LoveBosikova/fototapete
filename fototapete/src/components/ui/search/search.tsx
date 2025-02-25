@@ -1,21 +1,17 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { LangContext } from '../../../context/LangContext';
+import { CurCategoryContext } from '../../../context/curCategoryContext';
 import { NavLink } from 'react-router-dom';
 
 import SubcategoryCheckbox from '../subcategoryCheckbox/subcategoryCheckbox';
 import arrow from '../../../assets/subcategoryArrow.svg';
 
 import textData from '../../../texts';
+import prepareTextToLink from '../../../utils/prepareTextToLink';
 
 import style from './search.module.scss';
 
 type ISearchProps = {
-    category: {
-        id: number;
-        categoryName: string;
-        imgSrc: string;
-        subCategories: string[];
-    }[];
     chosenSubcategories: string[];
     setChosenSubcategories: React.Dispatch<React.SetStateAction<string[]>>;
     chosenColors: string[];
@@ -24,21 +20,25 @@ type ISearchProps = {
 
 function Search (props: ISearchProps) {
     const { lang } = useContext(LangContext)
+    const {curCategory, setCurCategory} = useContext(CurCategoryContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].categoriesPage
 
-    const { 
-        category,
+    const {
         chosenSubcategories, 
         setChosenSubcategories,
         chosenColors,
-        setChosenColors
+        setChosenColors,
     } = props
 
-    console.log(text);
+    const category = text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory))
+
+    console.log(text.categories.filter((i)=> prepareTextToLink(i.categoryName)));
 
     const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(false)  // Subcategories visibility state
     const [ isColorsOpen, setIsColorsOpen ] = useState(false)  // Colors visibility state
+
+    const [ newCategory, setNewCategory ] = useState(category)
 
     // Handle subcategories checkboxes
     function handleCheckbox (categoryName: string) {
@@ -64,9 +64,20 @@ function Search (props: ISearchProps) {
         setIsColorsOpen(!isColorsOpen)
     }
 
+    // Handle current category
+    function handleCurCategory (str: string) {
+        setCurCategory(str)
+    }
+
+    useEffect(() => {
+        console.log(curCategory);
+        console.log(text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory)));
+        setNewCategory(text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory)))
+    }, [curCategory]);
+
     return (
         <div className={style.search}>
-            {category.map((i) => i.categoryName) || <h3 className={style.searchTitle}>{category.map((i) => i.categoryName)}</h3>}
+            {newCategory.map((i) => i.categoryName) || <h3 className={style.searchTitle}>{category.map((i) => i.categoryName)}</h3>}
             <ul className={style.results}>
                 {category.map((i)=> i.subCategories.map((subCategory) => {
                     return (
@@ -91,7 +102,11 @@ function Search (props: ISearchProps) {
                 {text.categories.filter((item) => item.categoryName !== category.map((i)=> i.categoryName)[0]).map((category) => {
                     return (
                         <li key={category.id} className={style.subcategoryCheckbox} onClick={() => setChosenSubcategories([])}>
-                            <NavLink key={category.id} className={style.category} to={`/fototapete/catalog/${category.categoryName}`} end>
+                            <NavLink 
+                            key={category.id} 
+                            onClick={()=> handleCurCategory(prepareTextToLink(category.categoryName))}
+                            className={style.category} 
+                            to={`/fototapete/catalog/${prepareTextToLink(category.categoryName)}`} end>
                                 <p className={style.categoryName}>{category.categoryName}</p>
                             </NavLink>
                         </li>

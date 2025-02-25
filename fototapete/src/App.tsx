@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <Header />
         <Routes>
-          <Route index path='/fototapete' element={<MainPage />}></Route>
+          <Route index path='*' element={<MainPage />}></Route>
           <Route path='/fototapete/catalog' element={<CatalogPage />}>
             <Route index element={<Wallpapers />} />
             <Route path="/fototapete/catalog/:cid" element={<Category />} />

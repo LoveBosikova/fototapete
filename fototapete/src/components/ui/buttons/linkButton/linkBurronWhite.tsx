@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import style from './linkButtonWhite.module.scss';
 
 type ILinkButtonWhiteProps = {
@@ -10,11 +11,11 @@ function LinkButtonWhite (props: ILinkButtonWhiteProps) {
     const { text, link } = props;
 
 return (
-    <button className={style.linkBtn}>
-        <a className={style.link} href={link}>
-            {text}
-        </a>
-    </button>
+    <NavLink className={style.link} to={link} end>
+        <button className={style.linkBtn}>
+                {text}
+        </button>
+    </NavLink>
     )
 }
 
