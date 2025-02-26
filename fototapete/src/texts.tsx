@@ -522,6 +522,41 @@ const textData = {
                         'Unicorns',
                 ]
                 },
+                {
+                    id: 16,
+                    categoryName: 'Films',
+                    imgSrc: '/fototapete/categories/films.png',
+                    subCategories: [
+                        'Animals',
+                        'Cartoon heroes',
+                        'Dinosaurs',
+                        'Geographic maps',
+                        'Heroes',
+                        'Jungle',
+                        'Mountains',
+                        'Other',
+                        'Princesses',
+                        'Sky',
+                        'Space',
+                        'Sports',
+                        'Underwater world',
+                        'Unicorns',
+                ],
+                    imgs: [
+                        '/fototapete/childrens/children-1',
+                        '/fototapete/childrens/children-2',
+                        '/fototapete/childrens/children-3',
+                        '/fototapete/childrens/children-4',
+                        '/fototapete/childrens/children-5',
+                        '/fototapete/childrens/children-6',
+                        '/fototapete/childrens/children-7',
+                        '/fototapete/childrens/children-8',
+                        '/fototapete/childrens/children-9',
+                        '/fototapete/childrens/children-10',
+                        '/fototapete/childrens/children-11',
+                        '/fototapete/childrens/children-12',
+                    ]
+                },
             ]
         },
         catalog: {
@@ -635,7 +670,7 @@ const textData = {
         },
         categories: {
             childrensWallpapers: `Dječje tapete`,
-            mural: 'Mural',
+            mural: 'Murale',
             marble: 'Mramor',
         },
         categoriesBlock: {
@@ -1342,11 +1377,45 @@ const textData = {
                         '/fototapete/childrens/children-12',
                     ]
                 },
-                ,
                 {
                     id: 15,
                     categoryName: 'Murale',
                     imgSrc: '/fototapete/categories/mural.webp',
+                    subCategories: [
+                        'Animals',
+                        'Cartoon heroes',
+                        'Dinosaurs',
+                        'Geographic maps',
+                        'Heroes',
+                        'Jungle',
+                        'Mountains',
+                        'Other',
+                        'Princesses',
+                        'Sky',
+                        'Space',
+                        'Sports',
+                        'Underwater world',
+                        'Unicorns',
+                ],
+                    imgs: [
+                        '/fototapete/childrens/children-1',
+                        '/fototapete/childrens/children-2',
+                        '/fototapete/childrens/children-3',
+                        '/fototapete/childrens/children-4',
+                        '/fototapete/childrens/children-5',
+                        '/fototapete/childrens/children-6',
+                        '/fototapete/childrens/children-7',
+                        '/fototapete/childrens/children-8',
+                        '/fototapete/childrens/children-9',
+                        '/fototapete/childrens/children-10',
+                        '/fototapete/childrens/children-11',
+                        '/fototapete/childrens/children-12',
+                    ]
+                },
+                {
+                    id: 16,
+                    categoryName: 'Folije',
+                    imgSrc: '/fototapete/categories/films.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',

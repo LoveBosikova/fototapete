@@ -1,5 +1,6 @@
 import { LangContext } from '../../../context/LangContext';
 import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Title from '../../ui/title/title';
 import Handwriting from '../../ui/handwriting/handwriting';
@@ -9,15 +10,15 @@ import mockup1 from '../../../assets/footer-1.png';
 import mockup2 from '../../../assets/footer-2.png';
 import mockup3Big from '../../../assets/footer-3-big.png';
 import mockup4 from '../../../assets/footer-4.png';
-
-import textData from '../../../texts';
-
-import style from './footer.module.scss';
 import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 import ImgFb from '../../ui/icons/imgFb/imgFb';
 import ImgInstagram from '../../ui/icons/imgInstagram/imgInstagram';
 import ImgPinterest from '../../ui/icons/imgPinterest/imgPinterest';
 import ImgUp from '../../ui/icons/imgUp/imgUp';
+
+import textData from '../../../texts';
+
+import style from './footer.module.scss';
 
 function Footer () {
 
@@ -111,7 +112,13 @@ function Footer () {
                     <p className={style.mailWrap}><a className={style.email} href="mailto:fototapetezg@gmail.com&cc=fototapetezg.info@gmail.com?body=Hi! I wish I could ask about wallpapers.?subject=Question from website">fototapetezg@gmail.com</a></p>
                 </div>
                 <ul className={style.linksWrap}>
-                    {text.links.map((link)=> <li key={link.linkName} className={style.menuItemWrap}><a className={style.menuItem}>{link.linkName}</a></li>)}
+                    {text.links.map((link)=><NavLink 
+                    key={link.linkName} 
+                    className={style.menuItemWrap} 
+                    to={`/fototapete/catalog`} 
+                    end>
+                        <a className={style.menuItem}>{link.linkName}</a>
+                    </NavLink>)}
                 </ul>
             </div>
             <div className={style.underline}>

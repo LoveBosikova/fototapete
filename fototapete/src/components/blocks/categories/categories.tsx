@@ -9,11 +9,15 @@ import filmsPhoto from '../../../assets/categories-photo2.png';
 
 import style from './categories.module.scss';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
+import prepareTextToLink from '../../../utils/prepareTextToLink';
+import { CurCategoryContext } from '../../../context/curCategoryContext';
 
 function Categories () {
 
-    const { lang } = useContext(LangContext);
-    const langValue = lang.value.toLowerCase();
+    const { lang } = useContext(LangContext)
+    const langValue = lang.value.toLowerCase()
+
+    const {setCurCategory} = useContext(CurCategoryContext)
 
     const text = textData[langValue as keyof typeof textData].categoriesBlock
     const btnText = textData[langValue as keyof typeof textData].btns
@@ -29,7 +33,7 @@ function Categories () {
                     <div className={style.walpapersDescriptionWrap}>
                             <p className={style.categoryText}>{text.wallpapers}</p>
                             <div className={style.blackBtnWrap}>
-                                <LinkButtonBlack text={btnText.goToCategory} link={''}></LinkButtonBlack>
+                                <LinkButtonBlack text={btnText.goToCategory} link={'/fototapete/catalog'}></LinkButtonBlack>
                             </div>
                     </div>
                 </div>
@@ -40,8 +44,8 @@ function Categories () {
                     <div className={style.filmsDescriptionWrap}>
                         <div className={style.description}>
                             <p className={style.categoryText}>{text.films}</p>
-                            <div className={style.blackBtnWrap}>
-                                <LinkButtonBlack text={btnText.goToCategory} link={''}></LinkButtonBlack>
+                            <div className={style.blackBtnWrap} onClick={() => setCurCategory(prepareTextToLink(text.films))}>
+                                <LinkButtonBlack text={btnText.goToCategory} link={`/fototapete/catalog/${prepareTextToLink(text.films)}`}></LinkButtonBlack>
                             </div>
                         </div>
                     </div>

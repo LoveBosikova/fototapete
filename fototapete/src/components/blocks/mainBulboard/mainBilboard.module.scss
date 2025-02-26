@@ -61,7 +61,7 @@
 
 .articleWrap {
     width: 23%;
-    margin-top: 16vw;
+    margin-top: 15vw;
     margin-left: auto;
     margin-right: 5.8%;
     position: relative;
@@ -77,7 +77,7 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 8%;
+    padding-top: 1%;
     gap: 2%;
 }
 
@@ -89,7 +89,7 @@
     width: 58%;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
     .wrap {
         margin: 2%;
     }
@@ -133,6 +133,7 @@
     .btnsWrap {
         flex-direction: column;
         gap: 1.3vw;
+        padding-top: 10%;
     }
 
     .linkOrangeBtnWrap {
@@ -182,7 +183,8 @@
     }
 
     .btnsWrap {
-        padding-top: 6.6%;
+        flex-direction: row;
+        padding-top: 2.6%;
         width: 97%;
     }
 

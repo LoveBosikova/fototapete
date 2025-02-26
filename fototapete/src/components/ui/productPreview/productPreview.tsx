@@ -5,6 +5,9 @@ import ImgLike from "../icons/imgLike/imgLike";
 import prepareTextToLink from '../../../utils/prepareTextToLink';
 
 import style from './productPreview.module.scss';
+import { useContext } from "react";
+import { LangContext } from "../../../context/LangContext";
+import textData from "../../../texts";
 
 export type Iproduct = {
     id: number,
@@ -14,12 +17,18 @@ export type Iproduct = {
 }
 
 type IProductPreviewProps = {
-    categoryName: string;
+    categoryName: string | undefined;
     product: Iproduct;
 }
 
 function ProductPreview (props: IProductPreviewProps) {
-    const { categoryName, product } = props
+
+    const { lang } = useContext(LangContext)
+    const langValue = lang.value.toLowerCase()
+    const text = textData[langValue as keyof typeof textData].categoriesPage
+    const { 
+        categoryName = text.categories[0]?.categoryName, 
+        product } = props
 
     return (
         <li className={style.productPreview}>

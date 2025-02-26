@@ -20,7 +20,7 @@ function CatalogPage () {
     const [ chosenSubcategories, setChosenSubcategories ] = useState<string[]>([])
     const [ chosenColors, setChosenColors ] = useState<string[]>([])
 
-    const category = text.categories.filter((category) => prepareTextToLink(category.categoryName) == prepareTextToLink(curCategory))
+    const category = text.categories.filter((category) => prepareTextToLink(category?.categoryName) == prepareTextToLink(curCategory))
 
     console.log(curCategory)
 
@@ -31,7 +31,7 @@ function CatalogPage () {
                     <Title text={text.title} isBlack={true}></Title>
                 </div>
                 <div className={style.breadCrumbs}>
-                    <p className={style.path}>{text.breadcrumbles}{curCategory ? ` / ${category[0].categoryName}` : ''}</p>
+                    <p className={style.path}>{text.breadcrumbles}{curCategory ? ` / ${category[0]?.categoryName}` : ''}</p>
                 </div>
                 <div className={style.contentWrap}>
                     <div className={style.searchWrap}>

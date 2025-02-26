@@ -31,9 +31,7 @@ function Search (props: ISearchProps) {
         setChosenColors,
     } = props
 
-    const category = text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory))
-
-    console.log(text.categories.filter((i)=> prepareTextToLink(i.categoryName)));
+    const category = text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory))
 
     const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(false)  // Subcategories visibility state
     const [ isColorsOpen, setIsColorsOpen ] = useState(false)  // Colors visibility state
@@ -70,16 +68,16 @@ function Search (props: ISearchProps) {
     }
 
     useEffect(() => {
-        console.log(curCategory);
-        console.log(text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory)));
-        setNewCategory(text.categories.filter((i)=> prepareTextToLink(i.categoryName) == prepareTextToLink(curCategory)))
+        console.log('curCategory:', curCategory,'category:', category);
+        console.log(text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory)));
+        setNewCategory(text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory)))
     }, [curCategory]);
 
     return (
         <div className={style.search}>
-            {newCategory.map((i) => i.categoryName) || <h3 className={style.searchTitle}>{category.map((i) => i.categoryName)}</h3>}
+            {newCategory.map((i) => i?.categoryName) || <h3 className={style.searchTitle}>{category.map((i) => i?.categoryName)}</h3>}
             <ul className={style.results}>
-                {category.map((i)=> i.subCategories.map((subCategory) => {
+                {category.map((i)=> i?.subCategories.map((subCategory) => {
                     return (
                         <li key={subCategory} className={style.subcategoryCheckbox} onClick={()=> handleCheckbox(subCategory)}>
                             <div className={style.checkBoxWrap}>
@@ -99,15 +97,15 @@ function Search (props: ISearchProps) {
                 </h3>
             </button>
             <ul className={isOthersCategoriesOpen ? style.otherCategories : style.otherCategoriesClosed}>
-                {text.categories.filter((item) => item.categoryName !== category.map((i)=> i.categoryName)[0]).map((category) => {
+                {text.categories.filter((item) => item?.categoryName !== category.map((i)=> i?.categoryName)[0]).map((category) => {
                     return (
-                        <li key={category.id} className={style.subcategoryCheckbox} onClick={() => setChosenSubcategories([])}>
+                        <li key={category?.id} className={style.subcategoryCheckbox} onClick={() => setChosenSubcategories([])}>
                             <NavLink 
-                            key={category.id} 
-                            onClick={()=> handleCurCategory(prepareTextToLink(category.categoryName))}
+                            key={category?.id} 
+                            onClick={()=> handleCurCategory(prepareTextToLink(category?.categoryName))}
                             className={style.category} 
-                            to={`/fototapete/catalog/${prepareTextToLink(category.categoryName)}`} end>
-                                <p className={style.categoryName}>{category.categoryName}</p>
+                            to={`/fototapete/catalog/${prepareTextToLink(category?.categoryName)}`} end>
+                                <p className={style.categoryName}>{category?.categoryName}</p>
                             </NavLink>
                         </li>
                     )

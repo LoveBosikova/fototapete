@@ -33,6 +33,7 @@ function Bestsellers (){
     const text = textData[langValue as keyof typeof textData].bestsellers
     const btnText = textData[langValue as keyof typeof textData].btns
     const categoryText = textData[langValue as keyof typeof textData].categories
+    console.log(categoryText);
     
     return (
         <section className={style.bestsellers}>
@@ -100,7 +101,7 @@ function Bestsellers (){
                             <img className={style.img} src={pointer} alt='' />
                         </div>
                         <div className={style.orangeBtnWrap}>
-                            <LinkButtonOrange text={btnText.loadMore} link={''}></LinkButtonOrange>
+                            <LinkButtonOrange text={btnText.loadMore} link={'/fototapete/catalog'}></LinkButtonOrange>
                         </div>
                     </div>
                 </li>

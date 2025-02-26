@@ -26,15 +26,15 @@ function Wallpapers () {
             {text.categories.map((category) => {
                 return (
                     <NavLink 
-                    key={category.id} 
+                    key={category?.id} 
                     className={style.category} 
-                    to={`/fototapete/catalog/${prepareTextToLink(category.categoryName)}`} 
-                    onClick={()=> setCurCategory(prepareTextToLink(category.categoryName))}
+                    onClick={()=> setCurCategory(prepareTextToLink(category?.categoryName))}
+                    to={`/fototapete/catalog/${prepareTextToLink(category?.categoryName)}`} 
                     end>
                         <div className={style.imgWrap}>
-                            <img className={style.img} src={category.imgSrc} alt={category.categoryName} />
+                            <img className={style.img} src={category?.imgSrc} alt={category?.categoryName} />
                         </div>
-                        <p className={style.categoryName}>{category.categoryName}</p>
+                        <p className={style.categoryName}>{category?.categoryName}</p>
                     </NavLink>
                 )
             })}
