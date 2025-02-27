@@ -89,7 +89,7 @@
     color: $black-text;
 }
 
-@media (min-width: 720px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
     .bestsellers {
         padding-top: 12.8vw;
         padding-right: 4vw;
@@ -179,6 +179,18 @@
         margin-left: 9vw;
     }
 
+    .smallbestsellers {
+        flex-direction: column;
+    }
+
+    .smallBestsellersWrap {
+        width: 100%;
+    }
+
+    .btnSection {
+        width: 100%;
+    }
+
     .btnWrap {
         width: 31%;
         margin-top: -13.1vw;
@@ -203,7 +215,7 @@
 
     .contentWrap {
         flex-direction: column;
-        padding-top: 5.5vw;
+        padding-top: 0vw;
     }
 
     .bigbestseller {
@@ -243,5 +255,15 @@
         margin-left: 0;
         padding-top: 0;
         margin-top: -3vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .contentWrap {
+        padding-top: 0vw;
+    }
+
+    .btnWrap {
+        margin-top: -18vw;
     }
 }

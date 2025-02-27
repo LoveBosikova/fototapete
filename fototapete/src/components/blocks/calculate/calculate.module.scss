@@ -28,7 +28,9 @@
 .titleWrap {
     padding-top: 1.7%;
     margin-left: 3%;
-    width: 56%
+    width: 56%;
+    position: relative;
+    z-index: 3;
 }
 
 .calculator {
@@ -449,18 +451,38 @@
     }
 }
 
-@media (max-width: 495px) {
+@media (max-width: 640px) {
     .calculator {
         margin-bottom: 1.5vw;
         padding-bottom: 1.1vw;
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 520px) {
     .calculator {
         margin-bottom: 1vw;
-        // margin-top: 1vw;
         padding-bottom: 1vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .calculatorTitle {
+        padding-bottom: 2vw;
+    }
+
+    .calculatorText {
+        margin-bottom: 1vw;
+    }
+
+    .noteText {
+        margin-bottom: 0;
+        padding-bottom: 1vw;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .calculator {
         padding-top: 3vw;
     }
 }
