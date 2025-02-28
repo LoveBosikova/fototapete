@@ -559,79 +559,175 @@ const textData = {
                 },
             ]
         },
+        productPage: {
+            breadcrumbs: 'Catalog / Wallpapers / ',
+            note: 'Final price depends on the type of wallpaper. Adhesive is free!',
+            material: 'Material',
+            instructions: 'Instructions',
+            productionAndDelivery: 'Production and delivery time',
+            measureWall: 'How to measure your wall?',
+            alsoLikeTitle: 'You may also like',
+            customDesignServiceTitle: 'If you want unique wallpaper, we offer a custom design service',
+            point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
+            point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.'
+        },
         catalog: {
             products: [
                 {
                     id: 0,
                     name: `Children's Jungle 01`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/01.png',
+                    imgs: [
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png'
+                    ]
                 },
                 {
                     id: 1,
                     name: `Children's Jungle 02`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/02.png',
+                    imgs: [
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png'
+                    ]
                 },
                 {
                     id: 2,
                     name: `Children's Jungle 03`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/03.png',
+                    imgs: [
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png'
+                    ]
                 },
                 {
                     id: 3,
                     name: `Children's Jungle 04`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/04.png',
+                    imgs: [
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png'
+                    ]
                 },
                 {
                     id: 4,
                     name: `Children's Jungle 05`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/05.png',
+                    imgs: [
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png'
+                    ]
                 },
                 {
                     id: 5,
                     name: `Children's Jungle 06`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/06.png',
+                    imgs: [
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png'
+                    ]
                 },
                 {
                     id: 6,
                     name: `Children's Jungle 07`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/07.png',
+                    imgs: [
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png'
+                    ]
                 },
                 {
                     id: 7,
                     name: `Children's Jungle 08`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/08.png',
+                    imgs: [
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png'
+                    ]
                 },
                 {
                     id: 8,
                     name: `Children's Jungle 09`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/09.png',
+                    imgs: [
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png'
+                    ]
                 },
                 {
                     id: 9,
                     name: `Children's Jungle 10`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/10.png',
+                    imgs: [
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png'
+                    ]
                 },
                 {
                     id: 10,
                     name: `Children's Jungle 11`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/11.png',
+                    imgs: [
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png'
+                    ]
                 },
                 {
                     id: 11,
                     name: `Children's Jungle 12`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/12.png',
+                    imgs: [
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png'
+                    ]
                 }
             ]
         },
@@ -646,6 +742,8 @@ const textData = {
             learnMore: 'Learn more',
             subscribe: 'Subscribe',
             viewAllArticles: 'View all articles',
+            calculateThePrice: 'Calculate the price',
+            addToCart: 'Add to cart',
         },
         materials: [
             'Smooth Adhesive-based Wallpaper',
@@ -1454,76 +1552,172 @@ const textData = {
                 {
                     id: 0,
                     name: `Children's Jungle 01`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/01.png',
+                    imgs: [
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png',
+                        '/fototapete/catalog/01.png'
+                    ]
                 },
                 {
                     id: 1,
                     name: `Children's Jungle 02`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/02.png',
+                    imgs: [
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png',
+                        '/fototapete/catalog/02.png'
+                    ]
                 },
                 {
                     id: 2,
                     name: `Children's Jungle 03`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/03.png',
+                    imgs: [
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png',
+                        '/fototapete/catalog/03.png'
+                    ]
                 },
                 {
                     id: 3,
                     name: `Children's Jungle 04`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/04.png',
+                    imgs: [
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png',
+                        '/fototapete/catalog/04.png'
+                    ]
                 },
                 {
                     id: 4,
                     name: `Children's Jungle 05`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/05.png',
+                    imgs: [
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png',
+                        '/fototapete/catalog/05.png'
+                    ]
                 },
                 {
                     id: 5,
                     name: `Children's Jungle 06`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/06.png',
+                    imgs: [
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png',
+                        '/fototapete/catalog/06.png'
+                    ]
                 },
                 {
                     id: 6,
                     name: `Children's Jungle 07`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/07.png',
+                    imgs: [
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png',
+                        '/fototapete/catalog/07.png'
+                    ]
                 },
                 {
                     id: 7,
                     name: `Children's Jungle 08`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/08.png',
+                    imgs: [
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png',
+                        '/fototapete/catalog/08.png'
+                    ]
                 },
                 {
                     id: 8,
                     name: `Children's Jungle 09`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/09.png',
+                    imgs: [
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png',
+                        '/fototapete/catalog/09.png'
+                    ]
                 },
                 {
                     id: 9,
                     name: `Children's Jungle 10`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/10.png',
+                    imgs: [
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png',
+                        '/fototapete/catalog/10.png'
+                    ]
                 },
                 {
                     id: 10,
                     name: `Children's Jungle 11`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/11.png',
+                    imgs: [
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png',
+                        '/fototapete/catalog/11.png'
+                    ]
                 },
                 {
                     id: 11,
                     name: `Children's Jungle 12`,
+                    category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
                     img: '/fototapete/catalog/12.png',
+                    imgs: [
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png',
+                        '/fototapete/catalog/12.png'
+                    ]
                 }
             ]
+        },
+        productPage: {
+            breadcrumbs: 'Catalog / Wallpapers / ',
+            note: 'Final price depends on the type of wallpaper. Adhesive is free!',
+            material: 'Material',
+            instructions: 'Instructions',
+            productionAndDelivery: 'Production and delivery time',
+            measureWall: 'How to measure your wall?',
+            alsoLikeTitle: 'You may also like',
+            customDesignServiceTitle: 'If you want unique wallpaper, we offer a custom design service',
+            point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
+            point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.'
         },
         btns: {
             catalog:'Katalog',
@@ -1536,6 +1730,8 @@ const textData = {
             learnMore: 'Saznajte više',
             subscribe: 'Pretplatite se',
             viewAllArticles: 'Pogledajte sve članke',
+            calculateThePrice: 'Calculate the price',
+            addToCart: 'Add to cart',
         },
         materials: [
             'Glatka tapeta na bazi ljepila',

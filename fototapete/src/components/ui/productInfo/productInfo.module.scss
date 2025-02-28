@@ -1,0 +1,161 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.productInfo {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+.slidersWrap {
+    width: 51%;
+}
+
+.bigSlider {
+    position: relative;
+    margin-bottom: .7vw;
+}
+
+.sliderBtns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    z-index: 10;
+    top: 45.5%;
+    left: 3%;
+}
+
+.btnPrev {
+    transform: scaleX(-1);
+}
+
+.imgSmall {
+    width: 100%;
+    height: 70%;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titleWrap {
+    @include evolventa-700-25;
+    text-transform: uppercase;
+    margin-bottom: 1.6vw;
+}
+
+.metrics {
+    @include onest-500-20;
+    margin-bottom: .6vw;
+}
+
+.note {
+    @include onest-400-13;
+    width: 70%;
+    margin-bottom: 1.2vw;
+}
+
+.materialsWrap {
+    position: relative;
+    width: 59%;
+    max-width: 59%;
+}
+
+.materialTitle {
+    @include onest-400-13;
+    margin-bottom: 0.4vw;
+}
+
+.material {
+    @include onest-400-11;
+    cursor: pointer;
+    padding: 0.6vw 1vw;
+    border: 1px solid $border-grey;
+    border-radius: $button-border;
+    margin-bottom: 3%;
+}
+
+.selectedMaterial {
+    width: 94%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.optionsWrapClosed {
+    display: none;
+}
+
+.scrollHiddenContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 20.5vw;
+    max-height: 20.5vw;
+    overflow: auto;
+    padding-top: 2%;
+}
+
+.optionsWrap {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background-color: $white-text;
+    border: 1px solid $border-grey;
+    border-radius: 1.4rem;
+    top: 113%;
+    padding: 3% 8%;
+    padding-top: 0;
+    padding-right: 0;
+    height: 100%;
+    overflow: hidden;
+    height: 17.5vw;
+}
+
+.option {
+    padding-top: 1.6%;
+    padding-bottom: 1%;
+    cursor: pointer;
+    transition: $transition-appearance;
+
+    &:hover .materialText {
+        color: $orange-alert;
+        transition: $transition-disappearance;
+    }
+}
+
+.materialText {
+    @include onest-400-11;
+    width: 92%;
+}
+
+.arrowWrap {
+    position: absolute;
+    top: 24%;
+    right: 9%;
+    width: 1.5%;
+}
+
+.btnsWrap {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addToCartWrap {
+    width: 38%;
+}
+
+.calculateBtnWrap {
+    width: 50%;
+}
+
+.likeWrap {
+    width: 9.2%;
+}

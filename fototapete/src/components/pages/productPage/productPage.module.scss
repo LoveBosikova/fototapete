@@ -1,0 +1,18 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.productPage {
+    margin-top: 10.3vw;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    color: $black-text;
+}
+
+.breadCrumbs {
+    padding-bottom: 1.3vw;
+}
+
+.path {
+    @include onest-400-14;
+    color: $black-text;
+}

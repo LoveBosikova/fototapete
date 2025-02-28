@@ -13,6 +13,7 @@ import Wallpapers from './components/blocks/wallpapers/wallpapers';
 import Category from './components/blocks/category/category';
 
 import './App.scss'
+import ProductPage from './components/pages/productPage/productPage';
 // import { Iproduct } from './components/ui/productPreview/productPreview';
 
 function App() {
@@ -26,12 +27,12 @@ function App() {
       <Header />
         <Routes>
           <Route index path='*' element={<MainPage />}></Route>
+          <Route path='/fototapete/:pid' element={<ProductPage />}></Route>
+
           <Route path='/fototapete/catalog' element={<CatalogPage />}>
             <Route index element={<Wallpapers />} />
-            <Route path="/fototapete/catalog/:cid" element={<Category />} />
-            {/* <Route
-            path="/fototapete/catalog/:cid/:pid"
-            element={<ProductPreview />}
+            <Route path='/fototapete/catalog/:cid' element={<Category />} />
+            {/* <Route path='/fototapete/:pid' element={<ProductPage />}
             /> */}
           </Route>
 

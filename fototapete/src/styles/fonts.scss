@@ -64,6 +64,15 @@
     }
 }
 
+@mixin evolventa-700-25 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-25;
+}
+
 @mixin evolventa-400-18 {
     font-family: "Evolventa Bold", sans-serif;
     font-optical-sizing: auto;
@@ -165,6 +174,15 @@
     line-height: normal;
     font-weight: 500;
     font-size: $font-size-18;
+}
+
+@mixin onest-500-20 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-20;
 }
 
 @mixin onest-500-23 {

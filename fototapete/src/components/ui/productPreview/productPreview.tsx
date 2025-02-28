@@ -27,12 +27,12 @@ function ProductPreview (props: IProductPreviewProps) {
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].categoriesPage
     const { 
-        categoryName = text.categories[0]?.categoryName, 
+        // categoryName = text.categories[0]?.categoryName, 
         product } = props
 
     return (
         <li className={style.productPreview}>
-            <NavLink to={`/fototapete/catalog/${prepareTextToLink(categoryName)}/${product.id}`} end>
+            <NavLink to={`/fototapete/${product.id}`}>
                 <div className={style.imgWrap}>
                     <img className={style.img} src={product.img} alt={product.name} />
                 </div>
