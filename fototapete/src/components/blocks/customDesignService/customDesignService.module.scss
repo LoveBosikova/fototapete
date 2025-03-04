@@ -57,3 +57,52 @@
     width: 100%;
     max-width: 100%;
 }
+
+
+@media (max-width: 720px) {
+    .customDesignService {
+        margin-bottom: 0vw;
+    }
+
+    .handwriteWrap {
+        width: 97.5%;
+        margin-top: -3vw;
+    }
+
+    .contentWrap {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .cardBeuge,
+    .cardOrange,
+    .cardImg {
+        // width: 43%;
+        // height: 20vw;
+        width: 100%;
+
+    }
+
+    .cardBeuge,
+    .cardOrange {
+        padding: 6.5vw;
+    }
+
+    .cardImg {
+        width: 100%;
+    }
+
+    .text {
+        @include onest-400-28;
+    }
+}
+
+@media (max-width: 540px) {
+    .text {
+        @include onest-400-45;
+    }
+
+    .contentWrap {
+        gap: 4vw;
+    }
+}

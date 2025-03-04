@@ -28,7 +28,7 @@ function QuestionsProduct () {
                 <li className={style.questionWrap}>
                     <AccordionItem question={text[3]}></AccordionItem>
                 </li>
-                <li className={style.questionWrapFull}>
+                <li className={style.questionWrap}>
                     <AccordionItem question={text[4]}></AccordionItem>
                 </li>
             </ul>

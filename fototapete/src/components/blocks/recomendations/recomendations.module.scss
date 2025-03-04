@@ -16,3 +16,33 @@
 .productWrap {
     width: 32.3%;
 }
+
+@media (max-width: 720px) {
+
+    .recomendations {
+        margin: 8vw 0vw;
+    }
+
+    .productWrap {
+        width: 48%;
+    }
+
+    .productsWrap {
+        row-gap: 3.65vw;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .recomendations {
+        margin: 8vw 0vw;
+    }
+
+    .productWrap {
+        width: 100%;
+    }
+
+    .productsWrap {
+        row-gap: 3.65vw;
+    }
+}
