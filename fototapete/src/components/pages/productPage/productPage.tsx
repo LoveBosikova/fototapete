@@ -6,6 +6,7 @@ import textData from '../../../texts';
 
 import style from './productPage.module.scss';
 import ProductInfo from '../../ui/productInfo/productInfo';
+import QuestionsProduct from '../../blocks/questionsProduct/questionsProduct';
 
 function ProductPage () {
     // TODO : make try if there is no product fit this pid
@@ -36,6 +37,7 @@ function ProductPage () {
                 instructions={text.instructions}>
                 </ProductInfo>
             </div>
+            <QuestionsProduct />
 
         </div>
     )

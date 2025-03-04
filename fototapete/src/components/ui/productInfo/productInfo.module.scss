@@ -48,28 +48,32 @@
     @include evolventa-700-25;
     text-transform: uppercase;
     margin-bottom: 1.6vw;
+    padding-top: .3vw;
 }
 
 .metrics {
     @include onest-500-20;
-    margin-bottom: .6vw;
+    margin-bottom: .45vw;
+    width: 80%;
+    line-height: 100%;
 }
 
 .note {
     @include onest-400-13;
     width: 70%;
-    margin-bottom: 1.2vw;
+    margin-bottom: 1.6vw;
 }
 
 .materialsWrap {
     position: relative;
-    width: 59%;
-    max-width: 59%;
+    width: 50%;
+    max-width: 50%;
 }
 
-.materialTitle {
+.materialTitle,
+.calculatorTitle {
     @include onest-400-13;
-    margin-bottom: 0.4vw;
+    margin-bottom: 0.7vw;
 }
 
 .material {
@@ -78,7 +82,7 @@
     padding: 0.6vw 1vw;
     border: 1px solid $border-grey;
     border-radius: $button-border;
-    margin-bottom: 3%;
+    margin-bottom: 1.7vw;
 }
 
 .selectedMaterial {
@@ -146,10 +150,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2vw;
 }
 
 .addToCartWrap {
-    width: 38%;
+    width: 55%;
 }
 
 .calculateBtnWrap {
@@ -158,4 +163,75 @@
 
 .likeWrap {
     width: 9.2%;
+}
+
+.calculatorWrap {
+    width: 64%;
+}
+
+.topResultsWrap {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    margin-bottom: .55vw;
+}
+
+.formResult {
+    width: 79%;
+}
+
+.resultsWrap {
+    width: 79%;
+}
+
+.maesuresWrapVisible {
+    // display: none;
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 1.7vw;
+}
+
+.maesuresWrapInvisible {
+    display: none;
+    width: 63%;
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 1.7vw;
+}
+
+.measureTitle{
+    @include onest-400-13;
+    margin-bottom: 0.7vw;
+}
+
+.measureInput {
+    width: 90%;
+    @include onest-400-11;
+    cursor: pointer;
+    padding: 0.6vw 0vw;
+    padding-left: 10%;
+    border: 1px solid $border-grey;
+    border-radius: $button-border;
+    margin-bottom: .55vw;
+
+    transition: $transition-appearance;
+
+    &:focus,
+    &:active{
+        border: 1px solid $orange-alert;
+        outline: none;
+        transition: $transition-disappearance;
+    }
+
+}
+
+.wallWidth,
+.wallHeight {
+    width: 49%;
+    max-width: 49%;
 }

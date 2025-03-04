@@ -2,12 +2,10 @@ import { NavLink } from "react-router-dom";
 
 import ImgLike from "../icons/imgLike/imgLike";
 
-import prepareTextToLink from '../../../utils/prepareTextToLink';
-
 import style from './productPreview.module.scss';
-import { useContext } from "react";
-import { LangContext } from "../../../context/LangContext";
-import textData from "../../../texts";
+// import { useContext } from "react";
+// import { LangContext } from "../../../context/LangContext";
+// import textData from "../../../texts";
 
 export type Iproduct = {
     id: number,
@@ -23,9 +21,9 @@ type IProductPreviewProps = {
 
 function ProductPreview (props: IProductPreviewProps) {
 
-    const { lang } = useContext(LangContext)
-    const langValue = lang.value.toLowerCase()
-    const text = textData[langValue as keyof typeof textData].categoriesPage
+    // const { lang } = useContext(LangContext)
+    // const langValue = lang.value.toLowerCase()
+    // const text = textData[langValue as keyof typeof textData].categoriesPage
     const { 
         // categoryName = text.categories[0]?.categoryName, 
         product } = props

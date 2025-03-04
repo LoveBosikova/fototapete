@@ -561,15 +561,54 @@ const textData = {
         },
         productPage: {
             breadcrumbs: 'Catalog / Wallpapers / ',
-            note: 'Final price depends on the type of wallpaper. Adhesive is free!',
+            dependOn: 'depending on the type of wallpaper',
+            note: 'Adhesive is free!',
             material: 'Material',
+            selectMaterial: 'Select a material',
+            calculatorTitle: 'Price for entered dimensions',
+            priceForM: 'Price for m²:',
+            priceForMValue: '800 EUR',
+            totalM: 'Total m²:',
+            totalMValue: '0 m²',
+            wallpaperPrice: 'Wallpaper price:',
+            wallpaperPriceValue: '0 EUR',
+            wallWidth: 'Wall width (cm)',
+            wallHeight: 'Wall height (cm)',
+            enterValue: 'Enter a value',
             instructions: 'Instructions',
             productionAndDelivery: 'Production and delivery time',
             measureWall: 'How to measure your wall?',
             alsoLikeTitle: 'You may also like',
             customDesignServiceTitle: 'If you want unique wallpaper, we offer a custom design service',
             point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
-            point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.'
+            point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.',
+            questions: [
+                {
+                    id: 0,
+                    question: 'Materials',
+                    answer: 'Smooth adhesive-based'
+                },
+                {
+                    id: 1,
+                    question: 'Installation',
+                    answer: 'We offer a professional wallpaper installation service to ensure a perfect result. Our experts carefully and efficiently install the wallpaper, ensuring a high-quality finish for your space. Installation is charged separately.'
+                },
+                {
+                    id: 2,
+                    question: 'Production and delivery time',
+                    answer: 'From the moment you confirm your order, the delivery time is 3 to 5 business days. An express production service is also available for an additional fee.The courier service calculates based on the weight of the package, and it is usually between 6€ - 9€ (Croatia). In addition to delivery within Croatia, we also ship to other countries. Just let us know where you would like the shipment sent, and we will offer you the most favorable and secure shipping option.'
+                },
+                {
+                    id: 3,
+                    question: 'Design Visualization',
+                    answer: 'Once you place an order on our website, our managers will contact you and send you a design you’ve chosen, adjusted to your dimensions. We also offer a wallpaper visualization on your wall so you can see how the design will look in your space. To get the best results, simply send us a photo of your wall taken with good lighting and from a distance where the entire wall is visible. For the best outcome, please ensure there are no pictures or posters on the wall. Based on your photo, we will create a visualization with your chosen wallpaper, allowing you to assess how the pattern and colors will fit into your room.'
+                },
+                {
+                    id: 4,
+                    question: 'How to measure your wall?',
+                    answer: 'We have prepared instructions for you on how to measure your wall in different situations. If you cannot find the instructions you need here and require assistance, please contact us and we will be happy to help you.'
+                },
+            ],
         },
         catalog: {
             products: [
@@ -1708,16 +1747,55 @@ const textData = {
             ]
         },
         productPage: {
-            breadcrumbs: 'Catalog / Wallpapers / ',
-            note: 'Final price depends on the type of wallpaper. Adhesive is free!',
-            material: 'Material',
-            instructions: 'Instructions',
-            productionAndDelivery: 'Production and delivery time',
-            measureWall: 'How to measure your wall?',
-            alsoLikeTitle: 'You may also like',
-            customDesignServiceTitle: 'If you want unique wallpaper, we offer a custom design service',
-            point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
-            point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.'
+            breadcrumbs: 'Katalog / Tapete / ',
+            dependOn: 'depending on the type of wallpaper',
+            note: 'Adhesive is free!',
+            material: 'Materijal',
+            selectMaterial: 'Select a material',
+            instructions: 'Upute',
+            productionAndDelivery: 'Vrijeme izrade i dostave',
+            measureWall: 'Kako izmjeriti svoj zid?',
+            calculatorTitle: 'Price for entered dimensions',
+            priceForM: 'Price for m²:',
+            priceForMValue: '800 EUR',
+            totalM: 'Total m²:',
+            totalMValue: '0 m²',
+            wallpaperPrice: 'Wallpaper price:',
+            wallpaperPriceValue: '0 EUR',
+            wallWidth: 'Wall width (cm)',
+            wallHeight: 'Wall height (cm)',
+            enterValue: 'Enter a value',
+            alsoLikeTitle: 'Slični proizvodi',
+            customDesignServiceTitle: 'Ako želite jedinstvene tapete, nudimo uslugu dizajna po narudžbi',
+            point1: 'Kod nas možete kreirati foto tapete po mjeri s NEOGRANIČENIM mogućnostima dizajna. Bilo koja slika visoke rezolucije može postati vaša tapeta, a izrađujemo ih u dimenzijama koje VI odaberete!',
+            point2: 'Naši dizajneri pomoći će vam stvoriti poseban uzorak ili razviti potpuno novi dizajn prema vašim željama. Usluga se naplaćuje, a cijena ovisi o složenosti dizajna.',
+            questions: [
+                {
+                    id: 0,
+                    question: 'Materials',
+                    answer: 'Glatka na bazi ljepila'
+                },
+                {
+                    id: 1,
+                    question: 'Montaža ',
+                    answer: 'Nudimo profesionalnu uslugu postavljanja tapeta kako bismo osigurali savršen rezultat. Naši stručnjaci pažljivo i učinkovito postavljaju tapete, osiguravajući visokokvalitetan završetak vašeg prostora. Montaža se naplaćuje zasebno.'
+                },
+                {
+                    id: 2,
+                    question: 'Vrijeme isporuke i dostave',
+                    answer: 'Od trenutka potvrde vaše narudžbe, rok isporuke iznosi 3 do 5 radnih dana. Također nudimo uslugu žurne isporuke uz dodatnu naknadu. Kurirska služba izračunava cijenu na temelju težine paketa, a obično se kreće između 6€ - 9€ (Hrvatska). Osim dostave unutar Hrvatske, šaljemo i u druge zemlje. Samo nam javite gdje želite da pošaljemo vašu pošiljku, a mi ćemo vam ponuditi najpovoljniju i najsigurniju opciju dostave.'
+                },
+                {
+                    id: 3,
+                    question: 'Vizualizacija dizajna',
+                    answer: 'Nakon što dovršite narudžbu na našoj web stranici, naši menadžeri će vas kontaktirati i poslati vam odabrani dizajn prilagođen vašim dimenzijama. Također, nudimo vizualizaciju tapete na vašem zidu kako biste mogli vidjeti kako će dizajn izgledati u vašem prostoru. Za najbolje rezultate, jednostavno nam pošaljite fotografiju vašeg zida snimljenu uz dobro osvjetljenje i iz udaljenosti na kojoj je cijeli zid vidljiv.'
+                },
+                {
+                    id: 4,
+                    question: 'Kako izmjeriti svoj zid?',
+                    answer: 'Pripremili smo upute za vas kako izmjeriti svoj zid u različitim situacijama. Ako ovdje ne možete pronaći potrebne upute ili trebate pomoć, slobodno nas kontaktirajte i rado ćemo vam pomoći.'
+                },
+            ]
         },
         btns: {
             catalog:'Katalog',
@@ -1730,8 +1808,8 @@ const textData = {
             learnMore: 'Saznajte više',
             subscribe: 'Pretplatite se',
             viewAllArticles: 'Pogledajte sve članke',
-            calculateThePrice: 'Calculate the price',
-            addToCart: 'Add to cart',
+            calculateThePrice: 'Izračunajte cijenu',
+            addToCart: 'Dodajte u košaricu',
         },
         materials: [
             'Glatka tapeta na bazi ljepila',
