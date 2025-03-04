@@ -1,0 +1,59 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
+
+.customDesignService {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+.titleWrap {
+    width: 75%;
+}
+
+.handwriteWrap {
+    text-align: end;
+    width: 86.5%;
+    margin-top: -1.7vw;
+}
+
+.contentWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2%;
+}
+
+.cardBeuge,
+.cardOrange,
+.cardImg {
+    border-radius: 1rem;
+    width: 28.5%;
+
+}
+
+.cardBeuge,
+.cardOrange {
+    padding: 2.5vw;
+}
+
+.cardBeuge {
+    background-color: $beige;
+}
+
+.cardOrange {
+    background-color: $orange-alert;
+    & .text {
+        color: $white-text;
+    }
+}
+
+.text {
+    @include onest-400-14;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}

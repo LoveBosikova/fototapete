@@ -8,6 +8,7 @@ import style from './productPage.module.scss';
 import ProductInfo from '../../ui/productInfo/productInfo';
 import QuestionsProduct from '../../blocks/questionsProduct/questionsProduct';
 import Recomendations from '../../blocks/recomendations/recomendations';
+import CustomDesignService from '../../blocks/customDesignService/customDesignService';
 
 function ProductPage () {
     // TODO : make try if there is no product fit this pid
@@ -40,6 +41,7 @@ function ProductPage () {
             </div>
             <QuestionsProduct />
             <Recomendations />
+            <CustomDesignService />
 
         </div>
     )
