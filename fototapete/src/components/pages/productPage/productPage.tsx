@@ -7,6 +7,7 @@ import textData from '../../../texts';
 import style from './productPage.module.scss';
 import ProductInfo from '../../ui/productInfo/productInfo';
 import QuestionsProduct from '../../blocks/questionsProduct/questionsProduct';
+import Recomendations from '../../blocks/recomendations/recomendations';
 
 function ProductPage () {
     // TODO : make try if there is no product fit this pid
@@ -38,6 +39,7 @@ function ProductPage () {
                 </ProductInfo>
             </div>
             <QuestionsProduct />
+            <Recomendations />
 
         </div>
     )

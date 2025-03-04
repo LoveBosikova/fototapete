@@ -1,3 +1,5 @@
+import Handwriting from "./components/ui/handwriting/handwriting";
+
 const textData = {
     en: {
         mainBillboard: {
@@ -580,6 +582,7 @@ const textData = {
             measureWall: 'How to measure your wall?',
             alsoLikeTitle: 'You may also like',
             customDesignServiceTitle: 'If you want unique wallpaper, we offer a custom design service',
+            handwriting: 'Custom design',
             point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
             point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.',
             questions: [
@@ -1767,6 +1770,7 @@ const textData = {
             enterValue: 'Enter a value',
             alsoLikeTitle: 'Slični proizvodi',
             customDesignServiceTitle: 'Ako želite jedinstvene tapete, nudimo uslugu dizajna po narudžbi',
+            handwriting: 'Custom design',
             point1: 'Kod nas možete kreirati foto tapete po mjeri s NEOGRANIČENIM mogućnostima dizajna. Bilo koja slika visoke rezolucije može postati vaša tapeta, a izrađujemo ih u dimenzijama koje VI odaberete!',
             point2: 'Naši dizajneri pomoći će vam stvoriti poseban uzorak ili razviti potpuno novi dizajn prema vašim željama. Usluga se naplaćuje, a cijena ovisi o složenosti dizajna.',
             questions: [

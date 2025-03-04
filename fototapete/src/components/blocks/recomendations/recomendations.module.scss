@@ -1,0 +1,18 @@
+.recomendations {
+    margin: 3vw 0vw;
+}
+
+.titleWrap {
+    margin: 2vw 0vw;
+}
+
+.productsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2.65vw;
+}
+
+.productWrap {
+    width: 32.3%;
+}

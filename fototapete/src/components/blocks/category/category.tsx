@@ -28,7 +28,14 @@ function Category () {
         <div className={style.category}>
             <div className={style.contentWrap}>
                 <ul className={style.results}>
-                    {textCatalog.products.map((product) => <div key={product.id} className={style.productWrap}><ProductPreview product={product} categoryName={category.map((i)=> i?.categoryName)[0] && text.categories[0]?.categoryName} ></ProductPreview></div>)}
+                    {textCatalog.products.map((product) => <div 
+                                                            key={product.id} 
+                                                            className={style.productWrap}>
+                                                                <ProductPreview 
+                                                                product={product} 
+                                                                categoryName={category.map((i)=> i?.categoryName)[0] && text.categories[0]?.categoryName} >
+                                                                </ProductPreview>
+                                                            </div>)}
                 </ul>
             </div>
             <div className={style.btnWrap}>
