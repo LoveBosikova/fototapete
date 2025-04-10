@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import Selector from '../../ui/selector/selector';
 import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 import ImgHeart from '../../ui/icons/imgHeart/ImgHeart.tsx';
 import ImgBug from '../../ui/icons/imgBug/ImgBug.tsx';
 
-import style from './header.module.scss';
 import NavBar from '../navbar/navbar.tsx';
 import Logo from '../../ui/logo/logo.tsx';
+
+import style from './header.module.scss';
 
 function Header () {
 
@@ -27,9 +28,6 @@ function Header () {
                 <Logo isWhite={isDefaultStyles}></Logo>   
             </div>
             <div className={style.contentWrap}>
-                {/* <div className={style.logoWrap}>
-                    <img className={style.logoImg} src={logo} alt='Fototapete logo' />
-                </div> */}
                 <div className={style.iconsWrap}>
                     <div className={style.selectorWrap}>
                         <Selector isWhite={isDefaultStyles}></Selector>  
@@ -39,11 +37,11 @@ function Header () {
                             <ImgHeart></ImgHeart>
                         </UtilIcon>
                     </div>
-                    <div className={style.iconWrap}>
+                    <NavLink to='/fototapete/cart' className={style.iconWrap} end>
                         <UtilIcon linkTo={''} description={'Go to favorites'}>
                             <ImgBug></ImgBug>
                         </UtilIcon>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </header>

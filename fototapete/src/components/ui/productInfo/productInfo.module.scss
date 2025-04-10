@@ -185,7 +185,6 @@
 }
 
 .maesuresWrapVisible {
-    // display: none;
     width: 63%;
     display: flex;
     justify-content: space-between;
@@ -197,7 +196,6 @@
 .maesuresWrapInvisible {
     display: none;
     width: 63%;
-    // display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2%;
@@ -218,7 +216,6 @@
     border: 1px solid $border-grey;
     border-radius: $button-border;
     margin-bottom: .55vw;
-
     transition: $transition-appearance;
 
     &:focus,
@@ -227,11 +224,35 @@
         outline: none;
         transition: $transition-disappearance;
     }
-
 }
 
 .wallWidth,
 .wallHeight {
     width: 49%;
     max-width: 49%;
+}
+
+.likeWrap {
+    position: absolute;
+    z-index: 10;
+    top: 4%;
+    right: 3%;
+    width: 6%;
+}
+
+.checkboxWrap {
+    @include onest-400-18;
+    display: flex;
+    gap: .5vw;
+    margin-top: 2vw;
+}
+
+.subcategoryCheckboxWrap {
+    width: 1vw;
+    cursor: pointer;
+}
+
+.installationNote {
+    @include onest-400-13;
+    margin-top: 1vw;
 }

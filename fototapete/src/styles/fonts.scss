@@ -158,6 +158,15 @@
     font-size: $font-size-12;
 }
 
+@mixin onest-500-13 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-13;
+}
+
 @mixin onest-500-14 {
     font-family: "Onest", serif;
     font-optical-sizing: auto;

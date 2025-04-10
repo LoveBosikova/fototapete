@@ -98,11 +98,15 @@
 }
 
 @media (max-width: 540px) {
-    .text {
-        @include onest-400-45;
+    .titleWrap {
+        width: 82%;
     }
 
     .contentWrap {
         gap: 4vw;
+    }
+
+    .text {
+        @include onest-400-45;
     }
 }

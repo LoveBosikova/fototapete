@@ -1,0 +1,92 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.linkBtn {
+    @include onest-400-14;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    min-width: min-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: $white-text;
+    background-color: $black-text;
+    border: 1px solid $black-text;
+    outline: none;
+    border-radius: $button-border;
+    transition: $transition-appearance;
+    background-color: $black-text;
+
+    @media (max-width: 1140px) {
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+
+    @media (max-width: 720px) {
+        @include onest-400-28;
+    }
+    
+    @media (max-width: 500px) {
+        @include onest-400-34;
+    }
+
+    // &:hover {
+    //     background-color: $orange-alert;
+    //     transition: $transition-disappearance;
+    //     border: 1px solid $orange-alert;
+    //     color: $white-text;
+
+    //     & .link {
+    //         color: $white-text;
+    //         transition: $transition-disappearance;
+
+    //         @media (max-width: 1140px) {
+    //             @include onest-400-22;
+    //             letter-spacing: -0.015rem;
+    //             line-height: 123%;
+    //         }
+
+    //         @media (max-width: 720px) {
+    //             @include onest-400-28;
+    //         }
+            
+    //         @media (max-width: 500px) {
+    //             @include onest-400-34;
+    //         }
+    //     }
+    // }
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: $black-text;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    transition: $transition-appearance;
+
+    @media (max-width: 1140px) {
+        @include onest-400-22;
+        letter-spacing: -0.015rem;
+        line-height: 123%;
+    }
+
+    @media (max-width: 720px) {
+        @include onest-400-28;
+    }
+    
+    @media (max-width: 500px) {
+        @include onest-400-34;
+    }
+}

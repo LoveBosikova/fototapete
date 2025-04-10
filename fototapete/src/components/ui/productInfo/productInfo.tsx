@@ -10,6 +10,8 @@ import btn from '../../../assets/sliderBtn.png';
 import textData from "../../../texts";
 
 import style from './productInfo.module.scss';
+import ImgLike from "../icons/imgLike/imgLike";
+import SubcategoryCheckbox from "../subcategoryCheckbox/subcategoryCheckbox";
 
 type IProductInfoProps = {
     product: any ;
@@ -52,13 +54,20 @@ function ProductInfo (props: IProductInfoProps) {
         setWallWidth(width)
     }
 
+    const [ needInstallation, setNeedInstallation ] = useState<boolean>(false)
 
-    console.log(selectedMaterial);
+    function handleNeedInstallation () {
+        setNeedInstallation(!needInstallation)
+    }
 
     return (
         <div className={style.productInfo}>
             <div className={style.slidersWrap}>
                 <div className={style.bigSlider}>
+                    <div className={style.likeWrap}>
+                    {/* TODO: like functional! */}
+                        <ImgLike isActive={true}></ImgLike>
+                    </div>
                     <Swiper
                     grabCursor={true}
                     spaceBetween={10}
@@ -130,7 +139,6 @@ function ProductInfo (props: IProductInfoProps) {
                         placeholder={textProductInfo.enterValue}
                         />
                     </label>
-
                 </div>
 
                 <div className={style.calculatorWrap}>
@@ -143,6 +151,13 @@ function ProductInfo (props: IProductInfoProps) {
                         <div className={style.resultsWrap}>
                             <FormResult text={textProductInfo.wallpaperPrice} value={textProductInfo.wallpaperPriceValue}></FormResult>
                         </div>
+                        <div className={style.checkboxWrap}>
+                            <div className={style.subcategoryCheckboxWrap} onClick={handleNeedInstallation}>
+                                <SubcategoryCheckbox isActive={needInstallation}></SubcategoryCheckbox>
+                            </div>
+                            <p className={style.checkboxText}>{textProductInfo.checkbox}</p>
+                        </div>
+                        <p className={style.installationNote}>{textProductInfo.needInsallationNote}</p>
                     </div>
                 </div>
 

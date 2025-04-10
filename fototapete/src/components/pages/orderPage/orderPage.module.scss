@@ -1,0 +1,118 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.orderPage {
+    position: relative;
+    margin-right: 4.6%;
+    margin-left: 4.6%;
+    margin-top: 8.1vw;
+    margin-bottom: 2vw;
+}
+
+.note {
+    @include onest-400-11;
+    letter-spacing: 0.026rem;
+    text-align: center;
+    background-color: $orange-alert;
+    color: $white-text;
+    padding: 2.2vw 2.3vw;
+    border-radius: 1.2rem;
+    margin-bottom: 2.6vw;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+.form {
+    width: 50%;
+    max-width: 50%;
+    color: $black-text;
+
+    input, textarea {
+        border-radius: 1.2rem;
+        width: 95%;
+        padding: .5vw 1vw;
+        @include onest-400-11;
+    }
+}
+
+.switch {
+    display: flex;
+    color: $black-text;
+    width: 100%;
+    @include onest-400-14;
+
+    > div:first-child {
+        border-top-left-radius: 1.2rem;
+        border-bottom-left-radius: 1.2rem;
+    }
+    
+    > div:last-child {
+        border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+    }
+}
+
+.switch_item {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    padding: 1.2vw 0;
+    background-color: $beige-card;
+    color: $black-text;
+    overflow: hidden;
+    transition: all 150ms ease-in-out;
+}
+
+.switch_item_active {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    background-color: $orange-alert;
+    color: $white-text;
+    padding: 1.2vw 0;
+    overflow: hidden;
+    transition: all 150ms ease-in-out;
+}
+
+.order {
+    width: 50%;
+    max-width: 50%;
+    background-color: $beige-card;
+    border-radius: 1.2rem;
+    padding: 1.2vw;
+}
+
+.row {
+    display: flex;
+    gap: 3vw;
+    width: 97%;
+}
+
+.halfrow {
+    width: 50%;
+}
+
+.form_label {
+    margin-top: 1vw;
+    margin-bottom: .25vw;
+}
+
+.form_title {
+    margin-top: 1.5vw;
+}
+
+.checkboxWrap {
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 0.5vw;
+}
+
+.checkbox {
+    max-width: 1vw;
+}

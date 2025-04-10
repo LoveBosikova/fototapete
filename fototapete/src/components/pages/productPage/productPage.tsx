@@ -19,10 +19,7 @@ function ProductPage () {
     const langValue = lang.value.toLowerCase()
 
     const text = textData[langValue as keyof typeof textData].productPage // get the productPage texts
-    
-
     const product = textData[langValue as keyof typeof textData].catalog.products.find((product) => product.id === +pid) // get the products arr
-    console.log(product);
 
     return (
         <div className={style.productPage}>

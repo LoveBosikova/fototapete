@@ -1,5 +1,3 @@
-import Handwriting from "./components/ui/handwriting/handwriting";
-
 const textData = {
     en: {
         mainBillboard: {
@@ -585,6 +583,8 @@ const textData = {
             handwriting: 'Custom design',
             point1: 'You can create custom-made photo wallpapers with UNLIMITED design options with us. Any high-resolution image can be your wallpaper, and we make wallpapers in the dimensions YOU choose!',
             point2: 'Our designers will help you create a special pattern or develop a completely new design based on your wishes. The service is charged, and the price depends on the complexity of the design.',
+            checkbox: "I need installation",
+            needInsallationNote: "*Installation is paid separately. After placing your order, our manager will contact you to calculate the cost and schedule a convenient installation time.",
             questions: [
                 {
                     id: 0,
@@ -773,6 +773,45 @@ const textData = {
                 }
             ]
         },
+        cartPage: {
+            note:'BEFORE PLACING THE ORDER, WE WILL SEND YOU AN IMAGE OF THE SELECTED DESIGN IN THE REQUIRED DIMENSIONS TO THE PROVIDED EMAIL ADDRESS. WE WILL ASK YOU TO CONFIRM VIA EMAIL WHETHER THE WALLPAPER DESIGN MEETS YOUR EXPECTATIONS.',
+            title_product: 'Product',
+            title_price: 'Price',
+            title_amount: 'Amount',
+            title_total: 'Total',
+            cart_total_in_cart: 'Total in cart',
+            delivery: 'Delivery', 
+            cart_note: 'For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel`s weight, and they are usually between 5 and 10 euros.',
+            discount: 'Discount',
+        },
+        orderPage: {
+            cart_note_installation: "IF YOU WANT INSTALLATION: At the bottom of the form, please indicate that you would like our team to install the wallpaper. Provide an email address or WhatsApp number where we can reach you in writing to arrange the details. The current price does not include the installation service.",
+            private: "Private",
+            company: "Company",
+            contact_information: "Contact information",
+            email: "E-mail",
+            phone_number: "Phone number",
+            shippnig_information: "Shippnig information",
+            first_name: "First name",
+            last_name: "Last name",
+            country: "Country",
+            city: "City",
+            address: "Address (street, house number and apartment)",
+            postal_code: "Postal code",
+            district: "District (optional)",
+            additional_information: "Additional information",
+            order_notes: "Order Notes (optional)",
+            invoice_address: "Use other invoice address",
+            your_order: "Your order",
+            product: "Product",
+            total: "Total",
+            delivery: "Delivery",
+            order_note: "For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel's weight, and they are usually between 5 and 10 euros.",
+            discount: "Discount",
+            promo_code: "Promo code",
+            promo_note: "If you have a promo code or certificate, enter it in the field below",
+            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our"
+        },
         btns: {
             catalog:'Catalog',
             individualOrder: 'Individual order',
@@ -786,6 +825,9 @@ const textData = {
             viewAllArticles: 'View all articles',
             calculateThePrice: 'Calculate the price',
             addToCart: 'Add to cart',
+            goToCheckout: 'Go to checkout',
+            preview_dimensions: "Preview in your dimensions",
+            order: "Order",
         },
         materials: [
             'Smooth Adhesive-based Wallpaper',
@@ -1773,6 +1815,8 @@ const textData = {
             handwriting: 'Custom design',
             point1: 'Kod nas možete kreirati foto tapete po mjeri s NEOGRANIČENIM mogućnostima dizajna. Bilo koja slika visoke rezolucije može postati vaša tapeta, a izrađujemo ih u dimenzijama koje VI odaberete!',
             point2: 'Naši dizajneri pomoći će vam stvoriti poseban uzorak ili razviti potpuno novi dizajn prema vašim željama. Usluga se naplaćuje, a cijena ovisi o složenosti dizajna.',
+            checkbox: "I need installation",
+            needInsallationNote: "*Installation is paid separately. After placing your order, our manager will contact you to calculate the cost and schedule a convenient installation time.",
             questions: [
                 {
                     id: 0,
@@ -1801,6 +1845,45 @@ const textData = {
                 },
             ]
         },
+        cartPage: {
+            note:'BEFORE PLACING THE ORDER, WE WILL SEND YOU AN IMAGE OF THE SELECTED DESIGN IN THE REQUIRED DIMENSIONS TO THE PROVIDED EMAIL ADDRESS. WE WILL ASK YOU TO CONFIRM VIA EMAIL WHETHER THE WALLPAPER DESIGN MEETS YOUR EXPECTATIONS.',
+            title_product: 'Product',
+            title_price: 'Price',
+            title_amount: 'Amount',
+            title_total: 'Total',
+            cart_total_in_cart: 'Total in cart',
+            delivery: 'Delivery', 
+            cart_note: 'For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel`s weight, and they are usually between 5 and 10 euros.',
+            discount: 'Discount',
+        },
+        orderPage: {
+            cart_note_installation: "IF YOU WANT INSTALLATION: At the bottom of the form, please indicate that you would like our team to install the wallpaper. Provide an email address or WhatsApp number where we can reach you in writing to arrange the details. The current price does not include the installation service.",
+            private: "Private",
+            company: "Company",
+            contact_information: "Contact information",
+            email: "E-mail",
+            phone_number: "Phone number",
+            shippnig_information: "Shippnig information",
+            first_name: "First name",
+            last_name: "Last name",
+            country: "Country",
+            city: "City",
+            address: "Address (street, house number and apartment)",
+            postal_code: "Postal code",
+            district: "District (optional)",
+            additional_information: "Additional information",
+            order_notes: "Order Notes (optional)",
+            invoice_address: "Use other invoice address",
+            your_order: "Your order",
+            product: "Product",
+            total: "Total",
+            delivery: "Delivery",
+            order_note: "For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel's weight, and they are usually between 5 and 10 euros.",
+            discount: "Discount",
+            promo_code: "Promo code",
+            promo_note: "If you have a promo code or certificate, enter it in the field below",
+            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our"
+        },
         btns: {
             catalog:'Katalog',
             individualOrder: 'Individualna narudžba',
@@ -1814,6 +1897,9 @@ const textData = {
             viewAllArticles: 'Pogledajte sve članke',
             calculateThePrice: 'Izračunajte cijenu',
             addToCart: 'Dodajte u košaricu',
+            goToCheckout: 'Go to checkout',
+            preview_dimensions: "Preview in your dimensions",
+            order: "Order",
         },
         materials: [
             'Glatka tapeta na bazi ljepila',

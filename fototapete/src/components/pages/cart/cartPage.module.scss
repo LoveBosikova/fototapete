@@ -1,0 +1,97 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.cartPage {
+    position: relative;
+    margin-right: 4.6%;
+    margin-left: 4.6%;
+    margin-top: 8.1vw;
+    margin-bottom: 2vw;
+}
+
+.contentWrap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+.note {
+    @include onest-400-11;
+    letter-spacing: 0.026rem;
+    text-align: center;
+    background-color: $orange-alert;
+    color: $white-text;
+    text-transform: uppercase;
+    padding: 2.2vw 2.3vw;
+    border-radius: 1.2rem;
+    margin-bottom: 2.6vw;
+}
+
+.cartTable {
+    width: 71%;
+    border: 1px solid $black-text;
+    border-radius: 1.2rem;
+    @include onest-400-14;
+
+}
+
+.cartSummary {
+    width: 29%;
+    height: auto;
+}
+
+.cartHeader {
+    display: grid;
+    grid-template-columns: 10% 16% 35% repeat(3, 13.5%);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 3.1vw;
+    padding-bottom: 1vw;
+}
+
+.headerItem_product {
+    grid-area: 1 / 3 / 2 / 4;
+    color: $black-text;
+}
+
+.headerItem_price {
+    grid-area: 1 / 4 / 2 / 5; 
+    color: $black-text;
+}
+
+.headerItem_amount {
+    grid-area: 1 / 5 / 2 / 6; 
+    color: $black-text;
+}
+
+.headerItem_total {
+    grid-area: 1 / 6 / 2 / 7; 
+    color: $black-text;
+}
+
+.cartSummary {
+    background-color: $beige-card;
+    color: $black-text;
+    padding: 1.8vw;
+    border-radius: 1.2rem;
+}
+
+.cartSummary_header {
+    @include onest-500-14;
+    margin-top: 1.4vw;
+}
+
+.cartSummary_item {
+    @include onest-500-13;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8vw 0
+}
+
+.cartSummary_text {
+    @include onest-400-13;
+    margin: .8vw 0;
+    line-height: 114%;
+}

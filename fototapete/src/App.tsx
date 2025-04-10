@@ -14,6 +14,8 @@ import Category from './components/blocks/category/category';
 
 import './App.scss'
 import ProductPage from './components/pages/productPage/productPage';
+import CartPage from './components/pages/cart/cartPage';
+import OrderPage from './components/pages/orderPage/orderPage';
 // import { Iproduct } from './components/ui/productPreview/productPreview';
 
 function App() {
@@ -26,9 +28,10 @@ function App() {
     <BrowserRouter>
       <Header />
         <Routes>
-          <Route index path='*' element={<MainPage />}></Route>
-          <Route path='/fototapete/:pid' element={<ProductPage />}></Route>
-
+          <Route index path='*' element={<MainPage />} />
+          <Route path='/fototapete/:pid' element={<ProductPage />} />
+          <Route path='/fototapete/cart' element={<CartPage />} />
+          <Route path='/fototapete/order' element={<OrderPage />} />
           <Route path='/fototapete/catalog' element={<CatalogPage />}>
             <Route index element={<Wallpapers />} />
             <Route path='/fototapete/catalog/:cid' element={<Category />} />
