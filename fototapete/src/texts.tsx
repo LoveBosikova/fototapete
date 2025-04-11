@@ -808,9 +808,12 @@ const textData = {
             delivery: "Delivery",
             order_note: "For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel's weight, and they are usually between 5 and 10 euros.",
             discount: "Discount",
-            promo_code: "Promo code",
+            discount_code: "Discount code",
             promo_note: "If you have a promo code or certificate, enter it in the field below",
-            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our"
+            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our",
+            width: "Width (cm):",
+            height: "Height (cm):",
+            total_m2: "Total m2:",
         },
         btns: {
             catalog:'Catalog',
@@ -1880,9 +1883,12 @@ const textData = {
             delivery: "Delivery",
             order_note: "For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel's weight, and they are usually between 5 and 10 euros.",
             discount: "Discount",
-            promo_code: "Promo code",
+            discount_code: "Discount code",
             promo_note: "If you have a promo code or certificate, enter it in the field below",
-            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our"
+            personal_info_note: "Your personal information will be used to support your experience on this website and for other purposes described in our",
+            width: "Width (cm):",
+            height: "Height (cm):",
+            total_m2: "Total m2:",
         },
         btns: {
             catalog:'Katalog',

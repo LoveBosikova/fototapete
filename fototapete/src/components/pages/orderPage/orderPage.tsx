@@ -1,18 +1,23 @@
 import { useContext, useState } from 'react'
 import textData from '../../../texts'
 import { LangContext } from '../../../context/LangContext'
-import CartItem from '../../ui/cartItem/cartItem'
-import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
+// import CartItem from '../../ui/cartItem/cartItem'
+// import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
 import style from './orderPage.module.scss'
 import { $form, changeTaskForm } from './model'
 import { useUnit } from 'effector-react'
 import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbox'
+import { TEST_ORDER } from '../../../variables'
+import OrderItem, { TPropsOrderItem } from '../../ui/orderItem/orderItem'
+import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
+import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack'
+import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
 
 function OrderPage () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].orderPage
-    const products = textData[langValue as keyof typeof textData].catalog.products
+    // const products = textData[langValue as keyof typeof textData].catalog.products
     const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
 
@@ -69,7 +74,7 @@ function OrderPage () {
                             onChange={(e) => {
                                 changeTaskForm({ 
                                     key: "first_name", 
-                                    value: e.target.value });
+                                    value: e.target.value })
                                 }}
                             type='text'
                             />
@@ -81,7 +86,7 @@ function OrderPage () {
                             onChange={(e) => {
                                 changeTaskForm({ 
                                     key: "last_name", 
-                                    value: e.target.value });
+                                    value: e.target.value })
                                 }}
                             type='text'
                             />
@@ -167,6 +172,47 @@ function OrderPage () {
                 </form>
 
                 <div className={style.order}>
+                <h2 className={style.order_title}>{text.your_order}</h2>
+                <div className={style.order__header}>
+                    <p className={style.order_title}>{text.product}</p>
+                    <p className={style.order_title}>{text.total}</p>
+                </div>
+                <ul className={style.order__items}>
+                    {TEST_ORDER.map((item : TPropsOrderItem) => <OrderItem {...item} /> )}
+                </ul>
+                <div className={style.order__header}>
+                    <p className={style.order_title}>{text.total}</p>
+                    <p className={style.order_title}>90 €</p>
+                </div>
+                <h2 className={style.order_title}>{text.delivery}</h2>
+                <p className={style.delivery_note}>{text.order_note}</p>
+                <div className={style.order__header}>
+                    <p className={style.order_title}>{text.discount}</p>
+                    <p className={style.order_title}>0</p>
+                </div>
+                <div className={style.order__header}>
+                    <p className={style.order_title}>{text.product}</p>
+                    <p className={style.order_title}>{text.total}</p>
+                </div>
+                <h2 className={style.order_title}>{text.discount_code}</h2>
+                <p className={style.delivery_note}>{text.promo_note}</p>
+                <input 
+                    value={form.phone}
+                    onChange={(e) => {
+                        changeTaskForm({ 
+                            key: "discount_code", 
+                            value: e.target.value });
+                        }}
+                    type='text'
+                />
+                <p className={style.delivery_undernote}>{text.personal_info_note}</p>
+                <LinkButtonOrangeWhite text={btns.preview_dimensions} link={''}/>
+                <LinkButtonCart text={btns.order} link={''}/>
+
+
+
+
+
 
                 </div>
             </div>

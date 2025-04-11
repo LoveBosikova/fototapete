@@ -336,3 +336,12 @@
         font-size: $font-size-20;
     }
 }
+
+@mixin onest-400-9 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-9;
+}

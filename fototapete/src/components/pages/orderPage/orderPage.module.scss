@@ -23,12 +23,12 @@
 .content {
     display: flex;
     flex-wrap: nowrap;
-    gap: 2vw;
+    gap: 1.3vw;
 }
 
 .form {
-    width: 50%;
-    max-width: 50%;
+    width: 58%;
+    max-width: 58%;
     color: $black-text;
 
     input, textarea {
@@ -36,6 +36,7 @@
         width: 95%;
         padding: .5vw 1vw;
         @include onest-400-11;
+        margin-bottom: 0.25vw;
     }
 }
 
@@ -60,7 +61,7 @@
     width: 50%;
     text-align: center;
     height: 100%;
-    padding: 1.2vw 0;
+    padding: .7vw 0;
     background-color: $beige-card;
     color: $black-text;
     overflow: hidden;
@@ -73,7 +74,7 @@
     height: 100%;
     background-color: $orange-alert;
     color: $white-text;
-    padding: 1.2vw 0;
+    padding: .7vw 0;
     overflow: hidden;
     transition: all 150ms ease-in-out;
 }
@@ -83,7 +84,8 @@
     max-width: 50%;
     background-color: $beige-card;
     border-radius: 1.2rem;
-    padding: 1.2vw;
+    padding: 1.2vw 2.5vw;
+    padding-right: 3.7vw;
 }
 
 .row {
@@ -97,12 +99,19 @@
 }
 
 .form_label {
+    @include onest-400-13;
     margin-top: 1vw;
-    margin-bottom: .25vw;
+    margin-bottom: .67vw;
 }
 
 .form_title {
-    margin-top: 1.5vw;
+    @include onest-500-14;
+    margin-top: 2.5vw;
+}
+
+.order_title {
+    @include onest-500-14;
+    margin-top: 1.2vw;
 }
 
 .checkboxWrap {
@@ -115,4 +124,35 @@
 
 .checkbox {
     max-width: 1vw;
+}
+
+.order {
+    color: $black-text;
+    
+    input, textarea {
+        @include onest-400-11;
+        border-radius: 1.2rem;
+        width: 95%;
+        padding: .5vw 1vw;
+        margin-top: .5vw;
+        margin-bottom: .5vw;
+    }
+}
+.order__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery_note {
+    @include onest-400-11;
+    color: $black-text;
+    margin-top: .5vw;
+}
+
+.delivery_undernote {
+    @include onest-400-9;
+    color: $black-text;
+    margin-top: .25vw;
+    margin-bottom: 1vw;
 }

@@ -1,0 +1,34 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15%;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.info {
+    max-width: 50%;
+}
+
+.metricsWrap {
+    @include onest-400-12;
+    color: $link-disabled;
+}
+
+.name,
+.price {
+    @include onest-400-12;
+    color: $black-text;
+}
+
+.price {
+    min-width: 15%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
