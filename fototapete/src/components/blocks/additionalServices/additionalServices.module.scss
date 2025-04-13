@@ -1,0 +1,64 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+
+.additionalServices {
+    padding: 4vw 3.5vw;
+}
+
+.titlewrap {
+    width: 72%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+
+.card_beuge {
+    width: 26.5%;
+    background-color: $beige-card;
+    color: $black-text;
+    border-radius: 1.2rem;
+    padding: 2.2vw 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & .pointText {
+        @include onest-400-18;
+        width: 73%;
+        letter-spacing: .02rem;
+        margin-bottom: 4vw;
+    }
+
+    & .btnWrap {
+        width: 52%;
+    }
+}
+
+.card {
+    width: 26.5%;
+    background-color: $orange-alert;
+    color: $white-text;
+    border-radius: 1.2rem;
+    padding: 2.2vw 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & .pointText {
+        @include onest-400-18;
+        width: 73%;
+        letter-spacing: .02rem;
+        margin-bottom: 4vw;
+    }
+
+    & .btnWrap {
+        width: 52%;
+    }
+}

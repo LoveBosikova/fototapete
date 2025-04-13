@@ -18,7 +18,7 @@ function Header () {
     let location = useLocation();
 
     useEffect(()=>{
-        location.pathname === '/fototapete' ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
+        location.pathname === '/fototapete' || '/fototapete/info'  || '/' ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
     }, [location])
 
     return (

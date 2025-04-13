@@ -17,7 +17,11 @@ function NavBar (props: INavBarProps) {
             </NavLink>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Сustom design</a></li>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Price</a></li>
-                <li className={style.linkWrap}><a className={style.link} href='#'>Info</a></li>
+                <NavLink to='/fototapete/info' end>
+                    <li className={style.linkWrap}><p className={style.link}>Info</p></li>
+                </NavLink>
+                {/* /fototapete/info */}
+                {/* <li className={style.linkWrap}><a className={style.link} href='#'>Info</a></li> */}
                 <li className={style.linkWrap}><a className={style.link} href='#'>Materials</a></li>
             </ul>
         </nav>

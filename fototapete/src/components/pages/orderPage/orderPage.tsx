@@ -17,12 +17,8 @@ function OrderPage () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].orderPage
-    // const products = textData[langValue as keyof typeof textData].catalog.products
     const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
-
-
-    // const [isPrivate, setIsPrivate] = useState(true)
 
     return (
         <div className={style.orderPage}>
@@ -263,7 +259,6 @@ function OrderPage () {
                             </div>
                         </>
                         }
-                    {/* </div> */}
                 </form>
 
                 <div className={style.order}>
