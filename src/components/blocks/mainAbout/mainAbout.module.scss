@@ -1,0 +1,106 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.mainAbout {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    margin: .6%;
+    margin-top: 1.5vw;
+}
+
+.backgroundWrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.backgroundImg {
+    width: 100%;
+    max-width: 100%;
+}
+
+.textWrap {
+    width: 49%;
+    padding-top: 39.5vw;
+    padding-left: 3vw;
+    padding-bottom: 6vw;
+    position: relative;
+}
+
+.titleWrap {
+    width: 100%;
+}
+
+.handwritingWrap {
+    position: relative;
+    padding-left: 18%;
+    margin-top: -3%;
+    padding-right: .5%;
+}
+
+.articleWrap {
+    width: 23%;
+    margin-top: 15vw;
+    margin-left: auto;
+    margin-right: 5.8%;
+    position: relative;
+}
+
+.note {
+    @include onest-400-12;
+    color: $black-text;
+    letter-spacing: .019rem;
+    width: 84%;
+    margin-left: 1.2vw;
+    margin-top: -2vw;
+}
+
+@media (max-width: 1140px) {
+    .textWrap {
+        width: 65%;
+        padding-top: 78vw;
+        padding-left: 3vw;
+        padding-bottom: 13vw;
+    }
+
+    .handwritingWrap {
+        padding-left: 0;
+    }
+
+    h1 {
+        letter-spacing: -0.1rem !important;
+    }
+
+    .note {
+        @include onest-400-22;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    h1 {
+        letter-spacing: 0rem !important;
+    }
+
+    .textWrap {
+        width: 90%;
+        padding-top: 19vw;
+        padding-left: 3vw;
+        padding-bottom: 114vw;
+    }
+
+    .backgroundWrap {
+        top: 45vw;
+    }
+
+    .note {
+        @include onest-400-28;
+        padding-left: 35%;
+        width: 72%;
+    }
+}

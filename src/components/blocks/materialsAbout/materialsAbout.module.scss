@@ -1,0 +1,36 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.materialsAbout {
+    width: 100%;
+}
+
+.titleWrap {
+    width: 65%;
+}
+
+.imgWrap,
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.article {
+    display: flex;
+    gap: 3vw;
+    justify-content: start;
+    margin-top: 1.5vw;
+    margin-bottom: 2.5vw;
+}
+
+.text {
+    @include onest-400-13;
+    width: 43%;
+    color: $black-text;
+}
+
+.span {
+    @include onest-400-13;
+    color: $orange-alert;
+    display: block;
+}

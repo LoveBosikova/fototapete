@@ -1,0 +1,77 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+
+.materials {
+    margin-top: 6vw;
+}
+
+.materials__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        color: $black-text;
+        margin-top: 2vw;
+}
+
+.material {
+    background-color: $beige-card;
+    border-radius: 1.2rem;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img,
+.imgWrap {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1.2rem;
+    cursor: zoom-in
+}
+
+.bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.btn {
+    width: 40%;
+}
+
+.btn,
+.imgWrap {
+    display: flex;
+}
+
+.imgWrap {
+    width: 40%;
+    border-radius: 1.2rem;
+}
+
+.materials__list,
+.material__point {
+    list-style-type: disc;
+}
+
+.material__point {
+    @include onest-400-13;
+    margin-left: 2vw;
+}
+
+.material__description {
+    @include onest-400-13;
+    margin-top: 1vw;
+}
+
+
+.material__title {
+    @include onest-500-20;
+    width: 66%;
+    margin-bottom: 1vw;
+}
