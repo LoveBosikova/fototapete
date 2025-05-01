@@ -34,3 +34,20 @@
     color: $orange-alert;
     display: block;
 }
+
+@media (max-width: 1140px) {
+    .materialsAbout {
+        margin-top: 15vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .materialsAbout {
+        margin-top: 20vw;
+    }
+
+    .text,
+    .span {
+        @include onest-400-22;
+    }
+}

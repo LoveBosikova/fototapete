@@ -891,6 +891,16 @@ const textData = {
                 ],
                 about: "These are smooth matte PVC wallpapers with an additional protective layer of transparent lamination."
             },
+            concrete_texture: {
+                title: "Exclusive textured self-adhesive (concrete texture) — €58/m²",
+                points: [
+                    "self-adhesive", 
+                    "textured surface: concrete (veneziano)", 
+                    "cleaning with damp cloth", 
+                    "no additional adhesive required",
+                ],
+                about: "Wallpaper is printed on a self-adhesive matte PVC film with the finest 3D texture. This is the thickest and strongest material in our offer."
+            },
             self_adhesive_smooth_with_extra_protection: {
                 title: "Self-Adhesive Smooth Wallpapers with Extra Protection (for Kitchens and Bathrooms) — 35 €/m²",
                 points: [
@@ -903,6 +913,14 @@ const textData = {
                 ],
                 about: ""
             },
+        },
+        form_contact_us: {
+            title: "Leave your details or contact us for a free consultation on wallpaper material selection",
+            text: "Our experts will help you decide and choose the ideal material for your interior design.",
+            name: "Name",
+            mail: "E-mail",
+            phone: "Phone number",
+            note: "By clicking «Send» you agree with the"
         },
         btns: {
             catalog:'Catalog',
@@ -921,6 +939,7 @@ const textData = {
             preview_dimensions: "Preview in your dimensions",
             order: "Order",
             readMore: "Read more",
+            send: "Send",
         },
         materials: [
             'Smooth Adhesive-based Wallpaper',
@@ -2005,7 +2024,7 @@ const textData = {
             main_sub_right_orange: "Discover more about the materials and textures we offer below.",
             materisla_title: "Materials in our product range",
             smooth_adhesive_based: {
-                title: "Smooth Adhesive-based Wallpaper - 16 €/m²",
+                title: "Smooth Adhesive-based Wallpaper - €22/m²",
                 points: [
                     "application with adhesive", 
                     "smooth matt surface", 
@@ -2015,7 +2034,7 @@ const textData = {
                 about: "This wallpaper is printed on matte blueback paper. It has a smooth surface and is the most affordable option in our range. The wallpaper is suitable for flat walls (it cannot be applied using a textured technique)."
             },
             smooth_self_adhesive: {
-                title: "Smooth Self-Adhesive Wallpaper - 23,a5 €/m²",
+                title: "Smooth Self-Adhesive Wallpaper - €27,5/m²",
                 points: [
                     "self-adhesive", 
                     "smooth matt surface", 
@@ -2025,7 +2044,7 @@ const textData = {
                 about: "This wallpaper is printed on self-adhesive PVC matte foil. It is suitable for all flat and smooth surfaces."
             },
             textured_adhesive_based: {
-                title: "Textured Adhesive-Based Wallpaper (Straw/Sand Texture) — 29,5 €/m²",
+                title: "Textured Adhesive-Based Wallpaper (Straw/Sand Texture) - €32/m²",
                 points: [
                     "application with adhesive", 
                     "textured surface — straw/sand texture", 
@@ -2035,7 +2054,7 @@ const textData = {
                 about: "The fine texture of the paper gives it a more luxurious appearance in any space. It`s an excellent solution for both commercial spaces and residential areas, including bedrooms and living rooms."
             },
             textured_self_adhesive: {
-                title: "Textured Self-Adhesive Wallpaper — 41 €/m²",
+                title: "Textured Self-Adhesive Wallpaper — €45/m²",
                 points: [
                     "self-adhesive", 
                     "textured surface — similar to canvas", 
@@ -2056,8 +2075,18 @@ const textData = {
                 ],
                 about: "These are smooth matte PVC wallpapers with an additional protective layer of transparent lamination."
             },
+            concrete_texture: {
+                title: "Exclusive textured self-adhesive (concrete texture) — €58/m²",
+                points: [
+                    "self-adhesive", 
+                    "textured surface: concrete (veneziano)", 
+                    "cleaning with damp cloth", 
+                    "no additional adhesive required",
+                ],
+                about: "Wallpaper is printed on a self-adhesive matte PVC film with the finest 3D texture. This is the thickest and strongest material in our offer."
+            },
             self_adhesive_smooth_with_extra_protection: {
-                title: "Self-Adhesive Smooth Wallpapers with Extra Protection (for Kitchens and Bathrooms) — 35 €/m²",
+                title: "Self-Adhesive Smooth Wallpapers with Extra Protection (for Kitchens and Bathrooms)— €45/m²",
                 points: [
                     "self-adhesive with reinforced adhesive", 
                     "smooth matt surface", 
@@ -2068,6 +2097,14 @@ const textData = {
                 ],
                 about: ""
             },
+        },
+        form_contact_us: {
+            title: "Leave your details or contact us for a free consultation on wallpaper material selection",
+            text: "Our experts will help you decide and choose the ideal material for your interior design.",
+            name: "Name",
+            mail: "E-mail",
+            phone: "Phone number",
+            note: "By clicking «Send» you agree with the"
         },
         btns: {
             catalog:'Katalog',
@@ -2086,6 +2123,7 @@ const textData = {
             preview_dimensions: "Preview in your dimensions",
             order: "Order",
             readMore: "Read more",
+            send: "Send",
         },
         materials: [
             'Glatka tapeta na bazi ljepila',

@@ -33,7 +33,6 @@ function Bestsellers (){
     const text = textData[langValue as keyof typeof textData].bestsellers
     const btnText = textData[langValue as keyof typeof textData].btns
     const categoryText = textData[langValue as keyof typeof textData].categories
-    console.log(categoryText);
     
     return (
         <section className={style.bestsellers}>

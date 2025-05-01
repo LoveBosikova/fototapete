@@ -95,3 +95,15 @@
     margin: .8vw 0;
     line-height: 114%;
 }
+
+@media (max-width: 1140px) {
+    .cartPage {
+        margin-top: 15vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .cartPage {
+        margin-top: 20vw;
+    }
+}
