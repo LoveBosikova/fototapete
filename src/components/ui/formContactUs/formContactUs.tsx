@@ -3,7 +3,6 @@ import style from './formContactUs.module.scss'
 import { LangContext } from '../../../context/LangContext'
 import textData from '../../../texts'
 import LinkButtonWhite from '../buttons/linkButton/linkBurronWhite'
-import LinkButtonOrangeWhite from '../buttons/linkButton/linkBurronOrangeWhite'
 import NotePrivacyPolicy from '../notePrivacyPolicy/notePrivacyPolicy'
 
 function FormContactUs () {

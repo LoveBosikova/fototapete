@@ -10,6 +10,8 @@ import NavBar from '../navbar/navbar.tsx';
 import Logo from '../../ui/logo/logo.tsx';
 
 import style from './header.module.scss';
+import { $cart } from '../../pages/cart/model.ts';
+import { useUnit } from 'effector-react';
 
 function Header () {
 
@@ -21,8 +23,7 @@ function Header () {
         (location.pathname === '/fototapete' || location.pathname === '/fototapete/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
     }, [location])
 
-    console.log("isDefaultStyles", isDefaultStyles);
-    console.log("(location.pathname === '/fototapete' || location.pathname === '/fototapete/info')", (location.pathname === '/fototapete' || location.pathname === '/fototapete/info'));
+        const cart = useUnit($cart)
 
     return (
         <header className={style.header}>
@@ -43,6 +44,7 @@ function Header () {
                     <NavLink to='/fototapete/cart' className={style.iconWrap} end>
                         <UtilIcon linkTo={''} description={'Go to favorites'}>
                             <ImgBug></ImgBug>
+                            { cart.length > 0 && <div className={style.counter}><p>{cart.length}</p></div>}
                         </UtilIcon>
                     </NavLink>
                 </div>

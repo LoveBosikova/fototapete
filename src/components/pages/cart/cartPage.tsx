@@ -4,6 +4,8 @@ import style from './cartPage.module.scss'
 import { LangContext } from '../../../context/LangContext'
 import CartItem from '../../ui/cartItem/cartItem'
 import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
+import { useUnit } from 'effector-react'
+import { $cart } from './model'
 
 function CartPage () {
     const { lang } = useContext(LangContext)
@@ -11,6 +13,11 @@ function CartPage () {
     const text = textData[langValue as keyof typeof textData].cartPage
     const products = textData[langValue as keyof typeof textData].catalog.products
     const btns = textData[langValue as keyof typeof textData].btns
+
+    const cart = useUnit($cart)
+
+    console.log(cart);
+    
 
     return (
         <div className={style.cartPage}>
@@ -24,7 +31,7 @@ function CartPage () {
                         <li className={style.headerItem_total}>{text.title_total}</li>
                     </ul>
                     <ul className={style.cartItems}>
-                        {products.map((product)=> <CartItem product={product}></CartItem>)}
+                        {cart.map((product)=> <CartItem key={product.product?.id} product={product}></CartItem>)}
                     </ul>
                 </div>
                 <div className={style.cartSummary}>

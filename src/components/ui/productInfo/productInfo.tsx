@@ -1,5 +1,5 @@
 import { LangContext } from "../../../context/LangContext";
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import LinkButtonOrange from "../buttons/linkButton/linkButtonOrange";
@@ -12,6 +12,10 @@ import textData from "../../../texts";
 import style from './productInfo.module.scss';
 import ImgLike from "../icons/imgLike/imgLike";
 import SubcategoryCheckbox from "../subcategoryCheckbox/subcategoryCheckbox";
+import { IMaterial } from "../../../types";
+import { $cart, $cart_item_form, $cart_item_form_errors, addToCart, changeCartItemErrorsForm, changeCartItemForm } from "../../pages/cart/model";
+import { useUnit } from "effector-react";
+import { useParams } from "react-router-dom";
 
 type IProductInfoProps = {
     product: any ;
@@ -33,32 +37,46 @@ function ProductInfo (props: IProductInfoProps) {
     const textMaterials = textData[langValue as keyof typeof textData].materials
     const textProductInfo = textData[langValue as keyof typeof textData].productPage
     const textBtns = textData[langValue as keyof typeof textData].btns
+    const errors = textData[langValue as keyof typeof textData].errors
+
+
+    const form = useUnit($cart_item_form)
+    const form_errors = useUnit($cart_item_form_errors)
+    const cart = useUnit($cart)
+
+    console.log("cart_item_form", form);
+    console.log("cart", cart);
+    console.log("form_errors", form_errors);
 
     // Material values
-    const [selectedMaterial, setSelectedMaterial] = useState<string>('')
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
+
+    const { productId } = useParams();
 
     function handleMaterials () {
         setIsMaterialsOpen(!isMaterialsOpen)
     }
 
-    function handleOption (material: string) {
-        setSelectedMaterial(material)
+    function handleOption (material: IMaterial) {
+        changeCartItemForm({
+            key: "material",
+            value: material
+        })
+        changeCartItemErrorsForm({
+            key: "material",
+            value: "",
+            })
         setIsMaterialsOpen(false)
     }
 
-    // Calculator values
-    const [ wallWidth, setWallWidth ] = useState<number | undefined>(undefined)
+    useEffect(() => {
+        changeCartItemForm({
+            key: "product",
+            value: props.product
+        })
 
-    function handleWidth (width: number) {
-        setWallWidth(width)
-    }
+    }, [productId])
 
-    const [ needInstallation, setNeedInstallation ] = useState<boolean>(false)
-
-    function handleNeedInstallation () {
-        setNeedInstallation(!needInstallation)
-    }
 
     return (
         <div className={style.productInfo}>
@@ -109,25 +127,37 @@ function ProductInfo (props: IProductInfoProps) {
                 <p className={style.materialTitle}>{material}</p>
 
                 <div className={style.materialsWrap}>
-                    <div className={style.material} onClick={handleMaterials}><p className={style.selectedMaterial}>{selectedMaterial? selectedMaterial : textProductInfo.selectMaterial}</p></div>
+                    <p className={style.error}>{form_errors.material? form_errors.material : ""}</p>
+                    <div className={style.material} onClick={handleMaterials}><p className={style.selectedMaterial}>{form.material?.name ? form.material?.name : textProductInfo.selectMaterial}</p></div>
                     <div className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
                         <ul className={style.scrollHiddenContainer}>
-                            {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}
+                            {textMaterials.map((material: any) => <li className={style.option} key={material.id} onClick={()=> handleOption(material)}><p className={style.materialText}>{material.name}</p></li>)}
                         </ul>
                     </div>
                     <div className={style.arrowWrap}><img className={style.img} src={selectArrow}></img></div>
                 </div>
 
-                <div className={selectedMaterial? style.maesuresWrapVisible : style.maesuresWrapInvisible}>
+                <div className={form.material?.name ? style.maesuresWrapVisible : style.maesuresWrapInvisible}>
                     <label className={style.wallWidth} htmlFor='wallWidth'>
                         <h4 className={style.measureTitle}>{textProductInfo.wallWidth}</h4>
                         <input 
                         className={style.measureInput} 
                         id='wallWidth' 
                         type='number' 
-                        value={wallWidth}
-                        onChange={(e) => handleWidth(+e.target.value)}
+                        value={form.width}
+                        onChange={(e) =>{
+                            changeCartItemForm({
+                                key: "width",
+                                value: +e.target.value
+                            })
+                            changeCartItemErrorsForm({
+                                key: "width",
+                                value: "",
+                            })
+                        }
+                        }
                         placeholder={textProductInfo.enterValue}/>
+                        <p className={style.error}>{form_errors.width ? form_errors.width : ""}</p>
                     </label>
 
                     <label className={style.wallHeight} htmlFor='wallHeight'>
@@ -136,8 +166,21 @@ function ProductInfo (props: IProductInfoProps) {
                         className={style.measureInput} 
                         id='wallHeight' 
                         type='number' 
+                        value={form.height}
+                        onChange={(e) => {
+                            changeCartItemForm({
+                                key: "height",
+                                value: +e.target.value
+                            })
+                            changeCartItemErrorsForm({
+                                key: "height",
+                                value: "",
+                            })
+                        }
+                        }
                         placeholder={textProductInfo.enterValue}
                         />
+                        <p className={style.error}>{form_errors.height ? form_errors.height : ""}</p>
                     </label>
                 </div>
 
@@ -152,8 +195,13 @@ function ProductInfo (props: IProductInfoProps) {
                             <FormResult text={textProductInfo.wallpaperPrice} value={textProductInfo.wallpaperPriceValue}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
-                            <div className={style.subcategoryCheckboxWrap} onClick={handleNeedInstallation}>
-                                <SubcategoryCheckbox isActive={needInstallation}></SubcategoryCheckbox>
+                            <div className={style.subcategoryCheckboxWrap} onClick={(e)=> {
+                                changeCartItemForm({
+                                key: "needInstallation",
+                                value: !form.needInstallation
+                                })
+                            }}>
+                                <SubcategoryCheckbox isActive={!!form.needInstallation}></SubcategoryCheckbox>
                             </div>
                             <p className={style.checkboxText}>{textProductInfo.checkbox}</p>
                         </div>
@@ -162,8 +210,32 @@ function ProductInfo (props: IProductInfoProps) {
                 </div>
 
                 <div className={style.btnsWrap}>
-                    <div className={style.addToCartWrap}>
-                        <LinkButtonOrange text={textBtns.addToCart} link={''}></LinkButtonOrange>
+                    <div className={style.addToCartWrap} onClick={() => {
+
+                    }}>
+                        <LinkButtonOrange 
+                        text={textBtns.addToCart} 
+                        link={''}  
+                        onClick={() => {
+                            if (!form.material) {
+                                changeCartItemErrorsForm({
+                                    key: "material",
+                                    value: errors.selectMaterial,
+                                    })
+                            } else if (!form.width) {
+                                changeCartItemErrorsForm({
+                                    key: "width",
+                                    value: errors.enterWeight,
+                                    })
+                            } else if (!form.height) {
+                                changeCartItemErrorsForm({
+                                    key: "height",
+                                    value: errors.enterHeight,
+                                    })
+                            } else addToCart();
+                        }}
+                        
+                        ></LinkButtonOrange>
                     </div>
                 </div>
             </div>

@@ -21,12 +21,7 @@ type IProductPreviewProps = {
 
 function ProductPreview (props: IProductPreviewProps) {
 
-    // const { lang } = useContext(LangContext)
-    // const langValue = lang.value.toLowerCase()
-    // const text = textData[langValue as keyof typeof textData].categoriesPage
-    const { 
-        // categoryName = text.categories[0]?.categoryName, 
-        product } = props
+    const { product } = props
 
     return (
         <li className={style.productPreview}>

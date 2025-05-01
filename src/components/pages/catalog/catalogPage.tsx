@@ -21,9 +21,7 @@ function CatalogPage () {
     const [ chosenColors, setChosenColors ] = useState<string[]>([])
 
     const category = text.categories.filter((category) => prepareTextToLink(category?.categoryName) == prepareTextToLink(curCategory))
-
-    console.log(curCategory)
-
+    
     return (
         <div className={style.catalogPage}>
             <div className={style.titleWrap}>

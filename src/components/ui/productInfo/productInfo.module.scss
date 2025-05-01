@@ -256,3 +256,9 @@
     @include onest-400-13;
     margin-top: 1vw;
 }
+
+.error {
+    @include onest-400-11;
+    min-height: 1vw;
+    color: $orange-alert;
+}
