@@ -15,12 +15,12 @@ const TEST_ORDER = [
             name: `Children's Jungle 01`,
             category: 'Children`s wallpapers',
             metrics: 'from 16€ / m² — 41€ / m²',
-            img: '/fototapete/catalog/01.png',
+            img: '/catalog/01.png',
             imgs: [
-                '/fototapete/catalog/01.png',
-                '/fototapete/catalog/01.png',
-                '/fototapete/catalog/01.png',
-                '/fototapete/catalog/01.png'
+                '/catalog/01.png',
+                '/catalog/01.png',
+                '/catalog/01.png',
+                '/catalog/01.png'
             ]
         },
         material: 'Smooth Adhesive-based Wallpaper', 
@@ -35,12 +35,12 @@ const TEST_ORDER = [
             name: `Children's Jungle 05`,
             category: 'Children`s wallpapers',
             metrics: 'from 16€ / m² — 41€ / m²',
-            img: '/fototapete/catalog/05.png',
+            img: '/catalog/05.png',
             imgs: [
-                '/fototapete/catalog/05.png',
-                '/fototapete/catalog/05.png',
-                '/fototapete/catalog/05.png',
-                '/fototapete/catalog/05.png'
+                '/catalog/05.png',
+                '/catalog/05.png',
+                '/catalog/05.png',
+                '/catalog/05.png'
             ]
         },
         material: 'Textured Adhesive-Based Wallpaper (Straw/Sand Texture)', 

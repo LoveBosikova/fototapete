@@ -21,9 +21,6 @@ function Category () {
 
     const category = text.categories.filter((category) => prepareTextToLink(category?.categoryName) == prepareTextToLink(cid))
 
-    console.log(cid)
-    console.log(text.categories.filter((category) => prepareTextToLink(category?.categoryName)))
-
     return (
         <div className={style.category}>
             <div className={style.contentWrap}>
@@ -32,8 +29,8 @@ function Category () {
                                                             key={product.id} 
                                                             className={style.productWrap}>
                                                                 <ProductPreview 
-                                                                product={product} 
-                                                                categoryName={category.map((i)=> i?.categoryName)[0] && text.categories[0]?.categoryName} >
+                                                                    product={product} 
+                                                                    categoryName={category.map((i)=> i?.categoryName)[0] && text.categories[0]?.categoryName} >
                                                                 </ProductPreview>
                                                             </div>)}
                 </ul>

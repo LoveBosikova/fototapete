@@ -23,16 +23,16 @@ function Transforming () {
             <picture className={style.background} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/fototapete/transforming-small.png 720w"
+                    srcSet="/transforming-small.png 720w"
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/fototapete/transforming-big.webp 1140w"
+                    srcSet="/transforming-big.webp 1140w"
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/fototapete/transforming-medium.png 720w"
+                    srcSet="/transforming-medium.png 720w"
                     sizes="720px"
                 />
                 <img  className={style.background} src={backgroundBig} />

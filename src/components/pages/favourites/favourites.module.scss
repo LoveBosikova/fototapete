@@ -1,0 +1,47 @@
+.favourites {
+    margin-right: 4.6%;
+    margin-left: 4.6%;
+    margin-top: 15vw;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.84vw;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.contentWrap {
+    display: flex;
+}
+
+.productWrap {
+    width: 32.2%;
+}
+
+@media (max-width: 1300px) {
+    .productWrap {
+        width: 48%;
+    }
+    
+    .results {
+        row-gap: 3vw;
+        padding-top: 3vw;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .results {
+        row-gap: 3vw;
+        padding-top: 3vw;
+    }
+
+    .productWrap {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -26,16 +26,16 @@ function MainBilboard () {
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/fototapete/mainBack-small.png 720w"
+                    srcSet="/mainBack-small.png 720w"
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/fototapete/mainBack-large.png 1140w"
+                    srcSet="/mainBack-large.png 1140w"
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/fototapete/mainBack-medium.png 720w"
+                    srcSet="/mainBack-medium.png 720w"
                     sizes="720px"
                 />
                 <img  className={style.backgroundImg} src={backLarge} />
@@ -59,7 +59,7 @@ function MainBilboard () {
                 <p className={style.articleText}>{textData[langValue as keyof typeof textData].mainBillboard.article}</p>
                 <div className={style.btnsWrap}>
                     <div className={style.linkOrangeBtnWrap}>
-                        <LinkButtonOrange text={textData[langValue as keyof typeof textData].btns.catalog} link={'/fototapete/catalog'}></LinkButtonOrange>
+                        <LinkButtonOrange text={textData[langValue as keyof typeof textData].btns.catalog} link={'/catalog'}></LinkButtonOrange>
                     </div>
                     <div className={style.linkWhiteBtnWrap}>
                         <LinkButtonWhite text={textData[langValue as keyof typeof textData].btns.individualOrder} link={''}></LinkButtonWhite>

@@ -1,4 +1,4 @@
-import { createEvent, createStore, sample } from "effector";
+import { combine, createEvent, createStore, sample } from "effector";
 import { Iproduct } from "../../ui/productPreview/productPreview";
 import { IMaterial } from "../../../types";
 
@@ -71,3 +71,38 @@ sample({
     clock: addToCart,
     target: resetCartItemForm,
 })
+
+// стор избранных товаров
+
+// Тип элемента избранного
+export type TFavouriteItem = {
+    product: Iproduct;
+}
+
+// События
+export const addToFavourites = createEvent<Iproduct>();
+export const removeFromFavourites = createEvent<number>(); // product.id
+export const toggleFavouriteProduct = createEvent<Iproduct>();
+
+// Стор избранного
+console.log('FAVOURITES STORE INITIALIZED')
+export const $favourites = createStore<TFavouriteItem[]>([])
+.on(addToFavourites, (state, product) => {
+    const exists = state.some(item => item.product.id === product.id);
+    return exists ? state : [...state, { product }];
+})
+.on(removeFromFavourites, (state, id) =>
+    state.filter(item => item.product.id !== id)
+)
+.on(toggleFavouriteProduct, (state, product) => {
+    const exists = state.some(item => item.product.id === product.id);
+    return exists
+        ? state.filter(item => item.product.id !== product.id)
+        : [...state, { product }];
+});
+
+// Хелпер для проверки, в избранном ли товар
+export const createIsProductFavourite = (productId: number) =>
+    combine($favourites, (items) =>
+        items.some(item => item.product.id === productId)
+);

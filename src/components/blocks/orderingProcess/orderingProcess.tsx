@@ -32,16 +32,16 @@ function OrderingProcess () {
                             <picture className={style.img} >
                                 <source
                                     media="(max-width: 720px)"
-                                    srcSet="/fototapete/orderingProcess-interior1-small.png 720w"
+                                    srcSet="/orderingProcess-interior1-small.png 720w"
                                     sizes="720px"
                                 />
                                 <source
                                     media="(min-width: 1140px)"
-                                    srcSet="/fototapete/orderingProcess-interior1-big.png 1140w"
+                                    srcSet="/orderingProcess-interior1-big.png 1140w"
                                     sizes="1140px"
                                 />
                                 <source
-                                    srcSet="/fototapete/orderingProcess-interior1-medium.png 720w"
+                                    srcSet="/orderingProcess-interior1-medium.png 720w"
                                     sizes="720px"
                                 />
                                 <img  className={style.img} src={interior1Big} alt='Wallpaper interior'/>
@@ -87,16 +87,16 @@ function OrderingProcess () {
                     <picture className={style.img} >
                                 <source
                                     media="(max-width: 720px)"
-                                    srcSet="/fototapete/orderingProcess-interior2-small.png 720w"
+                                    srcSet="/orderingProcess-interior2-small.png 720w"
                                     sizes="720px"
                                 />
                                 <source
                                     media="(min-width: 1140px)"
-                                    srcSet="/fototapete/orderingProcess-interior2-big.png 1140w"
+                                    srcSet="/orderingProcess-interior2-big.png 1140w"
                                     sizes="1140px"
                                 />
                                 <source
-                                    srcSet="/fototapete/orderingProcess-interior2-medium.png 720w"
+                                    srcSet="/orderingProcess-interior2-medium.png 720w"
                                     sizes="720px"
                                 />
                                 <img  className={style.img} src={interior2Big} alt='Wallpaper interior'/>

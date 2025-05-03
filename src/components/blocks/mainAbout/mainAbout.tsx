@@ -20,16 +20,16 @@ function MainAbout () {
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/fototapete/about_main_little.png 720w"
+                    srcSet="/about_main_little.png 720w"
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/fototapete/about_main.png 1140w"
+                    srcSet="/about_main.png 1140w"
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/fototapete/about_main_medium.png 720w"
+                    srcSet="/about_main_medium.png 720w"
                     sizes="720px"
                 />
                 <img  className={style.backgroundImg} src={backLarge} />

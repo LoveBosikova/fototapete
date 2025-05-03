@@ -43,16 +43,16 @@ function WallpapersInInteriors () {
                     <picture className={style.img} >
                         <source
                             media="(max-width: 720px)"
-                            srcSet="/fototapete/interior-photo1-small.png 720w"
+                            srcSet="/interior-photo1-small.png 720w"
                             sizes="720px"
                         />
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/fototapete/interior-photo1-big.png 1140w"
+                            srcSet="/interior-photo1-big.png 1140w"
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/fototapete/interior-photo1-big.png 720w"
+                            srcSet="/interior-photo1-big.png 720w"
                             sizes="720px"
                         />
                         <img  className={style.img} src={photo1Big} />
@@ -62,16 +62,16 @@ function WallpapersInInteriors () {
                     <picture className={style.img} >
                         <source
                             media="(max-width: 720px)"
-                            srcSet="/fototapete/interior-photo2-small.png 720w"
+                            srcSet="/interior-photo2-small.png 720w"
                             sizes="720px"
                         />
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/fototapete/interior-photo2-big.png 1140w"
+                            srcSet="/interior-photo2-big.png 1140w"
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/fototapete/interior-photo2-big.png 720w"
+                            srcSet="/interior-photo2-big.png 720w"
                             sizes="720px"
                         />
                         <img  className={style.img} src={photo2Big} />
@@ -87,16 +87,16 @@ function WallpapersInInteriors () {
                     <picture className={style.img} >
                         <source
                             media="(max-width: 720px)"
-                            srcSet="/fototapete/interior-photo4-small.png 720w"
+                            srcSet="/interior-photo4-small.png 720w"
                             sizes="720px"
                         />
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/fototapete/interior-photo4-big.png 1140w"
+                            srcSet="/interior-photo4-big.png 1140w"
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/fototapete/interior-photo4-big.png 720w"
+                            srcSet="/interior-photo4-big.png 720w"
                             sizes="720px"
                         />
                         <img  className={style.img} src={photo4} />
@@ -112,16 +112,16 @@ function WallpapersInInteriors () {
                 <picture className={style.img} >
                         <source
                             media="(max-width: 720px)"
-                            srcSet="/fototapete/interior-photo6-small.png 720w"
+                            srcSet="/interior-photo6-small.png 720w"
                             sizes="720px"
                         />
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/fototapete/interior-photo6-big.png 1140w"
+                            srcSet="/interior-photo6-big.png 1140w"
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/fototapete/interior-photo6-big.png 720w"
+                            srcSet="/interior-photo6-big.png 720w"
                             sizes="720px"
                         />
                         <img  className={style.img} src={photo6} />

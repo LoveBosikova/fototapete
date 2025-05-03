@@ -29,7 +29,7 @@ function Wallpapers () {
                     key={category?.id} 
                     className={style.category} 
                     onClick={()=> setCurCategory(prepareTextToLink(category?.categoryName))}
-                    to={`/fototapete/catalog/${prepareTextToLink(category?.categoryName)}`} 
+                    to={`/catalog/${prepareTextToLink(category?.categoryName)}`} 
                     end>
                         <div className={style.imgWrap}>
                             <img className={style.img} src={category?.imgSrc} alt={category?.categoryName} />

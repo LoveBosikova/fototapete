@@ -36,16 +36,16 @@ function Footer () {
                 <picture className={style.img} >
                     <source
                         media="(max-width: 720px)"
-                        srcSet="/fototapete/footer-back-small.png 720w"
+                        srcSet="/footer-back-small.png 720w"
                         sizes="720px"
                     />
                     <source
                         media="(min-width: 1140px)"
-                        srcSet="/fototapete/footer-back-big.png 1140w"
+                        srcSet="/footer-back-big.png 1140w"
                         sizes="1140px"
                     />
                     <source
-                        srcSet="/fototapete/footer-back-medium.png 720w"
+                        srcSet="/footer-back-medium.png 720w"
                         sizes="720px"
                     />
                     <img  className={style.img} src={backImgBig} />
@@ -62,11 +62,11 @@ function Footer () {
                     <picture className={style.imgMockUp} >
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/fototapete/footer-3-big.png 1140w"
+                            srcSet="/footer-3-big.png 1140w"
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/fototapete/footer-3-medium.png 720w"
+                            srcSet="/footer-3-medium.png 720w"
                             sizes="720px"
                         />
                         <img  className={style.imgMockUp} src={mockup3Big} />
@@ -93,7 +93,7 @@ function Footer () {
                 <div className={style.contactsWrap}>
                     <ul className={style.iconsWrap}>
                         <li className={style.icon}>
-                            <UtilIcon linkTo={'https://www.instagram.com/fototapete_zg?igsh=MXVyeHc4bDY2Ync4bA=='} description='Go to Instagrsm'>
+                            <UtilIcon linkTo={'https://www.instagram.com_zg?igsh=MXVyeHc4bDY2Ync4bA=='} description='Go to Instagrsm'>
                                 <ImgInstagram></ImgInstagram>
                             </UtilIcon>
                         </li>
@@ -115,7 +115,7 @@ function Footer () {
                     {text.links.map((link)=><NavLink 
                     key={link.linkName} 
                     className={style.menuItemWrap} 
-                    to={`/fototapete/catalog`} 
+                    to={`/catalog`} 
                     end>
                         <a className={style.menuItem}>{link.linkName}</a>
                     </NavLink>)}

@@ -12,15 +12,15 @@ function NavBar (props: INavBarProps) {
     return (
         <nav className={isWhite? style.navbarColorful : style.navbar}>
             <ul className={style.linksWrap}>
-            <NavLink to='/fototapete/catalog' end>
+            <NavLink to='/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
             </NavLink>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Сustom design</a></li>
                 <li className={style.linkWrap}><a className={style.link} href='#'>Price</a></li>
-                <NavLink to='/fototapete/info' end>
+                <NavLink to='/info' end>
                     <li className={style.linkWrap}><p className={style.link}>Info</p></li>
                 </NavLink>
-                <NavLink to='/fototapete/materials' end>
+                <NavLink to='/materials' end>
                     <li className={style.linkWrap}><p className={style.link}>Materials</p></li>
                 </NavLink>
             </ul>

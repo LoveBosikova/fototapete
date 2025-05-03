@@ -47,16 +47,16 @@ function Calculate () {
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/fototapete/calculateBack-small.png 720w"
+                    srcSet="/calculateBack-small.png 720w"
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/fototapete/calculateBack-big.png 1140w"
+                    srcSet="/calculateBack-big.png 1140w"
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/fototapete/calculateBack-medium.png 720w"
+                    srcSet="/calculateBack-medium.png 720w"
                     sizes="720px"
                 />
                 <img  className={style.backgroundImg} src={backBig} />
@@ -76,7 +76,7 @@ function Calculate () {
                         <div className={style.material} onClick={handleMaterials}><p className={style.selectedMaterial}>{selectedMaterial}</p></div>
                         <div className={isMaterialsOpen? style.optionsWrap : style.optionsWrapClosed}>
                             <ul className={style.scrollHiddenContainer}>
-                                {textMaterials.map((material) => <li className={style.option} key={material} onClick={()=> handleOption(material)}><p className={style.materialText}>{material}</p></li>)}
+                                {textMaterials.map((material) => <li className={style.option} key={material.id} onClick={()=> handleOption(material.name)}><p className={style.materialText}>{material.name}</p></li>)}
                             </ul>
                         </div>
                         <div className={style.arrowWrap}><img className={style.img} src={selectArrow}></img></div>

@@ -20,7 +20,7 @@ function Header () {
     let location = useLocation();
 
     useEffect(()=>{
-        (location.pathname === '/fototapete' || location.pathname === '/fototapete/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
+        (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
     }, [location])
 
         const cart = useUnit($cart)
@@ -37,12 +37,15 @@ function Header () {
                         <Selector isWhite={isDefaultStyles}></Selector>  
                     </div>
                     <div className={style.iconWrap}>
+                    <NavLink to='/favourites' className={style.iconWrap} end>
                         <UtilIcon linkTo={''} description={'Go to favorites'}>
                             <ImgHeart></ImgHeart>
                         </UtilIcon>
+                    </NavLink>
+
                     </div>
-                    <NavLink to='/fototapete/cart' className={style.iconWrap} end>
-                        <UtilIcon linkTo={''} description={'Go to favorites'}>
+                    <NavLink to='/cart' className={style.iconWrap} end>
+                        <UtilIcon linkTo={''} description={'Go to cart'}>
                             <ImgBug></ImgBug>
                             { cart.length > 0 && <div className={style.counter}><p>{cart.length}</p></div>}
                         </UtilIcon>

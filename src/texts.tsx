@@ -1,3 +1,5 @@
+import Favourites from "./components/pages/favourites/favourites";
+
 const textData = {
     en: {
         mainBillboard: {
@@ -113,9 +115,9 @@ const textData = {
             title: 'We also write helpful articles for you',
             handwrite: 'Our blog',
             articles: [
-                {text: `5 Tips for Decorating a Children's Room`, img: '/fototapete/article-1.png', link: ''}, 
-                {text: 'Budget-Friendly Home Decorating Tricks', img: '/fototapete/article-2.png', link: ''}, 
-                {text: 'How to Choose the Perfect Wallpaper?', img: '/fototapete/article-3.png', link: ''},
+                {text: `5 Tips for Decorating a Children's Room`, img: '/article-1.png', link: ''}, 
+                {text: 'Budget-Friendly Home Decorating Tricks', img: '/article-2.png', link: ''}, 
+                {text: 'How to Choose the Perfect Wallpaper?', img: '/article-3.png', link: ''},
             ]
         },
         footer: {
@@ -189,7 +191,7 @@ const textData = {
                 {
                     id: 0,
                     categoryName: '3D',
-                    imgSrc: '/fototapete/categories/3D.png',
+                    imgSrc: '/categories/3D.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -210,7 +212,7 @@ const textData = {
                 {
                     id: 1,
                     categoryName: 'Abstract',
-                    imgSrc: '/fototapete/categories/abstract.png',
+                    imgSrc: '/categories/abstract.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -231,7 +233,7 @@ const textData = {
                 {
                     id: 2,
                     categoryName: 'Animals',
-                    imgSrc: '/fototapete/categories/animals.png',
+                    imgSrc: '/categories/animals.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -252,7 +254,7 @@ const textData = {
                 {
                     id: 3,
                     categoryName: 'Bricks',
-                    imgSrc: '/fototapete/categories/bricks.png',
+                    imgSrc: '/categories/bricks.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -273,7 +275,7 @@ const textData = {
                 {
                     id: 4,
                     categoryName: 'Chalkboard & Dry erase',
-                    imgSrc: '/fototapete/categories/chalkboardDryErase.png',
+                    imgSrc: '/categories/chalkboardDryErase.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -294,7 +296,7 @@ const textData = {
                 {
                     id: 5,
                     categoryName: 'Children’s wallpapers',
-                    imgSrc: '/fototapete/categories/childrensWallpapers.png',
+                    imgSrc: '/categories/childrensWallpapers.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -315,7 +317,7 @@ const textData = {
                 {
                     id: 6,
                     categoryName: 'Christmas',
-                    imgSrc: '/fototapete/categories/christmas.png',
+                    imgSrc: '/categories/christmas.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -336,7 +338,7 @@ const textData = {
                 {
                     id: 7,
                     categoryName: 'Cities',
-                    imgSrc: '/fototapete/categories/cities.png',
+                    imgSrc: '/categories/cities.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -357,7 +359,7 @@ const textData = {
                 {
                     id: 8,
                     categoryName: 'Coffee',
-                    imgSrc: '/fototapete/categories/coffee.png',
+                    imgSrc: '/categories/coffee.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -378,7 +380,7 @@ const textData = {
                 {
                     id: 9,
                     categoryName: 'Concrete texture',
-                    imgSrc: '/fototapete/categories/concreteTexture.png',
+                    imgSrc: '/categories/concreteTexture.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -399,7 +401,7 @@ const textData = {
                 {
                     id: 10,
                     categoryName: 'Flowers',
-                    imgSrc: '/fototapete/categories/flowers.png',
+                    imgSrc: '/categories/flowers.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -420,7 +422,7 @@ const textData = {
                 {
                     id: 11,
                     categoryName: 'Food',
-                    imgSrc: '/fototapete/categories/food.png',
+                    imgSrc: '/categories/food.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -441,7 +443,7 @@ const textData = {
                 {
                     id: 12,
                     categoryName: 'Kitchen',
-                    imgSrc: '/fototapete/categories/kitchen.png',
+                    imgSrc: '/categories/kitchen.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -462,7 +464,7 @@ const textData = {
                 {
                     id: 13,
                     categoryName: 'Leaves',
-                    imgSrc: '/fototapete/categories/leaves.png',
+                    imgSrc: '/categories/leaves.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -483,7 +485,7 @@ const textData = {
                 {
                     id: 14,
                     categoryName: 'Marble',
-                    imgSrc: '/fototapete/categories/marble.png',
+                    imgSrc: '/categories/marble.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -504,7 +506,7 @@ const textData = {
                 {
                     id: 15,
                     categoryName: 'Mural',
-                    imgSrc: '/fototapete/categories/abstract.png',
+                    imgSrc: '/categories/abstract.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -525,7 +527,7 @@ const textData = {
                 {
                     id: 16,
                     categoryName: 'Films',
-                    imgSrc: '/fototapete/categories/films.png',
+                    imgSrc: '/categories/films.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -543,18 +545,18 @@ const textData = {
                         'Unicorns',
                 ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
             ]
@@ -620,12 +622,12 @@ const textData = {
                     name: `Children's Jungle 01`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/01.png',
+                    img: '/catalog/01.png',
                     imgs: [
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png'
+                        '/catalog/01.png',
+                        '/catalog/01.png',
+                        '/catalog/01.png',
+                        '/catalog/01.png'
                     ]
                 },
                 {
@@ -633,12 +635,12 @@ const textData = {
                     name: `Children's Jungle 02`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/02.png',
+                    img: '/catalog/02.png',
                     imgs: [
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png'
+                        '/catalog/02.png',
+                        '/catalog/02.png',
+                        '/catalog/02.png',
+                        '/catalog/02.png'
                     ]
                 },
                 {
@@ -646,12 +648,12 @@ const textData = {
                     name: `Children's Jungle 03`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/03.png',
+                    img: '/catalog/03.png',
                     imgs: [
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png'
+                        '/catalog/03.png',
+                        '/catalog/03.png',
+                        '/catalog/03.png',
+                        '/catalog/03.png'
                     ]
                 },
                 {
@@ -659,12 +661,12 @@ const textData = {
                     name: `Children's Jungle 04`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/04.png',
+                    img: '/catalog/04.png',
                     imgs: [
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png'
+                        '/catalog/04.png',
+                        '/catalog/04.png',
+                        '/catalog/04.png',
+                        '/catalog/04.png'
                     ]
                 },
                 {
@@ -672,12 +674,12 @@ const textData = {
                     name: `Children's Jungle 05`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/05.png',
+                    img: '/catalog/05.png',
                     imgs: [
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png'
+                        '/catalog/05.png',
+                        '/catalog/05.png',
+                        '/catalog/05.png',
+                        '/catalog/05.png'
                     ]
                 },
                 {
@@ -685,12 +687,12 @@ const textData = {
                     name: `Children's Jungle 06`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/06.png',
+                    img: '/catalog/06.png',
                     imgs: [
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png'
+                        '/catalog/06.png',
+                        '/catalog/06.png',
+                        '/catalog/06.png',
+                        '/catalog/06.png'
                     ]
                 },
                 {
@@ -698,12 +700,12 @@ const textData = {
                     name: `Children's Jungle 07`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/07.png',
+                    img: '/catalog/07.png',
                     imgs: [
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png'
+                        '/catalog/07.png',
+                        '/catalog/07.png',
+                        '/catalog/07.png',
+                        '/catalog/07.png'
                     ]
                 },
                 {
@@ -711,12 +713,12 @@ const textData = {
                     name: `Children's Jungle 08`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/08.png',
+                    img: '/catalog/08.png',
                     imgs: [
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png'
+                        '/catalog/08.png',
+                        '/catalog/08.png',
+                        '/catalog/08.png',
+                        '/catalog/08.png'
                     ]
                 },
                 {
@@ -724,12 +726,12 @@ const textData = {
                     name: `Children's Jungle 09`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/09.png',
+                    img: '/catalog/09.png',
                     imgs: [
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png'
+                        '/catalog/09.png',
+                        '/catalog/09.png',
+                        '/catalog/09.png',
+                        '/catalog/09.png'
                     ]
                 },
                 {
@@ -737,12 +739,12 @@ const textData = {
                     name: `Children's Jungle 10`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/10.png',
+                    img: '/catalog/10.png',
                     imgs: [
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png'
+                        '/catalog/10.png',
+                        '/catalog/10.png',
+                        '/catalog/10.png',
+                        '/catalog/10.png'
                     ]
                 },
                 {
@@ -750,12 +752,12 @@ const textData = {
                     name: `Children's Jungle 11`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/11.png',
+                    img: '/catalog/11.png',
                     imgs: [
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png'
+                        '/catalog/11.png',
+                        '/catalog/11.png',
+                        '/catalog/11.png',
+                        '/catalog/11.png'
                     ]
                 },
                 {
@@ -763,12 +765,12 @@ const textData = {
                     name: `Children's Jungle 12`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/12.png',
+                    img: '/catalog/12.png',
                     imgs: [
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png'
+                        '/catalog/12.png',
+                        '/catalog/12.png',
+                        '/catalog/12.png',
+                        '/catalog/12.png'
                     ]
                 }
             ]
@@ -1058,12 +1060,15 @@ const textData = {
                 ],
                 about: ""
             },
-        ]
-    },
-    errors: {
-        selectMaterial: "Select material here",
-        enterHeight: "Enter height here",
-        enterWeight: "Enter weight here",
+        ],
+        favourites: {
+            title: "Favourites fototapete"
+        },
+        errors: {
+            selectMaterial: "Select material here",
+            enterHeight: "Enter height here",
+            enterWeight: "Enter weight here",
+        },
     },
     hrv: {
         mainBillboard: {
@@ -1181,15 +1186,15 @@ const textData = {
             articles: [
                 {
                     text: `5 savjeta za uređenje dječje sobe`, 
-                    img: '/fototapete/article-1.png', 
+                    img: '/article-1.png', 
                     link: ''},
                 {
                     text: 'Povoljni trikovi za uređenje doma', 
-                    img: '/fototapete/article-2.png', 
+                    img: '/article-2.png', 
                     link: ''},
                 {
                     text: 'Kako odabrati savršenu tapetu?', 
-                    img: '/fototapete/article-3.png', 
+                    img: '/article-3.png', 
                     link: ''},
             ]
         },
@@ -1264,7 +1269,7 @@ const textData = {
                 {
                     id: 0,
                     categoryName: '3D',
-                    imgSrc: '/fototapete/categories/3D.png',
+                    imgSrc: '/categories/3D.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1282,24 +1287,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 1,
                     categoryName: 'Apstrakcija',
-                    imgSrc: '/fototapete/categories/abstract.png',
+                    imgSrc: '/categories/abstract.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1317,24 +1322,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 2,
                     categoryName: 'Životinje',
-                    imgSrc: '/fototapete/categories/animals.png',
+                    imgSrc: '/categories/animals.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1352,24 +1357,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 3,
                     categoryName: 'Cigle',
-                    imgSrc: '/fototapete/categories/bricks.png',
+                    imgSrc: '/categories/bricks.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1387,24 +1392,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 4,
                     categoryName: 'Piši briši',
-                    imgSrc: '/fototapete/categories/chalkboardDryErase.png',
+                    imgSrc: '/categories/chalkboardDryErase.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1422,24 +1427,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 5,
                     categoryName: 'Dječje tapete',
-                    imgSrc: '/fototapete/categories/childrensWallpapers.png',
+                    imgSrc: '/categories/childrensWallpapers.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1457,24 +1462,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 6,
                     categoryName: 'Božić',
-                    imgSrc: '/fototapete/categories/christmas.png',
+                    imgSrc: '/categories/christmas.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1492,24 +1497,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 7,
                     categoryName: 'Gradovi',
-                    imgSrc: '/fototapete/categories/cities.png',
+                    imgSrc: '/categories/cities.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1527,24 +1532,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 8,
                     categoryName: 'Kava',
-                    imgSrc: '/fototapete/categories/coffee.png',
+                    imgSrc: '/categories/coffee.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1562,24 +1567,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 9,
                     categoryName: 'Tekstura betona',
-                    imgSrc: '/fototapete/categories/concreteTexture.png',
+                    imgSrc: '/categories/concreteTexture.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1597,24 +1602,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 10,
                     categoryName: 'Cvijeće',
-                    imgSrc: '/fototapete/categories/flowers.png',
+                    imgSrc: '/categories/flowers.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1632,24 +1637,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 11,
                     categoryName: 'Hrana',
-                    imgSrc: '/fototapete/categories/food.png',
+                    imgSrc: '/categories/food.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1667,24 +1672,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 12,
                     categoryName: 'Kuhinja',
-                    imgSrc: '/fototapete/categories/kitchen.png',
+                    imgSrc: '/categories/kitchen.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1702,24 +1707,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 13,
                     categoryName: 'Lišće',
-                    imgSrc: '/fototapete/categories/leaves.png',
+                    imgSrc: '/categories/leaves.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1737,24 +1742,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 14,
                     categoryName: 'Mramor',
-                    imgSrc: '/fototapete/categories/marble.png',
+                    imgSrc: '/categories/marble.png',
                     subCategories: [
                         'životinje',
                         'Crtani junaci',
@@ -1772,24 +1777,24 @@ const textData = {
                         'Jednorozi',
                     ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 15,
                     categoryName: 'Murale',
-                    imgSrc: '/fototapete/categories/mural.webp',
+                    imgSrc: '/categories/mural.webp',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -1807,24 +1812,24 @@ const textData = {
                         'Unicorns',
                 ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
                 {
                     id: 16,
                     categoryName: 'Folije',
-                    imgSrc: '/fototapete/categories/films.png',
+                    imgSrc: '/categories/films.png',
                     subCategories: [
                         'Animals',
                         'Cartoon heroes',
@@ -1842,18 +1847,18 @@ const textData = {
                         'Unicorns',
                 ],
                     imgs: [
-                        '/fototapete/childrens/children-1',
-                        '/fototapete/childrens/children-2',
-                        '/fototapete/childrens/children-3',
-                        '/fototapete/childrens/children-4',
-                        '/fototapete/childrens/children-5',
-                        '/fototapete/childrens/children-6',
-                        '/fototapete/childrens/children-7',
-                        '/fototapete/childrens/children-8',
-                        '/fototapete/childrens/children-9',
-                        '/fototapete/childrens/children-10',
-                        '/fototapete/childrens/children-11',
-                        '/fototapete/childrens/children-12',
+                        '/childrens/children-1',
+                        '/childrens/children-2',
+                        '/childrens/children-3',
+                        '/childrens/children-4',
+                        '/childrens/children-5',
+                        '/childrens/children-6',
+                        '/childrens/children-7',
+                        '/childrens/children-8',
+                        '/childrens/children-9',
+                        '/childrens/children-10',
+                        '/childrens/children-11',
+                        '/childrens/children-12',
                     ]
                 },
             ]
@@ -1865,12 +1870,12 @@ const textData = {
                     name: `Children's Jungle 01`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/01.png',
+                    img: '/catalog/01.png',
                     imgs: [
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png',
-                        '/fototapete/catalog/01.png'
+                        '/catalog/01.png',
+                        '/catalog/01.png',
+                        '/catalog/01.png',
+                        '/catalog/01.png'
                     ]
                 },
                 {
@@ -1878,12 +1883,12 @@ const textData = {
                     name: `Children's Jungle 02`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/02.png',
+                    img: '/catalog/02.png',
                     imgs: [
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png',
-                        '/fototapete/catalog/02.png'
+                        '/catalog/02.png',
+                        '/catalog/02.png',
+                        '/catalog/02.png',
+                        '/catalog/02.png'
                     ]
                 },
                 {
@@ -1891,12 +1896,12 @@ const textData = {
                     name: `Children's Jungle 03`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/03.png',
+                    img: '/catalog/03.png',
                     imgs: [
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png',
-                        '/fototapete/catalog/03.png'
+                        '/catalog/03.png',
+                        '/catalog/03.png',
+                        '/catalog/03.png',
+                        '/catalog/03.png'
                     ]
                 },
                 {
@@ -1904,12 +1909,12 @@ const textData = {
                     name: `Children's Jungle 04`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/04.png',
+                    img: '/catalog/04.png',
                     imgs: [
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png',
-                        '/fototapete/catalog/04.png'
+                        '/catalog/04.png',
+                        '/catalog/04.png',
+                        '/catalog/04.png',
+                        '/catalog/04.png'
                     ]
                 },
                 {
@@ -1917,12 +1922,12 @@ const textData = {
                     name: `Children's Jungle 05`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/05.png',
+                    img: '/catalog/05.png',
                     imgs: [
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png',
-                        '/fototapete/catalog/05.png'
+                        '/catalog/05.png',
+                        '/catalog/05.png',
+                        '/catalog/05.png',
+                        '/catalog/05.png'
                     ]
                 },
                 {
@@ -1930,12 +1935,12 @@ const textData = {
                     name: `Children's Jungle 06`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/06.png',
+                    img: '/catalog/06.png',
                     imgs: [
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png',
-                        '/fototapete/catalog/06.png'
+                        '/catalog/06.png',
+                        '/catalog/06.png',
+                        '/catalog/06.png',
+                        '/catalog/06.png'
                     ]
                 },
                 {
@@ -1943,12 +1948,12 @@ const textData = {
                     name: `Children's Jungle 07`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/07.png',
+                    img: '/catalog/07.png',
                     imgs: [
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png',
-                        '/fototapete/catalog/07.png'
+                        '/catalog/07.png',
+                        '/catalog/07.png',
+                        '/catalog/07.png',
+                        '/catalog/07.png'
                     ]
                 },
                 {
@@ -1956,12 +1961,12 @@ const textData = {
                     name: `Children's Jungle 08`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/08.png',
+                    img: '/catalog/08.png',
                     imgs: [
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png',
-                        '/fototapete/catalog/08.png'
+                        '/catalog/08.png',
+                        '/catalog/08.png',
+                        '/catalog/08.png',
+                        '/catalog/08.png'
                     ]
                 },
                 {
@@ -1969,12 +1974,12 @@ const textData = {
                     name: `Children's Jungle 09`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/09.png',
+                    img: '/catalog/09.png',
                     imgs: [
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png',
-                        '/fototapete/catalog/09.png'
+                        '/catalog/09.png',
+                        '/catalog/09.png',
+                        '/catalog/09.png',
+                        '/catalog/09.png'
                     ]
                 },
                 {
@@ -1982,12 +1987,12 @@ const textData = {
                     name: `Children's Jungle 10`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/10.png',
+                    img: '/catalog/10.png',
                     imgs: [
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png',
-                        '/fototapete/catalog/10.png'
+                        '/catalog/10.png',
+                        '/catalog/10.png',
+                        '/catalog/10.png',
+                        '/catalog/10.png'
                     ]
                 },
                 {
@@ -1995,12 +2000,12 @@ const textData = {
                     name: `Children's Jungle 11`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/11.png',
+                    img: '/catalog/11.png',
                     imgs: [
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png',
-                        '/fototapete/catalog/11.png'
+                        '/catalog/11.png',
+                        '/catalog/11.png',
+                        '/catalog/11.png',
+                        '/catalog/11.png'
                     ]
                 },
                 {
@@ -2008,12 +2013,12 @@ const textData = {
                     name: `Children's Jungle 12`,
                     category: 'Children`s wallpapers',
                     metrics: 'from 16€ / m² — 41€ / m²',
-                    img: '/fototapete/catalog/12.png',
+                    img: '/catalog/12.png',
                     imgs: [
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png',
-                        '/fototapete/catalog/12.png'
+                        '/catalog/12.png',
+                        '/catalog/12.png',
+                        '/catalog/12.png',
+                        '/catalog/12.png'
                     ]
                 }
             ]
@@ -2339,6 +2344,9 @@ const textData = {
                 about: ""
             },
         ],
+        favourites: {
+            title: "Favourites fototapete"
+        },
         errors: {
             selectMaterial: "Select material here",
             enterWeight: "Enter weight here",

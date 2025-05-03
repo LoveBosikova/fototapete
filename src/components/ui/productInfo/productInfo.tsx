@@ -84,7 +84,9 @@ function ProductInfo (props: IProductInfoProps) {
                 <div className={style.bigSlider}>
                     <div className={style.likeWrap}>
                     {/* TODO: like functional! */}
-                        <ImgLike isActive={true}></ImgLike>
+                        {/* <ImgLike isActive={true}></ImgLike> */}
+                        <ImgLike product={props.product}></ImgLike>
+
                     </div>
                     <Swiper
                     grabCursor={true}

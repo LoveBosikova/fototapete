@@ -33,7 +33,7 @@ function Categories () {
                     <div className={style.walpapersDescriptionWrap}>
                             <p className={style.categoryText}>{text.wallpapers}</p>
                             <div className={style.blackBtnWrap}>
-                                <LinkButtonBlack text={btnText.goToCategory} link={'/fototapete/catalog'}></LinkButtonBlack>
+                                <LinkButtonBlack text={btnText.goToCategory} link={'/catalog'}></LinkButtonBlack>
                             </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ function Categories () {
                         <div className={style.description}>
                             <p className={style.categoryText}>{text.films}</p>
                             <div className={style.blackBtnWrap} onClick={() => setCurCategory(prepareTextToLink(text.films))}>
-                                <LinkButtonBlack text={btnText.goToCategory} link={`/fototapete/catalog/${prepareTextToLink(text.films)}`}></LinkButtonBlack>
+                                <LinkButtonBlack text={btnText.goToCategory} link={`/catalog/${prepareTextToLink(text.films)}`}></LinkButtonBlack>
                             </div>
                         </div>
                     </div>

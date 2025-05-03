@@ -11,7 +11,7 @@ type ILogoProps = {
 function Logo (props: ILogoProps) {
     const { isWhite } = props
     return(
-        <NavLink to='/fototapete' end>
+        <NavLink to='' end>
                 <img className={style.logoImg} src={isWhite? logoWhite : colorfulLogo} alt='Fototapete logo' />
         </NavLink>
     ) 

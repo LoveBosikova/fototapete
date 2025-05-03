@@ -11,7 +11,7 @@ function CartPage () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].cartPage
-    const products = textData[langValue as keyof typeof textData].catalog.products
+    // const products = textData[langValue as keyof typeof textData].catalog.products
     const btns = textData[langValue as keyof typeof textData].btns
 
     const cart = useUnit($cart)
@@ -51,7 +51,7 @@ function CartPage () {
                         <span className={style.cartSummary_price}>90 €</span>
                     </p>
                     <div className={style.cartSummary_btn}>
-                        <LinkButtonCart text={btns.goToCheckout} link='/fototapete/order' />
+                        <LinkButtonCart text={btns.goToCheckout} link='/order' />
                     </div>
                 </div>
             </div>

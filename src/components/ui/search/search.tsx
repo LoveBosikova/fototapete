@@ -104,7 +104,7 @@ function Search (props: ISearchProps) {
                             key={category?.id} 
                             onClick={()=> handleCurCategory(prepareTextToLink(category?.categoryName))}
                             className={style.category} 
-                            to={`/fototapete/catalog/${prepareTextToLink(category?.categoryName)}`} end>
+                            to={`/catalog/${prepareTextToLink(category?.categoryName)}`} end>
                                 <p className={style.categoryName}>{category?.categoryName}</p>
                             </NavLink>
                         </li>

@@ -22,10 +22,11 @@ type IProductPreviewProps = {
 function ProductPreview (props: IProductPreviewProps) {
 
     const { product } = props
+    
 
     return (
         <li className={style.productPreview}>
-            <NavLink to={`/fototapete/${product.id}`}>
+            <NavLink to={`/${product.id}`}>
                 <div className={style.imgWrap}>
                     <img className={style.img} src={product.img} alt={product.name} />
                 </div>
@@ -36,7 +37,8 @@ function ProductPreview (props: IProductPreviewProps) {
             </NavLink>
             <div className={style.likeWrap}>
                 {/* TODO: like functional! */}
-                <ImgLike isActive={true}></ImgLike>
+                {/* <ImgLike isActive={true}></ImgLike> */}
+                <ImgLike product={props.product}></ImgLike>
             </div>
         </li>
     )

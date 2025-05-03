@@ -41,13 +41,13 @@ function Bestsellers (){
                 <Handwriting text={text.handwriteTop} color={'orange'}></Handwriting>
             </div>
             <div className={style.btnWrap}>
-                <LinkButtonWhite text={btnText.categories} link={'/fototapete/catalog'}></LinkButtonWhite>
+                <LinkButtonWhite text={btnText.categories} link={'/catalog'}></LinkButtonWhite>
             </div>
             <ul className={style.contentWrap}>
                 <li className={style.bigbestseller}>
                     <NavLink 
                     className={style.link} 
-                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.childrensWallpapers)}`} 
+                    to={`/catalog/${prepareTextToLink(categoryText.childrensWallpapers)}`} 
                     onClick={() => setCurCategory(prepareTextToLink(categoryText.childrensWallpapers)) }
                     end>
                         <div className={style.category}>
@@ -59,7 +59,7 @@ function Bestsellers (){
                 <li className={style.bigbestseller}>
                     <NavLink 
                     className={style.link} 
-                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.mural)}`} 
+                    to={`/catalog/${prepareTextToLink(categoryText.mural)}`} 
                     onClick={() => setCurCategory(prepareTextToLink(categoryText.mural)) }
                     end>
                         <div className={style.category}>
@@ -71,7 +71,7 @@ function Bestsellers (){
                 <li className={style.bigbestseller}>
                     <NavLink 
                     className={style.link} 
-                    to={`/fototapete/catalog/${prepareTextToLink(categoryText.marble)}`} 
+                    to={`/catalog/${prepareTextToLink(categoryText.marble)}`} 
                     onClick={() => setCurCategory(prepareTextToLink(categoryText.marble)) }
                     end>
                         <div className={style.category}>
@@ -100,7 +100,7 @@ function Bestsellers (){
                             <img className={style.img} src={pointer} alt='' />
                         </div>
                         <div className={style.orangeBtnWrap}>
-                            <LinkButtonOrange text={btnText.loadMore} link={'/fototapete/catalog'}></LinkButtonOrange>
+                            <LinkButtonOrange text={btnText.loadMore} link={'/catalog'}></LinkButtonOrange>
                         </div>
                     </div>
                 </li>
