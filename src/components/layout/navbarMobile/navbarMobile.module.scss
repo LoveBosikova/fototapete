@@ -44,6 +44,13 @@
     padding: 0.8vw 0.01vw;
 }
 
+@media(min-width: 1140px) {
+    .selectorWrap, 
+    .selectorWrapColorful {
+        display: none;
+    }
+}
+
 .langWrap {
     cursor: pointer;
     width: 100%;
@@ -57,10 +64,16 @@
 }
 
 .arrowWrap {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center
+    flex-direction: column;
+    row-gap: 0.7vw;
+}
+
+.line {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .selector {
@@ -84,7 +97,18 @@
     color: $black-text;
     border-radius: 1rem;
     padding-top: .6rem;
-    padding-bottom: .4rem;
+    padding-bottom: .6rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: .2vw;
+}
+
+.optionsColorful {
+    background-color: $beige-card !important;
+    color: $white-text !important;
 }
 
 .closedOptions {
@@ -130,5 +154,31 @@
     .options {
         @include evolventa-400-18;
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .selectorWrap,
+    .selectorWrapColorful  {
+        padding: 2vw 0.01vw;
+    }
+
+    .selectorWrap {
+        @include evolventa-400-28;
+    }
+
+    .iconsWrap {
+        width: 45%;
+    }
+
+    .options {
+        @include evolventa-400-28;
+        width: 100%;
+        row-gap: 1vw;
+    }
+
+    .iconWrap {
+        width: 8vw;
+        min-width: 8vw;
     }
 }

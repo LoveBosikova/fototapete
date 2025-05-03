@@ -5,13 +5,14 @@ import Selector from '../../ui/selector/selector';
 import UtilIcon from '../../ui/icons/utilIcon/utilIcon';
 import ImgHeart from '../../ui/icons/imgHeart/ImgHeart.tsx';
 import ImgBug from '../../ui/icons/imgBug/ImgBug.tsx';
-
-import NavBar from '../navbar/navbar.tsx';
 import Logo from '../../ui/logo/logo.tsx';
 
-import style from './header.module.scss';
+import NavBar from '../navbar/navbar.tsx';
 import { $cart } from '../../pages/cart/model.ts';
 import { useUnit } from 'effector-react';
+import NavbarMobile from '../navbarMobile/navbarMobile.tsx';
+
+import style from './header.module.scss';
 
 function Header () {
 
@@ -35,6 +36,9 @@ function Header () {
                 <div className={style.iconsWrap}>
                     <div className={style.selectorWrap}>
                         <Selector isWhite={isDefaultStyles}></Selector>  
+                    </div>
+                    <div className={style.selectorWrap}>
+                        <NavbarMobile isWhite={isDefaultStyles}/>
                     </div>
                     <div className={style.iconWrap}>
                     <NavLink to='/favourites' className={style.iconWrap} end>

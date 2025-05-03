@@ -33,6 +33,7 @@
     width: 13.9%;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     gap: 3%;
 }
 
@@ -44,6 +45,15 @@
 .iconWrap {
     width: 21.5%;
     height: 55%;
+}
+
+@media(max-width: 1140px) {
+    .iconWrap {
+        display: block;
+        width: 5vw;
+        min-width: 5vw;
+        // height: 55%;
+    }
 }
 
 .counter {
@@ -79,6 +89,7 @@
     .iconsWrap {
         width: 24.5%;
         padding-top: 1.2%;
+        align-items: center;
     }
 }
 
@@ -107,5 +118,31 @@
     .iconsWrap {
         width: 31%;
         margin-top: 3.4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .selectorWrap,
+    .selectorWrapColorful  {
+        padding: 2vw 0.01vw;
+    }
+
+    .selectorWrap {
+        @include evolventa-400-28;
+    }
+
+    .iconsWrap {
+        width: 45%;
+    }
+
+    .options {
+        @include evolventa-400-28;
+        width: 100%;
+        row-gap: 1vw;
+    }
+
+    .iconWrap {
+        width: 8vw;
+        min-width: 8vw;
     }
 }
