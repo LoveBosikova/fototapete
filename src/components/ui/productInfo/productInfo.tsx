@@ -197,7 +197,7 @@ function ProductInfo (props: IProductInfoProps) {
                             <FormResult text={textProductInfo.wallpaperPrice} value={textProductInfo.wallpaperPriceValue}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
-                            <div className={style.subcategoryCheckboxWrap} onClick={(e)=> {
+                            <div className={style.subcategoryCheckboxWrap} onClick={()=> {
                                 changeCartItemForm({
                                 key: "needInstallation",
                                 value: !form.needInstallation

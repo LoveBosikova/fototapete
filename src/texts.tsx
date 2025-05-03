@@ -1,5 +1,3 @@
-import Favourites from "./components/pages/favourites/favourites";
-
 const textData = {
     en: {
         mainBillboard: {

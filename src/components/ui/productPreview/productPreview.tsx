@@ -9,9 +9,10 @@ import style from './productPreview.module.scss';
 
 export type Iproduct = {
     id: number,
-        name: string,
-        metrics: string,
-        img: string,
+    name: string,
+    metrics: string,
+    img: string,
+    imgs?: string[],
 }
 
 type IProductPreviewProps = {

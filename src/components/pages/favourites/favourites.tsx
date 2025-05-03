@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { LangContext } from "../../../context/LangContext";
 import ProductPreview from "../../ui/productPreview/productPreview";
-import textData from "../../../texts"; 
 import { $favourites } from "../cart/model";
 import { useUnit } from "effector-react";
 import Title from "../../ui/title/title";
+import textData from "../../../texts"; 
 import style from './favourites.module.scss';
 
 function Favourites () {
