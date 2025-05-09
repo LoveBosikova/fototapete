@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import ProductInfo from '../../ui/productInfo/productInfo';

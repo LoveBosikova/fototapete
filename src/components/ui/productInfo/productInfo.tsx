@@ -13,7 +13,7 @@ import style from './productInfo.module.scss';
 import ImgLike from "../icons/imgLike/imgLike";
 import SubcategoryCheckbox from "../subcategoryCheckbox/subcategoryCheckbox";
 import { IMaterial } from "../../../types";
-import { $cart, $cart_item_form, $cart_item_form_errors, addToCart, changeCartItemErrorsForm, changeCartItemForm } from "../../pages/cart/model";
+import { $cart_item_form, $cart_item_form_errors, addToCart, changeCartItemErrorsForm, changeCartItemForm } from "../../pages/cart/model";
 import { useUnit } from "effector-react";
 import { useParams } from "react-router-dom";
 
@@ -42,7 +42,7 @@ function ProductInfo (props: IProductInfoProps) {
 
     const form = useUnit($cart_item_form)
     const form_errors = useUnit($cart_item_form_errors)
-    const cart = useUnit($cart)
+    // const cart = useUnit($cart)
 
     // Material values
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)

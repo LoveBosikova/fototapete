@@ -13,7 +13,7 @@ import style from './wallpapers.module.scss';
 
 function Wallpapers () {
     const { lang } = useContext(LangContext)
-    const {curCategory, setCurCategory} = useContext(CurCategoryContext)
+    const { setCurCategory} = useContext(CurCategoryContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].categoriesPage
     const textBtn = textData[langValue as keyof typeof textData].btns

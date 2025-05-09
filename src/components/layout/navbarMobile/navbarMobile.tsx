@@ -1,10 +1,7 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 
-import { LangContext } from '../../../context/LangContext';
 
-import { LANGS, ILang } from '../../../variables';
 
-import selectArrow from '../../../assets/selectArrow.png'
 import line from '../../../assets/line.png'
 
 import style from './navbarMobile.module.scss';
