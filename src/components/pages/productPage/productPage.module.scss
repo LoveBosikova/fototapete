@@ -16,3 +16,15 @@
     @include onest-400-14;
     color: $black-text;
 }
+
+@media(max-width: 1140px) {
+    .productPage {
+        margin-top: 15vw;
+    }
+}
+
+@media(max-width: 7200px) {
+    .productPage {
+        margin-top: 20vw;
+    }
+}

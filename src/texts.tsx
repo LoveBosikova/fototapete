@@ -47,13 +47,13 @@ const textData = {
             height: 'Height (cm)',
             priceFor: 'Price for entered dimensions:',
             priceForM: 'Price for m²:',
-            priceForMValue: '800 EUR',
+            priceForMValue: 'EUR',
             totalM: 'Total m²:',
-            totalMValue: '0 m²',
+            totalMValue: 'm²',
             wallpaperPrice: 'Wallpaper price:',
-            wallpaperPriceValue: '0 EUR',
+            wallpaperPriceValue: 'EUR',
             priceWithInstallation: 'Price with installation:',
-            priceWithInstallationValue: '0 EUR',
+            priceWithInstallationValue: 'EUR',
         },
         howToPlace: {
             title: 'How to place your order',
@@ -567,7 +567,7 @@ const textData = {
             selectMaterial: 'Select a material',
             calculatorTitle: 'Price for entered dimensions',
             priceForM: 'Price for m²:',
-            priceForMValue: '800 EUR',
+            priceForMValue: 'EUR',
             totalM: 'Total m²:',
             totalMValue: '0 m²',
             wallpaperPrice: 'Wallpaper price:',
@@ -774,6 +774,7 @@ const textData = {
             ]
         },
         cartPage: {
+            noCartItems: "Your shopping cart is currently empty. Choose wallpaper to your taste in the catalog.",
             note:'BEFORE PLACING THE ORDER, WE WILL SEND YOU AN IMAGE OF THE SELECTED DESIGN IN THE REQUIRED DIMENSIONS TO THE PROVIDED EMAIL ADDRESS. WE WILL ASK YOU TO CONFIRM VIA EMAIL WHETHER THE WALLPAPER DESIGN MEETS YOUR EXPECTATIONS.',
             title_product: 'Product',
             title_price: 'Price',
@@ -1060,7 +1061,8 @@ const textData = {
             },
         ],
         favourites: {
-            title: "Favourites fototapete"
+            title: "Favourites fototapete",
+            noFavourites: "Favorites are currently empty. Choose designs to your taste in the catalog!"
         },
         errors: {
             selectMaterial: "Select material here",
@@ -1116,13 +1118,13 @@ const textData = {
             height: 'Visina (cm)',
             priceFor: 'Cijena za unesene dimenzije:',
             priceForM: 'Cijena za m²:',
-            priceForMValue: '800 EUR',
+            priceForMValue: 'EUR',
             totalM: 'Ukupno m²:',
-            totalMValue: '0 m²',
+            totalMValue: 'm²',
             wallpaperPrice: 'Cijena tapeta:',
-            wallpaperPriceValue: '0 EUR',
+            wallpaperPriceValue: 'EUR',
             priceWithInstallation: 'Cijena sa montažom:',
-            priceWithInstallationValue: '0 EUR',
+            priceWithInstallationValue: 'EUR',
         },
         howToPlace: {
             title: 'Kako naručiti',
@@ -2032,7 +2034,7 @@ const textData = {
             measureWall: 'Kako izmjeriti svoj zid?',
             calculatorTitle: 'Price for entered dimensions',
             priceForM: 'Price for m²:',
-            priceForMValue: '800 EUR',
+            priceForMValue: 'EUR',
             totalM: 'Total m²:',
             totalMValue: '0 m²',
             wallpaperPrice: 'Wallpaper price:',
@@ -2076,6 +2078,7 @@ const textData = {
             ]
         },
         cartPage: {
+            noCartItems: "Your shopping cart is currently empty. Choose wallpaper to your taste in the catalog.",
             note:'BEFORE PLACING THE ORDER, WE WILL SEND YOU AN IMAGE OF THE SELECTED DESIGN IN THE REQUIRED DIMENSIONS TO THE PROVIDED EMAIL ADDRESS. WE WILL ASK YOU TO CONFIRM VIA EMAIL WHETHER THE WALLPAPER DESIGN MEETS YOUR EXPECTATIONS.',
             title_product: 'Product',
             title_price: 'Price',
@@ -2343,7 +2346,8 @@ const textData = {
             },
         ],
         favourites: {
-            title: "Favourites fototapete"
+            title: "Favourites fototapete",
+            noFavourites: "Favorites are currently empty. Choose designs to your taste in the catalog!"
         },
         errors: {
             selectMaterial: "Select material here",

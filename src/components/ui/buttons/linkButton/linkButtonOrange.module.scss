@@ -27,11 +27,15 @@
     }
 
     @media (max-width: 720px) {
-        @include onest-400-28;
+        @include onest-400-23;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
     
     @media (max-width: 500px) {
-        @include onest-400-34;
+        @include onest-400-20;
     }
 
     &:hover {

@@ -36,6 +36,7 @@ function App() {
             <Route index element={<Wallpapers />} />
             <Route path='/catalog/:cid' element={<Category />} />
           </Route>
+          <Route path='*' element={<MainPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

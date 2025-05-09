@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { LangContext } from "../../../context/LangContext";
 import { CurCategoryContext } from '../../../context/curCategoryContext';
 
@@ -21,9 +21,25 @@ function CatalogPage () {
     const [ chosenColors, setChosenColors ] = useState<string[]>([])
 
     const category = text.categories.filter((category) => prepareTextToLink(category?.categoryName) == prepareTextToLink(curCategory))
+
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            // containerRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+        // window.scrollTo({
+        //     top: 0,
+        //     behavior: "smooth"
+        // });
+    }, []);
     
     return (
-        <div className={style.catalogPage}>
+        <div className={style.catalogPage} ref={containerRef}>
             <div className={style.titleWrap}>
                 <div className={style.h1Wrap}>
                     <Title text={text.title} isBlack={true}></Title>

@@ -18,8 +18,6 @@ function Wallpapers () {
     const text = textData[langValue as keyof typeof textData].categoriesPage
     const textBtn = textData[langValue as keyof typeof textData].btns
 
-    console.log(curCategory);
-
     return (
         <>
         <ul className={style.wallpapers}>

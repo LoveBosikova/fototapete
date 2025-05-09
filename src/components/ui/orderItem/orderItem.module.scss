@@ -32,3 +32,14 @@
     flex-direction: row;
     justify-content: flex-end;
 }
+
+@media(max-width: 1140px) {
+    .metricsWrap {
+        @include onest-400-16;
+    }
+    
+    .name,
+    .price {
+        @include onest-400-18;
+    }
+}

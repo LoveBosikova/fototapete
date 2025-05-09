@@ -85,7 +85,6 @@ export const removeFromFavourites = createEvent<number>(); // product.id
 export const toggleFavouriteProduct = createEvent<Iproduct>();
 
 // Стор избранного
-console.log('FAVOURITES STORE INITIALIZED')
 export const $favourites = createStore<TFavouriteItem[]>([])
 .on(addToFavourites, (state, product) => {
     const exists = state.some(item => item.product.id === product.id);

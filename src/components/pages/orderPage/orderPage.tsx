@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import textData from '../../../texts'
 import { LangContext } from '../../../context/LangContext'
 import style from './orderPage.module.scss'
@@ -16,6 +16,16 @@ function OrderPage () {
     const text = textData[langValue as keyof typeof textData].orderPage
     const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
+
+    useEffect(() => {
+        setTimeout(() => {
+            // containerRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    }, []);
 
     return (
         <div className={style.orderPage}>

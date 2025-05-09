@@ -43,7 +43,7 @@
 }
 
 .iconWrap {
-    width: 21.5%;
+    width: 40%;
     height: 55%;
 }
 
@@ -52,7 +52,6 @@
         display: block;
         width: 5vw;
         min-width: 5vw;
-        // height: 55%;
     }
 }
 
@@ -74,6 +73,11 @@
 @media (min-width: 720px) and (max-width: 1140px) {
     .header {
         padding-top: 4.2%;
+    }
+
+    .counter {
+        top: -13%;
+        left: 71%;
     }
 
     .logoWrap {

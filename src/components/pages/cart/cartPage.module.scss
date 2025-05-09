@@ -9,6 +9,18 @@
     margin-bottom: 2vw;
 }
 
+.noCartItems {
+    margin-top: 10vw;
+    @include onest-400-22;
+    color: $black-text;
+    margin-bottom: 5vw;
+}
+
+.btnWrap {
+    width: 30%;
+    margin-bottom: 10vw;
+}
+
 .contentWrap {
     display: flex;
     align-items: flex-start;
@@ -32,8 +44,7 @@
     width: 71%;
     border: 1px solid $black-text;
     border-radius: 1.2rem;
-    @include onest-400-14;
-
+    @include onest-400-11;
 }
 
 .cartSummary {
@@ -91,7 +102,7 @@
 }
 
 .cartSummary_text {
-    @include onest-400-13;
+    @include onest-400-11;
     margin: .8vw 0;
     line-height: 114%;
 }
@@ -100,10 +111,102 @@
     .cartPage {
         margin-top: 15vw;
     }
+
+    .contentWrap {
+        flex-direction: column
+    }
+
+    .cartTable {
+        width: 100%;
+    }
+
+    .cartSummary {
+        width: 97%;
+    }
+
+    .cartSummary_header {
+        @include onest-500-23;
+    }
+
+    .cartSummary_item {
+        @include onest-500-23;
+    }
+
+    .cartSummary_btn {
+        width: 37%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 720px) {
     .cartPage {
         margin-top: 20vw;
+    }
+
+    .noCartItems {
+        @include onest-400-28;
+    }
+
+    .cartSummary_header {
+        @include onest-500-28;
+    }
+
+    .cartSummary_item {
+        @include onest-500-28;
+    }
+
+    .cartSummary_text {
+        @include onest-400-23;
+    }
+
+    .cartTable {
+        @include onest-400-28;
+    }
+
+    .note {
+        @include onest-400-23;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartPage {
+        margin-top: 20vw;
+    }
+
+    .cartSummary_header {
+        @include onest-500-34;
+    }
+
+    .cartSummary_item {
+        @include onest-500-34;
+    }
+
+    .cartSummary_text {
+        @include onest-400-28;
+    }
+
+    .noCartItems {
+        @include onest-400-34;
+    }
+
+    .cartTable {
+        @include onest-400-34;
+    }
+
+    .note {
+        @include onest-400-28;
+    }
+}
+
+@media (max-width: 420px) {
+    .cartPage {
+        margin-top: 5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .cartPage {
+        margin-top: 0vw;
     }
 }

@@ -6,11 +6,11 @@ import interior2Big from '../../../assets/orderingProcess-interior2-big.png';
 import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
 import Handwriting from '../../ui/handwriting/handwriting';
 import Title from '../../ui/title/title';
+import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite';
 
 import textData from '../../../texts';
 
 import style from './orderingProcess.module.scss';
-import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite';
 
 function OrderingProcess () {
 

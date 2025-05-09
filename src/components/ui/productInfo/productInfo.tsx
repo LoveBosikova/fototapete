@@ -44,10 +44,6 @@ function ProductInfo (props: IProductInfoProps) {
     const form_errors = useUnit($cart_item_form_errors)
     const cart = useUnit($cart)
 
-    console.log("cart_item_form", form);
-    console.log("cart", cart);
-    console.log("form_errors", form_errors);
-
     // Material values
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
 
@@ -74,19 +70,14 @@ function ProductInfo (props: IProductInfoProps) {
             key: "product",
             value: props.product
         })
-
     }, [productId])
-
 
     return (
         <div className={style.productInfo}>
             <div className={style.slidersWrap}>
                 <div className={style.bigSlider}>
                     <div className={style.likeWrap}>
-                    {/* TODO: like functional! */}
-                        {/* <ImgLike isActive={true}></ImgLike> */}
                         <ImgLike product={props.product}></ImgLike>
-
                     </div>
                     <Swiper
                     grabCursor={true}

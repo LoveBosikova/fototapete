@@ -276,6 +276,15 @@
     font-size: $font-size-24;
 }
 
+@mixin onest-400-23 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-23;
+}
+
 @mixin onest-400-22 {
     font-family: "Onest", serif;
     font-optical-sizing: auto;
@@ -302,9 +311,6 @@
     font-weight: 400;
     font-size: $font-size-18;
 
-    @media (min-width: 720px) and (max-width: 1140px) {
-        font-size: $font-size-28;
-    }
 }
 @mixin onest-400-16 {
     font-family: "Onest", serif;

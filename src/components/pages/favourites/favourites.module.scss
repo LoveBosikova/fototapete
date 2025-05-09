@@ -1,8 +1,26 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
 .favourites {
     margin-right: 4.6%;
     margin-left: 4.6%;
-    margin-top: 15vw;
+    margin-top: 12vw;
     margin-bottom: 5vw;
+}
+
+.noWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.noFavourites {
+    @include onest-400-22;
+    color: $black-text;
+}
+
+.btnWrap {
+    width: 30%;
 }
 
 .results {
@@ -11,6 +29,7 @@
     justify-content: space-between;
     row-gap: 1.84vw;
     width: 100%;
+    margin-top: 2vw;
     margin-bottom: 2vw;
 }
 
@@ -39,6 +58,18 @@
         margin-top: 25vw;
     }
 
+    .noWrap {
+        gap: 5vw;
+    }
+
+    .noFavourites {
+        @include onest-400-28;
+    }
+    
+    .btnWrap {
+        width: 40%;
+    }
+
     .results {
         row-gap: 3vw;
         padding-top: 3vw;
@@ -51,33 +82,76 @@
     }
 }
 
-@media (max-width: 350px) {
-
+@media (max-width: 720px) {   
     .favourites {
-        margin-top: 8vw;
+        margin-top: 20vw;
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 530px) {
     .favourites {
-        margin-top: 0vw;
+        margin-top: -5vw;
+    }
+
+    .noFavourites {
+        @include onest-400-34;
     }
 }
 
-@media (max-width: 320px) {
-    .favourites {
-        margin-top: -10vw;
-    }
-}
-
-@media (max-width: 310px) {
+@media (max-width: 480px) {
     .favourites {
         margin-top: -12vw;
     }
 }
 
+@media (max-width: 440px) {
+    .favourites {
+        margin-top: -25vw;
+    }
+}
+
+@media (max-width: 410px) {
+    .favourites {
+        margin-top: -34vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .favourites {
+        margin-top: -40vw;
+    }
+
+    .noFavourites {
+        @include onest-400-45;
+    }
+}
+
+@media (max-width: 350px) {
+    .favourites {
+        margin-top: -70vw;
+    }
+}
+
+@media (max-width: 340px) {
+    .favourites {
+        margin-top: -70vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .favourites {
+        margin-top: -75vw;
+    }
+}
+
+@media (max-width: 310px) {
+    .favourites {
+        margin-top: -80vw;
+    }
+}
+
 @media (max-width: 300px) {
     .favourites {
-        margin-top: -22vw;
+        margin-top: -100vw;
     }
 }

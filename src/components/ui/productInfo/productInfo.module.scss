@@ -262,3 +262,71 @@
     min-height: 1vw;
     color: $orange-alert;
 }
+
+@media(max-width: 720px) {
+
+    .btnPrev,
+    .btnNext {
+        width: 6vw;
+    }
+
+    .materialsWrap {
+        width: 80%;
+        max-width: 80%; 
+    }
+
+    .maesuresWrapVisible {
+        width: 80%;
+        max-width: 80%; 
+    }
+
+    .subcategoryCheckboxWrap {
+        width: 1.5vw;
+    }
+
+    .titleWrap {
+        @include evolventa-700-38;
+    }
+    
+    .metrics {
+        @include onest-500-23;
+    }
+    
+    .note {
+        @include onest-400-20;
+    }
+
+    .materialTitle,
+    .calculatorTitle {
+        @include onest-400-20;
+    }
+
+    .material {
+        @include onest-400-20;
+    }
+
+    .materialText {
+        @include onest-400-20;
+    }
+
+    .measureTitle{
+        @include onest-400-20;
+    }
+    
+    .measureInput {
+        @include onest-400-20;
+    }
+
+    .checkboxWrap {
+        @include onest-400-23;
+    }
+    
+    
+    .installationNote {
+        @include onest-400-20;
+    }
+    
+    .error {
+        @include onest-400-20;
+    }
+}

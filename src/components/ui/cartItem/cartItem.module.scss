@@ -24,6 +24,7 @@
 .deleteIcon { 
     grid-area: 1 / 1 / 2 / 2; 
     place-self: center;
+    cursor: pointer;
 }
 
 .productImg { grid-area: 1 / 2 / 2 / 3; }
@@ -38,6 +39,8 @@
 .price { 
     grid-area: 1 / 4 / 2 / 5; 
     color: $black-text;
+    word-break: break-all;
+    overflow-wrap: anywhere;
 }
 
 .amount { 
@@ -48,6 +51,8 @@
 .total { 
     grid-area: 1 / 6 / 2 / 7; 
     color: $black-text;
+    word-break: break-all;
+    overflow-wrap: anywhere;
 }
 
 .img {
@@ -59,4 +64,34 @@
     @include onest-400-13;
     color: $orange-alert;
     margin-bottom: .8vw;
+}
+
+@media(max-width: 720px) {
+    .productInfo { 
+        @include onest-400-23;
+    }
+
+    .productName {
+        @include onest-400-28;
+    }
+
+    .price,
+    .total {
+        @include onest-400-22;
+    }
+}
+
+@media(max-width: 500px) {
+    .productInfo { 
+        @include onest-400-28;
+    }
+
+    .productName {
+        @include onest-400-34;
+    }
+
+    .price,
+    .total {
+        @include onest-400-28;
+    }
 }
