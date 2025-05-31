@@ -24,7 +24,7 @@ function MainBilboard () {
         <div className={style.wrap}>
             <div className={style.backgroundWrap}>
             <picture className={style.backgroundImg} >
-                <source
+                {/* <source
                     media="(max-width: 720px)"
                     srcSet="/mainBack-small.png 720w"
                     sizes="720px"
@@ -37,7 +37,21 @@ function MainBilboard () {
                 <source
                     srcSet="/mainBack-medium.png 720w"
                     sizes="720px"
-                />
+                /> */}
+                <source
+                    media="(max-width: 720px)"
+                    srcSet={`${import.meta.env.BASE_URL}mainBack-small.png`}
+                    sizes="720px"
+                    />
+                    <source
+                    media="(min-width: 1140px)"
+                    srcSet={`${import.meta.env.BASE_URL}mainBack-large.png`}
+                    sizes="1140px"
+                    />
+                    <source
+                    srcSet={`${import.meta.env.BASE_URL}mainBack-medium.png`}
+                    sizes="720px"
+                    />
                 <img  className={style.backgroundImg} src={backLarge} />
             </picture>
             </div>

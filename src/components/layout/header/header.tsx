@@ -20,11 +20,19 @@ function Header () {
 
     let location = useLocation();
 
-    useEffect(()=>{
-        (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
-    }, [location])
+    // useEffect(()=>{
+        
+    //     (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
+    // }, [location])
 
-        const cart = useUnit($cart)
+    useEffect(() => {
+        const base = import.meta.env.BASE_URL; // например, '/fototapete/'
+        setIsDefaultStyles(
+            location.pathname === `${base}` || location.pathname === `${base}info`
+        );
+    }, [location.pathname]);
+
+    const cart = useUnit($cart)
 
     return (
         <header className={style.header}>

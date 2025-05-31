@@ -1,7 +1,7 @@
 import {  
   Route,
-  Routes,
-  BrowserRouter } 
+  Routes
+  } 
 from 'react-router-dom';
 
 import MainPage from './components/pages/mainPage/mainPage'
@@ -19,27 +19,24 @@ import Favourites from './components/pages/favourites/favourites';
 import './App.scss'
 
 function App() {
-
   return (
     <>
-    <BrowserRouter>
       <Header />
-        <Routes>
-          <Route index path='/' element={<MainPage />} />
-          <Route path='/:pid' element={<ProductPage />} />
-          <Route path='/cart' element={<CartPage />} />
-          <Route path='/order' element={<OrderPage />} />
-          <Route path='/info' element={<InfoPage />} />
-          <Route path='/favourites' element={<Favourites />} />
-          <Route path='/materials' element={<MaterialsPage />} />
-          <Route path='/catalog' element={<CatalogPage />}>
-            <Route index element={<Wallpapers />} />
-            <Route path='/catalog/:cid' element={<Category />} />
-          </Route>
-          <Route path='*' element={<MainPage />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Routes>
+        <Route index path='/' element={<MainPage />} />
+        <Route path='/:pid' element={<ProductPage />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/order' element={<OrderPage />} />
+        <Route path='/info' element={<InfoPage />} />
+        <Route path='/favourites' element={<Favourites />} />
+        <Route path='/materials' element={<MaterialsPage />} />
+        <Route path='/catalog' element={<CatalogPage />}>
+          <Route index element={<Wallpapers />} />
+          <Route path=':cid' element={<Category />} />
+        </Route>
+        <Route path='*' element={<MainPage />} />
+      </Routes>
+      <Footer />
     </>
   )
 }

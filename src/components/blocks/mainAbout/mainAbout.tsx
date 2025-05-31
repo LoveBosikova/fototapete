@@ -20,16 +20,16 @@ function MainAbout () {
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/about_main_little.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}about_main_little.png 720w`}
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/about_main.png 1140w"
+                    srcSet={`${import.meta.env.BASE_URL}about_main.png 1140w`}
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/about_main_medium.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}about_main_medium.png 720w`}
                     sizes="720px"
                 />
                 <img  className={style.backgroundImg} src={backLarge} />

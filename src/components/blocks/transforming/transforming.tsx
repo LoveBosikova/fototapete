@@ -23,16 +23,16 @@ function Transforming () {
             <picture className={style.background} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/transforming-small.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}transforming-small.png 720w`}
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/transforming-big.webp 1140w"
+                    srcSet={`${import.meta.env.BASE_URL}transforming-big.webp 1140w`}
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/transforming-medium.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}transforming-medium.png 720w`}
                     sizes="720px"
                 />
                 <img  className={style.background} src={backgroundBig} />

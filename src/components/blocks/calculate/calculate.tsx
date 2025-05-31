@@ -62,17 +62,22 @@ function Calculate () {
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/calculateBack-small.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}calculateBack-small.png 720w`}
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/calculateBack-big.png 1140w"
+                    srcSet={`${import.meta.env.BASE_URL}calculateBack-big.png 1140w`}
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/calculateBack-medium.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}calculateBack-medium.png 720w`}
                     sizes="720px"
+                />
+                <img
+                    className={style.backgroundImg}
+                    src={`${import.meta.env.BASE_URL}calculateBack-big.png`}
+                    alt="Background"
                 />
                 <img  className={style.backgroundImg} src={backBig} />
             </picture>

@@ -24,16 +24,16 @@ function Subscribe () {
             <picture className={style.backImg} >
                 <source
                     media="(max-width: 720px)"
-                    srcSet="/subscribe-back-small.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}subscribe-back-small.png 720w`}
                     sizes="720px"
                 />
                 <source
                     media="(min-width: 1140px)"
-                    srcSet="/subscribe-back-big.png 1140w"
+                    srcSet={`${import.meta.env.BASE_URL}subscribe-back-big.png 1140w`}
                     sizes="1140px"
                 />
                 <source
-                    srcSet="/subscribe-back-medium.png 720w"
+                    srcSet={`${import.meta.env.BASE_URL}subscribe-back-medium.png 720w`}
                     sizes="720px"
                 />
                 <img  className={style.backImg} src={backImgBig} />

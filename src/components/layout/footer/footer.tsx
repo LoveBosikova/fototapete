@@ -36,16 +36,16 @@ function Footer () {
                 <picture className={style.img} >
                     <source
                         media="(max-width: 720px)"
-                        srcSet="/footer-back-small.png 720w"
+                        srcSet={`${import.meta.env.BASE_URL}footer-back-small.png 720w`}
                         sizes="720px"
                     />
                     <source
                         media="(min-width: 1140px)"
-                        srcSet="/footer-back-big.png 1140w"
+                        srcSet={`${import.meta.env.BASE_URL}footer-back-big.png 1140w`}
                         sizes="1140px"
                     />
                     <source
-                        srcSet="/footer-back-medium.png 720w"
+                        srcSet={`${import.meta.env.BASE_URL}footer-back-medium.png 720w`}
                         sizes="720px"
                     />
                     <img  className={style.img} src={backImgBig} />
@@ -62,11 +62,11 @@ function Footer () {
                     <picture className={style.imgMockUp} >
                         <source
                             media="(min-width: 1140px)"
-                            srcSet="/footer-3-big.png 1140w"
+                            srcSet={`${import.meta.env.BASE_URL}footer-3-big.png 1140w`}
                             sizes="1140px"
                         />
                         <source
-                            srcSet="/footer-3-medium.png 720w"
+                            srcSet={`${import.meta.env.BASE_URL}footer-3-medium.png 720w`}
                             sizes="720px"
                         />
                         <img  className={style.imgMockUp} src={mockup3Big} />
