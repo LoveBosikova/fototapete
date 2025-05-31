@@ -5,10 +5,10 @@ import style from './orderPage.module.scss'
 import { $form, changeTaskForm } from './model'
 import { useUnit } from 'effector-react'
 import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbox'
-import { TEST_ORDER } from '../../../variables'
 import OrderItem, { TPropsOrderItem } from '../../ui/orderItem/orderItem'
 import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
 import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
+import { $cart } from '../cart/model'
 
 function OrderPage () {
     const { lang } = useContext(LangContext)
@@ -16,7 +16,7 @@ function OrderPage () {
     const text = textData[langValue as keyof typeof textData].orderPage
     const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
-
+    const cart = useUnit($cart)
     useEffect(() => {
         setTimeout(() => {
             // containerRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -275,7 +275,7 @@ function OrderPage () {
                     <p className={style.order_title}>{text.total}</p>
                 </div>
                 <ul className={style.order__items}>
-                    {TEST_ORDER.map((item : TPropsOrderItem) => <OrderItem {...item} /> )}
+                    {cart.map((item : TPropsOrderItem) => <OrderItem {...item} /> )}
                 </ul>
                 <div className={style.order__header}>
                     <p className={style.order_title}>{text.total}</p>

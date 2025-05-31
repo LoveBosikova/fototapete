@@ -16,7 +16,7 @@ function NavbarMobile (props: ISelectorProps) {
     const { isWhite } = props
 
     // Состояние нужно, чтобы элемент обновлялся сам после выбора новой опции, а не только менял значение контекста
-    const [ curLink, setCurLink ] = useState<string>('/')
+    const [ curLink, setCurLink ] = useState<string>(import.meta.env.BASE_URL)
 
     // Открыт - закрыт селект 
     const [ isOpen, setIsOpen ] = useState(false);
@@ -42,30 +42,30 @@ function NavbarMobile (props: ISelectorProps) {
                 <NavLink 
                 to='/catalog' 
                 onClick={() => {
-                    setCurLink('/catalog')
+                    setCurLink(`${import.meta.env.BASE_URLinfo}catalog`)
                     handleIsOpen()
                 } } 
-                className={curLink !== '/catalog' ? style.option : style.currentOption}
+                className={curLink !== `${import.meta.env.BASE_URLinfo}catalog` ? style.option : style.currentOption}
                 end>
                     <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
                 </NavLink>
                 <NavLink 
                 to='/info' 
                 onClick={() => {
-                    setCurLink('/info')
+                    setCurLink(`${import.meta.env.BASE_URLinfo}info`)
                     handleIsOpen()
                 }} end
-                className={curLink !== '/info' ? style.option : style.currentOption} 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}` ? style.option : style.currentOption} 
                 >
                     <li className={style.linkWrap}><p className={style.link}>Info</p></li>
                 </NavLink>
                 <NavLink 
                 to='/materials' 
                 onClick={() => {
-                    setCurLink('/materials')
+                    setCurLink(`${import.meta.env.BASE_URLinfo}materials`)
                     handleIsOpen()
                 }} 
-                className={curLink !== '/materials' ? style.option : style.currentOption} 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}materials` ? style.option : style.currentOption} 
                 end>
                     <li className={style.linkWrap}><p className={style.link}>Materials</p></li>
                 </NavLink>

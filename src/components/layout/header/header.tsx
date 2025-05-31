@@ -22,13 +22,19 @@ function Header () {
 
     // useEffect(()=>{
         
-    //     (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false)
+    //     (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false) /fototapete/
     // }, [location])
 
     useEffect(() => {
-        const base = import.meta.env.BASE_URL; // например, '/fototapete/'
+        const base = import.meta.env.BASE_URL;
+
+        console.log(location.pathname, `${base}`);
         setIsDefaultStyles(
-            location.pathname === `${base}` || location.pathname === `${base}info`
+            location.pathname === `${base}` 
+            || location.pathname === `/fototapete/` 
+            || location.pathname === `/` 
+            || location.pathname === `${base}info` 
+            || location.pathname === `/info`
         );
     }, [location.pathname]);
 

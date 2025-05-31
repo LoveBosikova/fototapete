@@ -8,48 +8,6 @@ const LANGS : ILang[] = [
     {name: 'Hrvatski', value: 'Hrv'},
 ]
 
-const TEST_ORDER = [
-    {
-        product: {
-            id: 0,
-            name: `Children's Jungle 01`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: '/catalog/01.png',
-            imgs: [
-                '/catalog/01.png',
-                '/catalog/01.png',
-                '/catalog/01.png',
-                '/catalog/01.png'
-            ]
-        },
-        material: 'Smooth Adhesive-based Wallpaper', 
-        width: '500',
-        height: '100',
-        total_m2: '5',
-        count: 1,
-    },
-    {
-        product: {
-            id: 4,
-            name: `Children's Jungle 05`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: '/catalog/05.png',
-            imgs: [
-                '/catalog/05.png',
-                '/catalog/05.png',
-                '/catalog/05.png',
-                '/catalog/05.png'
-            ]
-        },
-        material: 'Textured Adhesive-Based Wallpaper (Straw/Sand Texture)', 
-        width: '500',
-        height: '100',
-        total_m2: '5',
-        count: 1,
-    }
-]
 
-export { LANGS, TEST_ORDER }
+export { LANGS }
 export type { ILang };
