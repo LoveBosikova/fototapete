@@ -11,6 +11,8 @@ import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeW
 import textData from '../../../texts';
 
 import style from './orderingProcess.module.scss';
+import { Modal } from '../../ui/modal/Modal';
+import { openModal } from '../../ui/modal/model';
 
 function OrderingProcess () {
 
@@ -18,6 +20,7 @@ function OrderingProcess () {
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].orderingProcess
     const btnText = textData[langValue as keyof typeof textData].btns
+    const modalText = textData[langValue as keyof typeof textData].modals
 
     return (
         <section className={style.orderingProcess}>
@@ -49,38 +52,62 @@ function OrderingProcess () {
                     </div>
                     <div className={style.point2}>
                         <p className={style.pointText}>{text.point1}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point1')}>
                             <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
+                            <Modal modalName="point1">
+                                <h2>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point3}>
                         <p className={style.pointText}>{text.point2}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point2')}>
                             <LinkButtonBlack text={btnText.learnMore} link={''}></LinkButtonBlack>
+                            <Modal modalName="point2">
+                                <h2>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point4}>
                         <p className={style.pointText}>{text.point3}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point3')}>
                             <LinkButtonBlack text={btnText.learnMore} link={''}></LinkButtonBlack>
+                            <Modal modalName="point3">
+                                <h2>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point5}>
                         <p className={style.pointText}>{text.point4}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point4')}>
                             <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
+                            <Modal modalName="point4">
+                                <h2>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point6}>
                         <p className={style.pointText}>{text.point5}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point5')}>
                             <LinkButtonBlack text={btnText.learnMore} link={''}></LinkButtonBlack>
+                            <Modal modalName="point5">
+                                <h2>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point7}>
                         <p className={style.pointText}>{text.point6}</p>
-                        <div className={style.btnWrap}>
+                        <div className={style.btnWrap} onClick={() => openModal('point6')}>
                             <LinkButtonOrangeWhite text={btnText.learnMore} link={''}></LinkButtonOrangeWhite>
+                            <Modal modalName="point6">
+                                <h2 className={style.modal_title}>{modalText.modal.title}</h2>
+                                <p className={style.modal_text}>{modalText.modal.text}</p>   
+                            </Modal>
                         </div>
                     </div>
                     <div className={style.point8}>

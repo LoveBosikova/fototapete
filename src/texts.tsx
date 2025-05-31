@@ -1071,6 +1071,12 @@ const textData = {
             enterHeight: "Enter height here",
             enterWeight: "Enter weight here",
         },
+        modals: {
+            modal: {
+                title: 'Measurement service',
+                text: `If you're not sure how to properly measure your walls or want to avoid potential mistakes, we offer a measurement service by a professional. Our technician will come to your address, take all necessary measurements, and advise you on design options. The service is charged, and the price depends on your location and is available upon request. We offer measurement services in Zagreb and the surrounding area.`,
+            }
+        }
     },
     hrv: {
         mainBillboard: {
@@ -2904,6 +2910,12 @@ const textData = {
             selectMaterial: "Select material here",
             enterWeight: "Enter weight here",
             enterHeight: "Enter height here",
+        },
+        modals: {
+            modal: {
+                title: 'Measurement service',
+                text: `If you're not sure how to properly measure your walls or want to avoid potential mistakes, we offer a measurement service by a professional. Our technician will come to your address, take all necessary measurements, and advise you on design options. The service is charged, and the price depends on your location and is available upon request. We offer measurement services in Zagreb and the surrounding area.`,
+            }
         },
         btns: {
             catalog:'Katalog',

@@ -1,10 +1,12 @@
 @import './variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
+// import.meta.env.BASE_URL;
+
 @font-face {
     font-family: 'Evolventa Bold';
     src: local('Evolventa-Bold'), 
-        url('/fonts/Evolventa-Bold.ttf') format('truetype'),
+        url('fonts/Evolventa-Bold.ttf') format('truetype'),
         url('/fonts/Evolventa-Bold.otf') format('otf'),
         url('/fonts/Evolventa-Bold.woff') format('woff'),
         url('/fonts/Evolventa-Bold.svg') format("svg");
