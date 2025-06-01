@@ -8,7 +8,7 @@ import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbo
 import OrderItem from '../../ui/orderItem/orderItem'
 import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
 import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
-import { $cart } from '../cart/model'
+import { $cart, $totalPrice } from '../cart/model'
 
 function OrderPage () {
     const { lang } = useContext(LangContext)
@@ -17,15 +17,18 @@ function OrderPage () {
     const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
     const cart = useUnit($cart)
+    const totalPrice = useUnit($totalPrice)
+
     useEffect(() => {
         setTimeout(() => {
-            // containerRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
         }, 0);
     }, []);
+
+    console.log(cart);
 
     return (
         <div className={style.orderPage}>
@@ -279,7 +282,7 @@ function OrderPage () {
                 </ul>
                 <div className={style.order__header}>
                     <p className={style.order_title}>{text.total}</p>
-                    <p className={style.order_title}>90 €</p>
+                    <p className={style.order_title}>{totalPrice} €</p>
                 </div>
                 <h2 className={style.order_title}>{text.delivery}</h2>
                 <p className={style.delivery_note}>{text.order_note}</p>
@@ -287,10 +290,10 @@ function OrderPage () {
                     <p className={style.order_title}>{text.discount}</p>
                     <p className={style.order_title}>0</p>
                 </div>
-                <div className={style.order__header}>
+                {/* <div className={style.order__header}>
                     <p className={style.order_title}>{text.product}</p>
                     <p className={style.order_title}>{text.total}</p>
-                </div>
+                </div> */}
                 <h2 className={style.order_title}>{text.discount_code}</h2>
                 <p className={style.delivery_note}>{text.promo_note}</p>
                 <input 
@@ -303,14 +306,10 @@ function OrderPage () {
                     type='text'
                 />
                 <p className={style.delivery_undernote}>{text.personal_info_note}</p>
-                <LinkButtonOrangeWhite text={btns.preview_dimensions} link={''}/>
-                <LinkButtonCart text={btns.order} link={''}/>
-
-
-
-
-
-
+                <div className={style.order__btns}>
+                    <LinkButtonOrangeWhite text={btns.preview_dimensions} link={''}/>
+                    <LinkButtonCart text={btns.order} link={''}/>
+                </div>
                 </div>
             </div>
         </div>

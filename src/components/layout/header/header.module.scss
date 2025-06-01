@@ -123,6 +123,14 @@
         width: 31%;
         margin-top: 3.4vw;
     }
+
+    .counter {
+        @include onest-400-22;
+        top: -26%;
+        left: 60%;
+        width: 4vw;
+        height: 4vw;
+    }
 }
 
 @media (max-width: 500px) {
@@ -148,5 +156,13 @@
     .iconWrap {
         width: 8vw;
         min-width: 8vw;
+    }
+
+        .counter {
+        @include onest-400-28;
+        top: -26%;
+        left: 60%;
+        width: 5vw;
+        height: 5vw;
     }
 }

@@ -263,7 +263,23 @@
     color: $orange-alert;
 }
 
+.modal_btn {
+    width: 50%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media(max-width: 720px) {
+
+    .productInfo {
+        flex-direction: column;
+    }
+
+    .slidersWrap {
+        width: 100%;
+    }
 
     .btnPrev,
     .btnNext {
@@ -271,8 +287,8 @@
     }
 
     .materialsWrap {
-        width: 80%;
-        max-width: 80%; 
+        width: 64%;
+        width: 64%;
     }
 
     .maesuresWrapVisible {
@@ -285,36 +301,54 @@
     }
 
     .titleWrap {
-        @include evolventa-700-38;
+        @include evolventa-700-75;
     }
     
     .metrics {
-        @include onest-500-23;
+        @include onest-500-28;
     }
     
     .note {
-        @include onest-400-20;
+        @include onest-400-28;
     }
 
     .materialTitle,
     .calculatorTitle {
-        @include onest-400-20;
+        @include onest-400-28;
     }
 
     .material {
-        @include onest-400-20;
+        @include onest-400-24;
+        padding: 1.6vw 2vw;
     }
 
     .materialText {
-        @include onest-400-20;
+        @include onest-400-24;
     }
 
     .measureTitle{
-        @include onest-400-20;
+        @include onest-400-24;
     }
     
     .measureInput {
-        @include onest-400-20;
+        @include onest-400-24;
+        padding: 1.6vw 2vw;
+    }
+
+    .maesuresWrapVisible {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallWidth {
+        width: 63%;
+        max-width: 63%;
+    }
+
+    .wallHeight {
+        width: 63%;
+        max-width: 63%;
     }
 
     .checkboxWrap {
@@ -329,4 +363,91 @@
     .error {
         @include onest-400-20;
     }
+
+    .resultsWrap {
+        width: 82%;
+    }
+
+    .btnsWrap {
+        margin-bottom: 10vw;
+    }
+}
+
+@media(max-width: 570px) {
+    .materialsWrap,
+    .calculatorWrap {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .resultsWrap {
+        width: 88%;
+    }
+
+    .topResultsWrap {
+        margin-bottom: 2.55vw;
+    }
+
+    .titleWrap {
+        @include evolventa-700-111;
+    }
+    
+    .metrics {
+        @include onest-500-45;
+    }
+    
+    .note {
+        @include onest-400-45;
+        margin-bottom: 10vw;
+    }
+
+    .materialTitle,
+    .calculatorTitle {
+        @include onest-400-45;
+    }
+
+    .material {
+        @include onest-400-34;
+        padding: 1.6vw 2vw;
+        margin-bottom: 4vw;
+
+    }
+
+    .materialText {
+        @include onest-400-34;
+    }
+
+    .measureTitle{
+        @include onest-400-34;
+    }
+    
+    .measureInput {
+        @include onest-400-34;
+    }
+
+    .checkboxWrap {
+        @include onest-400-28;
+        margin-top: 4vw;
+    }
+    
+    
+    .installationNote {
+        @include onest-400-28;
+    }
+    
+    .error {
+        @include onest-400-28;
+    }
+
+    .subcategoryCheckboxWrap {
+        width: 2.5vw;
+    }
+
+    .btnsWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }

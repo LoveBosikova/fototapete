@@ -6,6 +6,7 @@
     margin-left: 4.5%;
     margin-right: 4.5%;
     color: $black-text;
+    
 }
 
 .breadCrumbs {
@@ -15,6 +16,10 @@
 .path {
     @include onest-400-14;
     color: $black-text;
+
+    @media(max-width: 720px) {
+        @include onest-400-28;
+    }
 }
 
 @media(max-width: 1140px) {

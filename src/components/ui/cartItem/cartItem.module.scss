@@ -34,6 +34,7 @@
     grid-area: 1 / 3 / 2 / 4;
     color: $black-text;
     padding: 0 1.8vw;
+
 }
 
 .price { 
@@ -69,6 +70,11 @@
 @media(max-width: 720px) {
     .productInfo { 
         @include onest-400-23;
+        flex-direction: column;
+    }
+
+    .slidersWrap {
+        width: 100%;
     }
 
     .productName {

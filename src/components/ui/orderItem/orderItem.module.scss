@@ -17,12 +17,31 @@
 .metricsWrap {
     @include onest-400-12;
     color: $link-disabled;
+
+    @media(max-width: 1140px) {
+        @include onest-400-16;
+    }
+    @media(max-width: 740px) {
+        @include onest-400-28;
+    }
+    @media(max-width: 440px) {
+        @include onest-400-45;
+    }
 }
 
 .name,
 .price {
     @include onest-400-12;
     color: $black-text;
+    @media(max-width: 1140px) {
+        @include onest-400-16;
+    }
+    @media(max-width: 740px) {
+        @include onest-400-28;
+    }
+    @media(max-width: 440px) {
+        @include onest-400-45;
+    }
 }
 
 .price {
@@ -31,15 +50,4 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
-
-@media(max-width: 1140px) {
-    .metricsWrap {
-        @include onest-400-16;
-    }
-    
-    .name,
-    .price {
-        @include onest-400-18;
-    }
 }

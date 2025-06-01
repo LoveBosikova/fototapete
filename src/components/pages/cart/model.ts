@@ -1,20 +1,21 @@
 import { combine, createEvent, createStore, sample } from "effector";
 import { Iproduct } from "../../ui/productPreview/productPreview";
 import { IMaterial } from "../../../types";
+import { openModal } from "../../ui/modal/model";
 
 export type TCartItemForm = {
     material: IMaterial | null | undefined;
     product: Iproduct | null | undefined;
-    width: number | string | undefined;
-    height: number | string | undefined;
+    width: number | null;
+    height: number | null;
     needInstallation: boolean | undefined;
 }
 
 export type TCartItemFormErrors = {
     material?: string;
     product?: string;
-    width?: string;
-    height?: string;
+    width?: string | null;
+    height?: string | null;
     needInstallation?: string;
 }
 
@@ -39,10 +40,10 @@ export const changeCartItemForm = createEvent<TChangeCartItemForm<keyof TCartIte
 export const resetCartItemForm = createEvent()
 
 export const $cart_item_form = createStore<TCartItemForm>({
-    material: undefined,
-    product: undefined,
-    width: undefined,
-    height: undefined,
+    material: null,
+    product: null,
+    width: null,
+    height: null,
     needInstallation: false,
 })
 .on(changeCartItemForm, (state, payload) => ({
@@ -61,6 +62,19 @@ export const $cart = createStore<TCartItemForm[]>([])
     .on(addCartItem, (state, item) => [...state, item])
     .on(removeFromCart, (state, id) => state.filter(item => item.product?.id !== id));
 
+    export const $totalPrice = $cart.map(cart => {
+    return cart.reduce((total, item) => {
+
+    if (!item.product || !item.width || !item.height) return total;
+    
+    const area = Number(item.width) * Number(item.height);
+    const pricePerM2 = parseFloat(item.product.metrics.match(/from (\d+)/)?.[1] || '0');
+    const itemPrice = area * pricePerM2;
+    
+    return total + itemPrice;
+    }, 0);
+});
+
 sample({
     source: $cart_item_form,
     clock: addToCart,
@@ -71,6 +85,12 @@ sample({
     clock: addToCart,
     target: resetCartItemForm,
 })
+
+sample({
+  clock: addToCart,
+  fn: () => 'cartSuccess',
+  target: openModal,
+});
 
 // стор избранных товаров
 

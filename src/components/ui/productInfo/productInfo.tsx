@@ -16,6 +16,8 @@ import { IMaterial } from "../../../types";
 import { $cart_item_form, $cart_item_form_errors, addToCart, changeCartItemErrorsForm, changeCartItemForm } from "../../pages/cart/model";
 import { useUnit } from "effector-react";
 import { useParams } from "react-router-dom";
+import { Modal } from "../modal/Modal";
+import { closeModal } from "../modal/model";
 
 type IProductInfoProps = {
     product: any ;
@@ -42,9 +44,9 @@ function ProductInfo (props: IProductInfoProps) {
 
     const form = useUnit($cart_item_form)
     const form_errors = useUnit($cart_item_form_errors)
-    // const cart = useUnit($cart)
 
-    // Material values
+    console.log(form);
+
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
 
     const { productId } = useParams();
@@ -181,11 +183,11 @@ function ProductInfo (props: IProductInfoProps) {
                     <h3 className={style.calculatorTitle}>{textProductInfo.calculatorTitle}</h3>
                     <div className={style.results}>
                         <div className={style.topResultsWrap}>
-                            <FormResult text={textProductInfo.priceForM} value={textProductInfo.priceForMValue}></FormResult>
-                            <FormResult text={textProductInfo.totalM} value={textProductInfo.totalMValue}></FormResult>
+                            <FormResult text={textProductInfo.priceForM} value={ form.material?.id ? String(form.material?.price) : "-"}></FormResult>
+                            <FormResult text={textProductInfo.totalM} value={`${form.height && form.width ? ((+form.height/100)*(+form.width/100)).toFixed(2) : textProductInfo.totalMValue}`}></FormResult>
                         </div>
                         <div className={style.resultsWrap}>
-                            <FormResult text={textProductInfo.wallpaperPrice} value={textProductInfo.wallpaperPriceValue}></FormResult>
+                            <FormResult text={textProductInfo.wallpaperPrice} value={form.material && form.width && form.height ? form.material?.price!*Number(((Number(form.height)/100)*(Number(form.width)/100)).toFixed(2)) : "-"}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
                             <div className={style.subcategoryCheckboxWrap} onClick={()=> {
@@ -229,6 +231,12 @@ function ProductInfo (props: IProductInfoProps) {
                         }}
                         
                         ></LinkButtonOrange>
+                        <Modal modalName="cartSuccess">
+                            <h2>Товар добавлен в корзину</h2>
+                            <div onClick={() => closeModal()} className={style.modal_btn}>
+                                <LinkButtonOrange text="Ok!" link=""/>
+                            </div>
+                        </Modal>
                     </div>
                 </div>
             </div>

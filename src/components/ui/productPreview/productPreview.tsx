@@ -3,9 +3,6 @@ import { NavLink } from "react-router-dom";
 import ImgLike from "../icons/imgLike/imgLike";
 
 import style from './productPreview.module.scss';
-// import { useContext } from "react";
-// import { LangContext } from "../../../context/LangContext";
-// import textData from "../../../texts";
 
 export type Iproduct = {
     id: number,
