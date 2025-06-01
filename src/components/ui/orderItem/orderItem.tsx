@@ -19,8 +19,8 @@ function OrderItem (props: TPropsOrderItem) {
         material, 
         width, 
         height, 
-        total_m2,
-        count,
+        // total_m2,
+        // count,
     } = props
 
     const { lang } = useContext(LangContext)

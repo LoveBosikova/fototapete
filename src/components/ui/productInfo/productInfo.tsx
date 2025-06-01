@@ -138,8 +138,8 @@ function ProductInfo (props: IProductInfoProps) {
                         <input 
                         className={style.measureInput} 
                         id='wallWidth' 
-                        type='number' 
-                        value={form.width}
+                        type='number' //@ts-ignore
+                        value={form.width && Number(form.width)}
                         onChange={(e) =>{
                             changeCartItemForm({
                                 key: "width",
@@ -160,7 +160,7 @@ function ProductInfo (props: IProductInfoProps) {
                         <input
                         className={style.measureInput} 
                         id='wallHeight' 
-                        type='number' 
+                        type='number' //@ts-ignore
                         value={form.height}
                         onChange={(e) => {
                             changeCartItemForm({
@@ -186,7 +186,8 @@ function ProductInfo (props: IProductInfoProps) {
                             <FormResult text={textProductInfo.priceForM} value={ form.material?.id ? String(form.material?.price) : "-"}></FormResult>
                             <FormResult text={textProductInfo.totalM} value={`${form.height && form.width ? ((+form.height/100)*(+form.width/100)).toFixed(2) : textProductInfo.totalMValue}`}></FormResult>
                         </div>
-                        <div className={style.resultsWrap}>
+                        <div className={style.resultsWrap}> 
+                            {/* @ts-ignore */}
                             <FormResult text={textProductInfo.wallpaperPrice} value={form.material && form.width && form.height ? form.material?.price!*Number(((Number(form.height)/100)*(Number(form.width)/100)).toFixed(2)) : "-"}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
