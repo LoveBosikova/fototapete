@@ -1,0 +1,78 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.blogArticlePage {
+    padding: 11.2vw 3.5vw;
+    min-height: 70vh;
+    color: $black-text;
+}
+
+.imgWrap
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.subtitle {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    @include onest-400-28;
+}
+
+.textSubtitle {
+    @include onest-500-28;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+.paragraph {
+    list-style: none;
+}
+
+.text {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    @include onest-400-18;
+}
+
+@media (max-width: 1140px) {
+    .blogArticlePage {
+        padding: 18vw 3.5vw;
+    }
+
+    .text {
+        @include onest-400-23;
+    }
+}
+
+@media (max-width: 720px) {
+    .subtitle {
+        @include onest-400-34;
+    }
+    .textSubtitle {
+        @include onest-500-34;
+    }
+
+    .text {
+        @include onest-400-28;
+    }
+}
+
+@media (max-width: 540px) {
+    .blogArticlePage {
+        padding: 27vw 3.5vw;
+    }
+    .subtitle {
+        @include onest-400-45;
+        margin-top: 2vw;
+    }
+    .textSubtitle {
+        @include onest-500-45;
+        margin-top: 8vw;
+    }
+
+    .text {
+        @include onest-400-45;
+    }
+}

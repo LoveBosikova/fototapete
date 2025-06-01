@@ -26,7 +26,7 @@ function HelpfulArticles () {
             </div>
             <div className={style.contentWrap}>
                 <div className={style.btnWrap}>
-                    <LinkButtonWhite text={textBtn.viewAllArticles} link={''}></LinkButtonWhite>
+                    <LinkButtonWhite text={textBtn.viewAllArticles} link={'/blog'}></LinkButtonWhite>
                 </div>
                 <ul className={style.articlesWrap}>
                     {text.articles.map((article) => {

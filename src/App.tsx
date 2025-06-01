@@ -17,6 +17,8 @@ import InfoPage from './components/pages/infoPage/infoPage';
 import MaterialsPage from './components/pages/materialsPage/materialsPage';
 import Favourites from './components/pages/favourites/favourites';
 import './App.scss'
+import BlogPage from './components/pages/blog/blogPage';
+import BlogArticlePage from './components/pages/blogArticlePage/BlogArticlePage';
 
 function App() {
   return (
@@ -30,6 +32,12 @@ function App() {
         <Route path='/info' element={<InfoPage />} />
         <Route path='/favourites' element={<Favourites />} />
         <Route path='/materials' element={<MaterialsPage />} />
+        {/* <Route path='/blog' element={<BlogPage />} />
+         */}
+        <Route path='/blog' element={<BlogPage />}>
+          {/* <Route path=':id' element={<BlogArticlePage />} /> */}
+        </Route>
+        <Route path='/blog/:id' element={<BlogArticlePage />} />
         <Route path='/catalog' element={<CatalogPage />}>
           <Route index element={<Wallpapers />} />
           <Route path=':cid' element={<Category />} />

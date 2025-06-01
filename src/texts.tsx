@@ -1076,7 +1076,86 @@ const textData = {
                 title: 'Measurement service',
                 text: `If you're not sure how to properly measure your walls or want to avoid potential mistakes, we offer a measurement service by a professional. Our technician will come to your address, take all necessary measurements, and advise you on design options. The service is charged, and the price depends on your location and is available upon request. We offer measurement services in Zagreb and the surrounding area.`,
             }
-        }
+        },
+        blogPage: {
+            header: "Helpful article"
+        },
+        articles: [
+            {   
+                id: 0,
+                titleImg: `${base}catalog/01.png`,
+                title: "5 Tips for Decorating a Children's Room",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            },
+            {
+                id: 1,
+                titleImg: `${base}catalog/01.png`,
+                title: "Budget-Friendly Home Decorating Tricks",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            },
+            {
+                id: 1,
+                titleImg: `${base}catalog/01.png`,
+                title: "How to Choose the Perfect Wallpaper?",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        // photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            }
+        ]
     },
     hrv: {
         mainBillboard: {
@@ -1257,621 +1336,7 @@ const textData = {
                 },
             ]
         },
-        // categoriesPage: {
-        //     title: 'KATALOG',
-        //     breadcrumbles: 'Katalog / Tapete',
-        //     otherCategories: 'Ostale kategorije',
-        //     colorsSubtitle: 'Colors',
-        //     colors: [
-        //         'White',
-        //         'Pink', 
-        //         'Orange',
-        //         'Red',
-        //         'Black',
-        //         'Grey',
-        //         'Multicolor',
-        //         'Brown',
-        //         'Yellow'
-        //     ],        
-        //     categories: [
-        //         {
-        //             id: 0,
-        //             categoryName: '3D',
-        //             imgSrc: `${base}3D.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 1,
-        //             categoryName: 'Apstrakcija',
-        //             imgSrc: `${base}abstract.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 2,
-        //             categoryName: 'Životinje',
-        //             imgSrc: `${base}animals.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 3,
-        //             categoryName: 'Cigle',
-        //             imgSrc: `${base}bricks.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 4,
-        //             categoryName: 'Piši briši',
-        //             imgSrc: `${base}chalkboardDryErase.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 5,
-        //             categoryName: 'Dječje tapete',
-        //             imgSrc: `${base}childrensWallpapers.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 6,
-        //             categoryName: 'Božić',
-        //             imgSrc: `${base}christmas.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 7,
-        //             categoryName: 'Gradovi',
-        //             imgSrc: `${base}cities.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 8,
-        //             categoryName: 'Kava',
-        //             imgSrc: `${base}coffee.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 9,
-        //             categoryName: 'Tekstura betona',
-        //             imgSrc: `${base}concreteTexture.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 10,
-        //             categoryName: 'Cvijeće',
-        //             imgSrc: `${base}flowers.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 11,
-        //             categoryName: 'Hrana',
-        //             imgSrc: `${base}food.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 12,
-        //             categoryName: 'Kuhinja',
-        //             imgSrc: `${base}kitchen.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 13,
-        //             categoryName: 'Lišće',
-        //             imgSrc: `${base}leaves.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 14,
-        //             categoryName: 'Mramor',
-        //             imgSrc: `${base}marble.png`,
-        //             subCategories: [
-        //                 'životinje',
-        //                 'Crtani junaci',
-        //                 'Dinosauri',
-        //                 'Geografske karte',
-        //                 'Heroji',
-        //                 'Džungla',
-        //                 'Planine',
-        //                 'Ostalo',
-        //                 'Princeze',
-        //                 'Nebo',
-        //                 'Svemir',
-        //                 'Sport',
-        //                 'Podvodni svijet',
-        //                 'Jednorozi',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 15,
-        //             categoryName: 'Murale',
-        //             imgSrc: `${base}mural.webp`,
-        //             subCategories: [
-        //                 'Animals',
-        //                 'Cartoon heroes',
-        //                 'Dinosaurs',
-        //                 'Geographic maps',
-        //                 'Heroes',
-        //                 'Jungle',
-        //                 'Mountains',
-        //                 'Other',
-        //                 'Princesses',
-        //                 'Sky',
-        //                 'Space',
-        //                 'Sports',
-        //                 'Underwater world',
-        //                 'Unicorns',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //         {
-        //             id: 16,
-        //             categoryName: 'Folije',
-        //             imgSrc: `${base}films.png`,
-        //             subCategories: [
-        //                 'Animals',
-        //                 'Cartoon heroes',
-        //                 'Dinosaurs',
-        //                 'Geographic maps',
-        //                 'Heroes',
-        //                 'Jungle',
-        //                 'Mountains',
-        //                 'Other',
-        //                 'Princesses',
-        //                 'Sky',
-        //                 'Space',
-        //                 'Sports',
-        //                 'Underwater world',
-        //                 'Unicorns',
-        //             ],
-        //             imgs: [
-        //                 `${base}children-1.png`,
-        //                 `${base}children-2.png`,
-        //                 `${base}children-3.png`,
-        //                 `${base}children-4.png`,
-        //                 `${base}children-5.png`,
-        //                 `${base}children-6.png`,
-        //                 `${base}children-7.png`,
-        //                 `${base}children-8.png`,
-        //                 `${base}children-9.png`,
-        //                 `${base}children-10.png`,
-        //                 `${base}children-11.png`,
-        //                 `${base}children-12.png`,
-        //             ]
-        //         },
-        //     ]    
-        // },
-                categoriesPage: {
+            categoriesPage: {
             title: 'CATALOG',
             breadcrumbles: 'Catalog / Wallpapers',
             otherCategories: 'Other categories',
@@ -2262,323 +1727,164 @@ const textData = {
             ]
         },
         catalog: {
-            // 
-    //         products: [
-    // {
-    //     id: 0,
-    //     name: `Children's Jungle 01`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}01.png`,
-    //     imgs: [
-    //         `${base}01.png`,
-    //         `${base}01.png`,
-    //         `${base}01.png`,
-    //         `${base}01.png`
-    //     ]
-    // },
-    // {
-    //     id: 1,
-    //     name: `Children's Jungle 02`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}02.png`,
-    //     imgs: [
-    //         `${base}02.png`,
-    //         `${base}02.png`,
-    //         `${base}02.png`,
-    //         `${base}02.png`
-    //     ]
-    // },
-    // {
-    //     id: 2,
-    //     name: `Children's Jungle 03`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}03.png`,
-    //     imgs: [
-    //         `${base}03.png`,
-    //         `${base}03.png`,
-    //         `${base}03.png`,
-    //         `${base}03.png`
-    //     ]
-    // },
-    // {
-    //     id: 3,
-    //     name: `Children's Jungle 04`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}04.png`,
-    //     imgs: [
-    //         `${base}04.png`,
-    //         `${base}04.png`,
-    //         `${base}04.png`,
-    //         `${base}04.png`
-    //     ]
-    // },
-    // {
-    //     id: 4,
-    //     name: `Children's Jungle 05`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}05.png`,
-    //     imgs: [
-    //         `${base}05.png`,
-    //         `${base}05.png`,
-    //         `${base}05.png`,
-    //         `${base}05.png`
-    //     ]
-    // },
-    // {
-    //     id: 5,
-    //     name: `Children's Jungle 06`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}06.png`,
-    //     imgs: [
-    //         `${base}06.png`,
-    //         `${base}06.png`,
-    //         `${base}06.png`,
-    //         `${base}06.png`
-    //     ]
-    // },
-    // {
-    //     id: 6,
-    //     name: `Children's Jungle 07`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}07.png`,
-    //     imgs: [
-    //         `${base}07.png`,
-    //         `${base}07.png`,
-    //         `${base}07.png`,
-    //         `${base}07.png`
-    //     ]
-    // },
-    // {
-    //     id: 7,
-    //     name: `Children's Jungle 08`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}08.png`,
-    //     imgs: [
-    //         `${base}08.png`,
-    //         `${base}08.png`,
-    //         `${base}08.png`,
-    //         `${base}08.png`
-    //     ]
-    // },
-    // {
-    //     id: 8,
-    //     name: `Children's Jungle 09`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}09.png`,
-    //     imgs: [
-    //         `${base}09.png`,
-    //         `${base}09.png`,
-    //         `${base}09.png`,
-    //         `${base}09.png`
-    //     ]
-    // },
-    // {
-    //     id: 9,
-    //     name: `Children's Jungle 10`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}10.png`,
-    //     imgs: [
-    //         `${base}10.png`,
-    //         `${base}10.png`,
-    //         `${base}10.png`,
-    //         `${base}10.png`
-    //     ]
-    // },
-    // {
-    //     id: 10,
-    //     name: `Children's Jungle 11`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}11.png`,
-    //     imgs: [
-    //         `${base}11.png`,
-    //         `${base}11.png`,
-    //         `${base}11.png`,
-    //         `${base}11.png`
-    //     ]
-    // },
-    // {
-    //     id: 11,
-    //     name: `Children's Jungle 12`,
-    //     category: 'Children`s wallpapers',
-    //     metrics: 'from 16€ / m² — 41€ / m²',
-    //     img: `${base}12.png`,
-    //     imgs: [
-    //         `${base}12.png`,
-    //         `${base}12.png`,
-    //         `${base}12.png`,
-    //         `${base}12.png`
-    //     ]
-    // }
-    //         ]
-    products: [
-            {
-            id: 0,
-            name: `Children's Jungle 01`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/01.png`,
-            imgs: [
-                `${base}catalog/01.png`,
-                `${base}catalog/01.png`,
-                `${base}catalog/01.png`,
-                `${base}catalog/01.png`
-            ]
-            },
-            {
-            id: 1,
-            name: `Children's Jungle 02`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/02.png`,
-            imgs: [
-                `${base}catalog/02.png`,
-                `${base}catalog/02.png`,
-                `${base}catalog/02.png`,
-                `${base}catalog/02.png`
-            ]
-            },
-            {
-            id: 2,
-            name: `Children's Jungle 03`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/03.png`,
-            imgs: [
-                `${base}catalog/03.png`,
-                `${base}catalog/03.png`,
-                `${base}catalog/03.png`,
-                `${base}catalog/03.png`
-            ]
-            },
-            {
-            id: 3,
-            name: `Children's Jungle 04`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/04.png`,
-            imgs: [
-                `${base}catalog/04.png`,
-                `${base}catalog/04.png`,
-                `${base}catalog/04.png`,
-                `${base}catalog/04.png`
-            ]
-            },
-            {
-            id: 4,
-            name: `Children's Jungle 05`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/05.png`,
-            imgs: [
-                `${base}catalog/05.png`,
-                `${base}catalog/05.png`,
-                `${base}catalog/05.png`,
-                `${base}catalog/05.png`
-            ]
-            },
-            {
-            id: 5,
-            name: `Children's Jungle 06`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/06.png`,
-            imgs: [
-                `${base}catalog/06.png`,
-                `${base}catalog/06.png`,
-                `${base}catalog/06.png`,
-                `${base}catalog/06.png`
-            ]
-            },
-            {
-            id: 6,
-            name: `Children's Jungle 07`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/07.png`,
-            imgs: [
-                `${base}catalog/07.png`,
-                `${base}catalog/07.png`,
-                `${base}catalog/07.png`,
-                `${base}catalog/07.png`
-            ]
-            },
-            {
-            id: 7,
-            name: `Children's Jungle 08`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/08.png`,
-            imgs: [
-                `${base}catalog/08.png`,
-                `${base}catalog/08.png`,
-                `${base}catalog/08.png`,
-                `${base}catalog/08.png`
-            ]
-            },
-            {
-            id: 8,
-            name: `Children's Jungle 09`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/09.png`,
-            imgs: [
-                `${base}catalog/09.png`,
-                `${base}catalog/09.png`,
-                `${base}catalog/09.png`,
-                `${base}catalog/09.png`
-            ]
-            },
-            {
-            id: 9,
-            name: `Children's Jungle 10`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/10.png`,
-            imgs: [
-                `${base}catalog/10.png`,
-                `${base}catalog/10.png`,
-                `${base}catalog/10.png`,
-                `${base}catalog/10.png`
-            ]
-            },
-            {
-            id: 10,
-            name: `Children's Jungle 11`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/11.png`,
-            imgs: [
-                `${base}catalog/11.png`,
-                `${base}catalog/11.png`,
-                `${base}catalog/11.png`,
-                `${base}catalog/11.png`
-            ]
-            },
-            {
-            id: 11,
-            name: `Children's Jungle 12`,
-            category: 'Children`s wallpapers',
-            metrics: 'from 16€ / m² — 41€ / m²',
-            img: `${base}catalog/12.png`,
-            imgs: [
-                `${base}catalog/12.png`,
-                `${base}catalog/12.png`,
-                `${base}catalog/12.png`,
-                `${base}catalog/12.png`
-            ]
-            }
-        ]
+            products: [
+                    {
+                    id: 0,
+                    name: `Children's Jungle 01`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/01.png`,
+                    imgs: [
+                        `${base}catalog/01.png`,
+                        `${base}catalog/01.png`,
+                        `${base}catalog/01.png`,
+                        `${base}catalog/01.png`
+                    ]
+                    },
+                    {
+                    id: 1,
+                    name: `Children's Jungle 02`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/02.png`,
+                    imgs: [
+                        `${base}catalog/02.png`,
+                        `${base}catalog/02.png`,
+                        `${base}catalog/02.png`,
+                        `${base}catalog/02.png`
+                    ]
+                    },
+                    {
+                    id: 2,
+                    name: `Children's Jungle 03`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/03.png`,
+                    imgs: [
+                        `${base}catalog/03.png`,
+                        `${base}catalog/03.png`,
+                        `${base}catalog/03.png`,
+                        `${base}catalog/03.png`
+                    ]
+                    },
+                    {
+                    id: 3,
+                    name: `Children's Jungle 04`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/04.png`,
+                    imgs: [
+                        `${base}catalog/04.png`,
+                        `${base}catalog/04.png`,
+                        `${base}catalog/04.png`,
+                        `${base}catalog/04.png`
+                    ]
+                    },
+                    {
+                    id: 4,
+                    name: `Children's Jungle 05`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/05.png`,
+                    imgs: [
+                        `${base}catalog/05.png`,
+                        `${base}catalog/05.png`,
+                        `${base}catalog/05.png`,
+                        `${base}catalog/05.png`
+                    ]
+                    },
+                    {
+                    id: 5,
+                    name: `Children's Jungle 06`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/06.png`,
+                    imgs: [
+                        `${base}catalog/06.png`,
+                        `${base}catalog/06.png`,
+                        `${base}catalog/06.png`,
+                        `${base}catalog/06.png`
+                    ]
+                    },
+                    {
+                    id: 6,
+                    name: `Children's Jungle 07`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/07.png`,
+                    imgs: [
+                        `${base}catalog/07.png`,
+                        `${base}catalog/07.png`,
+                        `${base}catalog/07.png`,
+                        `${base}catalog/07.png`
+                    ]
+                    },
+                    {
+                    id: 7,
+                    name: `Children's Jungle 08`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/08.png`,
+                    imgs: [
+                        `${base}catalog/08.png`,
+                        `${base}catalog/08.png`,
+                        `${base}catalog/08.png`,
+                        `${base}catalog/08.png`
+                    ]
+                    },
+                    {
+                    id: 8,
+                    name: `Children's Jungle 09`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/09.png`,
+                    imgs: [
+                        `${base}catalog/09.png`,
+                        `${base}catalog/09.png`,
+                        `${base}catalog/09.png`,
+                        `${base}catalog/09.png`
+                    ]
+                    },
+                    {
+                    id: 9,
+                    name: `Children's Jungle 10`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/10.png`,
+                    imgs: [
+                        `${base}catalog/10.png`,
+                        `${base}catalog/10.png`,
+                        `${base}catalog/10.png`,
+                        `${base}catalog/10.png`
+                    ]
+                    },
+                    {
+                    id: 10,
+                    name: `Children's Jungle 11`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/11.png`,
+                    imgs: [
+                        `${base}catalog/11.png`,
+                        `${base}catalog/11.png`,
+                        `${base}catalog/11.png`,
+                        `${base}catalog/11.png`
+                    ]
+                    },
+                    {
+                    id: 11,
+                    name: `Children's Jungle 12`,
+                    category: 'Children`s wallpapers',
+                    metrics: 'from 16€ / m² — 41€ / m²',
+                    img: `${base}catalog/12.png`,
+                    imgs: [
+                        `${base}catalog/12.png`,
+                        `${base}catalog/12.png`,
+                        `${base}catalog/12.png`,
+                        `${base}catalog/12.png`
+                    ]
+                    }
+                ]
                     },
         productPage: {
             breadcrumbs: 'Katalog / Tapete / ',
@@ -2901,6 +2207,84 @@ const textData = {
                 ],
                 about: ""
             },
+        ],
+        blogPage: {
+            header: "Helpful article"
+        },
+        articles: [
+            {   id: 0,
+                titleImg: `${base}catalog/01.png`,
+                title: "5 Tips for Decorating a Children's Room",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            },
+            {
+                id: 1,
+                titleImg: `${base}catalog/01.png`,
+                title: "Budget-Friendly Home Decorating Tricks",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            },
+            {
+                id: 2,
+                titleImg: `${base}catalog/01.png`,
+                title: "How to Choose the Perfect Wallpaper?",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                text: [
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        photoAfter: `${base}catalog/02.png`,
+                    },
+                    {
+                        header: "5 Tips for Decorating a Children's Room",
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+                        photoBefore: `${base}catalog/01.png`,
+                        // photoAfter: `${base}catalog/02.png`,
+                    }
+                ]
+            }
         ],
         favourites: {
             title: "Favourites fototapete",
