@@ -45,7 +45,7 @@ function Calculate () {
     }
 
     return (
-        <section className={style.calculate}>
+        <section className={style.calculate} id={`calculate`}>
             <picture className={style.backgroundImg} >
                 <source
                     media="(max-width: 720px)"

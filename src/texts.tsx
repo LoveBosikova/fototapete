@@ -127,19 +127,19 @@ const textData = {
             links: [
                 {
                     linkName: 'Catalog',
-                    linkTo: ''
+                    linkTo: '/catalog'
                 },
                 {
                     linkName: 'About us',
-                    linkTo: ''
+                    linkTo: '/info'
                 },
                 {
                     linkName: 'Instructions',
-                    linkTo: ''
+                    linkTo: '/info'
                 },
                 {
                     linkName: 'Wallpapers',
-                    linkTo: ''
+                    linkTo: '/catalog'
                 },
                 {
                     linkName: 'Before & after',
@@ -147,19 +147,19 @@ const textData = {
                 },
                 {
                     linkName: 'Materials',
-                    linkTo: ''
+                    linkTo: '/materials'
                 },
                 {
                     linkName: 'Other',
-                    linkTo: ''
+                    linkTo: '/blog'
                 },
                 {
                     linkName: 'Price',
-                    linkTo: ''
+                    linkTo: '/'
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: ''
+                    linkTo: '/'
                 },
                 {
                     linkName: 'Custom design',
@@ -167,7 +167,7 @@ const textData = {
                 },
                 {
                     linkName: 'Blog',
-                    linkTo: ''
+                    linkTo: '/blog'
                 },
             ]
         },
@@ -1296,19 +1296,19 @@ const textData = {
             links: [
                 {
                     linkName: 'Katalog',
-                    linkTo: ''
+                    linkTo: '/catalog'
                 },
                 {
                     linkName: 'O nama',
-                    linkTo: ''
+                    linkTo: '/info'
                 },
                 {
                     linkName: 'Upute',
-                    linkTo: ''
+                    linkTo: '/info'
                 },
                 {
                     linkName: 'Tapete',
-                    linkTo: ''
+                    linkTo: '/catalog'
                 },
                 {
                     linkName: 'Prije & poslije',
@@ -1316,19 +1316,19 @@ const textData = {
                 },
                 {
                     linkName: 'Materijali',
-                    linkTo: ''
+                    linkTo: '/materials'
                 },
                 {
                     linkName: 'Ostalo',
-                    linkTo: ''
+                    linkTo: '/blog'
                 },
                 {
                     linkName: 'Cijena',
-                    linkTo: ''
+                    linkTo: '/'
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: ''
+                    linkTo: '/'
                 },
                 {
                     linkName: 'Dizajn po narudžbi',
@@ -1336,7 +1336,7 @@ const textData = {
                 },
                 {
                     linkName: 'Blog',
-                    linkTo: ''
+                    linkTo: '/blog'
                 },
             ]
         },

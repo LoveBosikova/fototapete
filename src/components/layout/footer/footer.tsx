@@ -115,7 +115,7 @@ function Footer () {
                     {text.links.map((link)=><NavLink 
                     key={link.linkName} 
                     className={style.menuItemWrap} 
-                    to={`/catalog`} 
+                    to={link.linkTo} 
                     end>
                         <a className={style.menuItem}>{link.linkName}</a>
                     </NavLink>)}
