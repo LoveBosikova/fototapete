@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import Title from '../../ui/title/title';
@@ -8,6 +8,7 @@ import LinkButtonWhite from '../../ui/buttons/linkButton/linkBurronWhite';
 import textData from '../../../texts';
 
 import style from './helpfulArticles.module.scss';
+import { NavLink } from 'react-router-dom';
 
 function HelpfulArticles () {
 
@@ -32,12 +33,12 @@ function HelpfulArticles () {
                     {text.articles.map((article) => {
                         return (
                             <li className={style.article} key={article.text}>
-                                <a href={article.link}>
+                                <NavLink to={`/blog/${article.link}`}>
                                     <div className={style.imgWrap}>
                                         <img className={style.img} src={`${article.img}`}></img>
                                     </div>
                                     <h3 className={style.articleTitle}>{article.text}</h3>
-                                </a>
+                                </NavLink>
                             </li>
                         )
                     })}

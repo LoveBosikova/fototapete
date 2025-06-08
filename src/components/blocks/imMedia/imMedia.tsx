@@ -12,6 +12,7 @@ function ImMedia () {
 
     const [isPlaying, setIsPlaying] = useState(false)
     const videoId = "X3V0F9najIE"
+    
     return (
         <section className={style.imMedia}>
             <Title isBlack={true} text={text.in_media_title}/>

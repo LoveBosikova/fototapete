@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import styles from './blogPage.module.scss'
 import { LangContext } from '../../../context/LangContext'
 import textData from '../../../texts'
@@ -16,8 +16,19 @@ function BlogPage () {
 
     const articles = textData[langValue as keyof typeof textData].articles
 
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    }, []);
+
     return (
-        <div className={styles.blogPage}>
+        <div className={styles.blogPage} ref={containerRef}>
             <Title text={text.header} isBlack></Title>
             <ul className={stylesArticles.articlesWrap}>
                 {articles.map((article) => {

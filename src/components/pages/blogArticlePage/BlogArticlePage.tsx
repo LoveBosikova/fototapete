@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect, useRef } from "react"
 import { useParams } from "react-router-dom"
 import { LangContext } from "../../../context/LangContext"
 import textData from "../../../texts"
@@ -14,10 +14,20 @@ function BlogArticlePage () {
 
     const article = textData[langValue as keyof typeof textData].articles.find((a) => Number(a.id) === Number(id))
 
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    }, []);
+
     return (
-        <article className={styles.blogArticlePage}>
+        <article className={styles.blogArticlePage} ref={containerRef}>
             {article?.title ?  <Title isBlack={true} text={article?.title}></Title> : null}
-            {/* <Title isBlack={false} text={article?.title}></Title> */}
             {article?.subtitle? <p className={styles.subtitle}>{article.subtitle}</p> : null}
             {article?.text && article?.text.length > 0 ? 
             article?.text.map((a) => {

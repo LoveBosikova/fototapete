@@ -115,9 +115,9 @@ const textData = {
             title: 'We also write helpful articles for you',
             handwrite: 'Our blog',
             articles: [
-                { text: `5 Tips for Decorating a Children's Room`, img: `${base}article-1.png`, link: '' },
-                { text: 'Budget-Friendly Home Decorating Tricks', img: `${base}article-2.png`, link: '' },
-                { text: 'How to Choose the Perfect Wallpaper?', img: `${base}article-3.png`, link: '' },
+                { text: `5 Tips for Decorating a Children's Room`, img: `${base}article-1.png`, link: '0' },
+                { text: 'Budget-Friendly Home Decorating Tricks', img: `${base}article-2.png`, link: '1' },
+                { text: 'How to Choose the Perfect Wallpaper?', img: `${base}article-3.png`, link: '2' },
             ]
         },
         footer: {
@@ -1075,6 +1075,10 @@ const textData = {
             modal: {
                 title: 'Measurement service',
                 text: `If you're not sure how to properly measure your walls or want to avoid potential mistakes, we offer a measurement service by a professional. Our technician will come to your address, take all necessary measurements, and advise you on design options. The service is charged, and the price depends on your location and is available upon request. We offer measurement services in Zagreb and the surrounding area.`,
+            },
+            subscribeSuccess: {
+                title: "Everything went well",
+                text: "Thank you for subscribing!",
             }
         },
         blogPage: {
@@ -1274,15 +1278,15 @@ const textData = {
                 {
                     text: `5 savjeta za uređenje dječje sobe`, 
                     img: `${base}article-1.png`, 
-                    link: ''},
+                    link: '0'},
                 {
                     text: 'Povoljni trikovi za uređenje doma', 
                     img: `${base}article-2.png`, 
-                    link: ''},
+                    link: '1'},
                 {
                     text: 'Kako odabrati savršenu tapetu?', 
                     img: `${base}article-3.png`, 
-                    link: ''},
+                    link: '2'},
             ]
         },
         footer: {
@@ -2299,6 +2303,10 @@ const textData = {
             modal: {
                 title: 'Measurement service',
                 text: `If you're not sure how to properly measure your walls or want to avoid potential mistakes, we offer a measurement service by a professional. Our technician will come to your address, take all necessary measurements, and advise you on design options. The service is charged, and the price depends on your location and is available upon request. We offer measurement services in Zagreb and the surrounding area.`,
+            },
+            subscribeSuccess: {
+                title: "Everything went well",
+                text: "Thank you for subscribing!",
             }
         },
         btns: {

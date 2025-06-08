@@ -44,19 +44,6 @@ function Calculate () {
         setIsMaterialsOpen(!isMaterialsOpen)
     }
 
-    // function handleOption (material: string) {
-    //     setSelectedMaterial(material)
-    //     setIsMaterialsOpen(false)
-    // }
-
-    // function handleWidth (e: React.ChangeEvent<HTMLInputElement> ) {
-    //     setWidth(e.target.value)
-    // }
-
-    // function handleHeight (e: React.ChangeEvent<HTMLInputElement> ) {
-    //     setHeight(e.target.value)
-    // }
-
     return (
         <section className={style.calculate}>
             <picture className={style.backgroundImg} >
@@ -146,10 +133,10 @@ function Calculate () {
                 <div className={style.results}>
                     <div className={style.topResultsWrap}>
                         <FormResult text={text.priceForM} value={form.material? String(form.material.price) : text.priceForMValue}></FormResult>
-                        <FormResult text={text.totalM} value={form.height && form.width ? ` ${form.width * form.height} ${text.totalMValue}` : "-"}></FormResult>
+                        <FormResult text={text.totalM} value={form.height && form.width ? ` ${(form.width * form.height)/10000} ${text.totalMValue}` : "-"}></FormResult>
                     </div>
                     <div className={style.resultsWrap}>
-                        <FormResult text={text.wallpaperPrice} value={form.height && form.width &&form.material ? `${form.width * form.height * form.material.price!} ${text.wallpaperPriceValue}` : "-"}></FormResult>
+                        <FormResult text={text.wallpaperPrice} value={form.height && form.width &&form.material ? `${((form.width * form.height)/10000) * form.material.price!} ${text.wallpaperPriceValue}` : "-"}></FormResult>
                         <FormResult text={text.priceWithInstallation} value={text.priceWithInstallationValue}></FormResult>
                     </div>
                 </div>
