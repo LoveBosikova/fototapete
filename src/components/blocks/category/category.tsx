@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { LangContext } from "../../../context/LangContext";
 
 import ProductPreview from "../../ui/productPreview/productPreview";
@@ -21,8 +21,19 @@ function Category () {
 
     const category = text.categories.filter((category) => prepareTextToLink(category?.categoryName) == prepareTextToLink(cid))
 
+    const containerRef = useRef<HTMLDivElement>(null);
+    
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    })
+
     return (
-        <div className={style.category}>
+        <div className={style.category} ref={containerRef}>
             <div className={style.contentWrap}>
                 <ul className={style.results}>
                     {textCatalog.products.map((product) => <div 

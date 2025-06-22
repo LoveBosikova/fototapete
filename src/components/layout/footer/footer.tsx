@@ -19,6 +19,7 @@ import ImgUp from '../../ui/icons/imgUp/imgUp';
 import textData from '../../../texts';
 
 import style from './footer.module.scss';
+import NotePrivacyPolicy from '../../ui/notePrivacyPolicy/notePrivacyPolicy';
 
 function Footer () {
 
@@ -123,7 +124,8 @@ function Footer () {
             </div>
             <div className={style.underline}>
                 <p>© Foto tapete 2024</p>
-                <a className={style.privPolicy} href="http://">Privacy policy</a>
+                <NotePrivacyPolicy />
+                {/* <a className={style.privPolicy} href="http://">Privacy policy</a> */}
             </div>
         </footer>
     )

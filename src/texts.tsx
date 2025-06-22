@@ -1084,6 +1084,102 @@ const textData = {
         blogPage: {
             header: "Helpful article"
         },
+        politicaConfidencialnostiPage : {
+            title: "Privacy Policy",
+            section1: {
+                subtitle: "Important notice",
+                text1: "This privacy policy sets out how Foto tapete Zagreb uses and protects any information that you give Foto tapete Zagreb when you use this website. Foto tapete Zagreb is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.",
+                text2: "We take your privacy seriously and use your personal data as further explained in this Privacy Policy. We are the 'controller' of the personal data you provide to us."
+            },
+            section2: {
+                subtitle: "Personal data we may collect and why",
+                text1: "Personal data is any information which identifies you personally whether directly (for example, your name) or indirectly (for example, information about your use of our products and services). We may collect the following data about you:", 
+                point1: {
+                    bold: "Contact details:",
+                    text: " your name, email address, and telephone number so that we can contact you in response to an enquiry you make via our Site or in relation to the products and services that we have from time to time agreed to provide to you;"
+                },
+                point2: {
+                    bold: "Correspondence:",
+                    text: " we collect any additional personal data you may provide to us from time to time if you contact us by email, letter or telephone, through our Site, by submitting a comment on our Site, or by any other means"
+                }
+            },
+            section3: {
+                subtitle: "Cookies",
+                text1: "What are cookies? We collect information about your use of our Site through cookies. Cookies are short pieces of text that are stored on your device, in order to help a website to remember who you are and other information about your visit to the site. Cookies are stored on your computer, tablet or smartphone. Cookies can help to display the information on our Site in a way that matches your interests. Most major websites use cookies."
+            },
+            section4: {
+                subtitle: "How we use your personal data",
+                text1: "We use your personal data for the following purposes:",
+                point1: {
+                    bold: "To provide you with the products and services you have requested",
+                    text: " We use your personal data to accept you as a new or returning customer to provide you with the products and services you have requested in accordance with the Terms and Conditions of business."
+                },
+                point2: {
+                    bold: "To send you service communications, including in relation to changes to our Terms and Conditions of Business",
+                    text: " We use the contact details you have provided to us so that we can communicate with you about the products and services that we provide, including to let you know about major changes to those products and services or to the Terms and Conditions between us or to any related information."
+                },
+                point3: {
+                    bold: "Direct marketing (including by third parties)",
+                    text: " If you have provided your consent or we otherwise have the right to do so, we may use your contact details to send you direct marketing and keep you informed of promotional offers by email, SMS, post or telephone relating to our products and services. You can unsubscribe from our direct marketing at any time by clicking the 'Unsubscribe' link in any of our emails or by contacting fototapetezg@gmail.com. Our trusted business partners would also like to use your name, email address, postal address and telephone number to inform you of similar products, services and promotional offers. We will only share your personal data with our partners where you have provided us with your consent to do so. You can unsubscribe at any time by clicking the 'Unsubscribe' link in any of their emails or by contacting us."
+                },
+                point4: {
+                    bold: "To track your usage of our website, communications, products and services",
+                    text: " We use cookies and similar technologies to track your activity on our Site so that we can provide important features and functionality on our Site, monitor its usage, and provide you with a more personalised experienced."
+                },
+                point5: {
+                    bold: "To provide and improve customer support",
+                    text: " We use your personal data to be able to provide and improve the customer support we provide to you (for example, where you have questions about our products and services)."
+                },
+                point6: {
+                    bold: "To maintain our records and improve data accuracy",
+                    text: " Like any business, we process personal data in the course of maintaining and administering our internal records. This includes processing your personal data to ensure that the information we hold about you is kept up to date and accurate."
+                },
+                point7: {
+                    bold: "To respond to enquiries, complaints and disputes",
+                    text: " We use the personal data we hold about you to help us respond to any enquiries or complaints you have made, or deal with any dispute which may arise in the course of us providing our products and services to you, in the most effective manner."
+                },
+                point8: {
+                    bold: "To investigate, detect and prevent fraud and comply with our legal obligations",
+                    text: " In certain circumstances, we use your personal data, only to the extent required, in order to enable us to comply with our legal obligations, including for fraud detection, investigation and prevention purposes. This may require us to provide your personal data to law enforcement agencies if they request it."
+                }
+            },
+            section5: {
+                subtitle: "Legal grounds for processing",
+                text1: "Data protection law requires us to only process your personal data if we satisfy one or more legal grounds. These are set out in data protection law and we rely on a number of different grounds for the processing we carry out. These are as follows:",
+                point1: {
+                    bold: "Consent",
+                    text: " In certain circumstances, we process your personal data after obtaining your consent to do so for the purposes of: sending you marketing communications about our products and services; conducting marketing research; obtaining your credit score so that we can establish the best possible payment terms we are able to offer to you."
+                },
+                point2: {
+                    bold: "Necessary for the performance of a contract and to comply with our legal obligations",
+                    text: " It is necessary for us to process your basic contact details, payment details and information about the business you represent for the performance of the Terms and Conditions of business between us. In particular, we rely on this legal ground to: provide you with the products; communicate with you about the products and services that we provide to you, including to let you know about major changes to those products and services or to the Terms and Conditions of business between us or to any related information; provide and improve customer support; and notify you about changes to our service. If you choose not to give some or all of the aforementioned information to us, this may affect our ability to provide our products and services to you. In certain circumstances, we also use your personal data, only to the extent required, in order to enable us to comply with our legal obligations, including to detect, investigate and prevent fraud."
+                },
+                point3: {
+                    bold: "Necessary for the purposes of our legitimate business interests or those of a third party",
+                    text: " It is sometimes necessary to collect and use your personal data for the purposes of our legitimate interests as a business, which are to: provide you with products and services that are as useful and beneficial as possible, including by personalising our contact with you and making sure we tell you about all the offers that are relevant to you; better understand our customer base so that we can improve our products and services and marketing activities (which could also benefit you); comply with our contractual obligations to third parties; develop and improve our Site to enhance the customer experience; train our staff so that we can provide you with a better customer service; respond to any enquiries or complaints you have made, or deal with any dispute which may arise in the course of us providing our products and services to you; and to ensure that content from our Site is presented in the most effective manner for you and for your computer; ensure effective operational management and internal administration of our business, document retention, compliance with regulatory guidance and exercise or defence of legal claims. Where we think there is a risk that one of your interests or fundamental rights and freedoms may be affected, we will not process your personal data unless there is another legal ground for us to do so (either that we have obtained your consent to the processing or it is necessary for us to perform our contract with you or to comply with our legal obligations)."
+                }
+            },
+            section6: {
+                subtitle: "Who we share your personal data with",
+                text1: "We may provide your personal data to our suppliers and service providers, including other companies in our group, who provide certain business services for us and act as 'processors' of your personal data on our behalf. In addition, we may disclose your personal data if we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to protect the rights, property, or safety, of our business, our customers or others. This includes, in specific cases, exchanging information with other organisations for the purposes of fraud protection. In some cases, the personal data we collect from you may, for the purposes set out above, be transferred outside the European Economic Area (EEA) and such destinations may not have laws which protect your personal data to the same extent as in the EEA. We are required by data protection law to ensure that where we or our 'processors' transfer your personal data outside of the EEA, it is treated securely and is protected against unauthorised access, loss or destruction, unlawful processing and any processing which is inconsistent with the purposes set out in this Privacy Policy."
+            },
+            section7: {
+                subtitle: "How long we keep your personal data for",
+                text1: "We retain your personal data for no longer than is necessary for the purposes(s) for which it was provided. What this means in practice will vary between different types of data. When determining the relevant retention periods, we take into account factors including: legal obligation(s) under applicable law to retain data for a certain period of time; statute of limitations under applicable law; potential or actual disputes; and guidelines issued by relevant data protection authorities. Otherwise, we securely erase your personal data from our systems when it is no longer needed."
+            },
+            section8: {
+                subtitle: "How to contact us",
+                text1: "If you would like to exercise your data protection rights or if you are unhappy with how we have handled your personal data, please feel free to contact our Nominated Person for Data Protection on +385 91 6185 191, or via the 'Contact Us' section of our website."
+            },
+            section9: {
+                subtitle: "Links to other websites",
+                text1: "Our website may contain hyperlinks to websites owned and operated by third parties. This Privacy Policy does not apply to those other websites. We encourage you to read the privacy statements on the other websites you visit, as they will govern the use of any personal data you provide when visiting those websites. We do not accept any responsibility or liability for the privacy practices of such third-party websites and your use of such websites is at your own risk."
+            },
+            section10: {
+                subtitle: "Changes to this privacy policy",
+                text1: "This Privacy Policy was last updated on 22 June 2025. Foto tapete Zagreb may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes."
+            }
+        },
         articles: [
             {   
                 id: 0,
@@ -1340,7 +1436,7 @@ const textData = {
                 },
             ]
         },
-            categoriesPage: {
+        categoriesPage: {
             title: 'CATALOG',
             breadcrumbles: 'Catalog / Wallpapers',
             otherCategories: 'Other categories',
@@ -2214,6 +2310,102 @@ const textData = {
         ],
         blogPage: {
             header: "Helpful article"
+        },
+        politicaConfidencialnostiPage : {
+            title: "Privacy Policy",
+            section1: {
+                subtitle: "Important notice",
+                text1: "This privacy policy sets out how Foto tapete Zagreb uses and protects any information that you give Foto tapete Zagreb when you use this website. Foto tapete Zagreb is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.",
+                text2: "We take your privacy seriously and use your personal data as further explained in this Privacy Policy. We are the 'controller' of the personal data you provide to us."
+            },
+            section2: {
+                subtitle: "Personal data we may collect and why",
+                text1: "Personal data is any information which identifies you personally whether directly (for example, your name) or indirectly (for example, information about your use of our products and services). We may collect the following data about you:", 
+                point1: {
+                    bold: "Contact details:",
+                    text: " your name, email address, and telephone number so that we can contact you in response to an enquiry you make via our Site or in relation to the products and services that we have from time to time agreed to provide to you;"
+                },
+                point2: {
+                    bold: "Correspondence:",
+                    text: " we collect any additional personal data you may provide to us from time to time if you contact us by email, letter or telephone, through our Site, by submitting a comment on our Site, or by any other means"
+                }
+            },
+            section3: {
+                subtitle: "Cookies",
+                text1: "What are cookies? We collect information about your use of our Site through cookies. Cookies are short pieces of text that are stored on your device, in order to help a website to remember who you are and other information about your visit to the site. Cookies are stored on your computer, tablet or smartphone. Cookies can help to display the information on our Site in a way that matches your interests. Most major websites use cookies."
+            },
+            section4: {
+                subtitle: "How we use your personal data",
+                text1: "We use your personal data for the following purposes:",
+                point1: {
+                    bold: "To provide you with the products and services you have requested",
+                    text: " We use your personal data to accept you as a new or returning customer to provide you with the products and services you have requested in accordance with the Terms and Conditions of business."
+                },
+                point2: {
+                    bold: "To send you service communications, including in relation to changes to our Terms and Conditions of Business",
+                    text: " We use the contact details you have provided to us so that we can communicate with you about the products and services that we provide, including to let you know about major changes to those products and services or to the Terms and Conditions between us or to any related information."
+                },
+                point3: {
+                    bold: "Direct marketing (including by third parties)",
+                    text: " If you have provided your consent or we otherwise have the right to do so, we may use your contact details to send you direct marketing and keep you informed of promotional offers by email, SMS, post or telephone relating to our products and services. You can unsubscribe from our direct marketing at any time by clicking the 'Unsubscribe' link in any of our emails or by contacting fototapetezg@gmail.com. Our trusted business partners would also like to use your name, email address, postal address and telephone number to inform you of similar products, services and promotional offers. We will only share your personal data with our partners where you have provided us with your consent to do so. You can unsubscribe at any time by clicking the 'Unsubscribe' link in any of their emails or by contacting us."
+                },
+                point4: {
+                    bold: "To track your usage of our website, communications, products and services",
+                    text: " We use cookies and similar technologies to track your activity on our Site so that we can provide important features and functionality on our Site, monitor its usage, and provide you with a more personalised experienced."
+                },
+                point5: {
+                    bold: "To provide and improve customer support",
+                    text: " We use your personal data to be able to provide and improve the customer support we provide to you (for example, where you have questions about our products and services)."
+                },
+                point6: {
+                    bold: "To maintain our records and improve data accuracy",
+                    text: " Like any business, we process personal data in the course of maintaining and administering our internal records. This includes processing your personal data to ensure that the information we hold about you is kept up to date and accurate."
+                },
+                point7: {
+                    bold: "To respond to enquiries, complaints and disputes",
+                    text: " We use the personal data we hold about you to help us respond to any enquiries or complaints you have made, or deal with any dispute which may arise in the course of us providing our products and services to you, in the most effective manner."
+                },
+                point8: {
+                    bold: "To investigate, detect and prevent fraud and comply with our legal obligations",
+                    text: " In certain circumstances, we use your personal data, only to the extent required, in order to enable us to comply with our legal obligations, including for fraud detection, investigation and prevention purposes. This may require us to provide your personal data to law enforcement agencies if they request it."
+                }
+            },
+            section5: {
+                subtitle: "Legal grounds for processing",
+                text1: "Data protection law requires us to only process your personal data if we satisfy one or more legal grounds. These are set out in data protection law and we rely on a number of different grounds for the processing we carry out. These are as follows:",
+                point1: {
+                    bold: "Consent",
+                    text: " In certain circumstances, we process your personal data after obtaining your consent to do so for the purposes of: sending you marketing communications about our products and services; conducting marketing research; obtaining your credit score so that we can establish the best possible payment terms we are able to offer to you."
+                },
+                point2: {
+                    bold: "Necessary for the performance of a contract and to comply with our legal obligations",
+                    text: " It is necessary for us to process your basic contact details, payment details and information about the business you represent for the performance of the Terms and Conditions of business between us. In particular, we rely on this legal ground to: provide you with the products; communicate with you about the products and services that we provide to you, including to let you know about major changes to those products and services or to the Terms and Conditions of business between us or to any related information; provide and improve customer support; and notify you about changes to our service. If you choose not to give some or all of the aforementioned information to us, this may affect our ability to provide our products and services to you. In certain circumstances, we also use your personal data, only to the extent required, in order to enable us to comply with our legal obligations, including to detect, investigate and prevent fraud."
+                },
+                point3: {
+                    bold: "Necessary for the purposes of our legitimate business interests or those of a third party",
+                    text: " It is sometimes necessary to collect and use your personal data for the purposes of our legitimate interests as a business, which are to: provide you with products and services that are as useful and beneficial as possible, including by personalising our contact with you and making sure we tell you about all the offers that are relevant to you; better understand our customer base so that we can improve our products and services and marketing activities (which could also benefit you); comply with our contractual obligations to third parties; develop and improve our Site to enhance the customer experience; train our staff so that we can provide you with a better customer service; respond to any enquiries or complaints you have made, or deal with any dispute which may arise in the course of us providing our products and services to you; and to ensure that content from our Site is presented in the most effective manner for you and for your computer; ensure effective operational management and internal administration of our business, document retention, compliance with regulatory guidance and exercise or defence of legal claims. Where we think there is a risk that one of your interests or fundamental rights and freedoms may be affected, we will not process your personal data unless there is another legal ground for us to do so (either that we have obtained your consent to the processing or it is necessary for us to perform our contract with you or to comply with our legal obligations)."
+                }
+            },
+            section6: {
+                subtitle: "Who we share your personal data with",
+                text1: "We may provide your personal data to our suppliers and service providers, including other companies in our group, who provide certain business services for us and act as 'processors' of your personal data on our behalf. In addition, we may disclose your personal data if we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to protect the rights, property, or safety, of our business, our customers or others. This includes, in specific cases, exchanging information with other organisations for the purposes of fraud protection. In some cases, the personal data we collect from you may, for the purposes set out above, be transferred outside the European Economic Area (EEA) and such destinations may not have laws which protect your personal data to the same extent as in the EEA. We are required by data protection law to ensure that where we or our 'processors' transfer your personal data outside of the EEA, it is treated securely and is protected against unauthorised access, loss or destruction, unlawful processing and any processing which is inconsistent with the purposes set out in this Privacy Policy."
+            },
+            section7: {
+                subtitle: "How long we keep your personal data for",
+                text1: "We retain your personal data for no longer than is necessary for the purposes(s) for which it was provided. What this means in practice will vary between different types of data. When determining the relevant retention periods, we take into account factors including: legal obligation(s) under applicable law to retain data for a certain period of time; statute of limitations under applicable law; potential or actual disputes; and guidelines issued by relevant data protection authorities. Otherwise, we securely erase your personal data from our systems when it is no longer needed."
+            },
+            section8: {
+                subtitle: "How to contact us",
+                text1: "If you would like to exercise your data protection rights or if you are unhappy with how we have handled your personal data, please feel free to contact our Nominated Person for Data Protection on +385 91 6185 191, or via the 'Contact Us' section of our website."
+            },
+            section9: {
+                subtitle: "Links to other websites",
+                text1: "Our website may contain hyperlinks to websites owned and operated by third parties. This Privacy Policy does not apply to those other websites. We encourage you to read the privacy statements on the other websites you visit, as they will govern the use of any personal data you provide when visiting those websites. We do not accept any responsibility or liability for the privacy practices of such third-party websites and your use of such websites is at your own risk."
+            },
+            section10: {
+                subtitle: "Changes to this privacy policy",
+                text1: "This Privacy Policy was last updated on 22 June 2025. Foto tapete Zagreb may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes."
+            }
         },
         articles: [
             {   id: 0,

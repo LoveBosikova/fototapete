@@ -19,6 +19,7 @@ import Favourites from './components/pages/favourites/favourites';
 import './App.scss'
 import BlogPage from './components/pages/blog/blogPage';
 import BlogArticlePage from './components/pages/blogArticlePage/BlogArticlePage';
+import PoliticaConfidencialnosti from './components/pages/politicaConfidencialnosti/politicaConfidencialnosti';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
         <Route path='/cart' element={<CartPage />} />
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} />
+        <Route path='/privacy_policy' element={<PoliticaConfidencialnosti />} />
+        {/* `/privacy_policy` */}
         <Route path='/favourites' element={<Favourites />} />
         <Route path='/materials' element={<MaterialsPage />} />
         {/* <Route path='/blog' element={<BlogPage />} />

@@ -26,16 +26,11 @@ function CatalogPage () {
 
     useEffect(() => {
         setTimeout(() => {
-            // containerRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
         }, 0);
-        // window.scrollTo({
-        //     top: 0,
-        //     behavior: "smooth"
-        // });
     }, []);
     
     return (

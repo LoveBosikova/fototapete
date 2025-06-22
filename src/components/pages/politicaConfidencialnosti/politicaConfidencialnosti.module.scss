@@ -1,0 +1,79 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/variables.scss';
+
+.politicaConfidencialnostiPage {
+    color: $black-text;
+    margin-top: 14.5vw;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    margin-bottom: 5.25vw;
+
+    h1 {
+    @media (max-width: 720px) {
+        font-size: $font-size-45 !important;
+    }
+    @media (max-width: 480px) {
+        font-size: $font-size-75 !important;
+    }
+    @media (max-width: 350px) {
+        font-size: $font-size-128 !important;
+    }
+    }
+
+    @media (max-width: 720px) {
+        margin-top: 24vw;
+        margin-bottom: 10vw;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 30vw;
+        margin-bottom: 15vw;
+    }
+}
+
+.article {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.subtitle {
+    margin-bottom: 12px;
+    color: $orange-alert;
+}
+
+.list {
+    list-style-type:disc;
+}
+
+.item {
+    margin-left: 24px;
+    margin-bottom: 6px;
+}
+
+.text,
+.item {
+    @include onest-400-14;
+    @media (max-width: 720px) {
+        font-size: $font-size-28 !important;
+    }
+    @media (max-width: 480px) {
+        font-size: $font-size-38 !important;
+    }
+    @media (max-width: 350px) {
+        font-size: $font-size-45 !important;
+    }
+}
+
+.bold {
+    @include onest-500-14;
+    @media (max-width: 720px) {
+        font-size: $font-size-28 !important;
+    }
+    @media (max-width: 480px) {
+        font-size: $font-size-38 !important;
+    }
+    @media (max-width: 350px) {
+        font-size: $font-size-45 !important;
+    }
+}

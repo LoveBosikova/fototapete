@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from 'react';
+import { useContext } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import Title from '../../ui/title/title';
