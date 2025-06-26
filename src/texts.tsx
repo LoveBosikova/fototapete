@@ -938,6 +938,22 @@ const textData = {
                 about: ""
             },
         },
+        galleryPage: {
+            title: "Gallery",
+            imgs: [
+                `${base}gallery/gallery1.jpg`,
+                `${base}gallery/gallery2.jpg`,
+                `${base}gallery/gallery3.jpg`,
+                `${base}gallery/gallery4.jpg`,
+                `${base}gallery/gallery5.jpg`,
+                `${base}gallery/gallery6.jpg`,
+                `${base}gallery/gallery7.jpg`,
+                `${base}gallery/gallery8.jpg`,
+                `${base}gallery/gallery9.jpg`,
+                `${base}gallery/gallery10.jpg`,
+                `${base}gallery/gallery11.jpg`,
+            ]
+        },
         form_contact_us: {
             title: "Leave your details or contact us for a free consultation on wallpaper material selection",
             text: "Our experts will help you decide and choose the ideal material for your interior design.",
@@ -2310,6 +2326,22 @@ const textData = {
         ],
         blogPage: {
             header: "Helpful article"
+        },
+        galleryPage: {
+            title: "Gallery",
+            imgs: [
+                `${base}gallery/gallery1.jpg`,
+                `${base}gallery/gallery2.jpg`,
+                `${base}gallery/gallery3.jpg`,
+                `${base}gallery/gallery4.jpg`,
+                `${base}gallery/gallery5.jpg`,
+                `${base}gallery/gallery6.jpg`,
+                `${base}gallery/gallery7.jpg`,
+                `${base}gallery/gallery8.jpg`,
+                `${base}gallery/gallery9.jpg`,
+                `${base}gallery/gallery10.jpg`,
+                `${base}gallery/gallery11.jpg`,
+            ]
         },
         politicaConfidencialnostiPage : {
             title: "Privacy Policy",

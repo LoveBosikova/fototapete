@@ -52,7 +52,7 @@
 }
 
 .text,
-.item {
+.item, .bold {
     @include onest-400-14;
     @media (max-width: 720px) {
         font-size: $font-size-28 !important;
@@ -66,14 +66,5 @@
 }
 
 .bold {
-    @include onest-500-14;
-    @media (max-width: 720px) {
-        font-size: $font-size-28 !important;
-    }
-    @media (max-width: 480px) {
-        font-size: $font-size-38 !important;
-    }
-    @media (max-width: 350px) {
-        font-size: $font-size-45 !important;
-    }
+    font-weight: 500;
 }

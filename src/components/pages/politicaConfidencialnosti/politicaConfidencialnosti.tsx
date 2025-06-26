@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import textData from "../../../texts"
 import Title from "../../ui/title/title"
 import { LangContext } from "../../../context/LangContext"
@@ -8,6 +8,16 @@ const PoliticaConfidencialnosti = () => {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].politicaConfidencialnostiPage
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    }, []);
+    
     return (
         <div className={style.politicaConfidencialnostiPage}>
             <>
