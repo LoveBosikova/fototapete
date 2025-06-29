@@ -139,11 +139,11 @@ const textData = {
                 },
                 {
                     linkName: 'Wallpapers',
-                    linkTo: '/catalog'
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Before & after',
-                    linkTo: ''
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Materials',
@@ -155,15 +155,21 @@ const textData = {
                 },
                 {
                     linkName: 'Price',
-                    linkTo: '/'
+                    linkTo: {
+                        pathname: "/",
+                        hash: "#calculate",
+                    }
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: '/'
+                    linkTo: {
+                        pathname: "/",
+                        hash: "#questions",
+                    }
                 },
                 {
                     linkName: 'Custom design',
-                    linkTo: ''
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Blog',
@@ -1420,11 +1426,11 @@ const textData = {
                 },
                 {
                     linkName: 'Tapete',
-                    linkTo: '/catalog'
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Prije & poslije',
-                    linkTo: ''
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Materijali',
@@ -1436,15 +1442,21 @@ const textData = {
                 },
                 {
                     linkName: 'Cijena',
-                    linkTo: '/'
+                    linkTo: {
+                        pathname: "/",
+                        hash: "#calculate",
+                    }
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: '/'
+                    linkTo: {
+                        pathname: "/",
+                        hash: "#questions",
+                    }
                 },
                 {
                     linkName: 'Dizajn po narudžbi',
-                    linkTo: ''
+                    linkTo: '/gallery'
                 },
                 {
                     linkName: 'Blog',

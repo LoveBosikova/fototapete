@@ -448,6 +448,30 @@
         justify-content: center;
         align-items: center;
     }
+}
 
 
+@media (max-width: 520px) {
+    .arrowWrap{
+        top: 2vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .arrowWrap{
+        top: 1.5vw;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .arrowWrap{
+        top: 0vw;
+    }
+}
+
+@media (max-width: 330px) {
+    .arrowWrap{
+        top: .5vw;
+    }
 }

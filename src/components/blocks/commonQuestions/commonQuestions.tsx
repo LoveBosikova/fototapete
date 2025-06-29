@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import Title from '../../ui/title/title';
@@ -8,6 +8,7 @@ import Accordion from '../../ui/accordion/accordion';
 import textData from '../../../texts';
 
 import style from './commonQuestions.module.scss';
+import { useLocation } from 'react-router-dom';
 
 function CommonQuestions () {
 
@@ -15,8 +16,23 @@ function CommonQuestions () {
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].commonQuestions
 
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#questions') {
+            const element = document.getElementById('questions');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 300);
+            }
+        }
+    }, [location.hash]);
+
     return (
-        <section className={style.commonQuestions}>
+        <section className={style.commonQuestions} id='questions'>
             <div className={style.titleWrap}>
                 <Title isBlack={true} text={text.title}></Title>
                 <div className={style.handwriteWrap}>

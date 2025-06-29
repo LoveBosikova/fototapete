@@ -112,7 +112,7 @@ function Footer () {
                     <p className={style.telWrap}><a className={style.tel} href='tel:+385-91-6185-191'>+385 91 6185 191</a></p>
                     <p className={style.mailWrap}><a className={style.email} href="mailto:fototapetezg@gmail.com&cc=fototapetezg.info@gmail.com?body=Hi! I wish I could ask about wallpapers.?subject=Question from website">fototapetezg@gmail.com</a></p>
                 </div>
-                <ul className={style.linksWrap}>
+                {/* <ul className={style.linksWrap}>
                     {text.links.map((link)=><NavLink 
                     key={link.linkName} 
                     className={style.menuItemWrap} 
@@ -120,6 +120,23 @@ function Footer () {
                     end>
                         <a className={style.menuItem}>{link.linkName}</a>
                     </NavLink>)}
+                </ul> */}
+                <ul className={style.linksWrap}>
+                    {text.links.map((link) => {
+                        const linkProps = typeof link.linkTo === 'object' 
+                            ? { to: link.linkTo }
+                            : { to: link.linkTo, end: true };
+                            
+                        return (
+                            <NavLink 
+                                key={link.linkName} 
+                                className={style.menuItemWrap} 
+                                {...linkProps}
+                            >
+                                <a className={style.menuItem}>{link.linkName}</a>
+                            </NavLink>
+                        );
+                    })}
                 </ul>
             </div>
             <div className={style.underline}>

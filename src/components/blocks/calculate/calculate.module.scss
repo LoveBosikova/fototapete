@@ -463,6 +463,9 @@
         margin-bottom: 1vw;
         padding-bottom: 1vw;
     }
+    .arrowWrap{
+        top: 1vw;
+    }
 }
 
 @media (max-width: 460px) {
@@ -478,11 +481,23 @@
         margin-bottom: 0;
         padding-bottom: 1vw;
     }
+    .arrowWrap{
+        top: .5vw;
+    }
 }
 
 
 @media (max-width: 370px) {
     .calculator {
         padding-top: 3vw;
+    }
+    .arrowWrap{
+        top: 0vw;
+    }
+}
+
+@media (max-width: 330px) {
+    .arrowWrap{
+        top: -1vw;
     }
 }

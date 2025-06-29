@@ -2,12 +2,9 @@ import { useContext, useEffect, useRef } from "react";
 import styles from "./galleryPage.module.scss";
 import Title from "../../ui/title/title";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Mousewheel, Scrollbar} from 'swiper/modules';
+import { Pagination, Mousewheel} from 'swiper/modules';
 import { LangContext } from "../../../context/LangContext";
 import textData from "../../../texts";
-
-// Import Swiper styles
-
 
 const GalleryPage = () => {
 

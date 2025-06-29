@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { LangContext } from '../../../context/LangContext';
 
 import backBig from '../../../assets/calculateBack-big.png';
@@ -14,6 +14,7 @@ import style from './calculate.module.scss';
 import { $calculate_form, changeCalculateForm } from './model';
 import { useUnit } from 'effector-react';
 import { IMaterial } from '../../../types';
+import { useLocation } from 'react-router-dom';
 
 function Calculate () {
 
@@ -22,15 +23,9 @@ function Calculate () {
     const text = textData[langValue as keyof typeof textData].calculate
     const textBtn = textData[langValue as keyof typeof textData].btns
     const textMaterials = textData[langValue as keyof typeof textData].materials
-
-    // const [selectedMaterial, setSelectedMaterial] = useState<string>(text.materialsPlaceholder)
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
-    // const [width, setWidth] = useState<number | string>(text.witdh);
-    // const [height, setHeight] = useState<number | string>(text.height);
 
     const form = useUnit($calculate_form)
-
-    console.log(form);
 
     function handleMaterials () {
         setIsMaterialsOpen(!isMaterialsOpen)
@@ -43,6 +38,21 @@ function Calculate () {
         })
         setIsMaterialsOpen(!isMaterialsOpen)
     }
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#calculate') {
+            const element = document.getElementById('calculate');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 300);
+            }
+        }
+    }, [location.hash]);
 
     return (
         <section className={style.calculate} id={`calculate`}>

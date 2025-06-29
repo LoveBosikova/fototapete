@@ -102,14 +102,14 @@ function WallpapersInInteriors () {
                         <img  className={style.img} src={photo4} />
                     </picture>
                     <div className={style.btnWrapDesctop}>
-                        <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
+                        <LinkButtonOrange text={btnText.viewMore} link={'/gallery'}></LinkButtonOrange>
                     </div>
                 </div>
                 <div className={style.photo5}>
                     <img className={style.img} src={photo5} alt='Wallpaper in interior' />
                 </div>
                 <div className={style.photo6}>
-                <picture className={style.img} >
+                <picture className={style.img}>
                         <source
                             media="(max-width: 720px)"
                             srcSet={`${import.meta.env.BASE_URL}interior-photo6-small.png 720w`}
@@ -127,7 +127,8 @@ function WallpapersInInteriors () {
                         <img  className={style.img} src={photo6} />
                     </picture>
                     <div className={style.btnWrapMedium}>
-                        <LinkButtonOrange text={btnText.viewMore} link={''}></LinkButtonOrange>
+                        {/* тут */}
+                        <LinkButtonOrange text={btnText.viewMore} link={'/gallery'}></LinkButtonOrange>
                     </div>
                 </div>
             </div>

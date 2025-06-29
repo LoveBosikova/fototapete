@@ -6,8 +6,8 @@
     display: block;
     position: fixed;
     top: 0;
-    width: 22%;
-    margin-left: 38%;
+    width: 31%;
+    margin-left: 36%;
     margin-top: 2.4vw;
     background-color: $beige-card;
     border-radius: $button-border;
@@ -19,8 +19,8 @@
     display: block;
     position: fixed;
     top: 0;
-    width: 22%;
-    margin-left: 38%;
+    width: 31%;
+    margin-left: 36%;
     margin-top: 2.3vw;
     background-color: $beige-transparent;
     border-radius: $button-border;
@@ -36,6 +36,7 @@
     gap: 4%;
     margin: 0;
     padding: 0.8vw 8%;
+    white-space: nowrap;
 }
 
 .linkWrap {
