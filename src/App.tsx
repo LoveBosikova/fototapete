@@ -21,6 +21,7 @@ import BlogPage from './components/pages/blog/blogPage';
 import BlogArticlePage from './components/pages/blogArticlePage/BlogArticlePage';
 import PoliticaConfidencialnosti from './components/pages/politicaConfidencialnosti/politicaConfidencialnosti';
 import GalleryPage from './components/pages/galleryPage/galleryPage';
+import BeforeAfterPage from './components/pages/beforeAfter/beforeAfter';
 
 function App() {
   return (
@@ -33,14 +34,11 @@ function App() {
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} /> 
         <Route path='/gallery' element={<GalleryPage />} /> 
+        <Route path='/beforeAfter' element={<BeforeAfterPage />} /> 
         <Route path='/privacy_policy' element={<PoliticaConfidencialnosti />} />
-        {/* `/privacy_policy` */}
         <Route path='/favourites' element={<Favourites />} />
         <Route path='/materials' element={<MaterialsPage />} />
-        {/* <Route path='/blog' element={<BlogPage />} />
-         */}
         <Route path='/blog' element={<BlogPage />}>
-          {/* <Route path=':id' element={<BlogArticlePage />} /> */}
         </Route>
         <Route path='/blog/:id' element={<BlogArticlePage />} />
         <Route path='/catalog' element={<CatalogPage />}>

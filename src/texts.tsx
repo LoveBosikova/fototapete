@@ -960,6 +960,59 @@ const textData = {
                 `${base}gallery/gallery11.jpg`,
             ]
         },
+        instructionsPage: {
+            title: 'Get free expert advice for all your wallpaper questions',
+            handwriteTop: 'Instructions',
+            article: 'Here, you`ll find helpful tips on how to install wallpaper, how to prepare your wall, what kind of wallpaper adhesive you need – and much more.',
+            points: {
+                before: {
+                    title: "Before the installation!",
+                    texts: [
+                        'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
+                        'Before installation, check the wallpaper:',
+                        '— Are the wallpaper dimensions correct?',
+                        '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
+                        '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',
+                        'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.'
+                    ]
+                },
+                howTo: {
+                    title: "Before the installation!",
+                    texts: [
+                        'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
+                        'Before installation, check the wallpaper:',
+                        '— Are the wallpaper dimensions correct?',
+                        '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
+                        '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',
+                        'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.'
+                    ]
+                }
+            }
+        },
+        beforeAfterPage: {
+            title: "before and after", 
+            text: "Our collection of works reflects the perfect blend of creativity and quality. You can see the transformation of spaces—how they come to life when our wallpapers are added. These are just a few examples of our projects. You can find more on our Instagram and Facebook page. Whether you’re looking for a complete makeover or a subtle refresh, our gallery will provide inspiration for every room.",
+            photos: [
+                [`${base}beforeAfter/before1`, `${base}beforeAfter/after1`],
+                [`${base}beforeAfter/before2`, `${base}beforeAfter/after2`],
+                [`${base}beforeAfter/before3`, `${base}beforeAfter/after3`],
+                [`${base}beforeAfter/before4`, `${base}beforeAfter/after4`],
+                [`${base}beforeAfter/before5`, `${base}beforeAfter/after5`],
+                [`${base}beforeAfter/before6`, `${base}beforeAfter/after6`],
+                [`${base}beforeAfter/before7`, `${base}beforeAfter/after7`],
+                [`${base}beforeAfter/before8`, `${base}beforeAfter/after8`],
+                [`${base}beforeAfter/before9`, `${base}beforeAfter/after9`],
+                [`${base}beforeAfter/before10`, `${base}beforeAfter/after10`],
+                [`${base}beforeAfter/before11`, `${base}beforeAfter/after11`],
+                [`${base}beforeAfter/before12`, `${base}beforeAfter/after12`],
+                [`${base}beforeAfter/before13`, `${base}beforeAfter/after13`],
+                [`${base}beforeAfter/before14`, `${base}beforeAfter/after14`],
+                [`${base}beforeAfter/before15`, `${base}beforeAfter/after15`],
+                [`${base}beforeAfter/before16`, `${base}beforeAfter/after16`]
+            ]
+        },
         form_contact_us: {
             title: "Leave your details or contact us for a free consultation on wallpaper material selection",
             text: "Our experts will help you decide and choose the ideal material for your interior design.",
@@ -2450,6 +2503,28 @@ const textData = {
                 subtitle: "Changes to this privacy policy",
                 text1: "This Privacy Policy was last updated on 22 June 2025. Foto tapete Zagreb may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes."
             }
+        },
+        beforeAfterPage: {
+            title: "before and after", 
+            text: "Our collection of works reflects the perfect blend of creativity and quality. You can see the transformation of spaces—how they come to life when our wallpapers are added. These are just a few examples of our projects. You can find more on our Instagram and Facebook page. Whether you’re looking for a complete makeover or a subtle refresh, our gallery will provide inspiration for every room.",
+            photos: [
+                [`${base}beforeAfter/before1`, `${base}beforeAfter/after1`],
+                [`${base}beforeAfter/before2`, `${base}beforeAfter/after2`],
+                [`${base}beforeAfter/before3`, `${base}beforeAfter/after3`],
+                [`${base}beforeAfter/before4`, `${base}beforeAfter/after4`],
+                [`${base}beforeAfter/before5`, `${base}beforeAfter/after5`],
+                [`${base}beforeAfter/before6`, `${base}beforeAfter/after6`],
+                [`${base}beforeAfter/before7`, `${base}beforeAfter/after7`],
+                [`${base}beforeAfter/before8`, `${base}beforeAfter/after8`],
+                [`${base}beforeAfter/before9`, `${base}beforeAfter/after9`],
+                [`${base}beforeAfter/before10`, `${base}beforeAfter/after10`],
+                [`${base}beforeAfter/before11`, `${base}beforeAfter/after11`],
+                [`${base}beforeAfter/before12`, `${base}beforeAfter/after12`],
+                [`${base}beforeAfter/before13`, `${base}beforeAfter/after13`],
+                [`${base}beforeAfter/before14`, `${base}beforeAfter/after14`],
+                [`${base}beforeAfter/before15`, `${base}beforeAfter/after15`],
+                [`${base}beforeAfter/before16`, `${base}beforeAfter/after16`]
+            ]
         },
         articles: [
             {   id: 0,
