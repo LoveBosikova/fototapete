@@ -241,6 +241,46 @@
     margin-top: -1vw;
 }
 
+.modal__offer {
+    max-width: 520px;
+}
+
+// .modal_text {
+//     margin-bottom: 24px;
+// }
+
+.modal__offer__form {
+    display: flex;
+    flex-direction: column;
+    color: $black-text;
+    width: 60%;
+
+    input, textarea {
+        border-radius: 1.2rem;
+        width: 100%;
+        padding: .5vw 1vw;
+        @include onest-400-11;
+        @media(max-width: 740px) {
+            padding: 1.5vw 2vw;
+        }
+        @media(max-width: 440px) {
+            padding: 4vw;
+        }
+    }
+
+}
+
+.modal__offer__input {
+    margin-top: 24px;
+    @include onest-400-14;
+}
+
+.error {
+    @include onest-400-11;
+    min-height: 1vw;
+    color: $orange-alert;
+}
+
 @media (max-width: 1140px) {
 
     .calculate {
@@ -342,6 +382,10 @@
     .noteBtnWrap{
         width: 29%;
         margin-top: -0.5vw;
+    }
+
+    .modal__offer__input {
+        font-size: 1.5vw !important;
     }
 }
 
@@ -449,6 +493,14 @@
     .arrowWrap{
         top: 1.7vw;
     }
+
+    .modal__offer__input {
+        font-size: 2.5vw !important;
+    }
+
+    .error {
+        @include onest-400-20;
+    }
 }
 
 @media (max-width: 640px) {
@@ -466,6 +518,14 @@
     .arrowWrap{
         top: 1vw;
     }
+    .error {
+        @include onest-400-28;
+    }
+
+    .modal__offer__input {
+        font-size: 2.5vw !important;
+    }
+
 }
 
 @media (max-width: 460px) {

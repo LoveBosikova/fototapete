@@ -3,13 +3,16 @@ import { useUnit } from 'effector-react';
 import { ReactNode, useEffect } from 'react';
 import { $activeModal, closeModal } from './model';
 import styles from './Modal.module.scss';
+import classNames from 'classnames';
 
 interface ModalProps {
     modalName: string;
     children: ReactNode;
+    modalClassName?: string;
+    className?:string
 }
 
-export const Modal = ({ modalName, children }: ModalProps) => {
+export const Modal = ({ modalName, children, modalClassName, className }: ModalProps) => {
     const [activeModal, handleClose] = useUnit([$activeModal, closeModal]);
 
     const isOpen = activeModal === modalName;
@@ -26,7 +29,7 @@ export const Modal = ({ modalName, children }: ModalProps) => {
 
     return (
         <div className={styles.overlay} onClick={handleClose}>
-        <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+        <div className={classNames(styles.modal,className, modalClassName)} onClick={(e) => e.stopPropagation()}>
             <button className={styles.close} onClick={handleClose}>×</button>
             {children}
         </div>

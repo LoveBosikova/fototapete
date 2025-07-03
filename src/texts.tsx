@@ -143,7 +143,7 @@ const textData = {
                 },
                 {
                     linkName: 'Before & after',
-                    linkTo: '/gallery'
+                    linkTo: '/beforeAfter'
                 },
                 {
                     linkName: 'Materials',
@@ -169,7 +169,7 @@ const textData = {
                 },
                 {
                     linkName: 'Custom design',
-                    linkTo: '/gallery'
+                    linkTo: '/beforeAfter'
                 },
                 {
                     linkName: 'Blog',
@@ -1154,6 +1154,18 @@ const textData = {
             subscribeSuccess: {
                 title: "Everything went well",
                 text: "Thank you for subscribing!",
+            },
+            offer: {
+                text: 'Leave your contact information in this form and we will contact you and send you a commercial offer with all the details',
+                name: 'Name*',
+                phone: 'Phone number*',
+                email: 'Email',
+                request: 'Your request',
+                note: "By clicking «Send» you agree with the Privacy policy",
+                send: 'Send',
+                error_no_name: "Please, enter your name",
+                error_no_phone: "Please, enter your phone",
+                offer_success: "Thank you for your request!",
             }
         },
         blogPage: {
@@ -1483,7 +1495,7 @@ const textData = {
                 },
                 {
                     linkName: 'Prije & poslije',
-                    linkTo: '/gallery'
+                    linkTo: '/beforeAfter'
                 },
                 {
                     linkName: 'Materijali',
@@ -1509,7 +1521,7 @@ const textData = {
                 },
                 {
                     linkName: 'Dizajn po narudžbi',
-                    linkTo: '/gallery'
+                    linkTo: '/beforeAfter'
                 },
                 {
                     linkName: 'Blog',
@@ -2618,7 +2630,19 @@ const textData = {
             subscribeSuccess: {
                 title: "Everything went well",
                 text: "Thank you for subscribing!",
-            }
+            },
+            offer: {
+                text: 'Leave your contact information in this form and we will contact you and send you a commercial offer with all the details',
+                name: 'Name*',
+                phone: 'Phone number*',
+                email: 'Email',
+                request: 'Your request',
+                note: 'By clicking «Send» you agree with the Privacy policy',
+                send: 'Send',
+                error_no_name: "Please, enter your name",
+                error_no_phone: "Please, enter your phone",
+                offer_success: "Thank you for your request!"
+            },
         },
         btns: {
             catalog:'Katalog',

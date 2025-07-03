@@ -11,10 +11,13 @@ import LinkButtonBlack from '../../ui/buttons/linkButton/linkButtonBlack';
 import textData from '../../../texts';
 
 import style from './calculate.module.scss';
-import { $calculate_form, changeCalculateForm } from './model';
+import { $calculate_form, $offer_form, $offer_form_errors, changeCalculateForm, changeOfferErrorsForm, changeOfferForm, resetOfferForm, resetOfferFormErrors } from './model';
 import { useUnit } from 'effector-react';
 import { IMaterial } from '../../../types';
 import { useLocation } from 'react-router-dom';
+import { Modal } from '../../ui/modal/Modal';
+import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
+import { openModal } from '../../ui/modal/model';
 
 function Calculate () {
 
@@ -23,9 +26,14 @@ function Calculate () {
     const text = textData[langValue as keyof typeof textData].calculate
     const textBtn = textData[langValue as keyof typeof textData].btns
     const textMaterials = textData[langValue as keyof typeof textData].materials
+    const modalText = textData[langValue as keyof typeof textData].modals.offer
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
 
     const form = useUnit($calculate_form)
+    const offer_form = useUnit($offer_form)
+    const offer_form_errors = useUnit($offer_form_errors)
+
+    console.log(offer_form_errors);
 
     function handleMaterials () {
         setIsMaterialsOpen(!isMaterialsOpen)
@@ -53,6 +61,8 @@ function Calculate () {
             }
         }
     }, [location.hash]);
+
+    console.log("offer_form_errors", offer_form_errors);
 
     return (
         <section className={style.calculate} id={`calculate`}>
@@ -157,10 +167,113 @@ function Calculate () {
                     <p className={style.noteText}>{text.note1}</p>
                     <p className={style.noteText}>{text.note2}</p>
                     <p className={style.noteText}>{text.note3}</p>
-                    <div className={style.noteBtnWrap}>
-                        <LinkButtonBlack link={''} text={textBtn.getOffer}></LinkButtonBlack>
+                    <div className={style.noteBtnWrap} onClick={() => openModal('offer')}>
+                        <LinkButtonBlack link={''} text={textBtn.getOffer} ></LinkButtonBlack>
                     </div>
                 </div>
+                <Modal 
+                modalName="offer" 
+                className={style.noteBtnWrap} 
+                modalClassName={style.modal__offer}>
+                    <p className={style.modal_text}>{modalText.text}</p>
+                    <form 
+                    className={style.modal__offer__form} 
+                    action=""
+                    onSubmit={(e) => {
+                        e.preventDefault()
+                        if (!offer_form.name) {
+                            changeOfferErrorsForm({
+                                    key: "name",
+                                    value: modalText.error_no_name,
+                                    })
+                            } else if (!offer_form.phone) {
+                                changeOfferErrorsForm({
+                                    key: "phone",
+                                    value: modalText.error_no_phone,
+                                    })
+                            } else {
+                                openModal('offes_success')
+                                resetOfferFormErrors()
+                                resetOfferForm()
+                            } ;
+                    }}
+                    >
+                        <label htmlFor='width'>
+                            <input 
+                            className={style.modal__offer__input}
+                            name='name' 
+                            id='name' 
+                            placeholder={modalText.name} 
+                            value={offer_form.name} 
+                            onChange={(e) => {
+                                changeOfferForm({
+                                    key: "name",
+                                    value: e.target.value
+                                })
+                                changeOfferErrorsForm({
+                                    key: "name",
+                                    value: "",
+                                })
+                            }}
+                            />
+                            <p className={offer_form_errors.name ? style.error : style.error__hidden}>{offer_form_errors.name ? offer_form_errors.name : ""}</p>
+                        </label>
+                        <label htmlFor='phone'>
+                            <input 
+                            className={style.modal__offer__input}
+                            name='phone' 
+                            id='phone' 
+                            placeholder={modalText.phone} 
+                            value={offer_form.phone} 
+                            onChange={(e) => {
+                                changeOfferForm({
+                                    key: "phone",
+                                    value: e.target.value
+                                })
+                                changeOfferErrorsForm({
+                                    key: "phone",
+                                    value: "",
+                                })
+                            }}
+                            />
+                            <p className={offer_form_errors.phone ? style.error : style.error__hidden}>{offer_form_errors.phone ? offer_form_errors.phone : ""}</p>
+                        </label>
+                        <label htmlFor='mail'>
+                            <input 
+                            className={style.modal__offer__input}
+                            name='mail' 
+                            id='mail' 
+                            placeholder={modalText.email} 
+                            value={offer_form.mail} 
+                            onChange={(e) => {
+                                changeOfferForm({
+                                    key: "mail",
+                                    value: e.target.value
+                                })
+                            }}
+                            />
+                        </label>
+                        <label htmlFor='request'>
+                            <textarea 
+                            className={style.modal__offer__input}
+                            name='request' 
+                            id='request' 
+                            placeholder={modalText.request} 
+                            value={offer_form.request} 
+                            onChange={(e) => {
+                                changeOfferForm({
+                                    key: "request",
+                                    value: e.target.value
+                                })
+                            }}
+                            />
+                        </label>
+                        <LinkButtonOrange type='submit' text={modalText.send}/>
+                    </form>
+                </Modal>
+                <Modal modalName="offes_success">
+                    <h2>{modalText.offer_success}</h2>
+                </Modal>
         </section>
     )
 }

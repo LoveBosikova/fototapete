@@ -45,8 +45,6 @@ function ProductInfo (props: IProductInfoProps) {
     const form = useUnit($cart_item_form)
     const form_errors = useUnit($cart_item_form_errors)
 
-    console.log(form);
-
     const [isMaterialsOpen, setIsMaterialsOpen] = useState<boolean>(false)
 
     const { productId } = useParams();

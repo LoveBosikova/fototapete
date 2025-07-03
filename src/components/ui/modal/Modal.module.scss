@@ -24,11 +24,6 @@
     overflow-y: auto;
     position: relative;
     color: $black-text;
-
-    @media (max-width: 500px) {
-        min-width: none;
-        max-width: 80vw;
-    }
 }
 
 .close {
@@ -41,3 +36,17 @@
     cursor: pointer;
     color: $orange-alert
 }
+
+    @media (max-width: 800px) {
+        .modal {
+            min-width: 70vw;
+            width: 70vw;
+        }
+    }
+
+        @media (max-width: 500px) {
+        .modal {
+            min-width: 80vw;
+            width: 80vw;
+        }
+    }

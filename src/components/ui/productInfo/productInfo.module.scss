@@ -258,9 +258,14 @@
 }
 
 .error {
+    display: block;
     @include onest-400-11;
     min-height: 1vw;
     color: $orange-alert;
+}
+
+.error__hidden {
+    display: none;
 }
 
 .modal_btn {
