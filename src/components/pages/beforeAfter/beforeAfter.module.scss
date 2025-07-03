@@ -1,0 +1,73 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.beforeAfterPage {
+    padding: 11.2vw 3.5vw;
+    color: $black-text;
+}
+
+.innerSlider {
+    width: 100%;
+    height: 100%; 
+    flex-grow: 1;
+    border-radius: 10px;
+
+}
+
+.text {
+    width: 50%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    @include onest-400-18;
+}
+
+.doubleSlider {
+    display: flex;
+    margin-bottom: 24px;
+    gap: 14px;
+}
+
+.singleSlider {
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.slider {
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1140px) {
+    .beforeAfterPage {
+        padding: 18vw 3.5vw;
+    }
+
+    .text {
+        @include onest-400-23;
+    }
+}
+
+@media (max-width: 720px) {
+    .text {
+        @include onest-400-28;
+    }
+}
+
+@media (max-width: 540px) {
+    .beforeAfterPage {
+        padding: 27vw 3.5vw;
+    }
+
+    .text {
+        width: 100%;
+        @include onest-400-45;
+    }
+
+    .doubleSlider {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        gap: 24px;
+    }
+}

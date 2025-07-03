@@ -34,8 +34,6 @@ function ProductPreview (props: IProductPreviewProps) {
                 </div>
             </NavLink>
             <div className={style.likeWrap}>
-                {/* TODO: like functional! */}
-                {/* <ImgLike isActive={true}></ImgLike> */}
                 <ImgLike product={props.product}></ImgLike>
             </div>
         </li>

@@ -30,76 +30,122 @@ function BeforeAfterPage () {
     return (
         <section className={styles.beforeAfterPage} ref={containerRef}>
             <Title isBlack={true} text={text.title} />
-            <p>{text.text}</p>
-            {/* <div className={styles.singleSlider}>
-                <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[0][0]} alt="Image one" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[0][1]} alt="Image two" />}
-                />
-            </div>
-            <div className={styles.doubleSlider}>
-                <div className={styles.slider}>
-                    <ReactCompareSlider
-                    itemOne={<ReactCompareSliderImage src="..." srcSet="..." alt="Image one" />}
-                    itemTwo={<ReactCompareSliderImage src="..." srcSet="..." alt="Image two" />}
-                    />
-                </div>
-                <div className={styles.slider}>
-                    <ReactCompareSlider
-                    itemOne={<ReactCompareSliderImage src="..." srcSet="..." alt="Image one" />}
-                    itemTwo={<ReactCompareSliderImage src="..." srcSet="..." alt="Image two" />}
-                    />
-                </div>
-            </div> */}
+            <p className={styles.text}>{text.text}</p>
             <div className={styles.singleSlider}>
-            <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}before1`} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}after1`} alt="After" />}
+            <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before1.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after1.png`} alt="After" />}
             />
             </div>
 
             <div className={styles.doubleSlider}>
             <div className={styles.slider}>
-                <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[1][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[1][1]} alt="After" />}
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before2.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after2.png`} alt="After" />}
+            />
+            </div>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before3.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after3.png`} alt="After" />}
+            />
+            </div>
+            </div>
+
+            <div className={styles.singleSlider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                    itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before4.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after4.png`} alt="After" />}
+                />
+            </div>
+
+            <div className={styles.doubleSlider}>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before5.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after5.png`} alt="After" />}
                 />
             </div>
             <div className={styles.slider}>
-                <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[2][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[2][1]} alt="After" />}
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before6.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after6.png`} alt="After" />}
                 />
             </div>
             </div>
 
             <div className={styles.singleSlider}>
-            <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[3][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[3][1]} alt="After" />}
+            <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before7.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after7.png`} alt="After" />}
+            />
+            </div>
+
+            <div className={styles.singleSlider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                    itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before8.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after8.png`} alt="After" />}
+                />
+            </div>
+
+            <div className={styles.doubleSlider}>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before9.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after9.png`} alt="After" />}
+                />
+            </div>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before10.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after10.png`} alt="After" />}
+                />
+            </div>
+            </div>
+
+            <div className={styles.singleSlider}>
+            <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before11.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after11.png`} alt="After" />}
             />
             </div>
 
             <div className={styles.doubleSlider}>
             <div className={styles.slider}>
-                <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[4][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[4][1]} alt="After" />}
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before12.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after12.png`} alt="After" />}
                 />
             </div>
             <div className={styles.slider}>
-                <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[5][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[5][1]} alt="After" />}
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before13.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after13.png`} alt="After" />}
                 />
             </div>
             </div>
 
             <div className={styles.singleSlider}>
-            <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src={text.photos[6][0]} alt="Before" />}
-                itemTwo={<ReactCompareSliderImage src={text.photos[6][1]} alt="After" />}
+            <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before14.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after14.png`} alt="After" />}
             />
+            </div>
+
+            <div className={styles.doubleSlider}>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before15.png`} alt="Before" />}
+                    itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after15.png`} alt="After" />}
+                />
+            </div>
+            <div className={styles.slider}>
+                <ReactCompareSlider className={styles.innerSlider}
+                itemOne={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/before16.png`} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={`${import.meta.env.BASE_URL}beforeAfter/after16.png`} alt="After" />}
+                />
+            </div>
             </div>
         </section>
     )
