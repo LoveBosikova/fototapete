@@ -135,7 +135,7 @@ const textData = {
                 },
                 {
                     linkName: 'Instructions',
-                    linkTo: '/info'
+                    linkTo: '/instructions'
                 },
                 {
                     linkName: 'Wallpapers',
@@ -966,29 +966,54 @@ const textData = {
             article: 'Here, you`ll find helpful tips on how to install wallpaper, how to prepare your wall, what kind of wallpaper adhesive you need – and much more.',
             points: {
                 before: {
-                    title: "Before the installation!",
-                    texts: [
-                        'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
-                        'Before installation, check the wallpaper:',
-                        '— Are the wallpaper dimensions correct?',
-                        '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
-                        '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',
-                        'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
-                        'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.'
-                    ]
+                    question: "Before the installation!",
+                    answer: {
+                        text1: 'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
+                        checkTitle: 'Before installation, check the wallpaper:',
+                        checkPoints: ['— Are the wallpaper dimensions correct?',
+                                    '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
+                                    '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',],
+                        note1: 'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        note2: 'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.',
+                        text2: 'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        text3: 'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.',
+                    }
                 },
                 howTo: {
-                    title: "Before the installation!",
-                    texts: [
-                        'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
-                        'Before installation, check the wallpaper:',
-                        '— Are the wallpaper dimensions correct?',
-                        '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
-                        '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',
-                        'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
-                        'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.'
-                    ]
-                }
+                    question: "How to Install Smooth Adhesive-Based Wallpaper",
+                    answer: {
+                        text1: 'These installation instructions apply to smooth adhesive-based wallpapers. Before applying your smooth adhesive wallpapers, it’s important to properly prepare the wall. Make sure the wall is clean, dry, and smooth before wallpaper installation. If the surface you are applying the wallpaper to is not a standard wall, please contact us for specific instructions.',
+                        text2: 'If there are old wallpapers on the wall, remove them, and clean the wall of any dirt, grease, dust, or mold that could interfere with wallpaper installation. Fill any cracks or holes, and smooth out any rough surfaces before installing the wallpaper to ensure an even and neat finish.',
+                        checkPoints: ['— The wall where the wallpaper will be applied must be flat and dust-free.',
+                                    '— If the wall/room is cold, the wallpaper may peel off.',
+                                    '— For adhesive-based wallpapers, the wall must not have any oily paint.',
+                                    '— If the wall has been painted multiple times, is dusty, uneven, or cold, it must be primed and left to dry for at least 24 hours before installation.',
+                                ],
+                        title1: 'Start the Process of Installing Adhesive-Based Wallpaper',
+                        title2: 'Preparing the Adhesive ',
+                        text3: 'Dissolve the adhesive from the box in 3 liters of water if the packet is 95 grams. If the packet is smaller (without a label on the back), dissolve it in 1.5 liters of water. Wait 30 minutes for the adhesive to thicken and gain the right properties. After half an hour, stir the adhesive with a brush and check that it is thick (roughly the consistency of honey, without lumps).',
+                        title3: 'Wallpaper Installation',
+                        text4: 'First, apply the adhesive to the wallpaper (the blue side, first segment), and then to the section of the wall where you will place the first segment.',
+                        text5: 'After applying the adhesive to the wallpaper, wait 2-3 minutes, and the paper will be ready for application.  Once you place the first segment on the wall, gently press out the air with a brush. The same process applies to the second segment, but overlap IMAGE ON IMAGE by 2 cm.  Don’t be confused if the wallpaper appears uneven in some areas, the wallpaper will tighten as it dries. ',
+                        text6: 'If the wallpaper is wider than the wall, use a scalpel to trim the edges. Once the wallpaper is applied, use a damp magic cloth (completely wet the cloth and wring it out) to wipe over the entire wallpaper to remove any adhesive left on the front.',
+                        text7: 'You’re finished! Now it’s time to enjoy your new wallpaper! Enjoy the beautiful ambiance you’ve created. If you need additional help or advice, feel free to contact us.',
+                    }
+                },
+                howTo2: {
+                    question: "How to Install Textured Adhesive-Based Wallpaper",
+                    answer: {
+                        }
+                },
+                howTo3: {
+                    question: "How to Install Self-Adhesive Wallpaper",
+                    answer: {
+                        }
+                },
+                howTo4: {
+                    question: "How to measure your wall?",
+                    answer: {
+                        }
+                },
             }
         },
         beforeAfterPage: {
@@ -2419,6 +2444,62 @@ const textData = {
                 `${base}gallery/gallery10.jpg`,
                 `${base}gallery/gallery11.jpg`,
             ]
+        },
+        instructionsPage: {
+            title: 'Get free expert advice for all your wallpaper questions',
+            handwriteTop: 'Instructions',
+            article: 'Here, you`ll find helpful tips on how to install wallpaper, how to prepare your wall, what kind of wallpaper adhesive you need – and much more.',
+            points: {
+                before: {
+                    question: "Before the installation!",
+                    answer: {
+                        text1: 'It is essential that the person installing the wallpaper reads these instructions in full and watches the video',
+                        checkTitle: 'Before installation, check the wallpaper:',
+                        checkPoints: ['— Are the wallpaper dimensions correct?',
+                                    '— Are you satisfied with the image, image quality on the wallpaper, color, and resolution?',
+                                    '— Lay out the segments in the correct order side by side (it is very important to arrange the segments in the proper sequence; you can check the segment order in the diagram we sent you in the correspondence).',],
+                        note1: 'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        note2: 'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.',
+                        text2: 'If you notice any irregularities with the ordered product, contact us BEFORE INSTALLATION. ONCE YOU BEGIN INSTALLING THE WALLPAPER, we will not be able to accept any complaints. We do not accept subsequent complaints if the wallpaper is installed on the wall, peeled off, damaged, or falls due to a poor wall surface, gets wrinkled, or tears!',
+                        text3: 'If you have any questions about how to install the wallpaper, feel free to contact our friendly customer support team, who will be happy to assist you at +385 91 6185 191.',
+                    }
+                },
+                howTo: {
+                    question: "How to Install Smooth Adhesive-Based Wallpaper",
+                    answer: {
+                        text1: 'These installation instructions apply to smooth adhesive-based wallpapers. Before applying your smooth adhesive wallpapers, it’s important to properly prepare the wall. Make sure the wall is clean, dry, and smooth before wallpaper installation. If the surface you are applying the wallpaper to is not a standard wall, please contact us for specific instructions.',
+                        text2: 'If there are old wallpapers on the wall, remove them, and clean the wall of any dirt, grease, dust, or mold that could interfere with wallpaper installation. Fill any cracks or holes, and smooth out any rough surfaces before installing the wallpaper to ensure an even and neat finish.',
+                        checkPoints: ['— The wall where the wallpaper will be applied must be flat and dust-free.',
+                                    '— If the wall/room is cold, the wallpaper may peel off.',
+                                    '— For adhesive-based wallpapers, the wall must not have any oily paint.',
+                                    '— If the wall has been painted multiple times, is dusty, uneven, or cold, it must be primed and left to dry for at least 24 hours before installation.',
+                                ],
+                                title1: 'Start the Process of Installing Adhesive-Based Wallpaper',
+                                title2: 'Preparing the Adhesive ',
+                                text3: 'Dissolve the adhesive from the box in 3 liters of water if the packet is 95 grams. If the packet is smaller (without a label on the back), dissolve it in 1.5 liters of water. Wait 30 minutes for the adhesive to thicken and gain the right properties. After half an hour, stir the adhesive with a brush and check that it is thick (roughly the consistency of honey, without lumps).',
+                                title3: 'Wallpaper Installation',
+                                text4: 'First, apply the adhesive to the wallpaper (the blue side, first segment), and then to the section of the wall where you will place the first segment.',
+                                text5: 'After applying the adhesive to the wallpaper, wait 2-3 minutes, and the paper will be ready for application.  Once you place the first segment on the wall, gently press out the air with a brush. The same process applies to the second segment, but overlap IMAGE ON IMAGE by 2 cm.  Don’t be confused if the wallpaper appears uneven in some areas, the wallpaper will tighten as it dries. ',
+                                text6: 'If the wallpaper is wider than the wall, use a scalpel to trim the edges. Once the wallpaper is applied, use a damp magic cloth (completely wet the cloth and wring it out) to wipe over the entire wallpaper to remove any adhesive left on the front.',
+                                text7: 'You’re finished! Now it’s time to enjoy your new wallpaper! Enjoy the beautiful ambiance you’ve created. If you need additional help or advice, feel free to contact us.',
+                            }
+                },                
+                howTo2: {
+                    question: "How to Install Textured Adhesive-Based Wallpaper",
+                    answer: {
+                        }
+                },
+                howTo3: {
+                    question: "How to Install Self-Adhesive Wallpaper",
+                    answer: {
+                        }
+                },
+                howTo4: {
+                    question: "How to measure your wall?",
+                    answer: {
+                        }
+                },
+            }
         },
         politicaConfidencialnostiPage : {
             title: "Privacy Policy",

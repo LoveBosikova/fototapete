@@ -22,6 +22,7 @@ import BlogArticlePage from './components/pages/blogArticlePage/BlogArticlePage'
 import PoliticaConfidencialnosti from './components/pages/politicaConfidencialnosti/politicaConfidencialnosti';
 import GalleryPage from './components/pages/galleryPage/galleryPage';
 import BeforeAfterPage from './components/pages/beforeAfter/beforeAfter';
+import InstructionsPage from './components/pages/instructionsPage/instructionsPage';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} /> 
         <Route path='/gallery' element={<GalleryPage />} /> 
+        <Route path='/instructions' element={<InstructionsPage />} /> 
         <Route path='/beforeAfter' element={<BeforeAfterPage />} /> 
         <Route path='/privacy_policy' element={<PoliticaConfidencialnosti />} />
         <Route path='/favourites' element={<Favourites />} />

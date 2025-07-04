@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 
 import style from './navbar.module.scss';
-import { Modal } from "../../ui/modal/Modal";
+// import { Modal } from "../../ui/modal/Modal";
 
 type INavBarProps = {
     isWhite: boolean
@@ -16,9 +16,9 @@ function NavBar (props: INavBarProps) {
             <NavLink to='/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
             </NavLink>
-            <NavLink to='/beforeAfter' end>
+            {/* <NavLink to='/beforeAfter' end>
                 <li className={style.linkWrap}><p className={style.link}>Сustom design</p></li>
-            </NavLink>
+            </NavLink> */}
             <NavLink to={{
                         pathname: "/",
                         hash: "#calculate",

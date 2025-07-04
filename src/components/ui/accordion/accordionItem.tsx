@@ -7,6 +7,7 @@ import { LangContext } from '../../../context/LangContext';
 import textData from '../../../texts';
 
 type IAccordionItemPros = {
+    isHandleAnswers: boolean,
     question: {
         question: string,
         answer: string,

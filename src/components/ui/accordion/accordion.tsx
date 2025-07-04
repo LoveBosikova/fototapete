@@ -7,15 +7,16 @@ type IQuestion = {
 }
 
 type IAccordionProps = {
-    questions: IQuestion[]
+    questions: IQuestion[],
+    isHandleAnswers?: boolean, // Педелаем ответ одной строкой - false, если передаем ответ как кастомный элемент, то true
 };
 
 function Accordion (props: IAccordionProps) {
-const { questions } = props;
+const { questions, isHandleAnswers = false } = props;
 
     return (
         <ul className={style.accordion}>
-            {questions.map((question: IQuestion) => <AccordionItem key={question.question} question={question}></AccordionItem>)}
+            {questions.map((question: IQuestion) => <AccordionItem isHandleAnswers={isHandleAnswers} key={question.question} question={question}></AccordionItem>)}
         </ul>
     )
 }

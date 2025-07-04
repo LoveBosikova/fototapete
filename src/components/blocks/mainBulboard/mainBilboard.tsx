@@ -24,20 +24,6 @@ function MainBilboard () {
         <div className={style.wrap}>
             <div className={style.backgroundWrap}>
             <picture className={style.backgroundImg} >
-                {/* <source
-                    media="(max-width: 720px)"
-                    srcSet="/mainBack-small.png 720w"
-                    sizes="720px"
-                />
-                <source
-                    media="(min-width: 1140px)"
-                    srcSet="/mainBack-large.png 1140w"
-                    sizes="1140px"
-                />
-                <source
-                    srcSet="/mainBack-medium.png 720w"
-                    sizes="720px"
-                /> */}
                 <source
                     media="(max-width: 720px)"
                     srcSet={`${import.meta.env.BASE_URL}mainBack-small.png`}

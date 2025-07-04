@@ -18,6 +18,7 @@ import { useLocation } from 'react-router-dom';
 import { Modal } from '../../ui/modal/Modal';
 import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange';
 import { openModal } from '../../ui/modal/model';
+import NotePrivacyPolicy from '../../ui/notePrivacyPolicy/notePrivacyPolicy';
 
 function Calculate () {
 
@@ -268,7 +269,10 @@ function Calculate () {
                             }}
                             />
                         </label>
-                        <LinkButtonOrange type='submit' text={modalText.send}/>
+                        <div className={style.modal__offer__btnWrap}>
+                            <LinkButtonOrange type='submit' text={modalText.send}/>
+                        </div>
+                        <NotePrivacyPolicy color="black" text={'By clicking «Send» you agree with the'} />
                     </form>
                 </Modal>
                 <Modal modalName="offes_success">

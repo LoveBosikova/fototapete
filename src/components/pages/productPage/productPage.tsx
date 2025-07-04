@@ -12,7 +12,6 @@ import textData from '../../../texts';
 import style from './productPage.module.scss';
 
 function ProductPage () {
-    // TODO : make try if there is no product fit this pid
     let { pid = 0 } = useParams()
 
     const { lang } = useContext(LangContext)

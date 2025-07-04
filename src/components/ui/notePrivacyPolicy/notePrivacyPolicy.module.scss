@@ -2,9 +2,15 @@
 @import '../../../styles/fonts.scss';
 @import '../../../styles/variables.scss';
 
-.notePrivacyPolicy {
+.notePrivacyPolicy, .text {
     @include onest-400-11;
     color: $white-text;
+    font-weight: 400;
+}
+
+.notePrivacyPolicy__black, .text__black {
+    @include onest-400-11;
+    color: $black-text;
     font-weight: 400;
 }
 
@@ -14,8 +20,28 @@
     color: $white-text;
 }
 
-@media (max-width: 720px) {
-    .notePrivacyPolicy {
+.link__black {
+    text-decoration: underline;
+    cursor: pointer;
+    color: $black-text;
+}
+
+@media (max-width: 1140px) {
+    .notePrivacyPolicy, .text {
+        font-size: $font-size-13;
+    }
+
+    .notePrivacyPolicy__black, .text__black {
+        font-size: $font-size-13;
+    }
+}
+
+@media (max-width: 700px) {
+    .notePrivacyPolicy, .text {
+        font-size: $font-size-25;
+    }
+
+    .notePrivacyPolicy__black, .text__black {
         font-size: $font-size-25;
     }
 }
