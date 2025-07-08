@@ -151,6 +151,7 @@
 
 .answer__text {
     margin-bottom: 1vw;
+    @include onest-400-13;
 }
 
 .accordionItemOpen {
@@ -241,6 +242,7 @@
         letter-spacing: 0.005rem;
         font-size: 0.01vw;
     }
+    
 }
 
 @media (min-width: 720px) and (max-width: 1140px) {
@@ -296,6 +298,10 @@
 }
 
 @media (max-width: 720px) {
+
+    .answer__text {
+        font-size: $font-size-34;
+    }   
 
     .accordionAnswer__double {
         display: flex;
