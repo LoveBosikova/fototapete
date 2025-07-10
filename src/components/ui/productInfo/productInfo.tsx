@@ -139,7 +139,12 @@ function ProductInfo (props: IProductInfoProps) {
                         type='number' //@ts-ignore
                         value={form.width && Number(form.width)}
                         onChange={(e) =>{
-                            changeCartItemForm({
+                            if (+e.target.value === 0) {
+                                changeCartItemForm({
+                                    key: "width",
+                                    value: undefined
+                                })
+                            } else changeCartItemForm({
                                 key: "width",
                                 value: +e.target.value
                             })
@@ -161,7 +166,12 @@ function ProductInfo (props: IProductInfoProps) {
                         type='number' //@ts-ignore
                         value={form.height}
                         onChange={(e) => {
-                            changeCartItemForm({
+                            if (+e.target.value === 0) {
+                                changeCartItemForm({
+                                    key: "height",
+                                    value: undefined
+                                })
+                            } else changeCartItemForm({
                                 key: "height",
                                 value: +e.target.value
                             })

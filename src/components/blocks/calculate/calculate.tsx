@@ -34,8 +34,6 @@ function Calculate () {
     const offer_form = useUnit($offer_form)
     const offer_form_errors = useUnit($offer_form_errors)
 
-    console.log(offer_form_errors);
-
     function handleMaterials () {
         setIsMaterialsOpen(!isMaterialsOpen)
     }
@@ -62,8 +60,6 @@ function Calculate () {
             }
         }
     }, [location.hash]);
-
-    console.log("offer_form_errors", offer_form_errors);
 
     return (
         <section className={style.calculate} id={`calculate`}>
@@ -125,10 +121,15 @@ function Calculate () {
                                 placeholder={text.witdh} 
                                 value={form.width} 
                                 onChange={(e) => {
-                                    changeCalculateForm({
+                                    if (+e.target.value === 0) {
+                                        changeCalculateForm({
                                         key: "width",
-                                        value: +e.target.value
-                                    })
+                                        value: undefined
+                                        })
+                                    } else changeCalculateForm({
+                                            key: "width",
+                                            value: +e.target.value
+                                        })
                                 }}
                                 />
                             </label>
@@ -141,7 +142,12 @@ function Calculate () {
                             placeholder={text.height} 
                             value={form.height} 
                             onChange={(e) => {
-                                changeCalculateForm({
+                                if (+e.target.value === 0) {
+                                    changeCalculateForm({
+                                    key: "height",
+                                    value: undefined
+                                })
+                                } else changeCalculateForm({
                                     key: "height",
                                     value: +e.target.value
                                 })
