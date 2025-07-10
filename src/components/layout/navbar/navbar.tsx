@@ -65,10 +65,7 @@ function NavBar (props: INavBarProps) {
                     <NavLink to='/instructions' end>
                         <li className={style.linkWrap}><p className={style.link}>Instructions</p></li>
                     </NavLink>
-                    <NavLink to={{
-                        pathname: "/",
-                        hash: "#questions",
-                    }} end>
+                    <NavLink to='/faq' end>
                         <li className={style.linkWrap}><p className={style.link}>FAQ</p></li>
                     </NavLink>
                 </ul>
