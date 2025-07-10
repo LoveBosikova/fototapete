@@ -8,7 +8,9 @@ import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbo
 import OrderItem from '../../ui/orderItem/orderItem'
 import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
 import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
-import { $cart, $totalPrice } from '../cart/model'
+import { $cart, $totalPrice, finishOrder } from '../cart/model'
+import { Modal } from '../../ui/modal/Modal'
+import { openModal } from '../../ui/modal/model'
 
 function OrderPage () {
     const { lang } = useContext(LangContext)
@@ -18,6 +20,8 @@ function OrderPage () {
     const form = useUnit($form)
     const cart = useUnit($cart)
     const totalPrice = useUnit($totalPrice)
+
+    const modalText = textData[langValue as keyof typeof textData].modals
 
     useEffect(() => {
         setTimeout(() => {
@@ -290,10 +294,6 @@ function OrderPage () {
                     <p className={style.order_title}>{text.discount}</p>
                     <p className={style.order_title}>0</p>
                 </div>
-                {/* <div className={style.order__header}>
-                    <p className={style.order_title}>{text.product}</p>
-                    <p className={style.order_title}>{text.total}</p>
-                </div> */}
                 <h2 className={style.order_title}>{text.discount_code}</h2>
                 <p className={style.delivery_note}>{text.promo_note}</p>
                 <input 
@@ -306,9 +306,18 @@ function OrderPage () {
                     type='text'
                 />
                 <p className={style.delivery_undernote}>{text.personal_info_note}</p>
-                <div className={style.order__btns}>
-                    <LinkButtonOrangeWhite text={btns.preview_dimensions} link={''}/>
-                    <LinkButtonCart text={btns.order} link={''}/>
+                {/* тут */}
+                <Modal modalName="orderModal">
+                    <p className={style.modal_text}>{modalText.order.text}</p>   
+                </Modal>
+                <div 
+                className={style.order__btns} 
+                onClick={() => {
+                    openModal('orderModal')
+                    finishOrder()
+                }}
+                >
+                    <LinkButtonOrangeWhite text={btns.order} link={''}/>
                 </div>
                 </div>
             </div>

@@ -24,11 +24,9 @@ function CartItem (props: ICartItemProps) {
                 <p className={style.productName}>{product.product?.name} - {product.material?.name}</p>
                 <p className={style.productInfowidth}>Width (cm): {addSoftHyphensToNumber(product.width!)}</p>
                 <p className={style.productInfoheight}>Height (cm): {product.height}</p>
-                <p className={style.productInfoTotal}>Total m2: {addSoftHyphensToNumber(+product.width! * +product.height!)}</p>
+                <p className={style.productInfoTotal}>Total m2: {addSoftHyphensToNumber(+product.width!/100 * +product.height!/100)}</p>
             </div>
-            <p className={style.price}>~ {product.material?.price ? product.material?.price * (+product.width! * +product.height!) : '?'} €</p>
-            <p className={style.amount}>1</p>
-            <p className={style.total}>~ {product.material?.price ? product.material?.price * (+product.width! * +product.height!) : '?'} €</p>
+            <p className={style.price}>~ {product.material?.price ? product.material?.price * (+product.width!/100 * +product.height!/100) : '?'} €</p>
         </li>
     )
 }

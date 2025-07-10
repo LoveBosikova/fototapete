@@ -58,9 +58,12 @@ export const removeFromCart = createEvent<number>(); // product.id
 
 export const addCartItem = createEvent<TCartItemForm>()
 
+export const finishOrder = createEvent()
+
 export const $cart = createStore<TCartItemForm[]>([])
     .on(addCartItem, (state, item) => [...state, item])
-    .on(removeFromCart, (state, id) => state.filter(item => item.product?.id !== id));
+    .on(removeFromCart, (state, id) => state.filter(item => item.product?.id !== id))
+    .reset(finishOrder)
 
     export const $totalPrice = $cart.map(cart => {
     return cart.reduce((total, item) => {
@@ -68,8 +71,7 @@ export const $cart = createStore<TCartItemForm[]>([])
     if (!item.product || !item.width || !item.height) return total;
     
     const area = Number(item.width) * Number(item.height);
-    const pricePerM2 = parseFloat(item.product.metrics.match(/from (\d+)/)?.[1] || '0');
-    const itemPrice = area * pricePerM2;
+    const itemPrice = (area/10000) * item.material?.price!;
     
     return total + itemPrice;
     }, 0);

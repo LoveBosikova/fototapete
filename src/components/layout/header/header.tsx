@@ -20,11 +20,6 @@ function Header () {
 
     let location = useLocation();
 
-    // useEffect(()=>{
-        
-    //     (location.pathname === '/' || location.pathname === '/info') ? setIsDefaultStyles(true) : setIsDefaultStyles(false) /fototapete/
-    // }, [location])
-
     useEffect(() => {
         const base = import.meta.env.BASE_URL;
 

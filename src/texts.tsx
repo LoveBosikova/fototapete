@@ -1264,6 +1264,9 @@ const textData = {
                 error_no_name: "Please, enter your name",
                 error_no_phone: "Please, enter your phone",
                 offer_success: "Thank you for your request!",
+            },
+            order: {
+                text: "Thank for your order! Everything went well"
             }
         },
         blogPage: {
@@ -2870,6 +2873,9 @@ const textData = {
                 error_no_phone: "Please, enter your phone",
                 offer_success: "Thank you for your request!"
             },
+            order: {
+                text: "Thank for your order! Everything went well"
+            }
         },
         btns: {
             catalog:'Katalog',
