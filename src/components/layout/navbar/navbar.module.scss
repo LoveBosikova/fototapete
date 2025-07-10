@@ -76,10 +76,7 @@
 .subMenu__hidden {
     height: 0vw;
     opacity: 0;
-    transition: all 150ms ease-in-out;
     display: grid;
-    // height: auto;
-    // opacity: 1;
     grid-template-columns: 24% 16% 25% 24% 9%;
     position: fixed;
     top: 0;
@@ -91,7 +88,7 @@
     background-color: #f5f5f56e;;
     backdrop-filter: blur(2rem);
     border-radius: $button-border;
-    // transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
     z-index: -2;
 }
 
@@ -111,7 +108,7 @@
     background-color: #f5f5f56e;;
     backdrop-filter: blur(2rem);
     border-radius: $button-border;
-    // transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
     z-index: -2;
 }
 
