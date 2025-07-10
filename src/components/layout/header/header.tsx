@@ -55,7 +55,6 @@ function Header () {
                             <ImgHeart></ImgHeart>
                         </UtilIcon>
                     </NavLink>
-
                     </div>
                     <NavLink to='/cart' className={style.iconWrap} end>
                         <UtilIcon linkTo={''} description={'Go to cart'}>
