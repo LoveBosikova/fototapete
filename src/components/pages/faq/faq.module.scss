@@ -1,4 +1,12 @@
 .faqPage {
-    padding: 11.2vw 3.5vw;
+    padding: 5.2vw 3.5vw;
+    margin-bottom: 10vw;
     min-height: 70vh;
+}
+
+@media (max-width: 1140px) {
+    .faqPage {
+        padding: 0vw 3.5vw;
+    }
+
 }

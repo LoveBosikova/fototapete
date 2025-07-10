@@ -162,10 +162,7 @@ const textData = {
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: {
-                        pathname: "/",
-                        hash: "#questions",
-                    }
+                    linkTo: '/faq'
                 },
                 {
                     linkName: 'Custom design',
@@ -1615,10 +1612,7 @@ const textData = {
                 },
                 {
                     linkName: 'FAQ',
-                    linkTo: {
-                        pathname: "/",
-                        hash: "#questions",
-                    }
+                    linkTo: '/faq'
                 },
                 {
                     linkName: 'Dizajn po narudžbi',
