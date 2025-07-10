@@ -9,6 +9,7 @@
     
 }
 
+
 .breadCrumbs {
     padding-bottom: 1.3vw;
 }
@@ -28,8 +29,14 @@
     }
 }
 
-@media(max-width: 7200px) {
+@media(max-width: 720px) {
     .productPage {
-        margin-top: 20vw;
+        margin-top: 22vw;
+    }
+}
+
+@media(max-width: 645px) {
+    .productPage {
+        margin-top: 26vw;
     }
 }

@@ -33,8 +33,8 @@ function Search (props: ISearchProps) {
 
     const category = text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory))
 
-    const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(false)  // Subcategories visibility state
-    const [ isColorsOpen, setIsColorsOpen ] = useState(false)  // Colors visibility state
+    const [ isOthersCategoriesOpen, setIsOthersCategoriesOpen ] = useState(true)  // Subcategories visibility state
+    const [ isColorsOpen, setIsColorsOpen ] = useState(true)  // Colors visibility state
 
     const [ newCategory, setNewCategory ] = useState(category)
 
@@ -68,8 +68,6 @@ function Search (props: ISearchProps) {
     }
 
     useEffect(() => {
-        console.log('curCategory:', curCategory,'category:', category);
-        console.log(text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory)));
         setNewCategory(text.categories.filter((i)=> prepareTextToLink(i?.categoryName) == prepareTextToLink(curCategory)))
     }, [curCategory]);
 
