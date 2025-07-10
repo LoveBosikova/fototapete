@@ -12,7 +12,8 @@
     height: 100%; 
     flex-grow: 1;
     border-radius: 10px;
-
+    overflow: hidden;
+    display: flex;
 }
 
 .text {
@@ -26,6 +27,11 @@
     display: flex;
     margin-bottom: 24px;
     gap: 14px;
+
+    .slider {
+        max-width: 50%;
+        // height: 100%;
+    }
 }
 
 .singleSlider {
@@ -64,10 +70,19 @@
         @include onest-400-45;
     }
 
+    .singleSlider {
+        margin-bottom: 42px;
+    }
+
     .doubleSlider {
         display: flex;
         flex-direction: column;
-        margin-bottom: 24px;
-        gap: 24px;
+        margin-bottom: 42px;
+        gap: 42px;
+
+        .slider {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 }
