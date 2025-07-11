@@ -228,6 +228,7 @@
 
 .wallWidth,
 .wallHeight {
+    position: relative;
     width: 49%;
     max-width: 49%;
 }
@@ -251,6 +252,14 @@
 .subcategoryCheckboxWrap {
     width: 1vw;
     cursor: pointer;
+}
+
+.miniLabel {
+    @include onest-400-11;
+    color: $orange-alert;
+    position: absolute;
+    top: 31%;
+    left: 8%;
 }
 
 .installationNote {
@@ -277,10 +286,24 @@
     margin-right: auto;
 }
 
+@media(max-width: 1140px) {
+    .miniLabel {
+        font-size: 11px !important;
+        top: 52%;
+        left: 9%;
+    }
+}
+
 @media(max-width: 720px) {
 
     .productInfo {
         flex-direction: column;
+    }
+
+    .miniLabel {
+        font-size: 12px !important;
+        top: 33%;
+        left: 4%;
     }
 
     .slidersWrap {
@@ -460,6 +483,11 @@
 @media (max-width: 520px) {
     .arrowWrap{
         top: 2vw;
+    }
+        .miniLabel {
+        font-size: 12px !important;
+        top: 33%;
+        left: 85%;
     }
 }
 

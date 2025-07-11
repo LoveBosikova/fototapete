@@ -24,6 +24,7 @@ import GalleryPage from './components/pages/galleryPage/galleryPage';
 import BeforeAfterPage from './components/pages/beforeAfter/beforeAfter';
 import InstructionsPage from './components/pages/instructionsPage/instructionsPage';
 import FaqPage from './components/pages/faq/faq';
+import PricePage from './components/pages/pricePage/pricePage';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} />
         <Route path='/faq' element={<FaqPage />} />
+        <Route path='/price' element={<PricePage />} />
         <Route path='/gallery' element={<GalleryPage />} /> 
         <Route path='/instructions' element={<InstructionsPage />} /> 
         <Route path='/beforeAfter' element={<BeforeAfterPage />} /> 

@@ -28,13 +28,10 @@ function NavBar (props: INavBarProps) {
             <NavLink to='/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Сustom design</p></li>
             </NavLink>
-            <NavLink to={{
-                        pathname: "/",
-                        hash: "#calculate",
-                    }}>
+            <NavLink to='/price' end>
                 <li className={style.linkWrap}><p className={style.link}>Price</p></li>
             </NavLink>
-            <NavLink to='/info'>
+            <NavLink to='/info' end>
                 <li className={style.linkWrap}><p className={style.link}>Info</p></li>
             </NavLink>
             <NavLink to='/materials' end>

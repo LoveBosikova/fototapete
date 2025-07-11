@@ -133,6 +133,9 @@ function ProductInfo (props: IProductInfoProps) {
                 <div className={form.material?.name ? style.maesuresWrapVisible : style.maesuresWrapInvisible}>
                     <label className={style.wallWidth} htmlFor='wallWidth'>
                         <h4 className={style.measureTitle}>{textProductInfo.wallWidth}</h4>
+                        {form.width? 
+                        <p className={style.miniLabel}>cm</p> 
+                        : null}
                         <input 
                         className={style.measureInput} 
                         id='wallWidth' 
@@ -160,6 +163,9 @@ function ProductInfo (props: IProductInfoProps) {
 
                     <label className={style.wallHeight} htmlFor='wallHeight'>
                         <h4 className={style.measureTitle}>{textProductInfo.wallHeight}</h4>
+                        {form.height? 
+                            <p className={style.miniLabel}>cm</p> 
+                        : null}
                         <input
                         className={style.measureInput} 
                         id='wallHeight' 

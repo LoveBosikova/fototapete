@@ -157,10 +157,7 @@ const textData = {
                 },
                 {
                     linkName: 'Price',
-                    linkTo: {
-                        pathname: "/",
-                        hash: "#calculate",
-                    }
+                    linkTo: '/price'
                 },
                 {
                     linkName: 'FAQ',
@@ -1610,10 +1607,7 @@ const textData = {
                 },
                 {
                     linkName: 'Cijena',
-                    linkTo: {
-                        pathname: "/",
-                        hash: "#calculate",
-                    }
+                    linkTo: '/price'
                 },
                 {
                     linkName: 'FAQ',
