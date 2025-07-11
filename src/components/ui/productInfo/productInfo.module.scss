@@ -140,7 +140,7 @@
 
 .arrowWrap {
     position: absolute;
-    top: 24%;
+    top: 43%;
     right: 9%;
     width: 1.5%;
 }
@@ -286,12 +286,27 @@
     margin-right: auto;
 }
 
+@media(max-width: 1440px) {
+    .arrowWrap {
+        top: 36%;
+    }
+}
+
+
 @media(max-width: 1140px) {
     .miniLabel {
         font-size: 11px !important;
         top: 52%;
         left: 9%;
     }
+    .arrowWrap {
+        top: 28%;
+    }
+}
+@media(max-width: 8300px) {
+.arrowWrap {
+    top: 23%;
+}
 }
 
 @media(max-width: 720px) {

@@ -1,4 +1,4 @@
-import { Children, useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import textData from '../../../texts'
 import { LangContext } from '../../../context/LangContext'
 import style from './orderPage.module.scss'
