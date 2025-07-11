@@ -1237,9 +1237,18 @@ const textData = {
             noFavourites: "Favorites are currently empty. Choose designs to your taste in the catalog!"
         },
         errors: {
-            selectMaterial: "Select material here",
-            enterHeight: "Enter height here",
-            enterWeight: "Enter weight here",
+            firstName: "Enter first name",
+            lastName: "Enter last name",
+            email: "Enter email",
+            phone: "Enter phone number",
+            city: "Enter city",
+            address: "Enter address",
+            postalCode: "Enter postal code",
+            company: "Enter company name",
+            oib: "Enter OIB",
+            selectMaterial: "Select material",
+            enterHeight: "Enter height",
+            enterWeight: "Enter width",
         },
         modals: {
             modal: {
@@ -2842,9 +2851,18 @@ const textData = {
             noFavourites: "Favorites are currently empty. Choose designs to your taste in the catalog!"
         },
         errors: {
-            selectMaterial: "Select material here",
-            enterWeight: "Enter weight here",
-            enterHeight: "Enter height here",
+            firstName: "Enter first name",
+            lastName: "Enter last name",
+            email: "Enter email",
+            phone: "Enter phone number",
+            city: "Enter city",
+            address: "Enter address",
+            postalCode: "Enter postal code",
+            company: "Enter company name",
+            oib: "Enter OIB",
+            selectMaterial: "Select material",
+            enterHeight: "Enter height",
+            enterWeight: "Enter width",
         },
         modals: {
             modal: {

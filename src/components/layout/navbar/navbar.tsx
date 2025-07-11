@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 import style from './navbar.module.scss';
 import { useState } from "react";
-// import { Modal } from "../../ui/modal/Modal";
+
 
 type INavBarProps = {
     isWhite: boolean

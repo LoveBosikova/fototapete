@@ -1,7 +1,5 @@
-import { useContext, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import styles from './faq.module.scss'
-import { LangContext } from '../../../context/LangContext'
-import textData from '../../../texts'
 import CommonQuestions from '../../blocks/commonQuestions/commonQuestions'
 
 

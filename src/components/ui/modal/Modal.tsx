@@ -9,17 +9,21 @@ interface ModalProps {
     modalName: string;
     children: ReactNode;
     modalClassName?: string;
-    className?:string
+    className?:string;
+    onClose?: () => void;
 }
 
-export const Modal = ({ modalName, children, modalClassName, className }: ModalProps) => {
+export const Modal = ({ modalName, children, modalClassName, className, onClose }: ModalProps) => {
     const [activeModal, handleClose] = useUnit([$activeModal, closeModal]);
 
     const isOpen = activeModal === modalName;
 
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') handleClose();
+        if (e.key === 'Escape') {
+            handleClose();
+            if (onClose) onClose()
+        } 
         };
         document.addEventListener('keydown', handleEsc);
         return () => document.removeEventListener('keydown', handleEsc);
@@ -30,7 +34,10 @@ export const Modal = ({ modalName, children, modalClassName, className }: ModalP
     return (
         <div className={styles.overlay} onClick={handleClose}>
         <div className={classNames(styles.modal,className, modalClassName)} onClick={(e) => e.stopPropagation()}>
-            <button className={styles.close} onClick={handleClose}>×</button>
+            <button className={styles.close} onClick={() => {
+                handleClose
+                if (onClose) onClose()
+            }}>×</button>
             {children}
         </div>
         </div>
