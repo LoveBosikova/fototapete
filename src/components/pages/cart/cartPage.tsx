@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { LangContext } from '../../../context/LangContext'
 import CartItem from '../../ui/cartItem/cartItem'
 import { useUnit } from 'effector-react'
@@ -17,8 +17,19 @@ function CartPage () {
     const cart = useUnit($cart)
     const totalPrice = useUnit($totalPrice)
 
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 0);
+    }, []);
+
     return (
-        <div className={style.cartPage}>
+        <div className={style.cartPage} ref={containerRef}>
             <p className={style.note}>{text.cart_note}</p>
             <div className={style.contentWrap}>
                 {cart.length ? 

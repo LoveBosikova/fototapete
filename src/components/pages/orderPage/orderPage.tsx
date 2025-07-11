@@ -7,7 +7,6 @@ import { useUnit } from 'effector-react'
 import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbox'
 import OrderItem from '../../ui/orderItem/orderItem'
 import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
-import LinkButtonCart from '../../ui/buttons/linkButton/LinkButtonCart'
 import { $cart, $totalPrice, finishOrder } from '../cart/model'
 import { Modal } from '../../ui/modal/Modal'
 import { openModal } from '../../ui/modal/model'
@@ -32,8 +31,6 @@ function OrderPage () {
         }, 0);
     }, []);
 
-    console.log(cart);
-
     return (
         <div className={style.orderPage}>
             <p className={style.note}>{text.cart_note_installation}</p>
@@ -57,25 +54,6 @@ function OrderPage () {
                         </div>
                     </div>
                     <h2 className={style.form_title}>{text.contact_information}</h2>
-                    <p className={style.form_label}>{text.email}</p>
-                    <input 
-                    value={form.email}
-                    onChange={(e) => {
-                        changeTaskForm({ key: "email", value: e.target.value });
-                    }}
-                    type='text' 
-                    />
-                    <p className={style.form_label}>{text.phone_number}</p>
-                    <input 
-                    value={form.phone}
-                    onChange={(e) => {
-                        changeTaskForm({ 
-                            key: "phone", 
-                            value: e.target.value });
-                        }}
-                    type='text'
-                    />
-                    <h2 className={style.form_title}>{text.shippnig_information}</h2>
                     <div className={style.row}>
                         <div className={style.halfrow}>
                             <p className={style.form_label}>{text.first_name}</p>
@@ -102,10 +80,70 @@ function OrderPage () {
                             />
                         </div>
                     </div>
+                    <p className={style.form_label}>{text.email}</p>
+                    <input 
+                    value={form.email}
+                    onChange={(e) => {
+                        changeTaskForm({ key: "email", value: e.target.value });
+                    }}
+                    type='text' 
+                    />
+                    <p className={style.form_label}>{text.phone_number}</p>
+                    <input 
+                    value={form.phone}
+                    onChange={(e) => {
+                        changeTaskForm({ 
+                            key: "phone", 
+                            value: e.target.value });
+                        }}
+                    type='text'
+                    />
+                    <h2 className={style.form_title}>{text.shippnig_information}</h2>
+                    {/* <div className={style.row}>
+                        <div className={style.halfrow}>
+                            <p className={style.form_label}>{text.first_name}</p>
+                            <input 
+                            value={form.first_name}
+                            onChange={(e) => {
+                                changeTaskForm({ 
+                                    key: "first_name", 
+                                    value: e.target.value })
+                                }}
+                            type='text'
+                            />
+                        </div>
+                        <div className={style.halfrow}>
+                        <p className={style.form_label}>{text.last_name}</p>
+                            <input 
+                            value={form.last_name}
+                            onChange={(e) => {
+                                changeTaskForm({ 
+                                    key: "last_name", 
+                                    value: e.target.value })
+                                }}
+                            type='text'
+                            />
+                        </div>
+                    </div> */}
+                    {!form.isPrivate ? 
+                        <>
+                        <p className={style.form_label}>{text.oib}</p>
+                        <input 
+                        value={form.address}
+                        onChange={(e) => {
+                            changeTaskForm({ 
+                                key: "OIB", 
+                                value: e.target.value });
+                            }}
+                        type='text'
+                        />
+                        </>
+                    : null}
 
                     <div className={style.row}>
-                        <div className={style.halfrow}>
-                            <p className={style.form_label}>{text.company}</p>
+                        {form.isPrivate ? 
+                            <div className={style.halfrow}>
+                            <p className={style.form_label}>{text.country}</p>
                             <input 
                             value={form.country}
                             onChange={(e) => {
@@ -115,7 +153,20 @@ function OrderPage () {
                                 }}
                             type='text'
                             />
-                        </div>
+                        </div> 
+                        : <div className={style.halfrow}>
+                            <p className={style.form_label}>{text.company}</p>
+                            <input 
+                            value={form.country}
+                            onChange={(e) => {
+                                changeTaskForm({ 
+                                    key: "company", 
+                                    value: e.target.value });
+                                }}
+                            type='text'
+                            />
+                        </div>}
+                        
                         <div className={style.halfrow}>
                         <p className={style.form_label}>{text.city}</p>
                             <input 
@@ -139,6 +190,21 @@ function OrderPage () {
                         }}
                     type='text'
                     />
+                    {/* {!form.isPrivate ? 
+                    <>
+                    <p className={style.form_label}>{text.oib}</p>
+                    <input 
+                    value={form.address}
+                    onChange={(e) => {
+                        changeTaskForm({ 
+                            key: "OIB", 
+                            value: e.target.value });
+                        }}
+                    type='text'
+                    />
+                    </>
+
+                    : null} */}
 
                     <div className={style.row}>
                         <div className={style.halfrow}>

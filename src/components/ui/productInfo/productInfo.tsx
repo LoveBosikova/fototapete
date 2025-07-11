@@ -191,12 +191,11 @@ function ProductInfo (props: IProductInfoProps) {
                     <h3 className={style.calculatorTitle}>{textProductInfo.calculatorTitle}</h3>
                     <div className={style.results}>
                         <div className={style.topResultsWrap}>
-                            <FormResult text={textProductInfo.priceForM} value={ form.material?.id ? String(form.material?.price) : "-"}></FormResult>
+                            <FormResult text={textProductInfo.priceForM} value={ form.material?.id ? `${String(form.material?.price)} €` : "-"}></FormResult>
                             <FormResult text={textProductInfo.totalM} value={`${form.height && form.width ? ((+form.height/100)*(+form.width/100)).toFixed(2) : textProductInfo.totalMValue}`}></FormResult>
                         </div>
                         <div className={style.resultsWrap}> 
-                            {/* @ts-ignore */}
-                            <FormResult text={textProductInfo.wallpaperPrice} value={form.material && form.width && form.height ? form.material?.price!*Number(((Number(form.height)/100)*(Number(form.width)/100)).toFixed(2)) : "-"}></FormResult>
+                            <FormResult text={textProductInfo.wallpaperPrice} value={form.material && form.width && form.height ? `${form.material?.price!*Number(((Number(form.height)/100)*(Number(form.width)/100)).toFixed(2))} €` : "-"}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
                             <div className={style.subcategoryCheckboxWrap} onClick={()=> {

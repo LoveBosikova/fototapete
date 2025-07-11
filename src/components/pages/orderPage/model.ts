@@ -21,6 +21,8 @@ export type TForm = {
     other_address: string | null;
     other_postal_code: string | null;
     other_district: string | null;
+    company: string | null;
+    OIB: string | null;
 }
 
 export type TChangeTaskForm<Key extends keyof TForm> = {
@@ -44,6 +46,8 @@ export const $form = createStore<any>({
     invoice_address: false,
     discount_code: "",
     isPrivate: true,
+    company: "",
+    OIB: "",
 })
 .on(changeTaskForm, (state, payload) => ({
     ...state,
