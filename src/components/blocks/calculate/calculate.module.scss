@@ -186,8 +186,17 @@
     }
 }
 
+.miniLabel {
+    @include onest-400-11;
+    color: $orange-alert;
+    position: absolute;
+    top: -1%;
+    left: 10%;
+}
+
 .results {
-    width: 72%
+    width: 72%;
+    margin-bottom: 24px;
 }
 
 .resultsWrap {

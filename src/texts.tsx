@@ -56,6 +56,8 @@ const textData = {
             wallpaperPriceValue: 'EUR',
             priceWithInstallation: 'Price with installation:',
             priceWithInstallationValue: 'EUR',
+            installationText: "The price for installation depends on many factors and is calculated individually in each case.",
+            cm: "cm",
         },
         howToPlace: {
             title: 'How to place your order',
@@ -1498,6 +1500,8 @@ const textData = {
             wallpaperPriceValue: 'EUR',
             priceWithInstallation: 'Cijena sa montažom:',
             priceWithInstallationValue: 'EUR',
+            installationText: "The price for installation depends on many factors and is calculated individually in each case.",
+            cm: "cm",
         },
         howToPlace: {
             title: 'Kako naručiti',

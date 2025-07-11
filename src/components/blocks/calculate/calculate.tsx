@@ -48,6 +48,15 @@ function Calculate () {
 
     const location = useLocation();
 
+    const calculateWallpaperPrice = (width: number, height: number, material: IMaterial, priceText: string) => {
+        if (!width || !height || !material?.price) return "-";
+        
+        const basePrice = (width * height) / 10000 * material.price;
+        const finalPrice = basePrice < 50? 50 : Math.max(basePrice); // Берем максимум между расчетной ценой и 50
+        
+        return `${finalPrice} ${priceText}`;
+        };
+
     useEffect(() => {
         if (location.hash === '#calculate') {
             const element = document.getElementById('calculate');
@@ -113,6 +122,9 @@ function Calculate () {
                     </div>
                         <div className={style.inputsWrap}>
                             <label className={style.widthWrap} htmlFor='width'>
+                                {form.width? 
+                                <p className={style.miniLabel}>{text.cm}</p> 
+                                : null}
                                 <input 
                                 className={style.width} 
                                 type='number' 
@@ -134,6 +146,9 @@ function Calculate () {
                                 />
                             </label>
                             <label className={style.heightWrap} htmlFor='height'>
+                                {form.height? 
+                                <p className={style.miniLabel}>{text.cm}</p> 
+                                : null}
                             <input 
                             className={style.height} 
                             type='number' 
@@ -163,10 +178,11 @@ function Calculate () {
                         <FormResult text={text.totalM} value={form.height && form.width ? ` ${(form.width * form.height)/10000} ${text.totalMValue}` : "-"}></FormResult>
                     </div>
                     <div className={style.resultsWrap}>
-                        <FormResult text={text.wallpaperPrice} value={form.height && form.width &&form.material ? `${((form.width * form.height)/10000) * form.material.price!} ${text.wallpaperPriceValue}` : "-"}></FormResult>
-                        <FormResult text={text.priceWithInstallation} value={text.priceWithInstallationValue}></FormResult>
+                        <FormResult text={text.wallpaperPrice} value={form.height && form.width &&form.material ? calculateWallpaperPrice(form.width, form.height, form.material, text.wallpaperPriceValue) : "-"}></FormResult>
                     </div>
                 </div>
+                <h3 className={style.calculatorTitle}>{text.priceWithInstallation}</h3>
+                <p className={style.calculatorText}>{text.installationText}</p>
 
             </div>
                 <div className={style.note}>
