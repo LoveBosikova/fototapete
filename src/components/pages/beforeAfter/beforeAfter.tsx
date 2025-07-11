@@ -1,6 +1,5 @@
 import { useContext, useEffect, useRef } from "react"
 import { LangContext } from "../../../context/LangContext"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import textData from "../../../texts"
 
 import styles from './beforeAfter.module.scss'
@@ -9,16 +8,10 @@ import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slide
 import LazyCompareSlider from "../../ui/LazyCompareSlider/LazyCompareSlider";
 
 function BeforeAfterPage () {
-
-
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-
     const text = textData[langValue as keyof typeof textData].beforeAfterPage
-
     const containerRef = useRef<HTMLDivElement>(null);
-
-    console.log(text.photos[0][0]);
 
     useEffect(() => {
         setTimeout(() => {

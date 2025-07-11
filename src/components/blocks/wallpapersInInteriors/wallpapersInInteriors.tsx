@@ -127,7 +127,6 @@ function WallpapersInInteriors () {
                         <img  className={style.img} src={photo6} />
                     </picture>
                     <div className={style.btnWrapMedium}>
-                        {/* тут */}
                         <LinkButtonOrange text={btnText.viewMore} link={'/gallery'}></LinkButtonOrange>
                     </div>
                 </div>

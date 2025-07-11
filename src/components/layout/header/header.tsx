@@ -23,7 +23,6 @@ function Header () {
     useEffect(() => {
         const base = import.meta.env.BASE_URL;
 
-        console.log(location.pathname, `${base}`);
         setIsDefaultStyles(
             location.pathname === `${base}` 
             || location.pathname === `/fototapete/` 

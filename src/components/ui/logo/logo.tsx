@@ -1,6 +1,6 @@
-// import logoWhite from '../../../assets/logo.svg';
-// import colorfulLogo from '../../../assets/colorfulLogo.svg';
+//@ts-ignore
 import { ReactComponent as LogoWhite } from '../../../assets/logo.svg';
+//@ts-ignore
 import { ReactComponent as ColorfulLogo } from '../../../assets/colorfulLogo.svg';
 
 import style from './logo.module.scss';

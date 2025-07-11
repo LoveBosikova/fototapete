@@ -16,16 +16,13 @@ function OrderPage () {
     const { lang } = useContext(LangContext)
     const navigate = useNavigate();
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue as keyof typeof textData].orderPage
-    const btns = textData[langValue as keyof typeof textData].btns
     const form = useUnit($form)
     const cart = useUnit($cart)
     const totalPrice = useUnit($totalPrice)
-
     const errors = useUnit($offer_errors)
-
-    console.log("errors", errors);
-
+    
+    const text = textData[langValue as keyof typeof textData].orderPage
+    const btns = textData[langValue as keyof typeof textData].btns
     const modalText = textData[langValue as keyof typeof textData].modals
     const errorText = textData[langValue as keyof typeof textData].errors
 
@@ -44,13 +41,8 @@ function OrderPage () {
             <div className={style.content}>
                 <form 
                 className={style.form}
-                // onChange={(e) => console.log(e)}
                 onSubmit={(e) => {
-                    
-
                     e.preventDefault()
-
-                    console.log('rrr');
                     if (!form.first_name) {
                         changeOfferError({
                             key: "first_name",
@@ -131,7 +123,7 @@ function OrderPage () {
                     <div className={style.row}>
                         <div className={style.halfrow}>
                             <p className={style.form_label}>{text.first_name}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.first_name}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -148,7 +140,7 @@ function OrderPage () {
                         </div>
                         <div className={style.halfrow}>
                         <p className={style.form_label}>{text.last_name}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.last_name}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -166,7 +158,7 @@ function OrderPage () {
                         </div>
                     </div>
                     <p className={style.form_label}>{text.email}</p>
-                    <input 
+                    <input //@ts-ignore
                     value={form.email}
                     onChange={(e) => {
                         changeTaskForm({ key: "email", value: e.target.value });
@@ -180,7 +172,7 @@ function OrderPage () {
                     <p className={errors.email ? style.error : style.error__hidden}>{errors.email ? errors.email : ""}</p>
 
                     <p className={style.form_label}>{text.phone_number}</p>
-                    <input 
+                    <input //@ts-ignore
                     value={form.phone}
                     onChange={(e) => {
                         changeTaskForm({ 
@@ -200,7 +192,7 @@ function OrderPage () {
                     {!form.isPrivate ? 
                         <>
                         <p className={style.form_label}>{text.company}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.company}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -223,7 +215,7 @@ function OrderPage () {
                         {form.isPrivate ? 
                             <div className={style.halfrow}>
                             <p className={style.form_label}>{text.country}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.country}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -235,7 +227,7 @@ function OrderPage () {
                         </div> 
                         : <div className={style.halfrow}>
                         <p className={style.form_label}>{text.oib}</p>
-                        <input 
+                        <input //@ts-ignore
                         value={form.OIB}
                         onChange={(e) => {
                             changeTaskForm({ 
@@ -268,7 +260,7 @@ function OrderPage () {
                         
                         <div className={style.halfrow}>
                         <p className={style.form_label}>{text.city}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.city}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -287,7 +279,7 @@ function OrderPage () {
                         </div>
                     </div>
                     <p className={style.form_label}>{text.address}</p>
-                    <input 
+                    <input //@ts-ignore
                     value={form.address}
                     onChange={(e) => {
                         changeTaskForm({ 
@@ -306,7 +298,7 @@ function OrderPage () {
                     <div className={style.row}>
                         <div className={style.halfrow}>
                             <p className={style.form_label}>{text.postal_code}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.postal_code}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -325,7 +317,7 @@ function OrderPage () {
                         </div>
                         <div className={style.halfrow}>
                         <p className={style.form_label}>{text.district}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.district}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -355,7 +347,7 @@ function OrderPage () {
                             <div className={style.row}>
                                 <div className={style.halfrow}>
                                     <p className={style.form_label}>{text.first_name}</p>
-                                    <input 
+                                    <input //@ts-ignore
                                     value={form.first_name}
                                     onChange={(e) => {
                                         changeTaskForm({ 
@@ -368,7 +360,7 @@ function OrderPage () {
                                 </div>
                                 <div className={style.halfrow}>
                                 <p className={style.form_label}>{text.last_name}</p>
-                                    <input 
+                                    <input //@ts-ignore
                                     value={form.last_name}
                                     onChange={(e) => {
                                         changeTaskForm({ 
@@ -382,7 +374,7 @@ function OrderPage () {
                             <div className={style.row}>
                             <div className={style.halfrow}>
                                 <p className={style.form_label}>{text.country}</p>
-                                <input 
+                                <input //@ts-ignore
                                 value={form.country}
                                 onChange={(e) => {
                                     changeTaskForm({ 
@@ -394,7 +386,7 @@ function OrderPage () {
                             </div>
                             <div className={style.halfrow}>
                             <p className={style.form_label}>{text.city}</p>
-                                <input 
+                                <input //@ts-ignore
                                 value={form.city}
                                 onChange={(e) => {
                                     changeTaskForm({ 
@@ -406,7 +398,7 @@ function OrderPage () {
                             </div>
                             </div>
                             <p className={style.form_label}>{text.address}</p>
-                            <input 
+                            <input //@ts-ignore
                             value={form.address}
                             onChange={(e) => {
                                 changeTaskForm({ 
@@ -419,7 +411,7 @@ function OrderPage () {
                             <div className={style.row}>
                                 <div className={style.halfrow}>
                                     <p className={style.form_label}>{text.postal_code}</p>
-                                    <input 
+                                    <input //@ts-ignore
                                     value={form.postal_code}
                                     onChange={(e) => {
                                         changeTaskForm({ 
@@ -431,7 +423,7 @@ function OrderPage () {
                                 </div>
                                 <div className={style.halfrow}>
                                 <p className={style.form_label}>{text.district}</p>
-                                    <input 
+                                    <input //@ts-ignore
                                     value={form.district}
                                     onChange={(e) => {
                                         changeTaskForm({ 
@@ -467,7 +459,7 @@ function OrderPage () {
                 </div>
                 <h2 className={style.order_title}>{text.discount_code}</h2>
                 <p className={style.delivery_note}>{text.promo_note}</p>
-                <input 
+                <input //@ts-ignore
                     value={form.discount_code}
                     onChange={(e) => {
                         changeTaskForm({ 
@@ -485,16 +477,8 @@ function OrderPage () {
                 </Modal>
                 <div 
                 className={style.order__btns} 
-                // onClick={() => {
-                //     openModal('orderModal')
-                //     finishOrder()
-                // }}
                 onClick={(e) => {
-                    
-
                     e.preventDefault()
-
-                    console.log('rrr');
                     if (!form.first_name) {
                         changeOfferError({
                             key: "first_name",

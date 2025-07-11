@@ -83,8 +83,6 @@ function ProductInfo (props: IProductInfoProps) {
                     grabCursor={true}
                     spaceBetween={10}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper;
                     }}
@@ -106,8 +104,6 @@ function ProductInfo (props: IProductInfoProps) {
                     grabCursor={true}
                     spaceBetween={40}
                     slidesPerView={3}
-                    // onSlideChange={() => console.log('slide change')}
-                    // onSwiper={(swiper) => console.log(swiper)}
                     >
                         {imgs.map((img: string) => <SwiperSlide><img className={style.img} src={img} alt={name} /></SwiperSlide>)}
                     </Swiper>
