@@ -25,6 +25,7 @@ import BeforeAfterPage from './components/pages/beforeAfter/beforeAfter';
 import InstructionsPage from './components/pages/instructionsPage/instructionsPage';
 import FaqPage from './components/pages/faq/faq';
 import PricePage from './components/pages/pricePage/pricePage';
+import OtherPage from './components/pages/otherPage/otherPage';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route index path='/' element={<MainPage />} />
         <Route path='/:pid' element={<ProductPage />} />
         <Route path='/cart' element={<CartPage />} />
+        <Route path='/other' element={<OtherPage />} />
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} />
         <Route path='/faq' element={<FaqPage />} />

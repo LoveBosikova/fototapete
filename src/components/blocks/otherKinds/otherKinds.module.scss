@@ -1,0 +1,60 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.otherKinds {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vw;
+    color: $black-text;
+    padding: 11.2vw 3.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.otherCard {
+    max-width: 48.8%;
+    background-color: $beige-card;
+    border-radius: 25px;
+}
+
+.cardContent {
+    padding: 3vw;
+}
+
+.title {
+    text-transform: uppercase;
+    @include evolventa-700-25;
+}
+
+.text {
+    @include onest-400-11;
+    margin-top: 1vw;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 720px) {
+    .otherCard {
+        border-radius: 10px;
+    }
+
+    .title {
+        @include evolventa-700-38;
+    }
+
+    .text {
+        @include onest-400-20;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        @include onest-400-22;
+    }
+}

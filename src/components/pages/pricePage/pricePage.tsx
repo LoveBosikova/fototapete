@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import styles from './pricePage.module.scss'
 import Calculate from '../../blocks/calculate/calculate'
+import AdditionalServices from '../../blocks/additionalServices/additionalServices';
 
 
 function PricePage () {
@@ -18,6 +19,7 @@ function PricePage () {
     return (
         <div className={styles.pricePage} ref={containerRef}>
             <Calculate />
+            <AdditionalServices />
         </div>
     )
 }

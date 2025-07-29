@@ -85,6 +85,34 @@ const textData = {
             point4: 'Design visualization',
             point5: 'Installation service',
             point6: 'Gift certificates',
+        },        
+        otherMain: {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+        },
+        otherKinds: {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        otherGallery: {
+            title: 'Explore solutions and ideas for your space',
+            handwriting: 'Gallery',
+            imgs: [
+                `${base}other/other_gallery1.png`,
+                `${base}other/other_gallery2.png`,
+                `${base}other/other_gallery3.png`,
+            ]
+        },
+        otherOrder: {
+            title: 'Fill in this form to receive a commercial offer',
+            text: 'You can order sun protection film in the dimensions you need. If you`re unsure whether you`ll be able to apply the film to the glass yourself, you can hire our installers.'
+        },
+        otherMedia: {
+            title: 'Welcome to a world of custom designs and endless possibilities!',
         },
         commonQuestions: {
             title: `Our customers often ask`,
@@ -1535,6 +1563,34 @@ const textData = {
             point4: 'Vizualizacija dizajna',
             point5: 'Usluga montaže',
             point6: 'Poklon bonovi',
+        },
+        otherMain: {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+        },
+        otherKinds: {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        otherGallery: {
+            title: 'Explore solutions and ideas for your space',
+            handwriting: 'Gallery',
+            imgs: [
+                `${base}other/other_gallery1.png`,
+                `${base}other/other_gallery2.png`,
+                `${base}other/other_gallery3.png`,
+            ]
+        },
+        otherOrder: {
+            title: 'Fill in this form to receive a commercial offer',
+            text: 'You can order sun protection film in the dimensions you need. If you`re unsure whether you`ll be able to apply the film to the glass yourself, you can hire our installers.'
+        },
+        otherMedia: {
+            title: 'Welcome to a world of custom designs and endless possibilities!',
         },
         commonQuestions: {
             title: `Naši kupci često pitaju`,

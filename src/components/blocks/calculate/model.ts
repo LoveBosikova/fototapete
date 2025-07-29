@@ -59,10 +59,10 @@ export const changeOfferForm = createEvent<TChangeOfferForm<keyof TOfferForm>>()
 export const resetOfferForm = createEvent()
 
 export const $offer_form = createStore<TOfferForm>({
-    name: undefined,
-    phone: undefined,
-    mail: undefined,
-    request: undefined,
+    name: '',
+    phone: '',
+    mail: '',
+    request: '',
 })
 .on(changeOfferForm, (state, payload) => ({
     ...state,

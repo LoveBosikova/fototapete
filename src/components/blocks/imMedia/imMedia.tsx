@@ -5,17 +5,23 @@ import { LangContext } from '../../../context/LangContext'
 import textData from '../../../texts'
 import back from '../../../assets/media_bacground.png'
 
-function ImMedia () {
+type IImMediaProps = {
+    title?: string 
+}
+
+function ImMedia (props: IImMediaProps) {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
     const text = textData[langValue as keyof typeof textData].infoPage
+
+    const { title } = props
 
     const [isPlaying, setIsPlaying] = useState(false)
     const videoId = "X3V0F9najIE"
     
     return (
         <section className={style.imMedia}>
-            <Title isBlack={true} text={text.in_media_title}/>
+            <Title isBlack={true} text={ title ? title : text.in_media_title}/>
             <div className={style.videoWrap}>
                 {isPlaying ? (
                     <iframe

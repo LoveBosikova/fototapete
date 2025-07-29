@@ -1,0 +1,33 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.otherMain {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    margin: .6%;
+    margin-top: 1.5vw;
+}
+
+.backgroundImg {
+    width: 100%;
+    max-width: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+    left: 0;
+    width: 42.5%;
+}
+
+.text {
+    @include onest-400-18;
+    color: $black-text;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}

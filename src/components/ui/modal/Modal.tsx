@@ -35,7 +35,7 @@ export const Modal = ({ modalName, children, modalClassName, className, onClose 
         <div className={styles.overlay} onClick={handleClose}>
         <div className={classNames(styles.modal,className, modalClassName)} onClick={(e) => e.stopPropagation()}>
             <button className={styles.close} onClick={() => {
-                handleClose
+                handleClose()
                 if (onClose) onClose()
             }}>×</button>
             {children}

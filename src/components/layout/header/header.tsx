@@ -29,6 +29,8 @@ function Header () {
             || location.pathname === `/` 
             || location.pathname === `${base}info` 
             || location.pathname === `/info`
+            || location.pathname === `${base}other` 
+            || location.pathname === `/other`
         );
     }, [location.pathname]);
 

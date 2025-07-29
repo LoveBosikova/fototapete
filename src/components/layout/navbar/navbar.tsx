@@ -46,7 +46,7 @@ function NavBar (props: INavBarProps) {
                     <NavLink to='/gallery' end>
                         <li className={style.linkWrap}><p className={style.link}>Wallpapers</p></li>
                     </NavLink>
-                    <NavLink to='/materials' end>
+                    <NavLink to='/other' end>
                         <li className={style.linkWrap}><p className={style.link}>Other</p></li>
                     </NavLink>
                 </ul>
