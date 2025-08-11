@@ -6,3 +6,10 @@ export type IMaterial = {
     about: string | null;
     price: number | null;
 }
+
+export type TFile = {
+    name: string;
+    type: "image/jpeg" | "image/png" | "application/pdf" | "application/eps" | "image/eps";
+    size: number; // в байтах
+    data?: string | ArrayBuffer | null; // base64 или бинарные данные
+};

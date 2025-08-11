@@ -1,0 +1,492 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.mainCustomDesign {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    margin: .6%;
+    margin-top: 1.5vw;
+    min-height: 90vh;
+    margin-bottom: 10vw;
+}
+
+.backgroundWrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.backgroundImg {
+    width: 100%;
+    max-width: 100%;
+}
+
+.textWrap {
+    width: 49%;
+    position: relative;
+}
+
+.titleWrap {
+    width: 100%;
+}
+
+.form {
+    position: absolute;
+    background-color: $white-text;
+    border-radius: 1.2rem;
+    top: 5%;
+    right: 4%;
+    width: 34%;
+    padding: 24px;
+    max-width: 40%;
+    color: $black-text;
+    z-index: 1;
+
+    @media(max-width: 720px) {
+        width: 93%;
+        max-width: 93%;
+    }
+
+    input, textarea {
+        border-radius: 1.2rem;
+        width: 95%;
+        padding: 1vw 1vw;
+        @include onest-400-11;
+        margin-bottom: 1vw;
+        @media(max-width: 720px) {
+            padding: 1.5vw 2vw;
+        }
+        @media(max-width: 440px) {
+            padding: 4vw;
+        }
+
+        // Стилизация плейсхолдера
+        &::placeholder {
+            color: $black-text;
+            @include onest-400-11; 
+        }
+        
+        &::-webkit-input-placeholder { 
+            color: $black-text;
+            @include onest-400-11; 
+        }
+        &::-moz-placeholder {
+            color: $black-text;
+            @include onest-400-11; 
+        }
+        &:-ms-input-placeholder {
+            color: $black-text;
+            @include onest-400-11; 
+        }
+        &:-moz-placeholder {
+            color: $black-text;
+            @include onest-400-11; 
+        }
+    }
+}
+
+.form_title {
+    margin-bottom: 24px;
+}
+
+.text {
+    color: $black-text;
+    @include onest-400-11; 
+    margin-bottom: 1vw;
+}
+
+.btnsWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 1vw;
+}
+
+.error {
+    display: block;
+    @include onest-400-11;
+    min-height: 1vw;
+    color: $orange-alert;
+}
+
+.error__hidden {
+    display: none;
+    height: 0vw;
+}
+
+.row {
+    display: flex;
+    gap: 7%;
+    width: 100%;
+    max-width: 100%;
+    @media(max-width: 720px) {
+        gap: 5vw;
+    }
+    @media(max-width: 720px) {
+        flex-direction: column;
+    }
+}
+
+.halfrow {
+    width: 43.7%;
+    @media(max-width: 720px) {
+        width: 100%;
+    }
+}
+
+.selectHidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+} 
+
+.materialsWrap {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.material {
+    padding: 1vw 1vw;
+        @include onest-400-11;
+        margin-bottom: 1vw;
+        @media(max-width: 720px) {
+            padding: 1.5vw 2vw;
+        }
+        @media(max-width: 440px) {
+            padding: 4vw;
+        }
+    cursor: pointer;
+    border: 1px solid $border-grey;
+    border-radius: 1.2rem;
+    margin-bottom: 3%;
+}
+
+.selectedMaterial {
+    width: 94%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.optionsWrapClosed {
+    display: none;
+}
+
+.scrollHiddenContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 20.5vw;
+    max-height: 20.5vw;
+    overflow: auto;
+    padding-top: 2%;
+}
+
+.optionsWrap {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background-color: $white-text;
+    border: 1px solid $border-grey;
+    border-radius: 1.4rem;
+    top: 113%;
+    padding: 3% 8%;
+    padding-top: 0;
+    padding-right: 0;
+    height: 100%;
+    overflow: hidden;
+    height: 20.5vw;
+    
+}
+
+.option {
+    padding-top: 1.6%;
+    padding-bottom: 1%;
+    cursor: pointer;
+    transition: $transition-appearance;
+
+    &:hover .materialText {
+        color: $orange-alert;
+        transition: $transition-disappearance;
+    }
+}
+
+.materialText {
+    @include onest-400-11;
+    width: 92%;
+}
+
+.arrowWrap {
+    position: absolute;
+    top: 24%;
+    right: 9%;
+    width: 1.5%;
+}
+
+
+@media (max-width: 1140px) {
+    .mainCustomDesign {
+        margin-top: 16vw;
+        margin-bottom: 30vw;
+    }
+
+    .handwritingWrap {
+        padding-left: 0;
+    }
+
+    h1 {
+        letter-spacing: -0.1rem !important;
+    }
+
+    .form {
+        top: 16%;
+        right: 27%;
+        width: 69%;
+        max-width: 69%;
+
+        input, textarea {
+            width: 95%;
+            padding: 1vw 1vw;
+            @include onest-400-11;
+            margin-bottom: 1vw;
+            @media(max-width: 720px) {
+                padding: 1.5vw 2vw;
+            }
+            @media(max-width: 440px) {
+                padding: 4vw;
+            }
+
+            // Стилизация плейсхолдера
+            &::placeholder {
+                @include onest-400-11; 
+            }
+            
+            &::-webkit-input-placeholder { 
+                @include onest-400-11; 
+            }
+            &::-moz-placeholder {
+                @include onest-400-11; 
+            }
+            &:-ms-input-placeholder {
+                @include onest-400-11; 
+            }
+            &:-moz-placeholder {
+                @include onest-400-11; 
+            }
+        }
+    }
+
+    .halfrow {
+        width: 45%;
+        @media(max-width: 720px) {
+            width: 100%;
+        }
+    }
+
+    .textWrap {
+        width: 65%;
+        padding-left: 1vw;
+        padding-top: 0;
+    }
+
+    .materialsWrap {
+        width: 98.5%;
+        max-width: 98.5%;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .mainCustomDesign {
+        display: flex;
+        flex-direction: column;
+        margin-top: 23vw;
+    }
+    
+    h1 {
+        letter-spacing: 0rem !important;
+    }
+
+    .textWrap {
+        width: 90%;
+        padding-top: 0vw;
+        padding-left: 0vw;
+        padding-bottom: 0vw;
+    }
+
+    .backgroundWrap {
+        top: 0vw;
+        order: 3;
+    }
+
+    .backgroundWrap {
+        position: relative;
+    }
+
+    .form {
+        position: relative;
+        background-color: $white-text;
+        border-radius: 1.2rem;
+        top: 5%;
+        right: 4%;
+        width: 34%;
+        padding: 24px;
+        max-width: 40%;
+        color: $black-text;
+        z-index: 1;
+
+        @media(max-width: 720px) {
+            width: 93%;
+            max-width: 93%;
+        }
+
+        input, textarea {
+            border-radius: 1.2rem;
+            width: 95%;
+            @include onest-400-22;
+            margin-bottom: 2vw;
+            @media(max-width: 720px) {
+                padding: 1.5vw 2vw;
+            }
+            @media(max-width: 440px) {
+                padding: 4vw;
+            }
+
+            // Стилизация плейсхолдера
+            &::placeholder {
+                color: $black-text;
+                @include onest-400-22; 
+            }
+            
+            &::-webkit-input-placeholder { 
+                color: $black-text;
+                @include onest-400-22; 
+            }
+            &::-moz-placeholder {
+                color: $black-text;
+                @include onest-400-22; 
+            }
+            &:-ms-input-placeholder {
+                color: $black-text;
+                @include onest-400-22; 
+            }
+            &:-moz-placeholder {
+                color: $black-text;
+                @include onest-400-22; 
+            }
+        }
+    }
+
+    .material {
+        padding: 1.5vw 2vw;
+        @include onest-400-22;
+    }
+
+    .materialsWrap {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .materialText {
+        @include onest-400-22;
+    }
+
+    .text {
+        @include onest-400-22; 
+    }
+
+    .error {
+        @include onest-400-22;
+    }
+
+    .row {
+        gap: 0vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .form {
+        input, textarea {
+            &::placeholder {
+                @include onest-400-28; 
+            }
+            
+            &::-webkit-input-placeholder { 
+                @include onest-400-28; 
+            }
+            &::-moz-placeholder {
+                @include onest-400-28; 
+            }
+            &:-ms-input-placeholder {
+                @include onest-400-28; 
+            }
+            &:-moz-placeholder {
+                @include onest-400-28; 
+            }
+        }
+    }
+
+    .material {
+        @include onest-400-28;
+    }
+
+    .materialText {
+        @include onest-400-28;
+    }
+
+    .text {
+        @include onest-400-28; 
+    }
+
+    .error {
+        @include onest-400-24;
+    }
+}
+
+@media (max-width: 440px) {
+    .form {
+        input, textarea {
+            &::placeholder {
+                @include onest-400-34; 
+            }
+            
+            &::-webkit-input-placeholder { 
+                @include onest-400-34; 
+            }
+            &::-moz-placeholder {
+                @include onest-400-34; 
+            }
+            &:-ms-input-placeholder {
+                @include onest-400-34; 
+            }
+            &:-moz-placeholder {
+                @include onest-400-34; 
+            }
+        }
+    }
+
+    .material {
+        @include onest-400-34;
+        padding: 4vw;
+    }
+
+    .materialText {
+        @include onest-400-34;
+    }
+
+    .text {
+        @include onest-400-34; 
+    }
+
+    .error {
+        @include onest-400-28;
+    }
+}

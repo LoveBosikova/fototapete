@@ -244,19 +244,6 @@ function OrderPage () {
                         <p className={errors.OIB ? style.error : style.error__hidden}>{errors.OIB ? errors.OIB : ""}</p>
 
                         </div>}
-
-                        {/* <div className={style.halfrow}>
-                            <p className={style.form_label}>{text.company}</p>
-                            <input 
-                            value={form.country}
-                            onChange={(e) => {
-                                changeTaskForm({ 
-                                    key: "company", 
-                                    value: e.target.value });
-                                }}
-                            type='text'
-                            />
-                        </div> */}
                         
                         <div className={style.halfrow}>
                         <p className={style.form_label}>{text.city}</p>

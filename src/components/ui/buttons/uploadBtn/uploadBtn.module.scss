@@ -1,0 +1,51 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+.linkBtn {
+    @include onest-400-14;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: $border-grey;
+    border: 1px solid $border-grey;
+    outline: none;
+    border-radius: $button-border;
+    transition: $transition-appearance;
+    color: $white-text;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 720px) {
+        @include onest-400-28;
+    }
+    
+    @media (max-width: 500px) {
+        @include onest-400-34;
+    }
+
+    &:hover {
+        background-color: #191919;
+        opacity: 90%;
+        transition: $transition-disappearance;
+        border: 1px solid $orange-hover;
+    }
+}
+
+.link {
+    color: $white-text;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

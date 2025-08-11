@@ -26,6 +26,7 @@ import InstructionsPage from './components/pages/instructionsPage/instructionsPa
 import FaqPage from './components/pages/faq/faq';
 import PricePage from './components/pages/pricePage/pricePage';
 import OtherPage from './components/pages/otherPage/otherPage';
+import CustomDesignPage from './components/pages/customDesign/CustomDesignPage';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='/faq' element={<FaqPage />} />
         <Route path='/price' element={<PricePage />} />
         <Route path='/gallery' element={<GalleryPage />} /> 
+        <Route path='/customDesign' element={<CustomDesignPage />} /> 
         <Route path='/instructions' element={<InstructionsPage />} /> 
         <Route path='/beforeAfter' element={<BeforeAfterPage />} /> 
         <Route path='/privacy_policy' element={<PoliticaConfidencialnosti />} />

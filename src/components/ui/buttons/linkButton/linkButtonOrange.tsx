@@ -12,10 +12,14 @@ function LinkButtonOrange({ text, link, onClick, ...rest }: ILinkButtonOrangePro
         <button className={style.linkBtn} onClick={onClick} {...rest}>
             {link ? 
             <NavLink className={style.link} to={link} end>
+                <div className={style.link}> 
                 {text}
+                </div>
             </NavLink>
         
-            : <p>{text}</p>}
+            : <div className={style.link}> 
+                {text}
+            </div>}
         </button>
     );
 }

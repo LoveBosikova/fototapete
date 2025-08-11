@@ -25,7 +25,7 @@ function NavBar (props: INavBarProps) {
             <NavLink to='/catalog' end>
                 <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
             </NavLink>
-            <NavLink to='/catalog' end>
+            <NavLink to='/customDesign' end>
                 <li className={style.linkWrap}><p className={style.link}>Сustom design</p></li>
             </NavLink>
             <NavLink to='/price' end>

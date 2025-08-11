@@ -150,6 +150,48 @@ const textData = {
                 { text: 'How to Choose the Perfect Wallpaper?', img: `${base}article-3.png`, link: '2' },
             ]
         },
+        customDesignPage: {
+            main: {
+                title: 'Do you want to order wallpaper with your own image?',
+                form: {
+                    title: 'Fill out the form, and we will prepare everything for you:',
+                    name: 'Name',
+                    surname: 'Surname',
+                    phone: 'Phone number',
+                    email: 'Email',
+                    address: 'Delivery address',
+                    width: 'Wall width',
+                    height: 'Wall height',
+                    material: 'Choose material',
+                    custom_image: 'Your image (max 32 MB — jpg, png, eps, pdf)',
+                }
+            },
+            transformImage: {
+                title: 'TRANSFORM YOUR IMAGE INTO CUSTOM WALLPAPER',
+                subtitle: 'Create a one-of-a-kind, personal wall with your own photo and design your custom wallpaper with Fototapete Zagreb. All you need is an image you like, provided it`s high quality to ensure the best result.',
+                howToTitle: 'How to place an order',
+                step1: {
+                    title: 'Upload Your Image',
+                    text: 'Select the file you`d like to print. Make sure it`s in high resolution to achieve a clear and beautiful result.',
+                },
+                step2: {
+                    title: 'Fill Out the Form',
+                    text: 'Enter your contact details, specify the desired dimensions, choose the material type, and share any specific requests.',
+                },
+                step3: {
+                    title: 'Image Quality Check',
+                    text: 'Our team will review your image to confirm that it`s suitable for printing at the selected size. If needed, we`ll reach out to offer suggestions or alternatives.',
+                },
+                step4: {
+                    title: 'Confirmation and Follow-Up',
+                    text: 'After the image review, we`ll contact you to discuss the details and answer any questions you may have.',
+                },
+                step5: {
+                    title: '',
+                    text: 'Create custom wallpaper with your image to add a stylish, high-quality accent to your space!',
+                },
+            },
+        },
         footer: {
             titleTop: `Let's keep`,
             titleBottom: 'in touch with us',
@@ -1162,6 +1204,8 @@ const textData = {
             order: "Order",
             readMore: "Read more",
             send: "Send",
+            uploadImg: 'Choose file',
+            uplaodDone: 'You have an uploaded file:'
         },
         materials: [
             {
@@ -1277,6 +1321,7 @@ const textData = {
             selectMaterial: "Select material",
             enterHeight: "Enter height",
             enterWeight: "Enter width",
+            file: "Need file uploaded"
         },
         modals: {
             modal: {
@@ -1636,6 +1681,48 @@ const textData = {
                     img: `${base}article-3.png`, 
                     link: '2'},
             ]
+        },
+        customDesignPage: {
+            main: {
+                title: 'Do you want to order wallpaper with your own image?',
+                form: {
+                    title: 'Fill out the form, and we will prepare everything for you:',
+                    name: 'Name',
+                    surname: 'Surname',
+                    phone: 'Phone number',
+                    email: 'Email',
+                    address: 'Delivery address',
+                    width: 'Wall width',
+                    height: 'Wall height',
+                    material: 'Choose material',
+                    custom_image: 'Your image (max 32 MB — jpg, png, eps, pdf)',
+                }
+            },
+            transformImage: {
+                title: 'TRANSFORM YOUR IMAGE INTO CUSTOM WALLPAPER',
+                subtitle: 'Create a one-of-a-kind, personal wall with your own photo and design your custom wallpaper with Fototapete Zagreb. All you need is an image you like, provided it`s high quality to ensure the best result.',
+                howToTitle: 'How to place an order',
+                step1: {
+                    title: 'Upload Your Image',
+                    text: 'Select the file you`d like to print. Make sure it`s in high resolution to achieve a clear and beautiful result.',
+                },
+                step2: {
+                    title: 'Fill Out the Form',
+                    text: 'Enter your contact details, specify the desired dimensions, choose the material type, and share any specific requests.',
+                },
+                step3: {
+                    title: 'Image Quality Check',
+                    text: 'Our team will review your image to confirm that it`s suitable for printing at the selected size. If needed, we`ll reach out to offer suggestions or alternatives.',
+                },
+                step4: {
+                    title: 'Confirmation and Follow-Up',
+                    text: 'After the image review, we`ll contact you to discuss the details and answer any questions you may have.',
+                },
+                step5: {
+                    title: '',
+                    text: 'Create custom wallpaper with your image to add a stylish, high-quality accent to your space!',
+                },
+            },
         },
         footer: {
             titleTop: `Ostanimo u`,
@@ -2919,6 +3006,7 @@ const textData = {
             selectMaterial: "Select material",
             enterHeight: "Enter height",
             enterWeight: "Enter width",
+            file: "Need file uploaded",
         },
         modals: {
             modal: {
@@ -2963,6 +3051,8 @@ const textData = {
             order: "Order",
             readMore: "Read more",
             send: "Send",
+            uploadImg: 'Choose file',
+            uplaodDone: 'You have an uploaded file:',
         },
     }
 }
