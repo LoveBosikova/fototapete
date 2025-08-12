@@ -1205,7 +1205,8 @@ const textData = {
             readMore: "Read more",
             send: "Send",
             uploadImg: 'Choose file',
-            uplaodDone: 'You have an uploaded file:'
+            uplaodDone: 'You have an uploaded file:',
+            nextArticle: 'Read next article',
         },
         materials: [
             {
@@ -3053,6 +3054,7 @@ const textData = {
             send: "Send",
             uploadImg: 'Choose file',
             uplaodDone: 'You have an uploaded file:',
+            nextArticle: 'Read next article',
         },
     }
 }

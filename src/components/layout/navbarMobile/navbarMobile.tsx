@@ -39,7 +39,7 @@ function NavbarMobile (props: ISelectorProps) {
                 </div>
             </div>
             <ul className={options}>
-                <NavLink 
+                {/* <NavLink 
                 to='/catalog' 
                 onClick={() => {
                     setCurLink(`${import.meta.env.BASE_URLinfo}catalog`)
@@ -66,6 +66,56 @@ function NavbarMobile (props: ISelectorProps) {
                     handleIsOpen()
                 }} 
                 className={curLink !== `${import.meta.env.BASE_URLinfo}materials` ? style.option : style.currentOption} 
+                end>
+                    <li className={style.linkWrap}><p className={style.link}>Materials</p></li>
+                </NavLink> */}
+                <NavLink to='/catalog' 
+                onClick={() => {
+                    setCurLink(`${import.meta.env.BASE_URLinfo}catalog`)
+                    handleIsOpen()
+                    } 
+                } 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}catalog` ? style.option : style.currentOption}
+                end>
+                    <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
+                </NavLink>
+                <NavLink to='/customDesign' 
+                onClick={() => {
+                    setCurLink(`${import.meta.env.BASE_URLinfo}customDesign`)
+                    handleIsOpen()
+                    } 
+                } 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}customDesign` ? style.option : style.currentOption}
+                end>
+                    <li className={style.linkWrap}><p className={style.link}>Сustom design</p></li>
+                </NavLink>
+                <NavLink to='/price' 
+                onClick={() => {
+                    setCurLink(`${import.meta.env.BASE_URLinfo}price`)
+                    handleIsOpen()
+                    } 
+                } 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}price` ? style.option : style.currentOption}
+                end>
+                    <li className={style.linkWrap}><p className={style.link}>Price</p></li>
+                </NavLink>
+                <NavLink to='/info'
+                onClick={() => {
+                    setCurLink(`${import.meta.env.BASE_URLinfo}info`)
+                    handleIsOpen()
+                    } 
+                } 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}info` ? style.option : style.currentOption}
+                end>
+                    <li className={style.linkWrap}><p className={style.link}>Info</p></li>
+                </NavLink>
+                <NavLink to='/materials' 
+                onClick={() => {
+                    setCurLink(`${import.meta.env.BASE_URLinfo}materials`)
+                    handleIsOpen()
+                    } 
+                } 
+                className={curLink !== `${import.meta.env.BASE_URLinfo}materials` ? style.option : style.currentOption}
                 end>
                     <li className={style.linkWrap}><p className={style.link}>Materials</p></li>
                 </NavLink>

@@ -3,7 +3,7 @@
 @import '../../../styles/fonts.scss';
 
 .blogArticlePage {
-    padding: 11.2vw 3.5vw;
+    padding: 11.2vw 20%;
     min-height: 70vh;
     color: $black-text;
 }
@@ -34,6 +34,11 @@
     margin-top: 1vw;
     margin-bottom: 1vw;
     @include onest-400-18;
+}
+
+.btnWrap {
+    margin-top: 2vw;
+    width: 50%;
 }
 
 @media (max-width: 1140px) {

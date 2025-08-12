@@ -87,6 +87,7 @@
     display: block;
     font-weight: 200;
     position: absolute;
+    z-index: 1000;
     width: 120%;
     top: 110%;
     left: 0;
@@ -116,14 +117,14 @@
 }
 
 .option {
-    text-align: center;
+    text-align: left;
     margin-bottom: 3%;
     cursor: pointer;
 }
 
 .currentOption {
     cursor: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3%;
     color: $link-disabled;
 }
