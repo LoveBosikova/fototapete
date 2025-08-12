@@ -31,3 +31,36 @@
     margin-left: 10%;
     margin-top: 5%;
 }
+
+@media (max-width: 1140px) {
+    .content {
+        bottom: 3%;
+        width: 53.5%;
+    }
+
+    .text {
+        margin-left: 5%;
+        @include onest-400-24;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .otherMain {
+        margin-top: 33vw;
+    }
+    .content {
+        top: -5%;
+        left: 0%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .text {
+        margin-top: 2%;
+        margin-left: 50%;
+        width: 50%;
+        @include onest-400-34;
+    }
+}
+

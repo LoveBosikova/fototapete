@@ -19,20 +19,43 @@ function Header () {
     const [isDefaultStyles, setIsDefaultStyles] = useState(true);
 
     let location = useLocation();
-
     useEffect(() => {
-        const base = import.meta.env.BASE_URL;
-
+    const base = import.meta.env.BASE_URL;
+    
+    const updateState = () => {
+        const isLargeScreen = window.innerWidth > 720;
         setIsDefaultStyles(
             location.pathname === `${base}` 
             || location.pathname === `/fototapete/` 
             || location.pathname === `/` 
             || location.pathname === `${base}info` 
             || location.pathname === `/info`
-            || location.pathname === `${base}other` 
-            || location.pathname === `/other`
+            || (
+                (location.pathname === `${base}other` || location.pathname === `/other`)
+                && isLargeScreen
+            )
         );
-    }, [location.pathname]);
+    };
+    
+    updateState();
+    window.addEventListener('resize', updateState);
+    
+    return () => window.removeEventListener('resize', updateState);
+}, [location.pathname]);
+
+    // useEffect(() => {
+    //     const base = import.meta.env.BASE_URL;
+
+    //     setIsDefaultStyles(
+    //         location.pathname === `${base}` 
+    //         || location.pathname === `/fototapete/` 
+    //         || location.pathname === `/` 
+    //         || location.pathname === `${base}info` 
+    //         || location.pathname === `/info`
+    //         || location.pathname === `${base}other` 
+    //         || location.pathname === `/other`
+    //     );
+    // }, [location.pathname]);
 
     const cart = useUnit($cart)
 

@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import styles from './CustomDesignPage.module.scss'
 import CustomDesignMain from '../../blocks/mainCustomDesign/mainCustomDesign';
-import OrderingProcess from '../../blocks/orderingProcess/orderingProcess';
 import AdditionalServices from '../../blocks/additionalServices/additionalServices';
 
 function CustomDesignPage () {
@@ -26,7 +25,6 @@ function CustomDesignPage () {
         <div className={styles.customDesignPage} ref={containerRef}>
             <CustomDesignMain />
             <AdditionalServices />
-
         </div>
     )
 }

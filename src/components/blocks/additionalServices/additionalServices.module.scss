@@ -62,3 +62,19 @@
         width: 52%;
     }
 }
+
+@media (max-width: 720px) {
+    .card {
+        & .pointText {
+            @include onest-400-24;
+        }
+    }
+
+    
+    .card_beuge {
+        & .pointText {
+            @include onest-400-24;
+        }
+    }
+
+}

@@ -1,7 +1,6 @@
 import { LangContext } from '../../../context/LangContext';
 import { useContext, useState } from 'react';
 
-import Handwriting from '../../ui/handwriting/handwriting';
 import Title from '../../ui/title/title';
 import selectArrow from '../../../assets/selectArrow.png';
 

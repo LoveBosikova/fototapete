@@ -1,5 +1,5 @@
 import { createEvent, createStore } from "effector";
-import { IMaterial, TFile } from "../../../types";
+import { IMaterial } from "../../../types";
 import { TAllowedFile } from "../../ui/buttons/uploadBtn/uploadBtn";
 
 export type TCustomDesignForm = {
