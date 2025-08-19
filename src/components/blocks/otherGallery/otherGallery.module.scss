@@ -8,6 +8,7 @@
 
 .titleWrap {
     width: 57%;
+    margin-bottom: 5vw;
 }
 
 .handwritingWrap {
@@ -31,6 +32,10 @@
     border-radius: 25px;
 }
 
+.smallSlider {
+    position: relative;
+}
+
 .smallSlide {
     overflow: visible;
         width: 95.5vw;
@@ -40,6 +45,30 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.sliderBtns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    top: 80.5%;
+    left: 2%;
+}
+
+.btnPrev {
+    transform: scaleX(-1);
+}
+
+.imgSmall {
+    width: 100%;
+    height: 70%;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1140px)  {

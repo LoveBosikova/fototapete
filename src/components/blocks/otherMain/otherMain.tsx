@@ -4,12 +4,14 @@ import textData from '../../../texts'
 import backLarge from '../../../assets/otherMain__big.png';
 import Title from '../../ui/title/title'
 import style from './otherMain.module.scss'
+import { useParams } from 'react-router-dom';
 
 
 function OtherMain () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue as keyof typeof textData].otherMain
+    const { id } = useParams()
+    const text = id ? textData[langValue as keyof typeof textData].otherMain[Number(id)] : textData[langValue as keyof typeof textData].otherMain[0]
 
     return (
         <section className={style.otherMain}>

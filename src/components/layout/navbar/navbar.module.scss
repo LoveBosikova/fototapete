@@ -6,8 +6,8 @@
     display: block;
     position: fixed;
     top: 0;
-    width: 31%;
-    margin-left: 36%;
+    width: 37%;
+    margin-left: 33%;
     margin-top: 2.4vw;
     background-color: $beige-card;
     border-radius: $button-border;
@@ -19,8 +19,8 @@
     display: block;
     position: fixed;
     top: 0;
-    width: 31%;
-    margin-left: 36%;
+    width: 37%;
+    margin-left: 33%;
     margin-top: 2.3vw;
     background-color: $beige-transparent;
     border-radius: $button-border;
@@ -56,7 +56,9 @@
 
 @media (max-width: 1140px) {
     .navbar, 
-    .navbarColorful {
+    .navbarColorful,
+    .subMenuItem,
+    .subMenu__hidden {
         display: none;
     }
 }
@@ -77,11 +79,11 @@
     height: 0vw;
     opacity: 0;
     display: grid;
-    grid-template-columns: 24% 16% 25% 24% 9%;
+    grid-template-columns: 26% 26% 18% 21% 22%;
     position: fixed;
     top: 0;
-    width: 31%;
-    margin-left: 36%;
+    width: 37%;
+    margin-left: 33%;
     margin-top: 2.4vw;
     padding-top: 3.5vw;
     padding-bottom: .5vw;
@@ -97,11 +99,11 @@
     display: grid;
     height: auto;
     opacity: 1;
-    grid-template-columns: 24% 16% 25% 24% 9%;
+    grid-template-columns: 26% 26% 18% 21% 22%;
     position: fixed;
     top: 0;
-    width: 31%;
-    margin-left: 36%;
+    width: 37%;
+    margin-left: 33%;
     margin-top: 2.4vw;
     padding-top: 3.5vw;
     padding-bottom: .5vw;
@@ -110,6 +112,10 @@
     border-radius: $button-border;
     transition: all 150ms ease-in-out;
     z-index: -2;
+
+    p {
+        transition: all 0ms ease-in-out;
+    }
 }
 
 .subMenuItem {

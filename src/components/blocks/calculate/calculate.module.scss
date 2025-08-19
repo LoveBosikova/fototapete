@@ -187,11 +187,11 @@
 }
 
 .miniLabel {
-    @include onest-400-11;
+    @include onest-400-14;
     color: $orange-alert;
     position: absolute;
-    top: -1%;
-    left: 10%;
+    top: 33%;
+    right: 5%;
 }
 
 .results {

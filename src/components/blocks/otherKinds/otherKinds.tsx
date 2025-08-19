@@ -8,12 +8,15 @@ import other3 from '../../../assets/other3.png';
 import textData from '../../../texts'
 
 import style from './otherKinds.module.scss'
+import { useParams } from 'react-router-dom';
 
 
 function OtherKinds () {
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const text = textData[langValue as keyof typeof textData].otherKinds
+    const { id } = useParams()
+    const text = id ? textData[langValue as keyof typeof textData].otherKinds[Number(id)] : textData[langValue as keyof typeof textData].otherKinds[0]
+    // const text = textData[langValue as keyof typeof textData].otherKinds
 
     return (
         <ul className={style.otherKinds}>

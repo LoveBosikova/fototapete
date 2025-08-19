@@ -230,7 +230,7 @@ const InstructionsPage = () => {
                             <div className={styles.headerWrap}>
                                 <h2 className={styles.accordionQuestion}>{text.points.howTo4.question}</h2>
                                 <div className={styles.btnWrap}>
-                                    <img className={styles.img} src={isOpen4? closeIcon : openIcon} alt='Open-close button' />
+                                    <img className={styles.imgInstructions} src={isOpen4? closeIcon : openIcon} alt='Open-close button' />
                                 </div>
                             </div>
                             <div className={styles.answerWrap}>
@@ -245,7 +245,7 @@ const InstructionsPage = () => {
                                             <p className={styles.answer__text}>{text.points.howTo4.answer.text2}</p>
                                         </div>
                                         <div className={styles.answer__half}>
-                                            <img className={styles.img} src={text.points.howTo4.answer.img1} alt='' />
+                                            <img className={styles.imgInstructions} src={text.points.howTo4.answer.img1} alt='' />
                                         </div>
                                     </div>
                                 :null}
@@ -256,7 +256,7 @@ const InstructionsPage = () => {
                                             <p className={styles.answer__text}>{text.points.howTo4.answer.text3}</p>
                                         </div>
                                         <div className={styles.answer__half}>
-                                            <img className={styles.img} src={text.points.howTo4.answer.img2} alt='' />
+                                            <img className={styles.imgInstructions} src={text.points.howTo4.answer.img2} alt='' />
                                         </div>
                                     </div>
                                 :null}
@@ -267,7 +267,7 @@ const InstructionsPage = () => {
                                             <p className={styles.answer__text}>{text.points.howTo4.answer.text4}</p>
                                         </div>
                                         <div className={styles.answer__half}>
-                                            <img className={styles.img} src={text.points.howTo4.answer.img3} alt='' />
+                                            <img className={styles.imgInstructions} src={text.points.howTo4.answer.img3} alt='' />
                                         </div>
                                     </div>
                                 :null}
@@ -279,7 +279,7 @@ const InstructionsPage = () => {
                                             <p className={styles.answer__text}>{text.points.howTo4.answer.text5}</p>
                                         </div>
                                         <div className={styles.answer__half}>
-                                            <img className={styles.img} src={text.points.howTo4.answer.img4} alt='' />
+                                            <img className={styles.imgInstructions} src={text.points.howTo4.answer.img4} alt='' />
                                         </div>
                                     </div>
                                 :null}
@@ -290,7 +290,7 @@ const InstructionsPage = () => {
                                             <p className={styles.answer__text}>{text.points.howTo4.answer.text6}</p>
                                         </div>
                                         <div className={styles.answer__half}>
-                                            <img className={styles.img} src={text.points.howTo4.answer.img5} alt='' />
+                                            <img className={styles.imgInstructions} src={text.points.howTo4.answer.img5} alt='' />
                                         </div>
                                     </div>
                                 :null}

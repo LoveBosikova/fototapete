@@ -5,6 +5,9 @@
 .search {
     position: sticky;
     top: 4vw;
+    max-height: 75vh;
+    overflow-y: scroll;
+    margin-bottom: 3vw;
 }
 
 .searchTitle {

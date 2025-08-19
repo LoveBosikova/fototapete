@@ -36,7 +36,7 @@ function App() {
         <Route index path='/' element={<MainPage />} />
         <Route path='/:pid' element={<ProductPage />} />
         <Route path='/cart' element={<CartPage />} />
-        <Route path='/other' element={<OtherPage />} />
+        <Route path='/other/:id' element={<OtherPage />} />
         <Route path='/order' element={<OrderPage />} />
         <Route path='/info' element={<InfoPage />} />
         <Route path='/faq' element={<FaqPage />} />

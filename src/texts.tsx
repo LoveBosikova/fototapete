@@ -86,11 +86,46 @@ const textData = {
             point5: 'Installation service',
             point6: 'Gift certificates',
         },        
-        otherMain: {
+        otherMain: [
+            {
             title: 'Sun protection Films',
             text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
-        },
-        otherKinds: {
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+    ],
+        otherKinds: [
+        {
             thermalTitle: 'Thermal Protection',
             thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
             uvTitle: 'UV Protection',
@@ -98,15 +133,154 @@ const textData = {
             mirrorTitle: 'Mirror effect for privacy',
             mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
         },
-        otherGallery: {
-            title: 'Explore solutions and ideas for your space',
-            handwriting: 'Gallery',
-            imgs: [
-                `${base}other/other_gallery1.png`,
-                `${base}other/other_gallery2.png`,
-                `${base}other/other_gallery3.png`,
-            ]
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
         },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+    ],
+        otherGallery: [
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+    ],
         otherOrder: {
             title: 'Fill in this form to receive a commercial offer',
             text: 'You can order sun protection film in the dimensions you need. If you`re unsure whether you`ll be able to apply the film to the glass yourself, you can hire our installers.'
@@ -192,6 +366,94 @@ const textData = {
                 },
             },
         },
+        header_main: {
+            topLinks: [
+                {
+                    linkName: 'Wallpapers',
+                    linkTo: '/catalog'
+                },
+                {
+                    linkName: 'Films',
+                    linkTo: '/other/0'
+                },
+                {
+                    linkName: 'Сustom design',
+                    linkTo: '/customDesign'
+                },
+                {
+                    linkName: 'Price',
+                    linkTo: '/price'
+                },
+                {
+                    linkName: 'Info',
+                    linkTo: '/info'
+                },
+                {
+                    linkName: 'Materials',
+                    linkTo: '/materials'
+                },
+            ],
+            subLinksFilms: [
+                {
+                    linkName: 'Sun Protect folije',
+                    linkTo: '/other/0'
+                },
+                {
+                    linkName: 'Pjeskarena folija',
+                    linkTo: '/other/1'
+                },
+                {
+                    linkName: 'Brendiranje izloga',
+                    linkTo: '/other/2'
+                },
+                {
+                    linkName: 'Folije za kuhinje',
+                    linkTo: '/other/3'
+                },
+                {
+                    linkName: 'Folije za liftove',
+                    linkTo: '/other/4'
+                },
+                {
+                    linkName: 'Brendiranje vozila',
+                    linkTo: '/other/5'
+                },
+                {
+                    linkName: 'Građevinske ploče',
+                    linkTo: '/other/6'
+                },
+                {
+                    linkName: 'Tisak na ceradi',
+                    linkTo: '/other/7'
+                },
+                {
+                    linkName: 'Platno za skele',
+                    linkTo: '/other/8'
+                },
+                {
+                    linkName: 'Sajamski štandovi',
+                    linkTo: '/other/9'
+                },
+            ],
+            subLinksInfo: [
+                {
+                    linkName: 'About us',
+                    linkTo: '/info'
+                },
+                {
+                    linkName: 'Before & after',
+                    linkTo: '/beforeAfter'
+                },
+                {
+                    linkName: 'Instructions',
+                    linkTo: '/instructions'
+                },
+                {
+                    linkName: 'FAQ',
+                    linkTo: '/faq'
+                },
+            ]
+        },
         footer: {
             titleTop: `Let's keep`,
             titleBottom: 'in touch with us',
@@ -223,7 +485,7 @@ const textData = {
                 },
                 {
                     linkName: 'Other',
-                    linkTo: '/blog'
+                    linkTo: '/other/0'
                 },
                 {
                     linkName: 'Price',
@@ -1143,15 +1405,15 @@ const textData = {
                     answer: {
                         text1: `We have prepared instructions for you on how to measure your wall in different situations. If you cannot find the instructions you need here and require assistance, please contact us, and we will be happy to help you.`,
                         text2: `Measure the width and height of the wall, preferably in several places, as not all walls are perfectly even. We will print the wallpaper according to the width and height you provide to us, and we will also add an extra 3-4 cm, which you can trim off during installation.`,
-                        img1: `${base}instructions/Instructions1.jpg`,
+                        img1: `${base}instructions/Instructions1.png`,
                         text3: `If your wall is sloped, measure the width (Š) and height (V) at the highest point, as well as additional Š2 and V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper will be trimmed off.`,
-                        img2: `${base}instructions/Instructions2.jpg`,
+                        img2: `${base}instructions/Instructions2.png`,
                         text4: `If your wall is sloped, measure the width (Š) and height (V) at the highest point, as well as additional V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full Width and full Height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper will be trimmed off.`,
-                        img3: `${base}instructions/Instructions3.jpg`,
+                        img3: `${base}instructions/Instructions3.png`,
                         text5: `If you have door on your wall, measure the full width (Š) and full height (V), as well as additional Š2, Š3 and V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper, as well as section for door, will be cut out.`,
-                        img4: `${base}instructions/Instructions4.jpg`,
+                        img4: `${base}instructions/Instructions4.png`,
                         text6: `If you have window on your wall, measure the full width and full height, as well as additional Š2, Š3, V2 and V3 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper, as well as section for window, will be cut out.`,
-                        img5: `${base}instructions/Instructions5.jpg`,
+                        img5: `${base}instructions/Instructions5.png`,
                         }
                 },
             }
@@ -1610,11 +1872,46 @@ const textData = {
             point5: 'Usluga montaže',
             point6: 'Poklon bonovi',
         },
-        otherMain: {
+        otherMain: [
+            {
             title: 'Sun protection Films',
             text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
-        },
-        otherKinds: {
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+            {
+            title: 'Sun protection Films',
+            text: 'Mirror or sun protection films are among the most popular solutions for superior thermal and UV protection on glass surfaces'
+            }, 
+    ],
+        otherKinds: [
+        {
             thermalTitle: 'Thermal Protection',
             thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
             uvTitle: 'UV Protection',
@@ -1622,15 +1919,154 @@ const textData = {
             mirrorTitle: 'Mirror effect for privacy',
             mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
         },
-        otherGallery: {
-            title: 'Explore solutions and ideas for your space',
-            handwriting: 'Gallery',
-            imgs: [
-                `${base}other/other_gallery1.png`,
-                `${base}other/other_gallery2.png`,
-                `${base}other/other_gallery3.png`,
-            ]
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
         },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+        {
+            thermalTitle: 'Thermal Protection',
+            thermalText: 'These films reflect sunlight during the summer while retaining heat during the winter, which would otherwise escape through window glass. In this way, they significantly contribute to energy efficiency, reducing heating and cooling costs. By reflecting the sun`s rays and reducing solar heating during summer heat, the films can lower the indoor temperature by up to 15ºC, making the space more comfortable for living and working. Additionally, they reduce glaring sunlight, making it easier to work on a computer or watch TV.',
+            uvTitle: 'UV Protection',
+            uvText: 'The films also block 99% of UV rays, offering excellent protection for your skin, as well as protecting furniture or merchandise from fading and deterioration. This makes them a great solution for both your home and various business spaces (offices, shop windows, etc.).',
+            mirrorTitle: 'Mirror effect for privacy',
+            mirrorText: 'The films are applied to the inside of the glass. Mirror film belongs to the category of highly reflective films. This means that the mirror effect occurs on the side where the light source is more intense. During the day, when sunlight is strong, the mirror film prevents views from the outside in, while you will still have an unobstructed view from the inside out. In the evening, the situation will be reversed.',
+        },
+    ],
+        otherGallery: [
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+            {
+                title: 'Explore solutions and ideas for your space',
+                handwriting: 'Gallery',
+                imgs: [
+                    `${base}other/other_gallery1.png`,
+                    `${base}other/other_gallery2.png`,
+                    `${base}other/other_gallery3.png`,
+                ]
+            },
+        ],
         otherOrder: {
             title: 'Fill in this form to receive a commercial offer',
             text: 'You can order sun protection film in the dimensions you need. If you`re unsure whether you`ll be able to apply the film to the glass yourself, you can hire our installers.'
@@ -1725,6 +2161,94 @@ const textData = {
                 },
             },
         },
+        header_main: {
+            topLinks: [
+                {
+                    linkName: 'Wallpapers',
+                    linkTo: '/catalog'
+                },
+                {
+                    linkName: 'Films',
+                    linkTo: '/other/0'
+                },
+                {
+                    linkName: 'Сustom design',
+                    linkTo: '/customDesign'
+                },
+                {
+                    linkName: 'Price',
+                    linkTo: '/price'
+                },
+                {
+                    linkName: 'Info',
+                    linkTo: '/info'
+                },
+                {
+                    linkName: 'Materials',
+                    linkTo: '/materials'
+                },
+            ],
+            subLinksFilms: [
+                {
+                    linkName: 'Sun Protect folije',
+                    linkTo: '/other/0'
+                },
+                {
+                    linkName: 'Pjeskarena folija',
+                    linkTo: '/other/1'
+                },
+                {
+                    linkName: 'Brendiranje izloga',
+                    linkTo: '/other/2'
+                },
+                {
+                    linkName: 'Folije za kuhinje',
+                    linkTo: '/other/3'
+                },
+                {
+                    linkName: 'Folije za liftove',
+                    linkTo: '/other/4'
+                },
+                {
+                    linkName: 'Brendiranje vozila',
+                    linkTo: '/other/5'
+                },
+                {
+                    linkName: 'Građevinske ploče',
+                    linkTo: '/other/6'
+                },
+                {
+                    linkName: 'Tisak na ceradi',
+                    linkTo: '/other/7'
+                },
+                {
+                    linkName: 'Platno za skele',
+                    linkTo: '/other/8'
+                },
+                {
+                    linkName: 'Sajamski štandovi',
+                    linkTo: '/other/9'
+                },
+            ],
+            subLinksInfo: [
+                {
+                    linkName: 'About us',
+                    linkTo: '/info'
+                },
+                {
+                    linkName: 'Before & after',
+                    linkTo: '/beforeAfter'
+                },
+                {
+                    linkName: 'Instructions',
+                    linkTo: '/instructions'
+                },
+                {
+                    linkName: 'FAQ',
+                    linkTo: '/faq'
+                },
+            ]
+        },
         footer: {
             titleTop: `Ostanimo u`,
             titleBottom: 'kontaktu s nama',
@@ -1756,7 +2280,7 @@ const textData = {
                 },
                 {
                     linkName: 'Ostalo',
-                    linkTo: '/blog'
+                    linkTo: '/other/0'
                 },
                 {
                     linkName: 'Cijena',
@@ -2784,15 +3308,15 @@ const textData = {
                     answer: {
                         text1: `We have prepared instructions for you on how to measure your wall in different situations. If you cannot find the instructions you need here and require assistance, please contact us, and we will be happy to help you.`,
                         text2: `Measure the width and height of the wall, preferably in several places, as not all walls are perfectly even. We will print the wallpaper according to the width and height you provide to us, and we will also add an extra 3-4 cm, which you can trim off during installation.`,
-                        img1: `${base}instructions/Instructions1.jpg`,
+                        img1: `${base}instructions/Instructions1.png`,
                         text3: `If your wall is sloped, measure the width (Š) and height (V) at the highest point, as well as additional Š2 and V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper will be trimmed off.`,
-                        img2: `${base}instructions/Instructions2.jpg`,
+                        img2: `${base}instructions/Instructions2.png`,
                         text4: `If your wall is sloped, measure the width (Š) and height (V) at the highest point, as well as additional V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full Width and full Height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper will be trimmed off.`,
-                        img3: `${base}instructions/Instructions3.jpg`,
+                        img3: `${base}instructions/Instructions3.png`,
                         text5: `If you have door on your wall, measure the full width (Š) and full height (V), as well as additional Š2, Š3 and V2 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper, as well as section for door, will be cut out.`,
-                        img4: `${base}instructions/Instructions4.jpg`,
+                        img4: `${base}instructions/Instructions4.png`,
                         text6: `If you have window on your wall, measure the full width and full height, as well as additional Š2, Š3, V2 and V3 that we will need to show how the chosen design will fit your dimensions. This way, you can immediately see which part of the design will not fit on the wall. The wallpaper will be printed to the full width and full height dimensions, and we will add an additional 3-4 cm. During installation, the excess wallpaper, as well as section for window, will be cut out.`,
-                        img5: `${base}instructions/Instructions5.jpg`,
+                        img5: `${base}instructions/Instructions5.png`,
                         }
                 },
             }

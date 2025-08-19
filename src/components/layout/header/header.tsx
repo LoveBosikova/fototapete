@@ -31,7 +31,7 @@ function Header () {
             || location.pathname === `${base}info` 
             || location.pathname === `/info`
             || (
-                (location.pathname === `${base}other` || location.pathname === `/other`)
+                (location.pathname.includes(`${base}other`) || location.pathname.includes(`/other`))
                 && isLargeScreen
             )
         );

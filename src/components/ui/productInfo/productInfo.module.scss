@@ -255,11 +255,11 @@
 }
 
 .miniLabel {
-    @include onest-400-11;
+    @include onest-400-13;
     color: $orange-alert;
     position: absolute;
-    top: 31%;
-    left: 8%;
+    top: 45%;
+    right: 5%;
 }
 
 .installationNote {
@@ -295,9 +295,10 @@
 
 @media(max-width: 1140px) {
     .miniLabel {
-        font-size: 11px !important;
-        top: 52%;
-        left: 9%;
+        @include onest-400-13;
+        // font-size: 16px !important;
+        top: 63%;
+        right: 5%;
     }
     .arrowWrap {
         top: 28%;
@@ -316,9 +317,11 @@
     }
 
     .miniLabel {
-        font-size: 12px !important;
-        top: 33%;
-        left: 4%;
+        // font-size: 12px !important;
+        @include onest-400-24;
+
+        top: 50%;
+        right: 5%;
     }
 
     .slidersWrap {
@@ -499,11 +502,11 @@
     .arrowWrap{
         top: 2vw;
     }
-        .miniLabel {
-        font-size: 12px !important;
-        top: 33%;
-        left: 85%;
-    }
+    //     .miniLabel {
+    //     font-size: 12px !important;
+    //     top: 33%;
+    //     left: 85%;
+    // }
 }
 
 @media (max-width: 420px) {

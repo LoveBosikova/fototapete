@@ -1,7 +1,9 @@
 import { NavLink } from "react-router";
 
 import style from './navbar.module.scss';
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LangContext } from "../../../context/LangContext";
+import textData from "../../../texts";
 
 
 type INavBarProps = {
@@ -11,6 +13,11 @@ type INavBarProps = {
 function NavBar (props: INavBarProps) {
     const { isWhite } = props
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
+    const { lang } = useContext(LangContext)
+    const langValue = lang.value.toLowerCase()
+
+    const text = textData[langValue as keyof typeof textData].header_main
     
 
     return (
@@ -22,49 +29,25 @@ function NavBar (props: INavBarProps) {
         <nav className={isWhite? style.navbarColorful : style.navbar}
             >
             <ul className={style.linksWrap}>
-            <NavLink to='/catalog' end>
-                <li className={style.linkWrap}><p className={style.link}>Catalog</p></li>
-            </NavLink>
-            <NavLink to='/customDesign' end>
-                <li className={style.linkWrap}><p className={style.link}>Сustom design</p></li>
-            </NavLink>
-            <NavLink to='/price' end>
-                <li className={style.linkWrap}><p className={style.link}>Price</p></li>
-            </NavLink>
-            <NavLink to='/info' end>
-                <li className={style.linkWrap}><p className={style.link}>Info</p></li>
-            </NavLink>
-            <NavLink to='/materials' end>
-                <li className={style.linkWrap}><p className={style.link}>Materials</p></li>
-            </NavLink>
+                {text.topLinks.map((link) => <NavLink to={link.linkTo} end>
+                <li className={style.linkWrap}><p className={style.link}>{link.linkName}</p></li>
+            </NavLink>)}
             </ul>
         </nav>
             <div className={isSubMenuOpen ? style.subMenu : style.subMenu__hidden}
             >
-                {/* Подменю */}
                 <ul className={style.subMenuItem}>
-                    <NavLink to='/gallery' end>
-                        <li className={style.linkWrap}><p className={style.link}>Wallpapers</p></li>
-                    </NavLink>
-                    <NavLink to='/other' end>
-                        <li className={style.linkWrap}><p className={style.link}>Other</p></li>
-                    </NavLink>
+                </ul>
+                <ul className={style.subMenuItem}>
+                    {text.subLinksFilms.map((link) => <NavLink to={link.linkTo} end>
+                        <li className={style.linkWrap}><p className={style.link}>{link.linkName}</p></li>
+                    </NavLink>)}
                 </ul>
                 <div className={style.subMenuItem}></div>
-                <div className={style.subMenuItem}></div>
                 <ul className={style.subMenuItem}>
-                    <NavLink to='/info' end>
-                        <li className={style.linkWrap}><p className={style.link}>About us</p></li>
-                    </NavLink>
-                    <NavLink to='/beforeAfter' end>
-                        <li className={style.linkWrap}><p className={style.link}>Before & after</p></li>
-                    </NavLink>
-                    <NavLink to='/instructions' end>
-                        <li className={style.linkWrap}><p className={style.link}>Instructions</p></li>
-                    </NavLink>
-                    <NavLink to='/faq' end>
-                        <li className={style.linkWrap}><p className={style.link}>FAQ</p></li>
-                    </NavLink>
+                    {text.subLinksInfo.map((link) => <NavLink to={link.linkTo} end>
+                        <li className={style.linkWrap}><p className={style.link}>{link.linkName}</p></li>
+                    </NavLink>)}
                 </ul>
                 <div className={style.subMenuItem}></div>
             </div>
