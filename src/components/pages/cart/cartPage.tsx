@@ -8,6 +8,7 @@ import LinkButtonOrange from '../../ui/buttons/linkButton/linkButtonOrange'
 import textData from '../../../texts'
 
 import style from './cartPage.module.scss'
+import CartItemAdditional from '../../ui/cartItem/cartItemAdditional'
 
 function CartPage () {
     const { lang } = useContext(LangContext)
@@ -18,7 +19,7 @@ function CartPage () {
     const totalPrice = useUnit($totalPrice)
 
     const containerRef = useRef<HTMLDivElement>(null);
-
+    
     useEffect(() => {
         setTimeout(() => {
             window.scrollTo({
@@ -41,6 +42,7 @@ function CartPage () {
                         </ul>
                         <ul className={style.cartItems}>
                             {cart.map((product)=> <CartItem key={product.product?.id} product={product}></CartItem>)}
+                            {text.additional.map((product) => <CartItemAdditional key={product.id} {...product}></CartItemAdditional>)}
                         </ul>
                     </div>
                     <div className={style.cartSummary}>

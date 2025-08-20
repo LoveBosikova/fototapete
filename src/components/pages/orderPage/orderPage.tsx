@@ -7,10 +7,11 @@ import { useUnit } from 'effector-react'
 import SubcategoryCheckbox from '../../ui/subcategoryCheckbox/subcategoryCheckbox'
 import OrderItem from '../../ui/orderItem/orderItem'
 import LinkButtonOrangeWhite from '../../ui/buttons/linkButton/linkBurronOrangeWhite'
-import { $cart, $totalPrice, finishOrder } from '../cart/model'
+import { $additionalInCart, $cart, $totalPrice, finishOrder } from '../cart/model'
 import { Modal } from '../../ui/modal/Modal'
 import { openModal } from '../../ui/modal/model'
 import { useNavigate } from 'react-router-dom'
+import OrderAdditionslItem from '../../ui/orderItem/orderAdditionalItem'
 
 function OrderPage () {
     const { lang } = useContext(LangContext)
@@ -18,6 +19,7 @@ function OrderPage () {
     const langValue = lang.value.toLowerCase()
     const form = useUnit($form)
     const cart = useUnit($cart)
+    const additionalInCart = useUnit($additionalInCart)
     const totalPrice = useUnit($totalPrice)
     const errors = useUnit($offer_errors)
     
@@ -433,6 +435,7 @@ function OrderPage () {
                 </div>
                 <ul className={style.order__items}>
                     {cart.map((item : any) => <OrderItem {...item} /> )}
+                    {additionalInCart.map((item : any) => <OrderAdditionslItem {...item} /> )}
                 </ul>
                 <div className={style.order__header}>
                     <p className={style.order_title}>{text.total}</p>

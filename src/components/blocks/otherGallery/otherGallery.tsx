@@ -16,14 +16,10 @@ function OtherGallery () {
 
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-    const textBtn = textData[langValue as keyof typeof textData].btns
     const swiperRef = useRef<any>(null);
-
     const { id } = useParams()
     const text = id ? textData[langValue as keyof typeof textData].otherGallery[Number(id)] : textData[langValue as keyof typeof textData].otherGallery[0]
     
-    // const text = textData[langValue as keyof typeof textData].otherGallery
-
     return (
         <section className={style.otherGallery}>
             <div className={style.titleWrap}>

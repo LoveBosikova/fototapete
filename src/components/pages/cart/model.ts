@@ -2,6 +2,7 @@ import { combine, createEvent, createStore, sample } from "effector";
 import { Iproduct } from "../../ui/productPreview/productPreview";
 import { IMaterial } from "../../../types";
 import { openModal } from "../../ui/modal/model";
+import { ICartItemAdditionalProps } from "../../ui/cartItem/cartItemAdditional";
 
 export type TCartItemForm = {
     material: IMaterial | null | undefined;
@@ -65,17 +66,48 @@ export const $cart = createStore<TCartItemForm[]>([])
     .on(removeFromCart, (state, id) => state.filter(item => item.product?.id !== id))
     .reset(finishOrder)
 
-    export const $totalPrice = $cart.map(cart => {
-    return cart.reduce((total, item) => {
+export const addAdditionalItem = createEvent<ICartItemAdditionalProps>();
+export const removeAdditionalFromCart = createEvent<number>(); // product.id
 
-    if (!item.product || !item.width || !item.height) return total;
+export const $additionalInCart = createStore<ICartItemAdditionalProps[]>([])
+    .on(addAdditionalItem, (state, item) => [...state, item])
+    .on(removeAdditionalFromCart, (state, id) => state.filter(item => item.id !== id))
+    .reset(finishOrder)
+
+// export const $totalPrice = $cart.map(cart => {
+//     return cart.reduce((total, item) => {
+
+//     if (!item.product || !item.width || !item.height) return total;
     
-    const area = Number(item.width) * Number(item.height);
-    const itemPrice = (area/10000) * item.material?.price!;
+//     const area = Number(item.width) * Number(item.height);
+//     const itemPrice = (area/10000) * item.material?.price!;
     
-    return total + itemPrice;
+//     return total + itemPrice;
+//     }, 0);
+// });
+
+export const $cartTotal = $cart.map(cart => {
+    return cart.reduce((total, item) => {
+        if (!item.product || !item.width || !item.height) return total;
+        
+        const area = Number(item.width) * Number(item.height);
+        const itemPrice = (area / 10000) * item.material?.price!;
+        
+        return total + itemPrice;
     }, 0);
 });
+
+export const $additionalTotal = $additionalInCart.map(additionalItems => {
+    return additionalItems.reduce((total, item) => {
+        return total + item.price;
+    }, 0);
+});
+
+export const $totalPrice = combine(
+    $cartTotal,
+    $additionalTotal,
+    (cartTotal, additionalTotal) => cartTotal + additionalTotal
+);
 
 sample({
     source: $cart_item_form,
@@ -89,9 +121,9 @@ sample({
 })
 
 sample({
-  clock: addToCart,
-  fn: () => 'cartSuccess',
-  target: openModal,
+    clock: addToCart,
+    fn: () => 'cartSuccess',
+    target: openModal,
 });
 
 // стор избранных товаров

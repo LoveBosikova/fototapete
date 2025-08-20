@@ -7,19 +7,13 @@ import OtherKinds from '../../blocks/otherKinds/otherKinds'
 import ImMedia from '../../blocks/imMedia/imMedia'
 import OtherGallery from '../../blocks/otherGallery/otherGallery'
 import OtherOrder from '../../blocks/otherOrder/otherOrder'
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 function OtherPage () {
-
-    // const { id } = useParams()
-
     const { lang } = useContext(LangContext)
     const langValue = lang.value.toLowerCase()
-
     const text = textData[langValue as keyof typeof textData].otherMedia
-
     const containerRef = useRef<HTMLDivElement>(null);
-
     let location = useLocation();
 
     useEffect(() => {

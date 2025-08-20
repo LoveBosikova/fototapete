@@ -1120,6 +1120,41 @@ const textData = {
             delivery: 'Delivery', 
             cart_note: 'For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel`s weight, and they are usually between 5 and 10 euros.',
             discount: 'Discount',
+            additional: [
+                {
+                    name: "Knife",
+                    about: "Long description here.",
+                    id: 1,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/knife.png",
+                },
+                {
+                    name: "Cart",
+                    about: "Long description here.",
+                    id: 2,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/card.jpg",
+                },
+                {
+                    name: "Cart and Knife",
+                    about: "Long description here.",
+                    id: 3,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/both.png",
+                },
+            ]
         },
         infoPage: {
             main_title: "At Fototapete Zagreb we specialize in transforming your visions into reality",
@@ -2915,6 +2950,41 @@ const textData = {
             delivery: 'Delivery', 
             cart_note: 'For cash-on-delivery orders, you pay the order cost calculated on the website plus shipping expenses. Unfortunately, we do not have exact information on the shipping costs. The courier service calculates them based on the parcel`s weight, and they are usually between 5 and 10 euros.',
             discount: 'Discount',
+            additional: [
+                {
+                    name: "Knife",
+                    about: "Long description here.",
+                    id: 1,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/knife.png",
+                },
+                {
+                    name: "Cart",
+                    about: "Long description here.",
+                    id: 2,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/card.jpg",
+                },
+                {
+                    name: "Cart and Knife",
+                    about: "Long description here.",
+                    id: 3,
+                    points: [
+                            "plus 1",
+                            "plus 2",
+                        ],
+                    price: 2,
+                    img: "/fototapete/additional/both.png",
+                },
+            ]
         },
         infoPage: {
             main_title: "At Fototapete Zagreb we specialize in transforming your visions into reality",
