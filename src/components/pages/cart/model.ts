@@ -92,8 +92,10 @@ export const $cartTotal = $cart.map(cart => {
         
         const area = Number(item.width) * Number(item.height);
         const itemPrice = (area / 10000) * item.material?.price!;
+
+        const isMoreThanMin = total + itemPrice >= 50
         
-        return total + itemPrice;
+        return isMoreThanMin ? total + itemPrice : 50;
     }, 0);
 });
 

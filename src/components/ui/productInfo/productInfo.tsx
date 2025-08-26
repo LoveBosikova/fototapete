@@ -72,6 +72,15 @@ function ProductInfo (props: IProductInfoProps) {
         })
     }, [productId])
 
+        const calculateWallpaperPrice = (width: number, height: number, material: IMaterial, priceText: string) => {
+        if (!width || !height || !material?.price) return "-";
+        
+        const basePrice = (width * height) / 10000 * material.price;
+        const finalPrice = basePrice < 50? 50 : Math.max(basePrice); // Берем максимум между расчетной ценой и 50
+        
+        return `${finalPrice} ${priceText}`;
+        };
+
     return (
         <div className={style.productInfo}>
             <div className={style.slidersWrap}>
@@ -197,7 +206,7 @@ function ProductInfo (props: IProductInfoProps) {
                             <FormResult text={textProductInfo.totalM} value={`${form.height && form.width ? ((+form.height/100)*(+form.width/100)).toFixed(2) : textProductInfo.totalMValue}`}></FormResult>
                         </div>
                         <div className={style.resultsWrap}> 
-                            <FormResult text={textProductInfo.wallpaperPrice} value={form.material && form.width && form.height ? `${form.material?.price!*Number(((Number(form.height)/100)*(Number(form.width)/100)).toFixed(2))} €` : "-"}></FormResult>
+                            <FormResult text={textProductInfo.wallpaperPrice} value={form.height && form.width &&form.material ? calculateWallpaperPrice(form.width, form.height, form.material, '€') : "-"}></FormResult>
                         </div>
                         <div className={style.checkboxWrap}>
                             <div className={style.subcategoryCheckboxWrap} onClick={()=> {
